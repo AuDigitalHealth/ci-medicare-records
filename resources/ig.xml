@@ -18,7 +18,7 @@
   <description
     value="Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications."/>
   <copyright
-    value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <package>
     <name value="base"/>
     <resource>

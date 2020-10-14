@@ -17,7 +17,7 @@
   </contact>
   <description value="Donation decision specific to an organ or tissue."/>
   <copyright
-    value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
