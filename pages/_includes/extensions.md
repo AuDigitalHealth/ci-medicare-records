@@ -1,4 +1,5 @@
 # {{ page.title }}
+{% include publish-box.html %}
 
 The [extensions](http://hl7.org/fhir/STU3/extensibility.html) listed below are defined as part of this implementation guide.
 A [registry of standard extensions](http://hl7.org/fhir/STU3/extensibility-registry.html) can be found in the FHIR specification. 
