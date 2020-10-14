@@ -18,7 +18,7 @@
     value="This profile defines representation of vaccination information from the Australian Immunisation Register."/>
   <copyright
     value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.2"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Immunization"/>
