@@ -1,6 +1,6 @@
 ## Medicare Records FHIR Implementation Guide
 
-### Approved for external use
+### Draft
 
 
 {:.no_toc}
