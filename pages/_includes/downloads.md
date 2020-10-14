@@ -1,5 +1,5 @@
 # {{ page.title }}
-{% include publish-box.html %}
+<!--{% include publish-box.html %}-->
 
 **Validator Pack and Definitions**
 

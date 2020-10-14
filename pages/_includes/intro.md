@@ -5,7 +5,7 @@
 
 {:.no_toc}
 
-{% include publish-box.html %}
+<!--{% include publish-box.html %}-->
 
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
