@@ -32,6 +32,14 @@
 	<date value="2017-08-15"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
+		<extension
+			url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-seriescriterion">
+			<valueAge>
+				<value value="12"/>
+				<system value="http://unitsofmeasure.org" />
+				<code value="a"/>
+			</valueAge>
+		</extension>
 		<doseSequence value="1"/>
 		<targetDisease>
 			<coding>
@@ -59,7 +67,6 @@
 			<coding>
 				<system value="http://hl7.org/fhir/v3/NullFlavor"/>
 				<code value="NAVU"/>
-				<display value="Not available"/>
 			</coding>
 		</doseStatus>
 	</vaccinationProtocol>

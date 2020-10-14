@@ -177,6 +177,12 @@
         <reference value="Consent/aodr-example-notwillingtodonate"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-immunization-seriescriterion"/>
+      </sourceReference>
+    </resource>
   </package>
   <page>
     <source value="index.html"/>
