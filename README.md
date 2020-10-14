@@ -1,10 +1,10 @@
-# CI FHIR STU3  
+# CI Medicare Records  
 
 ## Overview
-This repository is ‘current state’ of HL7™ FHIR® Release 3 (STU) artefacts authored and maintained by the Clinical Informatics team at the Australian Digital Health Agency. The contents are early working drafts that may have known issues and still be in development. These drafts are available for comment, review, and collaboration. Approved releases for use in implementation and in production systems are published on the Agency’s [developer centre]( https://developer.digitalhealth.gov.au/).
+This repository is TBD
 
 The contents of this repository include:
-- FHIR implementation guides, and where available the associated CDA implementation guide
+- FHIR implementation guide, and where available the associated CDA implementation guide
 - profiles
 - extensions
 - example resources conforming to the profiles or extensions
@@ -15,9 +15,8 @@ The contents of this repository include:
 This repository has the following structure: 
 - a resources folder that holds all StructureDefinition resources (e.g. profiles, extensions)
 - an examples folder that holds all example resources
-- an output folder that contains subfolders for each FHIR implementation guide containing the actual implementation guide as a downloadable zip and the extracted files
-- a pages folder that contains the subfolders for each FHIR implementation guide containing the implementation guide specific markdown files e.g. header and footer
-- multiple JSON control files in the root level folder (e.g. ig-sharedhealthsummary-1.json)
+- a pages folder that contains the implementation guide specific markdown files e.g. header and footer
+- single JSON control file in the root level folder
 - repository files, e.g. .gitignore.md, .readme.md and etc.
 - implementation guide build files, e.g. base.html, format.html and etc.
 
