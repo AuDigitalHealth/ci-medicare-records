@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="2fe9873a-0eea-415a-89ae-0b82ff2b3d0b"/>
+    <status value="active"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="22087011000036100"/>
+            <display value="candesartan cilexetil 32 mg tablet"/>
+        </coding>
+        <text value="Candesartan 32mg"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
+    </subject>
+    <taken value="y"/>
+    <dosage>
+        <text value="1 tablet daily"/>
+        <timing>
+            <repeat>
+                <frequency value="1"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <doseQuantity>
+            <value value="1"/>
+            <unit value="tablet"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="63011000036109"/>
+        </doseQuantity>
+    </dosage>
+</MedicationStatement>
