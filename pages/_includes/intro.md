@@ -17,7 +17,7 @@
 
 This implementation guide is an Australian realm implementation guide of the HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent atomic Medicare records in the My Health Record system and related applications.
 
-This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html) is based on [FHIR<sup>&reg;</sup> version 3.0.1](http://hl7.org/fhir/STU3/index.html).
+This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html) is based on [FHIR<sup>&reg;</sup> version 3.0.2](http://hl7.org/fhir/STU3/index.html).
 
 ### Scope
 
