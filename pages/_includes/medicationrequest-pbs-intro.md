@@ -33,5 +33,3 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * The referenced medication resource will include the code for the medication and the manufacturer if known
 * If the number of permitted repeats for a prescription are zero, the numberOfRepeatsAllowed element should not be included - the value of '0' cannot be used
 
-##### **Examples**
-Sample instances are included within [Explanation of Benefit Medicare](StructureDefinition-explanationofbenefit-medicare.html) example instances. 

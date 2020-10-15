@@ -18,5 +18,3 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
 
-##### **Examples**
-Sample instances are included within [Consent Australian Organ Donor Register](StructureDefinition-consent-aodr.html) example instances.

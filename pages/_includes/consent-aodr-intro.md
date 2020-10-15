@@ -43,11 +43,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * the extension Donation Decision with SNOMED CT code 160654005 &#124;*Willing to be donor*&#124;
     * listing a decision (permit or deny) for each specific organ and tissue that can be donated, each of which is represented by an except structure referencing a BodySite resource
 
-##### **Examples**
 
-1. [Willing to donate](Consent-aodr-example-willingtodonate.html)
-1. [Willing to donate some](Consent-aodr-example-willingtodonatesome.html)
-1. [Not willing to donate](Consent-aodr-example-notwillingtodonate.html)
 
 
 

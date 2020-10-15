@@ -37,11 +37,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * In order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so doseStatus has been set to NAVU Not Available
 * Though not expected to be provided, a cancelled, rejected, or not administered vaccination can be represented using notGiven=true and status=completed
 
-##### **Examples**
-1. [Administered immunisation - short](Immunization-immunization-air-example-administration-short.html)
-1. [Administered immunisation](Immunization-immunization-air-example-administration.html)
-1. [Immunisation not given](Immunization-immunization-air-example-notGiven.html)
-1. [Administered immunisation with text list of targetDisease](Immunization-immunization-air-example-administration-text.html)
+
 
 
 

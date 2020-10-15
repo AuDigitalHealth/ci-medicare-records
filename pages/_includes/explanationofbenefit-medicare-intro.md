@@ -46,11 +46,6 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * Whether a service was provided in a hospital is indicated by the use and value of item.location
     * Date of service is represented by item.serviced[x]
 
-#####  **Examples**
-1. [Explanation of Benefit MBS example 1](ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html)
-1. [Explanation of Benefit MBS example 2](ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html)
-1. [Explanation of Benefit MBS example min](ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html)
-1. [Explanation of Benefit PBS example 1](ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html)
-1. [Explanation of Benefit PBS example 2](ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html)
+
 
 
