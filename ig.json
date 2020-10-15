@@ -14,7 +14,10 @@
         "specification": "http://hl7.org/fhir/STU3/",
         "txCache": "txCache"
     },
-    "extraTemplates": ["mappings"],
+    "extraTemplates": [
+        "mappings",
+        "examples"
+    ],
     "do-transforms": "true",
     "spreadsheets": [],
     "special-urls": ["http://hl7.org.au/fhir/ValueSet/valueset-anzsco"],
@@ -26,6 +29,7 @@
         },
         "StructureDefinition": {
             "template-defns": "sd-definitions.html",
+            "template-examples": "sd-examples.html",
             "template-base": "sd.html",
             "template-mappings": "sd-mappings.html"
         },
