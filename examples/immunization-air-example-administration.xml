@@ -32,6 +32,9 @@
 	<date value="2017-08-15"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
+		<extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Immunization.protocolApplied.doseNumber[x]">
+			<valueString value="12 months" />
+		</extension>
 		<doseSequence value="1"/>
 		<targetDisease>
 			<coding>
@@ -59,7 +62,6 @@
 			<coding>
 				<system value="http://hl7.org/fhir/v3/NullFlavor"/>
 				<code value="NAVU"/>
-				<display value="Not available"/>
 			</coding>
 		</doseStatus>
 	</vaccinationProtocol>

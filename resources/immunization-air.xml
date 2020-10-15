@@ -16,6 +16,12 @@
   </contact>
   <description
     value="This profile defines representation of vaccination information from the Australian Immunisation Register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
   <copyright
     value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
@@ -158,6 +164,28 @@
     <element id="Immunization.vaccinationProtocol">
       <path value="Immunization.vaccinationProtocol"/>
       <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.vaccinationProtocol.extension">
+      <path value="Immunization.vaccinationProtocol.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Immunization.vaccinationProtocol.extension:doseNumber">
+      <path value="Immunization.vaccinationProtocol.extension"/>
+      <sliceName value="doseNumber"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile
+          value="http://hl7.org/fhir/4.0/StructureDefinition/extension-Immunization.protocolApplied.doseNumber[x]"
+        />
+      </type>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.authority">
