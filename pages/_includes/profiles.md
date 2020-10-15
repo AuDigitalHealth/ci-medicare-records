@@ -1,20 +1,136 @@
 # {{ page.title }}
 
-<!--{% include publish-box.html %}-->
+<p>The following profiles form part of this implementation guide: </p>
 
-The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined as part of this implementation guide.
-HL7 Australia base profiles referenced by this implementation guide can be found in the [Australian Base Profiles Implementation Guide](http://www.hl7.org.au/fhir/base2018Sep/).
+<html>
+  <div id="segment-content" class="segment">
+  <div class="container">
+  <div class="row">
+  <div class="inner-wrapper">
 
-Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
-* [Explanation of Benefit Medicare](StructureDefinition-explanationofbenefit-medicare.html)
-* [Medication Request Pharmaceutical Benefits Scheme](StructureDefinition-medicationrequest-pbs.html)
-* [Medication Pharmaceutical Benefits Scheme](StructureDefinition-medication-pbs.html)
-* [Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs](StructureDefinition-referralrequest-mbsdva.html)
+<div class="col-12">
+    <div style="border-right-style: none;" id="tabs">
+      <div style="border-right-style: none;" id="tabs">
+          <div>
+                <table width="100%">
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Foundation</div></td>
+                        <td class="frm-category">Conformance</td>
+                        <td class="frm-category">Terminology</td>
+                        <td class="frm-category">Security</td>
+                        <td class="frm-category">Documents</td>
+                        <td class="frm-category">Other</td>
+                    </tr> 
+                    <tr class="frm-contents" height="80">
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul>
+                                <li><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></li>
+                           </ul>
+                        </td>
+                       <td class="frm-null"/>
+                       <td class="frm-null"/>
+                    </tr>
+                    <tr class="frm-break">
+                        <td colspan="6"/>
+                   </tr>
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Base</div></td>
+                        <td class="frm-category">Individuals</td>
+                        <td class="frm-category">Entities</td>
+                        <td class="frm-category">Workflow</td>
+                        <td class="frm-category">Management</td>
+                        <td class="frm-null"/>
+                    </tr> 
+                        <tr class="frm-contents">
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Clinical</div></td>
+                        <td class="frm-category">Summary</td>
+                        <td class="frm-category">Diagnostics</td>
+                        <td class="frm-category">Medications</td>
+                        <td class="frm-category">Care Provision</td>
+                        <td class="frm-category">Request &amp; Response</td>
+                    </tr> 
+                    <tr class="frm-contents">
+                      <td class="frm-null"/>
+                      <td class="frm-set">
+                          <ul class="frm-set">
+                              <li><a href="StructureDefinition-bodysite-aodr.html">BodySite (BodySite Australian Organ Donor Register)</a></li>
+                          </ul>
+                      </td>
+                      <td class="frm-set">
+                        <ul class="frm-set">
+                            <li><a href="StructureDefinition-medicationrequest-pbs.html">MedicationRequest (Medication Request Pharmaceutical Benefits Scheme)</a></li>
+                            <li><a href="StructureDefinition-medication-pbs.html">Medication (Medication Pharmaceutical Benefits Scheme)</a></li>
+                            <li><a href="StructureDefinition-immunization-air.html">Immunization (Immunization Australian Immunisation Register)</a></li>
+                         </ul>
+                      </td>
+                      <td class="frm-set">
+                          <ul class="frm-set">
+                            <li><a href="StructureDefinition-referralrequest-mbsdva.html">ReferralRequest (Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs)</a></li>
+                          </ul>
+                      </td>
+                      <td class="frm-null"/>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
+                        <td class="frm-category">Support</td>
+                        <td class="frm-category">Billing</td>
+                        <td class="frm-category">Payment</td>
+                        <td class="frm-category">General</td>
+                        <td class="frm-null"/>
+                    </tr> 
+                    <tr class="frm-contents" height="80">
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                           <ul>
+                              <li><a href="StructureDefinition-explanationofbenefit-medicare.html">ExplanationofBenefit (Explanation of Benefit Medicare)</a></li>
+                            </ul>
+                        </td>
+                        <td class="frm-null"/>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
+                        <td class="frm-category">Public Health &amp; Research</td>
+                        <td class="frm-category">Definitional Artifacts</td>
+                        <td class="frm-category">Clinical Decision Support</td>
+                        <td class="frm-category">Quality Reporting</td>
+                        <td class="frm-category">Testing</td>
+                    </tr> 
+                    <tr class="frm-contents" height="80">
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                </table>
+</div>
 
-Profiles that define representation of donation decision information from the Australian Organ Donor Register:
-* [Consent Australian Organ Donor Register](StructureDefinition-consent-aodr.html)
-* [BodySite Australian Organ Donor Register](StructureDefinition-bodysite-aodr.html)
+     
+  </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /row -->
+  </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-Profile that defines the representation of vaccination information from the Australian Immunisation Register:
-* [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html)
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
 
+ </div>
+</div>
+</html>
