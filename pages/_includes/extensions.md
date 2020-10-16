@@ -8,6 +8,18 @@ The following extensions form part of this implementation guide:
         <th>Type</th>
         <th>Context</th>
     </tr>
+        <tr>
+        <td><a href="StructureDefinition-extension-airimmunisationstatus.html">AIR Immunisation Status</a></td>
+        <td>extension-airimmunisationstatus</td>
+        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+        <td><a href="http://hl7.org/fhir/stu3/Patient.html">Patient</a></td>
+    </tr>
+     <tr>
+        <td><a href="StructureDefinition-extension-aircovid19immunisationstatus.html">AIR COVID-19 Immunisation Status</a></td>
+        <td>extension-aircovid19immunisationstatus</td>
+        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+        <td><a href="http://hl7.org/fhir/stu3/Patient.html">Patient</a></td>
+    </tr>
     <tr>
         <td><a href="StructureDefinition-extension-donationdecision.html">ExtensionConsentDonationDecision</a></td>
         <td>extension-donationdecision</td>

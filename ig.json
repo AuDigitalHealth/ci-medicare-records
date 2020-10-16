@@ -91,6 +91,14 @@
         "StructureDefinition/medication-pbs": {
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
+        },
+        "StructureDefinition/extension-airimmunisationstatus": {
+            "base": "StructureDefinition-extension-airimmunisationstatus.html",
+            "defns": "StructureDefinition-extension-airimmunisationstatus-definitions.html"
+        },
+        "StructureDefinition/extension-aircovid19immunisationstatus": {
+            "base": "StructureDefinition-extension-aircovid19immunisationstatus.html",
+            "defns": "StructureDefinition-extension-aircovid19immunisationstatus-definitions.html"
         }
     },
     "tool": "jekyll",
