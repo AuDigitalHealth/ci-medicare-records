@@ -14,8 +14,7 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description
-    value="The purpose of this profile is to provide a representation of vaccination information from the Australian Immunisation Register."/>
+  <description value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register.&#xa;&#xa;#### Must Support&#xa;&#xa;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xa;&#xa;* The system SHALL be able to store and retrieve the element&#xa;&#xa;Except for the following elements:&#xa;&#xa;* identifier&#xa;&#xa;* patient&#xa;&#xa;for which it SHALL be interpreted as:&#xa;&#xa;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
