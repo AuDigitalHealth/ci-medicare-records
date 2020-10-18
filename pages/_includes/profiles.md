@@ -71,6 +71,7 @@
                             <li><a href="StructureDefinition-medicationrequest-pbs.html">MedicationRequest (Medication Request Pharmaceutical Benefits Scheme)</a></li>
                             <li><a href="StructureDefinition-medication-pbs.html">Medication (Medication Pharmaceutical Benefits Scheme)</a></li>
                             <li><a href="StructureDefinition-immunization-air.html">Immunization (Immunization Australian Immunisation Register)</a></li>
+                            <li><a href="StructureDefinition-immunizationrecommendation-air.html">ImmunizationRecommendation (Australian Immunisation Register Immunisation Recommendation)</a></li>
                          </ul>
                       </td>
                       <td class="frm-set">

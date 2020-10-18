@@ -92,6 +92,12 @@
         <reference value="StructureDefinition/extension-aircovid19immunisationstatus"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/immunizationrecommendation-air"/>
+      </sourceReference>
+    </resource>
     
 <!--    Examples-->
     
@@ -189,6 +195,22 @@
       <description value="Not willing to donate"/>
       <sourceReference>
         <reference value="Consent/aodr-example-notwillingtodonate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="ImmunizationRecommendation 1"/>
+      <description value="Polio vaccine with the forecast status of 'due' (text only)"/>
+      <sourceReference>
+        <reference value="ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="ImmunizationRecommendation 2"/>
+      <description value="Polio vaccine with the forecast status of 'overdue' (text only)"/>
+      <sourceReference>
+        <reference value="ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329"/>
       </sourceReference>
     </resource>
   </package>

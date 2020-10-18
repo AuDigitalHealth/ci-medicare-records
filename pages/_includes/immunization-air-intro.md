@@ -1,4 +1,4 @@
-#### Immunization Australian Immunisation Register
+#### Immunization Australian Immunisation Register  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register.
 
 #### Usage Scenarios

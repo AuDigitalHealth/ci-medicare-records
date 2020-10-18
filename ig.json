@@ -99,6 +99,10 @@
         "StructureDefinition/extension-aircovid19immunisationstatus": {
             "base": "StructureDefinition-extension-aircovid19immunisationstatus.html",
             "defns": "StructureDefinition-extension-aircovid19immunisationstatus-definitions.html"
+        },
+        "StructureDefinition/immunizationrecommendation-air": {
+            "base": "StructureDefinition-immunizationrecommendation-air.html",
+            "defns": "StructureDefinition-immunizationrecommendation-air-definitions.html"
         }
     },
     "tool": "jekyll",
