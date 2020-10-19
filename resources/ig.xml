@@ -98,6 +98,12 @@
         <reference value="StructureDefinition/immunizationrecommendation-air"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/flag-air"/>
+      </sourceReference>
+    </resource>
     
 <!--    Examples-->
     
@@ -211,6 +217,14 @@
       <description value="Polio vaccine with the forecast status of 'overdue' (text only)"/>
       <sourceReference>
         <reference value="ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Flag 1"/>
+      <description value="AIR notice - meningococcal C vaccine"/>
+      <sourceReference>
+        <reference value="Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
       </sourceReference>
     </resource>
   </package>

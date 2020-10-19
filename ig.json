@@ -104,6 +104,11 @@
             "base": "StructureDefinition-immunizationrecommendation-air.html",
             "defns": "StructureDefinition-immunizationrecommendation-air-definitions.html"
         }
+        ,
+        "StructureDefinition/flag-air": {
+            "base": "StructureDefinition-flag-air.html",
+            "defns": "StructureDefinition-flag-air-definitions.html"
+        }
     },
     "tool": "jekyll",
     "license": "CC0-1.0",

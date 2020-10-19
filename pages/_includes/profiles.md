@@ -47,7 +47,11 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                       <td class="frm-set">
+                          <ul class="frm-set">
+                              <li><a href="StructureDefinition-flag-air.html">Flag (Australian Immunisation Register Notice)</a></li>
+                          </ul>
+                      </td>
                         <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-break"><td colspan="6"/></tr>
