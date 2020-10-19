@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunizationrecommendation-air" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air" />
-  <name value="ImmunizationAustralianImmunisationRegister" />
+  <name value="ImmunizationRecommendationAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Immunisation Recommendation" />
   <status value="draft" />
   <experimental value="true" />
@@ -45,16 +45,17 @@
   <differential>
     <element id="ImmunizationRecommendation">
       <path value="ImmunizationRecommendation" />
-      <constraint>
-        <key value="inv-dh-imm-01" />
-        <severity value="error" />
-        <human value="One meta.profile SHALL have value 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air'" />
-        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air').exists()" />
-      </constraint>
+      <short value="TBD" />
     </element>
     <element id="ImmunizationRecommendation.meta">
       <path value="ImmunizationRecommendation.meta" />
       <min value="1" />
+      <constraint>
+        <key value="inv-dh-imm-01" />
+        <severity value="error" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air'" />
+        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air').exists()" />
+      </constraint>
     </element>
     <element id="ImmunizationRecommendation.meta.profile">
       <path value="ImmunizationRecommendation.meta.profile" />
@@ -74,7 +75,6 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.vaccineCode">
       <path value="ImmunizationRecommendation.recommendation.vaccineCode" />
-      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1" />
@@ -82,6 +82,7 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.targetDisease">
       <path value="ImmunizationRecommendation.recommendation.targetDisease" />
+      <min value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -98,10 +99,18 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion" />
+      <short value="Due date" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion.code">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/immunization-recommendation-date-criterion" />
+          <code value="due" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion.value">
