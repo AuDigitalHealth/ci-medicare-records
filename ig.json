@@ -92,27 +92,27 @@
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
-        "StructureDefinition/extension-airimmunisationstatus": {
+        "StructureDefinition/extension-airimmunisationstatus-1": {
             "base": "StructureDefinition-extension-airimmunisationstatus-1.html",
             "defns": "StructureDefinition-extension-airimmunisationstatus-1-definitions.html"
         },
-        "StructureDefinition/extension-aircovid19immunisationstatus": {
+        "StructureDefinition/extension-aircovid19immunisationstatus-1": {
             "base": "StructureDefinition-extension-aircovid19immunisationstatus-1.html",
             "defns": "StructureDefinition-extension-aircovid19immunisationstatus-1-definitions.html"
         },
-        "StructureDefinition/observation-airimmunisationstatus": {
+        "StructureDefinition/observation-airimmunisationstatus-1": {
             "base": "StructureDefinition-observation-airimmunisationstatus-1.html",
             "defns": "StructureDefinition-observation-airimmunisationstatus-1-definitions.html"
         },
-        "StructureDefinition/immunizationrecommendation-air": {
+        "StructureDefinition/immunizationrecommendation-air-1": {
             "base": "StructureDefinition-immunizationrecommendation-air-1.html",
             "defns": "StructureDefinition-immunizationrecommendation-air-1-definitions.html"
         },
-        "StructureDefinition/flag-air": {
+        "StructureDefinition/flag-air-1": {
             "base": "StructureDefinition-flag-air-1.html",
             "defns": "StructureDefinition-flag-air-1-definitions.html"
         },
-        "StructureDefinition/extension-immunization-doseschedule": {
+        "StructureDefinition/extension-immunization-doseschedule-1": {
             "base": "StructureDefinition-extension-immunization-doseschedule-1.html",
             "defns": "StructureDefinition-extension-immunization-doseschedule-1-definitions.html"
         },
