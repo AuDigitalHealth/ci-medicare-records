@@ -107,18 +107,26 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-immunization-seriescriterion"/>
+        <reference value="StructureDefinition/extension-immunization-doseschedule"/>
       </sourceReference>
     </resource>
-    
-    
+
+
     <!--    Examples-->
-    <resource>
+    <!--<resource>
       <example value="true"/>
       <name value="Immunization example 1"/>
       <description value="Immunization given example."/>
       <sourceReference>
         <reference value="Immunization/immunization-air-example-administration"/>
+      </sourceReference>
+    </resource>-->
+    <resource>
+      <example value="true"/>
+      <name value="Immunization example 1"/>
+      <description value="Vaccination administration (Infanix Hexa at 6 months of age)"/>
+      <sourceReference>
+        <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
       </sourceReference>
     </resource>
     <resource>
@@ -231,12 +239,6 @@
       <description value="AIR notice - meningococcal C vaccine"/>
       <sourceReference>
         <reference value="Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/extension-immunization-seriescriterion"/>
       </sourceReference>
     </resource>
   </package>

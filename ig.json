@@ -103,11 +103,14 @@
         "StructureDefinition/immunizationrecommendation-air": {
             "base": "StructureDefinition-immunizationrecommendation-air.html",
             "defns": "StructureDefinition-immunizationrecommendation-air-definitions.html"
-        }
-        ,
+        },
         "StructureDefinition/flag-air": {
             "base": "StructureDefinition-flag-air.html",
             "defns": "StructureDefinition-flag-air-definitions.html"
+        },
+        "StructureDefinition/extension-immunization-doseschedule": {
+            "base": "StructureDefinition-extension-immunization-doseschedule.html",
+            "defns": "StructureDefinition-extension-immunization-doseschedule-definitions.html"
         }
     },
     "tool": "jekyll",

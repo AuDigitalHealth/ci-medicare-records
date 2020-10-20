@@ -7,7 +7,7 @@
   </tr>
   <tr>
         <td>valueCodeableConcept (terminology binding)</td>
-        <td>Terminology binding is not available. A value set that includes codes for 'up to date' and 'not up to date' concepts is getting developed.</td>
+        <td>Terminology binding is not available. A value set that includes codes 171258008 | Up-to-date with vaccinations| and 171259000 | Not up to date with vaccinations| is currently in development.</td>
         <td>See <a href="https://jira.aws.tooling/browse/FTR-1128">FTR-1128</a></td>
   </tr>
   <tr>

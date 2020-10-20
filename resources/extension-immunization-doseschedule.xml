@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-immunization-seriescriterion" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-seriescriterion" />
+  <id value="extension-immunization-doseschedule" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule" />
   <version value="1.0.0" />
-  <name value="ExtensionImmunizationSeriesCriterion" />
+  <name value="ImmunizationDoseSchedule" />
+  <title value="Immunisation Dose Schedule" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -15,8 +16,8 @@
   </contact>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="AU"/>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
     </coding>
   </jurisdiction>
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
@@ -31,23 +32,24 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Series criterion" />
+      <short value="Immunisation Dose Schedule" />
+      <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-seriescriterion" />
+      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="string"/>
+        <code value="string" />
       </type>
       <type>
-        <code value="Age"/>
+        <code value="Age" />
       </type>
       <type>
-        <code value="CodeableConcept"/>
+        <code value="CodeableConcept" />
       </type>
     </element>
   </differential>
