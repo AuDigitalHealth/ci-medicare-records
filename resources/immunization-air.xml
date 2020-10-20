@@ -150,7 +150,7 @@
       <sliceName value="doseSchedule" />
       <type>
         <code value="Extension" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule" />
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1" />
       </type>
       <mustSupport value="true" />
     </element>
