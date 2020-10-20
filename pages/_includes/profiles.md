@@ -9,8 +9,7 @@
   <div class="inner-wrapper">
 
 <div class="col-12">
-    <div style="border-right-style: none;" id="tabs">
-      <div style="border-right-style: none;" id="tabs">
+         <div style="border-right-style: none;" id="tabs">
           <div>
                 <table width="100%">
                     <tr class="frm-group">
@@ -47,8 +46,6 @@
                         <td class="frm-set">
                           <ul class="frm-set">
                               <li><a href="StructureDefinition-patient-ihi-1.html">Patient (Patient with Mandatory IHI)</a></li>
-                          </ul>
-                                                    <ul class="frm-set">
                               <li><a href="StructureDefinition-patient-ihi-1.html">Practitioner (Base Practitioner)</a></li>
                           </ul>
                         </td>

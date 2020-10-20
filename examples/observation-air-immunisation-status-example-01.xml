@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="observation-air-immunisation-status-example-01"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus" />
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
     </meta>
     <status value="final"/>
     <code>
