@@ -1,7 +1,8 @@
 <Immunization xmlns="http://hl7.org/fhir">
 	<id value="immunization-air-example-administration"/>
 	<meta>
-		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
+		<profile
+			value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
@@ -32,9 +33,6 @@
 	<date value="2017-08-15"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
-		<extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-Immunization.protocolApplied.doseNumber[x]">
-			<valueString value="12 months" />
-		</extension>
 		<doseSequence value="1"/>
 		<targetDisease>
 			<coding>
