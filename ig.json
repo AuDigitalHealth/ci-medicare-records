@@ -100,6 +100,10 @@
             "base": "StructureDefinition-extension-aircovid19immunisationstatus.html",
             "defns": "StructureDefinition-extension-aircovid19immunisationstatus-definitions.html"
         },
+        "StructureDefinition/observation-airimmunisationstatus": {
+            "base": "StructureDefinition-observation-airimmunisationstatus.html",
+            "defns": "StructureDefinition-observation-airimmunisationstatus-definitions.html"
+        },
         "StructureDefinition/immunizationrecommendation-air": {
             "base": "StructureDefinition-immunizationrecommendation-air.html",
             "defns": "StructureDefinition-immunizationrecommendation-air-definitions.html"

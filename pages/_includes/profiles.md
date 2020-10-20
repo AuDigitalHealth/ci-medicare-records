@@ -68,6 +68,7 @@
                       <td class="frm-set">
                           <ul class="frm-set">
                               <li><a href="StructureDefinition-bodysite-aodr.html">BodySite (BodySite Australian Organ Donor Register)</a></li>
+                              <li><a href="StructureDefinition-observation-airimmunisationstatus.html">Observation (Observation of AIR Immunisation Status)</a></li>
                           </ul>
                       </td>
                       <td class="frm-set">
