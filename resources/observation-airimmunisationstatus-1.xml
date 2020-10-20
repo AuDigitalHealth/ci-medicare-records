@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-airimmunisationstatus" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus" />
+  <id value="observation-airimmunisationstatus-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
   <version value="1.0.0" />
   <name value="ObservationAIRImmunisationStatus" />
-  <title value="Observation of AIR Immunisation Status" />
+  <title value="AIR Immunisation Status" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -40,6 +40,20 @@
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
       </constraint>
     </element>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+      <min value="1" />
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1'" />
+        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1').exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
@@ -59,7 +73,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
       </type>
       <mustSupport value="true" />
     </element>

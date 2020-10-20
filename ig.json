@@ -93,28 +93,40 @@
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
         "StructureDefinition/extension-airimmunisationstatus": {
-            "base": "StructureDefinition-extension-airimmunisationstatus.html",
-            "defns": "StructureDefinition-extension-airimmunisationstatus-definitions.html"
+            "base": "StructureDefinition-extension-airimmunisationstatus-1.html",
+            "defns": "StructureDefinition-extension-airimmunisationstatus-1-definitions.html"
         },
         "StructureDefinition/extension-aircovid19immunisationstatus": {
-            "base": "StructureDefinition-extension-aircovid19immunisationstatus.html",
-            "defns": "StructureDefinition-extension-aircovid19immunisationstatus-definitions.html"
+            "base": "StructureDefinition-extension-aircovid19immunisationstatus-1.html",
+            "defns": "StructureDefinition-extension-aircovid19immunisationstatus-1-definitions.html"
         },
         "StructureDefinition/observation-airimmunisationstatus": {
-            "base": "StructureDefinition-observation-airimmunisationstatus.html",
-            "defns": "StructureDefinition-observation-airimmunisationstatus-definitions.html"
+            "base": "StructureDefinition-observation-airimmunisationstatus-1.html",
+            "defns": "StructureDefinition-observation-airimmunisationstatus-1-definitions.html"
         },
         "StructureDefinition/immunizationrecommendation-air": {
-            "base": "StructureDefinition-immunizationrecommendation-air.html",
-            "defns": "StructureDefinition-immunizationrecommendation-air-definitions.html"
+            "base": "StructureDefinition-immunizationrecommendation-air-1.html",
+            "defns": "StructureDefinition-immunizationrecommendation-air-1-definitions.html"
         },
         "StructureDefinition/flag-air": {
-            "base": "StructureDefinition-flag-air.html",
-            "defns": "StructureDefinition-flag-air-definitions.html"
+            "base": "StructureDefinition-flag-air-1.html",
+            "defns": "StructureDefinition-flag-air-1-definitions.html"
         },
         "StructureDefinition/extension-immunization-doseschedule": {
-            "base": "StructureDefinition-extension-immunization-doseschedule.html",
-            "defns": "StructureDefinition-extension-immunization-doseschedule-definitions.html"
+            "base": "StructureDefinition-extension-immunization-doseschedule-1.html",
+            "defns": "StructureDefinition-extension-immunization-doseschedule-1-definitions.html"
+        },
+        "StructureDefinition/patient-ihi-1": {
+            "base": "StructureDefinition-patient-ihi-1.html",
+            "defns": "StructureDefinition-patient-ihi-1-definitions.html"
+        },
+        "StructureDefinition/organization-dh-base-1": {
+            "base": "StructureDefinition-organization-dh-base-1.html",
+            "defns": "StructureDefinition-organization-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/practitioner-dh-base-1": {
+            "base": "StructureDefinition-practitioner-dh-base-1.html",
+            "defns": "StructureDefinition-practitioner-dh-base-1-definitions.html"
         }
     },
     "tool": "jekyll",

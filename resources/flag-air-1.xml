@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="flag-air" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air" />
+  <id value="flag-air-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1" />
   <version value="1.0.0" />
   <name value="FlagAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Notice" />
@@ -42,6 +42,12 @@
     <element id="Flag">
       <path value="Flag" />
       <short value="Australian Immunisation Register Notice" />
+      <constraint>
+        <key value="inv-dh-fla-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
+      </constraint>
     </element>
     <element id="Flag.meta">
       <path value="Flag.meta" />
@@ -49,8 +55,8 @@
       <constraint>
         <key value="inv-dh-fla-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air'" />
-        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1'" />
+        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1').exists()" />
       </constraint>
     </element>
     <element id="Flag.meta.profile">
@@ -89,10 +95,6 @@
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Flag.subject.identifier">
-      <path value="Flag.subject.identifier" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

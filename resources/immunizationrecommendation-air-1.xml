@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="immunizationrecommendation-air" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air" />
+  <id value="immunizationrecommendation-air-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1" />
   <version value="1.0.0" />
   <name value="ImmunizationRecommendationAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Immunisation Recommendation" />
@@ -47,6 +47,12 @@
     <element id="ImmunizationRecommendation">
       <path value="ImmunizationRecommendation" />
       <short value="TBD" />
+      <constraint>
+        <key value="inv-dh-imr-01" />
+        <severity value="error" />
+        <human value="The patient shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()" />
+      </constraint>
     </element>
     <element id="ImmunizationRecommendation.meta">
       <path value="ImmunizationRecommendation.meta" />
@@ -54,8 +60,8 @@
       <constraint>
         <key value="inv-dh-imm-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air'" />
-        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1'" />
+        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1').exists()" />
       </constraint>
     </element>
     <element id="ImmunizationRecommendation.meta.profile">
@@ -66,20 +72,13 @@
       <path value="ImmunizationRecommendation.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="ImmunizationRecommendation.recommendation.date">
       <path value="ImmunizationRecommendation.recommendation.date" />
       <mustSupport value="true" />
-    </element>
-    <element id="ImmunizationRecommendation.recommendation.vaccineCode">
-      <path value="ImmunizationRecommendation.recommendation.vaccineCode" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1" />
-      </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.targetDisease">
       <path value="ImmunizationRecommendation.recommendation.targetDisease" />

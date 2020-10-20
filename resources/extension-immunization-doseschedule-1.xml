@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-immunization-doseschedule" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule" />
+  <id value="extension-immunization-doseschedule-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1" />
   <version value="1.0.0" />
   <name value="ImmunizationDoseSchedule" />
   <title value="Immunisation Dose Schedule" />
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule" />
+      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

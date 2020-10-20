@@ -83,41 +83,63 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-airimmunisationstatus"/>
+        <reference value="StructureDefinition/extension-airimmunisationstatus-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-aircovid19immunisationstatus"/>
+        <reference value="StructureDefinition/extension-aircovid19immunisationstatus-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/immunizationrecommendation-air"/>
+        <reference value="StructureDefinition/immunizationrecommendation-air-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/observation-airimmunisationstatus"/>
+        <reference value="StructureDefinition/observation-airimmunisationstatus-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/flag-air"/>
+        <reference value="StructureDefinition/flag-air-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-immunization-doseschedule"/>
+        <reference value="StructureDefinition/extension-immunization-doseschedule-1"/>
       </sourceReference>
     </resource>
-
-
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/patient-ihi-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/humanname-dh-base-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/organization-dh-base-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/practitioner-dh-base-1"/>
+      </sourceReference>
+    </resource>
     <!--    Examples-->
     <!--<resource>
       <example value="true"/>

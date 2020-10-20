@@ -44,12 +44,23 @@
                         <td class="frm-null"/>
                     </tr> 
                         <tr class="frm-contents">
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                          <ul class="frm-set">
+                              <li><a href="StructureDefinition-patient-ihi-1.html">Patient (Patient with Mandatory IHI)</a></li>
+                          </ul>
+                                                    <ul class="frm-set">
+                              <li><a href="StructureDefinition-patient-ihi-1.html">Practitioner (Base Practitioner)</a></li>
+                          </ul>
+                        </td>
+                        <td class="frm-set">
+                          <ul class="frm-set">
+                              <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organisation)</a></li>
+                          </ul>
+                        </td>
                         <td class="frm-null"/>
                        <td class="frm-set">
                           <ul class="frm-set">
-                              <li><a href="StructureDefinition-flag-air.html">Flag (Australian Immunisation Register Notice)</a></li>
+                              <li><a href="StructureDefinition-flag-air-1.html">Flag (Australian Immunisation Register Notice)</a></li>
                           </ul>
                       </td>
                         <td class="frm-null"/>
@@ -68,7 +79,7 @@
                       <td class="frm-set">
                           <ul class="frm-set">
                               <li><a href="StructureDefinition-bodysite-aodr.html">BodySite (BodySite Australian Organ Donor Register)</a></li>
-                              <li><a href="StructureDefinition-observation-airimmunisationstatus.html">Observation (Observation of AIR Immunisation Status)</a></li>
+                              <li><a href="StructureDefinition-observation-airimmunisationstatus-1.html">Observation (AIR Immunisation Status)</a></li>
                           </ul>
                       </td>
                       <td class="frm-set">
@@ -76,7 +87,7 @@
                             <li><a href="StructureDefinition-medicationrequest-pbs.html">MedicationRequest (Medication Request Pharmaceutical Benefits Scheme)</a></li>
                             <li><a href="StructureDefinition-medication-pbs.html">Medication (Medication Pharmaceutical Benefits Scheme)</a></li>
                             <li><a href="StructureDefinition-immunization-air.html">Immunization (Immunization Australian Immunisation Register)</a></li>
-                            <li><a href="StructureDefinition-immunizationrecommendation-air.html">ImmunizationRecommendation (Australian Immunisation Register Immunisation Recommendation)</a></li>
+                            <li><a href="StructureDefinition-immunizationrecommendation-air-1.html">ImmunizationRecommendation (Australian Immunisation Register Immunisation Recommendation)</a></li>
                          </ul>
                       </td>
                       <td class="frm-set">
