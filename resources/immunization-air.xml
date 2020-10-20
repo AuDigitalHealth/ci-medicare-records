@@ -42,15 +42,6 @@
           value="(notGiven = false) implies (date and extension('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-cancellationperiod').empty())"
         />
       </constraint>
-      <constraint>
-        <key value="inv-dh-imm-02"/>
-        <severity value="error"/>
-        <human
-          value="One meta.profile SHALL have value 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'"/>
-        <expression
-          value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
-        />
-      </constraint>
     </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension"/>
@@ -80,9 +71,16 @@
     </element>
     <element id="Immunization.meta.profile">
       <path value="Immunization.meta.profile"/>
-      <definition
-        value="A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structuredefinition-definitions.html#StructureDefinition.url)."/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-imm-02"/>
+        <severity value="error"/>
+        <human
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'"/>
+        <expression
+          value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
+        />
+      </constraint>
     </element>
     <element id="Immunization.identifier">
       <path value="Immunization.identifier"/>
