@@ -61,7 +61,7 @@
         <human
           value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'"/>
         <expression
-          value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
         />
       </constraint>
     </element>

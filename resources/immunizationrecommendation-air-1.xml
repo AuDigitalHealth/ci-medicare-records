@@ -61,7 +61,7 @@
         <key value="inv-dh-imm-01" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1'" />
-        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1').exists()" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1').exists()" />
       </constraint>
     </element>
     <element id="ImmunizationRecommendation.meta.profile">

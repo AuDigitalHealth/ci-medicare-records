@@ -47,7 +47,7 @@
         <key value="inv-dh-obs-02" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1'" />
-        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1').exists()" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1').exists()" />
       </constraint>
     </element>
     <element id="Observation.meta.profile">
