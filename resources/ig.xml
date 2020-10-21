@@ -140,6 +140,13 @@
         <reference value="StructureDefinition/practitioner-dh-base-1"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/communication-air-1"/>
+      </sourceReference>
+    </resource>
+
     <!--    Examples-->
     <!--<resource>
       <example value="true"/>
@@ -277,6 +284,14 @@
         <reference value="Observation/observation-air-immunisation-status-example-01"/>
       </sourceReference>
     </resource>
+    <!--<resource>
+      <example value="true"/>
+      <name value="Communication 1"/>
+      <description value="AIR notice - meningococcal C vaccine"/>
+      <sourceReference>
+        <reference value="Communication/953ecb5e-afed-400c-9b0c-b67f2b33466d"/>
+      </sourceReference>
+    </resource>-->
   </package>
   <page>
     <source value="index.html"/>

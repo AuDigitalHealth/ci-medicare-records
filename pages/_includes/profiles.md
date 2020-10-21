@@ -92,7 +92,11 @@
                             <li><a href="StructureDefinition-referralrequest-mbsdva.html">ReferralRequest (Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs)</a></li>
                           </ul>
                       </td>
-                      <td class="frm-null"/>
+                      <td class="frm-set">
+                          <ul class="frm-set">
+                             <li><a href="StructureDefinition-communication-air-1.html">Communication (Australian Immunisation Register Notice)</a></li>
+                          </ul>
+                      </td>
                     </tr> 
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">

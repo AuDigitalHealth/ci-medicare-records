@@ -1,0 +1,36 @@
+<Communication xmlns="http://hl7.org/fhir">
+    <id value="953ecb5e-afed-400c-9b0c-b67f2b33466d"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/commmunication-air-1"
+        />
+    </meta>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1500551000168103"/>
+        </coding>
+        <text value="Australian Immunisation Register notice "/>
+    </category>
+    <subject>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://hl7.org/fhir/v2/0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+        </identifier>
+    </subject>
+    <payload>
+        <contentString
+            value="Your child has received a dose of
+            meningococcal C vaccine. Please check with your immunisation provider to ensure that the course
+            has been completed."
+        />
+    </payload>
+</Commmunication>
