@@ -284,14 +284,14 @@
         <reference value="Observation/observation-air-immunisation-status-example-01"/>
       </sourceReference>
     </resource>
-    <!--<resource>
+    <resource>
       <example value="true"/>
       <name value="Communication 1"/>
       <description value="AIR notice - meningococcal C vaccine"/>
       <sourceReference>
         <reference value="Communication/953ecb5e-afed-400c-9b0c-b67f2b33466d"/>
       </sourceReference>
-    </resource>-->
+    </resource>
   </package>
   <page>
     <source value="index.html"/>
