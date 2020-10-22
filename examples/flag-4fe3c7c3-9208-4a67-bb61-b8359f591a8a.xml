@@ -9,7 +9,7 @@
             <system value="http://snomed.info/sct"/>
             <code value="1500551000168103"/>
         </coding>
-        <text value="Australian Immunisation Register notice "/>
+        <text value="Australian Immunisation Register notice"/>
     </category>
     <code>
         <text
