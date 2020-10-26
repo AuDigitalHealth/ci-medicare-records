@@ -57,7 +57,10 @@
         </forecastStatus>
         <dateCriterion>
             <code>
-                <text value="Due"/>
+                <coding>
+                    <system value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                    <code value="due"/>
+                </coding>
             </code>
             <value value="2020-10-19"/>
         </dateCriterion>
