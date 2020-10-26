@@ -55,8 +55,8 @@
       <constraint>
         <key value="inv-dh-fla-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1').exists()" />
       </constraint>
     </element>
     <element id="Flag.meta.profile">
