@@ -132,7 +132,7 @@ The conformance verbs used in this implementation guide are defined in [FHIR Con
 The terminology binding rules are defined in [Controlling the use of Coded Values](http://hl7.org/fhir/stu3/terminologies.html#binding). Terminology is specified in this implementation guide, 
 in some cases binding an element to a value set or binding to a single fixed code. For guidance on coding see [Using Codes in Resources](http://hl7.org/fhir/stu3/terminologies.html).
 
-A value set binding, if present in this specification, will be specified in the "Description & Constraints" column of a profile as the title of the value set (hyperlinked to its definition) followed by identification of the binding strength (hyperlinked to its definition), e.g. [Health Summary Non-Clinical Empty Reason](https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1) ([required](http://hl7.org/fhir/stu3/terminologies.html#code)).
+A value set binding, if present in this specification, will be specified in the "Description & Constraints" column of a profile as the title of the value set (hyperlinked to its definition) followed by identification of the binding strength (hyperlinked to its definition), e.g. [Australian Vaccine](https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1) ([required](http://hl7.org/fhir/stu3/terminologies.html#code)).
 
 
 ### Cardinality
