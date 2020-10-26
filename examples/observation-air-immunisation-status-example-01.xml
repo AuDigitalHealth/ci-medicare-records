@@ -32,5 +32,6 @@
             <code value="171258008"/>
             <display value="Up-to-date with vaccinations"/>
         </coding>
+        <text value="Up to date"/>
     </valueCodeableConcept>
 </Observation>
