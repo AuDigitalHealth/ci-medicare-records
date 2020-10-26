@@ -91,15 +91,16 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.forecastStatus">
       <path value="ImmunizationRecommendation.recommendation.forecastStatus" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/NullFlavor" />
+          <code value="NAVU" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/immunization-recommendation-status" />
-      </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion" />
-      <short value="Due date" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -115,6 +116,7 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion.value">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion.value" />
+      <short value="Due date" />
       <mustSupport value="true" />
     </element>
   </differential>
