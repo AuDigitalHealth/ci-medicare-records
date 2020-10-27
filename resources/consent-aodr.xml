@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="consent-aodr"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
-  <version value="1.0.1"/>
+  <version value="1.1.0"/>
   <name value="ConsentAustralianOrganDonorRegister"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-10-22"/>
+  <date value="2020-10-27"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -37,7 +37,7 @@
         <human
           value="If donation decision is 'permit', there SHALL be a specific organ (except.data.reference)."/>
         <expression
-          value="donationDecision.valueCodeableConcept.coding.code='160654005' implies except.exists()"
+          value="extension.where(url='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision').value.coding.code='160654005'.exists() implies except.exists()"
         />
       </constraint>
       <constraint>
@@ -46,7 +46,7 @@
         <human
           value="If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference)."/>
         <expression
-          value="donationDecision.valueCodeableConcept.coding.code='161034004' implies except.empty()"
+          value="extension.where(url='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision').value.coding.code='161034004'.exists() implies except.empty()"
         />
       </constraint>
       <constraint>
