@@ -11,7 +11,7 @@
             <table>
                 <tr>
                     <td>Date:</td>
-                    <td>07 Jun 2020</td>
+                    <td>06 July 2020</td>
                 </tr>
                 <tr>
                     <td>Patient IHI:</td>
@@ -20,12 +20,10 @@
                 <tr>
                     <td>Next immunisation/s due</td>
                     <td>Due date</td>
-                    <td>Status</td>
                 </tr>
                 <tr>
-                    <td>Polio</td>
-                    <td>19 Oct 2020</td>
-                    <td>Due</td>
+                    <td>Diphtheria Tetanus Pertussis</td>
+                    <td>19 Oct 2022</td>
                 </tr>
             </table>
         </div>
@@ -46,14 +44,13 @@
     <recommendation>
         <date value="2020-07-06"/>
         <targetDisease>
-            <text value="Polio"/>
+            <text value="Diphtheria Tetanus Pertussis"/>
         </targetDisease>
         <forecastStatus>
             <coding>
-                <system value="http://hl7.org/fhir/immunization-recommendation-status"/>
-                <code value="due"/>
+                <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+                <code value="NAVU"/>
             </coding>
-            <text value="Due"/>
         </forecastStatus>
         <dateCriterion>
             <code>

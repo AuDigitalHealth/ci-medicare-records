@@ -76,6 +76,10 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="ImmunizationRecommendation.recommendation">
+      <path value="ImmunizationRecommendation.recommendation" />
+      <mustSupport value="true" />
+    </element>
     <element id="ImmunizationRecommendation.recommendation.date">
       <path value="ImmunizationRecommendation.recommendation.date" />
       <mustSupport value="true" />
