@@ -39,7 +39,7 @@
         <severity value="error"/>
         <human value="A PBS or RPBS claim SHALL include a prescription."/>
         <expression
-          value="(item.category.coding.code='pbs' or item.category.coding.code='rpbs') implies prescription.exists()"
+          value="(item.category.coding.where(code='pbs').exists() or item.category.coding.where(code='rpbs').exists()) implies prescription.exists()"
         />
       </constraint>
       <constraint>
@@ -47,7 +47,7 @@
         <severity value="error"/>
         <human value="A MBS or DVABS claim SHALL NOT include a prescription."/>
         <expression
-          value="(item.category.coding.code='mbs' or item.category.coding.code='dva') implies prescription.exists().not()"
+          value="(item.category.coding.where(code='mbs').exists() or item.category.coding.where(code='dva').exists()) implies prescription.exists().not()"
         />
       </constraint>
       <constraint>
@@ -60,7 +60,7 @@
         <key value="inv-dh-eob-04"/>
         <severity value="error"/>
         <human value="A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy')."/>
-        <expression value="subType.coding.code='pbs' implies type.coding.code='pharmacy'"/>
+        <expression value="subType.coding.where(code='pbs').exists() implies type.coding.where(code = 'pharmacy').exists()"/>
       </constraint>
       <constraint>
         <key value="inv-dh-eob-05"/>
