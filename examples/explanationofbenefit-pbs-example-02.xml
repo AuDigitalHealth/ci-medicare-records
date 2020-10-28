@@ -6,30 +6,6 @@
 		/>
 	</meta>
 	<contained>
-		<Organization xmlns="http://hl7.org/fhir">
-			<id value="Organization2"/>
-			<identifier>
-				<system value="http://pbs.gov.au/code/manufacturer"/>
-				<value value="MM"/>
-			</identifier>
-		</Organization>
-	</contained>
-	<contained>
-		<Medication xmlns="http://hl7.org/fhir">
-			<id value="Medication2"/>
-			<code>
-				<coding>
-					<system value="urn:oid:1.2.36.1.2001.1005.22"/>
-					<code value="03119E"/>
-				</coding>
-			</code>
-			<manufacturer>
-				<reference value="#Organization2"/>
-			</manufacturer>
-
-		</Medication>
-	</contained>
-	<contained>
 		<MedicationRequest xmlns="http://hl7.org/fhir">
 			<id value="MedicationRequest2"/>
 			<meta>
@@ -40,7 +16,7 @@
 			<status value="active"/>
 			<intent value="order"/>
 			<medicationReference>
-				<reference value="#Medication2"/>
+				<display value="03119E, Manuf: MM"/>
 			</medicationReference>
 			<subject>
 				<identifier>
