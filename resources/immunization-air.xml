@@ -118,8 +118,7 @@
       <path value="Immunization.patient"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1"/>
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -172,6 +171,10 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="Immunization.vaccinationProtocol.doseSequence">
+      <path value="Immunization.vaccinationProtocol.doseSequence"/>
+      <mustSupport value="true"/>
+    </element>
     <element id="Immunization.vaccinationProtocol.authority.display">
       <path value="Immunization.vaccinationProtocol.authority.display"/>
       <min value="1"/>
@@ -181,7 +184,7 @@
       <path value="Immunization.vaccinationProtocol.targetDisease"/>
       <mustSupport value="true"/>
       <binding>
-        <strength value="required"/>
+        <strength value="preferred"/>
         <valueSetUri
           value="https://healthterminologies.gov.au/fhir/ValueSet/vaccination-target-disease-1"/>
       </binding>
