@@ -127,8 +127,13 @@
         "StructureDefinition/practitioner-dh-base-1": {
             "base": "StructureDefinition-practitioner-dh-base-1.html",
             "defns": "StructureDefinition-practitioner-dh-base-1-definitions.html"
+        }, 
+        "StructureDefinition/humanname-dh-base-1": {
+            "base": "StructureDefinition-humanname-dh-base-1.html",
+            "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
         }
     },
+    
     "tool": "jekyll",
     "license": "CC0-1.0",
     "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir",
