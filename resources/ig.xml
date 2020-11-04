@@ -159,30 +159,30 @@
         <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
       </sourceReference>
     </resource>
-    <resource>
+    <!--<resource>
       <example value="true"/>
       <name value="Immunization short example"/>
       <description value="Immunization given example 3 - short."/>
       <sourceReference>
         <reference value="Immunization/immunization-air-example-administration-short"/>
       </sourceReference>
-    </resource>
-    <resource>
+    </resource>-->
+    <!--<resource>
       <example value="true"/>
       <name value="Immunisation example 3"/>
       <description value="Immunisation not given example"/>
       <sourceReference>
         <reference value="Immunization/immunization-air-example-notGiven"/>
       </sourceReference>
-    </resource>
-    <resource>
+    </resource>-->
+    <!--<resource>
       <example value="true"/>
       <name value="Immunisation example 4"/>
       <description value="Immunisation example - with targetDisease as text"/>
       <sourceReference>
         <reference value="Immunization/immunization-air-example-administration-text"/>
       </sourceReference>
-    </resource>
+    </resource>-->
     <resource>
       <example value="true"/>
       <name value="Explanation of Benefit MBS example 1"/>
