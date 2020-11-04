@@ -127,6 +127,10 @@
         "StructureDefinition/humanname-dh-base-1": {
             "base": "StructureDefinition-humanname-dh-base-1.html",
             "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/extension-vaccineserialnumber-1": {
+            "base": "StructureDefinition-extension-vaccineserialnumber-1.html",
+            "defns": "StructureDefinition-extension-vaccineserialnumber-1-definitions.html"
         }
     },
     "tool": "jekyll",

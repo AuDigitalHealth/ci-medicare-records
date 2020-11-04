@@ -38,4 +38,10 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Resource.html">Resource</a></td>
     </tr>
+        <tr>
+        <td><a href="StructureDefinition-extension-vaccineserialnumber-1.html">Vaccine Vial Serial Number</a></td>
+        <td>extension-vaccineserialnumber-1</td>
+        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a></td>
+        <td><a href="http://hl7.org/fhir/STU3/immunization-definitions.html#Immunization">Immunization</a></td>
+    </tr>
 </table>

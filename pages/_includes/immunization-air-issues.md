@@ -10,11 +10,6 @@
         <td>The extension definitionn including the URL and id may change when requirements become available.</td>
         <td>N/A</td>
   </tr>
-      <tr>
-        <td>Serial number missing</td>
-        <td>Support for the vaccine serial number requirement will be added in the next draft of this profile.</td>
-        <td>N/A</td>
-  </tr>
   <tr>
         <td>Constraint presentation</td>
         <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>

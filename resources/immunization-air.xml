@@ -1,151 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="immunization-air" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air" />
-  <version value="2.0.0" />
-  <name value="ImmunizationAustralianImmunisationRegister" />
-  <title value="Immunization Australian Immunisation Register" />
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <id value="immunization-air"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
+  <version value="2.0.0"/>
+  <name value="ImmunizationAustralianImmunisationRegister"/>
+  <title value="Immunization Australian Immunisation Register"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* identifier&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description
+    value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* identifier&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing"/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="AU" />
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
     </coding>
   </jurisdiction>
-  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="3.0.2" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Immunization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
-  <derivation value="constraint" />
+  <copyright
+    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="3.0.2"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Immunization"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Immunization">
-      <path value="Immunization" />
-      <short value="Australian Immunisation Register Vaccination Information" />
+      <path value="Immunization"/>
+      <short value="Australian Immunisation Register Vaccination Information"/>
       <constraint>
-        <key value="inv-dh-imm-03" />
-        <severity value="error" />
-        <human value="The patient shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <key value="inv-dh-imm-03"/>
+        <severity value="error"/>
+        <human
+          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"
+        />
       </constraint>
     </element>
+    <element id="Immunization.extension">
+      <path value="Immunization.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Immunization.extension:serialNumber">
+      <path value="Immunization.extension"/>
+      <sliceName value="serialNumber"/>
+<!--      <min value="0"/>
+      <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-vaccineserialnumber-1"
+        />
+      </type>
+      <mustSupport value="true"/>
+    </element>
     <element id="Immunization.meta">
-      <path value="Immunization.meta" />
-      <min value="1" />
+      <path value="Immunization.meta"/>
+      <min value="1"/>
       <constraint>
-        <key value="inv-dh-imm-02" />
-        <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()" />
+        <key value="inv-dh-imm-02"/>
+        <severity value="error"/>
+        <human
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'"/>
+        <expression
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
+        />
       </constraint>
     </element>
     <element id="Immunization.meta.profile">
-      <path value="Immunization.meta.profile" />
-      <min value="1" />
+      <path value="Immunization.meta.profile"/>
+      <min value="1"/>
     </element>
     <element id="Immunization.identifier">
-      <path value="Immunization.identifier" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <path value="Immunization.identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.status">
-      <path value="Immunization.status" />
-      <fixedCode value="completed" />
-      <mustSupport value="true" />
+      <path value="Immunization.status"/>
+      <fixedCode value="completed"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.notGiven">
-      <path value="Immunization.notGiven" />
-      <fixedBoolean value="false" />
-      <mustSupport value="true" />
+      <path value="Immunization.notGiven"/>
+      <fixedBoolean value="false"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccineCode">
-      <path value="Immunization.vaccineCode" />
-      <mustSupport value="true" />
+      <path value="Immunization.vaccineCode"/>
+      <mustSupport value="true"/>
       <binding>
-        <strength value="required" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1" />
+        <strength value="required"/>
+        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1"/>
       </binding>
     </element>
     <element id="Immunization.patient">
-      <path value="Immunization.patient" />
+      <path value="Immunization.patient"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.date">
-      <path value="Immunization.date" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Immunization.date"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.primarySource">
-      <path value="Immunization.primarySource" />
-      <fixedBoolean value="true" />
-      <mustSupport value="true" />
+      <path value="Immunization.primarySource"/>
+      <fixedBoolean value="true"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.lotNumber">
-      <path value="Immunization.lotNumber" />
-      <short value="Batch number" />
-      <mustSupport value="true" />
+      <path value="Immunization.lotNumber"/>
+      <short value="Batch number"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol">
-      <path value="Immunization.vaccinationProtocol" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <path value="Immunization.vaccinationProtocol"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.extension">
-      <path value="Immunization.vaccinationProtocol.extension" />
+      <path value="Immunization.vaccinationProtocol.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="Immunization.vaccinationProtocol.extension:doseSchedule">
-      <path value="Immunization.vaccinationProtocol.extension" />
-      <sliceName value="doseSchedule" />
+      <path value="Immunization.vaccinationProtocol.extension"/>
+      <sliceName value="doseSchedule"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1" />
+        <code value="Extension"/>
+        <profile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1"
+        />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.doseSequence">
-      <path value="Immunization.vaccinationProtocol.doseSequence" />
-      <mustSupport value="true" />
+      <path value="Immunization.vaccinationProtocol.doseSequence"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.authority.display">
-      <path value="Immunization.vaccinationProtocol.authority.display" />
-      <min value="1" />
-      <fixedString value="National Imunisation Program" />
+      <path value="Immunization.vaccinationProtocol.authority.display"/>
+      <min value="1"/>
+      <fixedString value="National Imunisation Program"/>
     </element>
     <element id="Immunization.vaccinationProtocol.targetDisease">
-      <path value="Immunization.vaccinationProtocol.targetDisease" />
-      <mustSupport value="true" />
+      <path value="Immunization.vaccinationProtocol.targetDisease"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.doseStatus">
-      <path value="Immunization.vaccinationProtocol.doseStatus" />
+      <path value="Immunization.vaccinationProtocol.doseStatus"/>
       <patternCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v3/NullFlavor" />
-          <code value="NAVU" />
+          <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+          <code value="NAVU"/>
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -140,7 +140,12 @@
         <reference value="StructureDefinition/practitioner-dh-base-1"/>
       </sourceReference>
     </resource>
-
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-vaccineserialnumber-1"/>
+      </sourceReference>
+    </resource>
 
     <!--    Examples-->
     <!--<resource>
