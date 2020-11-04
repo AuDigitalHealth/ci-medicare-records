@@ -5,29 +5,6 @@
             value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunizationrecommendation-air-1"
         />
     </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td>Date:</td>
-                    <td>06 July 2020</td>
-                </tr>
-                <tr>
-                    <td>Patient IHI:</td>
-                    <td>8003608166690503</td>
-                </tr>
-                <tr>
-                    <td>Next immunisation/s due</td>
-                    <td>Due date</td>
-                </tr>
-                <tr>
-                    <td>Polio</td>
-                    <td>19 Oct 2020</td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <patient>
         <identifier>
             <type>
@@ -42,7 +19,70 @@
         </identifier>
     </patient>
     <recommendation>
-        <date value="2020-07-06"/>
+        <date value="2020-10-29"/>
+        <targetDisease>
+            <text value="Diphtheria Tetanus Pertussis"/>
+        </targetDisease>
+        <forecastStatus>
+            <coding>
+                <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+                <code value="NAVU"/>
+            </coding>
+        </forecastStatus>
+        <dateCriterion>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                    <code value="due"/>
+                </coding>
+            </code>
+            <value value="2018-04-02"/>
+        </dateCriterion>
+    </recommendation>
+    <recommendation>
+        <date value="2020-10-29"/>
+        <targetDisease>
+            <text value="Hepatitis B"/>
+        </targetDisease>
+        <forecastStatus>
+            <coding>
+                <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+                <code value="NAVU"/>
+            </coding>
+        </forecastStatus>
+        <dateCriterion>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                    <code value="due"/>
+                </coding>
+            </code>
+            <value value="2019-05-10"/>
+        </dateCriterion>
+    </recommendation>
+    <recommendation>
+        <date value="2020-10-29"/>
+        <targetDisease>
+            <text value="Varicella"/>
+        </targetDisease>
+        <forecastStatus>
+            <coding>
+                <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+                <code value="NAVU"/>
+            </coding>
+        </forecastStatus>
+        <dateCriterion>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                    <code value="due"/>
+                </coding>
+            </code>
+            <value value="2019-08-02"/>
+        </dateCriterion>
+    </recommendation>
+    <recommendation>
+        <date value="2020-10-29"/>
         <targetDisease>
             <text value="Polio"/>
         </targetDisease>
@@ -59,7 +99,7 @@
                     <code value="due"/>
                 </coding>
             </code>
-            <value value="2022-10-19"/>
+            <value value="2022-05-05"/>
         </dateCriterion>
     </recommendation>
 </ImmunizationRecommendation>
