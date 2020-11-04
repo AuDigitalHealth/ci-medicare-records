@@ -38,10 +38,4 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Resource.html">Resource</a></td>
     </tr>
-    <tr>
-        <td><a href="StructureDefinition-extension-immunization-cancellationperiod.html">ExtensionImmunizationCancellationPeriod</a></td>
-        <td>extension-immunization-cancellationperiod</td>
-        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#Period">Period</a></td>
-        <td><a href="http://hl7.org/fhir/stu3/Immunization.html">Immunization</a></td>
-    </tr>
 </table>

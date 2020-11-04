@@ -50,7 +50,7 @@
             "template-format": "ex-format.html"
         }
     },
-    "npm-name" : "hl7.fhir.au.dh.medicare-records",
+    "npm-name": "hl7.fhir.au.dh.medicare-records",
     "resources": {
         "StructureDefinition/consent-aodr": {
             "base": "StructureDefinition-consent-aodr.html",
@@ -63,10 +63,6 @@
         "StructureDefinition/explanationofbenefit-medicare": {
             "base": "StructureDefinition-explanationofbenefit-medicare.html",
             "defns": "StructureDefinition-explanationofbenefit-medicare-definitions.html"
-        },
-        "StructureDefinition/extension-immunization-cancellationperiod": {
-            "base": "StructureDefinition-extension-immunization-cancellationperiod.html",
-            "defns": "StructureDefinition-extension-immunization-cancellationperiod-definitions.html"
         },
         "StructureDefinition/extension-dateinitialregistration": {
             "base": "StructureDefinition-extension-dateinitialregistration.html",
@@ -127,22 +123,21 @@
         "StructureDefinition/practitioner-dh-base-1": {
             "base": "StructureDefinition-practitioner-dh-base-1.html",
             "defns": "StructureDefinition-practitioner-dh-base-1-definitions.html"
-        }, 
+        },
         "StructureDefinition/humanname-dh-base-1": {
             "base": "StructureDefinition-humanname-dh-base-1.html",
             "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
         }
     },
-    
     "tool": "jekyll",
     "license": "CC0-1.0",
     "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir",
     "dependencyList": [{
         "name": "aubase",
         "location": "http://hl7.org.au/fhir",
-        "version":"1.1.1"
+        "version": "1.1.1"
     }],
-    "fixed-business-version" : "2.0.0",
+    "fixed-business-version": "2.0.0",
     "broken-links": "warning",
-    "title":"Medicare Records"
+    "title": "Medicare Records"
 }
