@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-vaccineserialnumber-1"/>
+  <id value="immunization-dose-schedule-1"/>
   <url
-    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-vaccineserialnumber-1"/>
+    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"/>
   <version value="1.0.0"/>
-  <name value="VaccineSerialNumber"/>
-  <title value="Vaccine Vial Serial Number"/>
+  <name value="ImmunizationDoseSchedule"/>
+  <title value="Immunisation Dose Schedule"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -21,32 +21,26 @@
       <code value="AU"/>
     </coding>
   </jurisdiction>
-  <description value="Serial number of the vaccine."/>
   <copyright
     value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <contextType value="resource"/>
-  <context value="Immunization"/>
+  <context value="Immunization.vaccinationProtocol"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Vaccine Serial Number"/>
+      <short value="Immunisation Dose Schedule"/>
       <max value="1"/>
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri
-        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-vaccineserialnumber-1"
+        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"
       />
     </element>
     <element id="Extension.value[x]">

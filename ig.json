@@ -88,13 +88,13 @@
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
-        "StructureDefinition/extension-airimmunisationstatus-1": {
-            "base": "StructureDefinition-extension-airimmunisationstatus-1.html",
-            "defns": "StructureDefinition-extension-airimmunisationstatus-1-definitions.html"
+        "StructureDefinition/air-immunisation-status-1": {
+            "base": "StructureDefinition-air-immunisation-status-1.html",
+            "defns": "StructureDefinition-air-immunisation-status-1-definitions.html"
         },
-        "StructureDefinition/extension-aircovid19immunisationstatus-1": {
-            "base": "StructureDefinition-extension-aircovid19immunisationstatus-1.html",
-            "defns": "StructureDefinition-extension-aircovid19immunisationstatus-1-definitions.html"
+        "StructureDefinition/air-covid19-immunisation-status-1": {
+            "base": "StructureDefinition-air-covid19-immunisation-status-1.html",
+            "defns": "StructureDefinition-air-covid19-immunisation-status-1-definitions.html"
         },
         "StructureDefinition/observation-airimmunisationstatus-1": {
             "base": "StructureDefinition-observation-airimmunisationstatus-1.html",
@@ -108,9 +108,9 @@
             "base": "StructureDefinition-flag-air-1.html",
             "defns": "StructureDefinition-flag-air-1-definitions.html"
         },
-        "StructureDefinition/extension-immunization-doseschedule-1": {
-            "base": "StructureDefinition-extension-immunization-doseschedule-1.html",
-            "defns": "StructureDefinition-extension-immunization-doseschedule-1-definitions.html"
+        "StructureDefinition/immunization-dose-schedule-1": {
+            "base": "StructureDefinition-immunization-dose-schedule-1.html",
+            "defns": "StructureDefinition-immunization-dose-schedule-1-definitions.html"
         },
         "StructureDefinition/patient-ihi-1": {
             "base": "StructureDefinition-patient-ihi-1.html",
@@ -128,9 +128,9 @@
             "base": "StructureDefinition-humanname-dh-base-1.html",
             "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
         },
-        "StructureDefinition/extension-vaccineserialnumber-1": {
-            "base": "StructureDefinition-extension-vaccineserialnumber-1.html",
-            "defns": "StructureDefinition-extension-vaccineserialnumber-1-definitions.html"
+        "StructureDefinition/vaccine-serial-number-1": {
+            "base": "StructureDefinition-vaccine-serial-number-1.html",
+            "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"
         }
     },
     "tool": "jekyll",

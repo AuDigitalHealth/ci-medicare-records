@@ -33,15 +33,14 @@
 	<date value="2019-05-02"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
-		<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1">
-			<valueAge>
-				<value value="6"/>
-				<system value="http://unitsofmeasure.org"/>
-				<code value="mo"/>
-			</valueAge>
-			<!--<valueString value="6 months">
-			</valueString>-->
+		<extension
+			url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1">
+			<valueString value="6 months"/>
 		</extension>
+		<doseSequence value="1"/>
+		<authority>
+			<display value="National Imunisation Program"/>
+		</authority>
 		<targetDisease>
 			<coding>
 				<system value="http://snomed.info/sct"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-airimmunisationstatus-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-airimmunisationstatus-1" />
+  <id value="air-immunisation-status-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/air-immunisation-status-1" />
   <version value="1.0.0" />
   <name value="AIRImmunisationStatus" />
   <title value="AIR Immunisation Status" />
@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-airimmunisationstatus-1" />
+      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/air-immunisation-status-1" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />

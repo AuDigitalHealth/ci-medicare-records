@@ -57,12 +57,10 @@
     <element id="Immunization.extension:serialNumber">
       <path value="Immunization.extension"/>
       <sliceName value="serialNumber"/>
-<!--      <min value="0"/>
-      <max value="1"/>-->
       <type>
         <code value="Extension"/>
         <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-vaccineserialnumber-1"
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -153,13 +151,18 @@
       <type>
         <code value="Extension"/>
         <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-immunization-doseschedule-1"
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"
         />
       </type>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.doseSequence">
       <path value="Immunization.vaccinationProtocol.doseSequence"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.vaccinationProtocol.authority">
+      <path value="Immunization.vaccinationProtocol.authority"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.authority.display">
@@ -173,13 +176,12 @@
     </element>
     <element id="Immunization.vaccinationProtocol.doseStatus">
       <path value="Immunization.vaccinationProtocol.doseStatus"/>
-      <patternCodeableConcept>
+      <fixedCodeableConcept>
         <coding>
           <system value="http://hl7.org/fhir/v3/NullFlavor"/>
           <code value="NAVU"/>
         </coding>
-      </patternCodeableConcept>
-      <mustSupport value="true"/>
+      </fixedCodeableConcept>
     </element>
   </differential>
 </StructureDefinition>

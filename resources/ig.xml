@@ -83,13 +83,13 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-airimmunisationstatus-1"/>
+        <reference value="StructureDefinition/air-immunisation-status-1"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-aircovid19immunisationstatus-1"/>
+        <reference value="StructureDefinition/air-covid19-immunisation-status-1"/>
       </sourceReference>
     </resource>
     <resource>
@@ -113,7 +113,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-immunization-doseschedule-1"/>
+        <reference value="StructureDefinition/immunization-dose-schedule-1"/>
       </sourceReference>
     </resource>
     <resource>
@@ -143,7 +143,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-vaccineserialnumber-1"/>
+        <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
     </resource>
 

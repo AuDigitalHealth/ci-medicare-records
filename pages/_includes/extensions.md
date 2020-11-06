@@ -9,14 +9,14 @@ The following extensions form part of this implementation guide:
         <th>Context</th>
     </tr>
         <tr>
-        <td><a href="StructureDefinition-extension-airimmunisationstatus-1.html">AIR Immunisation Status</a></td>
-        <td>extension-airimmunisationstatus</td>
+        <td><a href="StructureDefinition-air-immunisation-status-1.html">AIR Immunisation Status</a></td>
+        <td>air-immunisation-status-1</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Patient.html">Patient</a></td>
     </tr>
      <tr>
-        <td><a href="StructureDefinition-extension-aircovid19immunisationstatus-1.html">AIR COVID-19 Immunisation Status</a></td>
-        <td>extension-aircovid19immunisationstatus</td>
+        <td><a href="StructureDefinition-air-covid19-immunisation-status-1.html">AIR COVID-19 Immunisation Status</a></td>
+        <td>air-covid19-immunisation-status-1</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Patient.html">Patient</a></td>
     </tr>
@@ -27,9 +27,9 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/stu3/Consent.html">Consent</a></td>
     </tr>
         <tr>
-        <td><a href="StructureDefinition-extension-immunization-doseschedule-1.html">Immunisation Dose Schedule</a></td>
-        <td>extension-immunization-doseschedule</td>
-        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/stu3/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+        <td><a href="StructureDefinition-immunization-dose-schedule-1.html">Immunisation Dose Schedule</a></td>
+        <td>immunization-dose-schedule-1</td>
+        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/STU3/immunization-definitions.html#Immunization.vaccinationProtocol">Immunization.vaccinationProtocol</a></td>
     </tr>
     <tr>
@@ -39,8 +39,8 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/stu3/Resource.html">Resource</a></td>
     </tr>
         <tr>
-        <td><a href="StructureDefinition-extension-vaccineserialnumber-1.html">Vaccine Vial Serial Number</a></td>
-        <td>extension-vaccineserialnumber-1</td>
+        <td><a href="StructureDefinition-vaccine-serial-number-1.html">Vaccine Vial Serial Number</a></td>
+        <td>vaccine-serial-number-1</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/STU3/immunization-definitions.html#Immunization">Immunization</a></td>
     </tr>

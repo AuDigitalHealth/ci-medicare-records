@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-aircovid19immunisationstatus-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-aircovid19immunisationstatus-1" />
+  <id value="vaccine-serial-number-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1" />
   <version value="1.0.0" />
-  <name value="AIRCOVID19ImmunisationStatus" />
-  <title value="AIR COVID-19 Immunisation Status" />
+  <name value="VaccineSerialNumber" />
+  <title value="Vaccine Vial Serial Number" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to describe the Australian Immunisation Register (AIR) immunisation status." />
+  <description value="Serial number of the vaccine." />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -31,33 +31,28 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
-  <context value="Patient" />
+  <context value="Immunization" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="AIR COVID-19 Imunisation Status" />
-      <definition value="Australian Immunisation Register COVID-19 immunisation status." />
+      <short value="Vaccine Serial Number" />
+      <definition value="Vaccine Serial Number" />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-airimmunisationstatus" />
+      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1" />
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <short value="AIR COVID-19 immunisation status" />
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueString" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="string" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/type/australian-immunisation-register-immunisation-status-1" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
