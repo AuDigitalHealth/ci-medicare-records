@@ -132,6 +132,7 @@
     </element>
     <element id="Immunization.vaccinationProtocol">
       <path value="Immunization.vaccinationProtocol"/>
+      <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
@@ -163,6 +164,12 @@
     <element id="Immunization.vaccinationProtocol.authority">
       <path value="Immunization.vaccinationProtocol.authority"/>
       <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/organization-dh-base-1"
+        />
+      </type>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.vaccinationProtocol.authority.display">
