@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunization-dose-schedule-1"/>
-  <url
-    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"/>
-  <version value="1.0.0"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"/>
+  <version value="1.0.1"/>
   <name value="ImmunizationDoseSchedule"/>
   <title value="Immunisation Dose Schedule"/>
   <status value="draft"/>
@@ -21,8 +20,7 @@
       <code value="AU"/>
     </coding>
   </jurisdiction>
-  <copyright
-    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -39,15 +37,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri
-        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1"
-      />
+      <fixedUri value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1" />
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
-      <min value="1"/>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
       <type>
-        <code value="string"/>
+        <code value="string" />
       </type>
     </element>
   </differential>
