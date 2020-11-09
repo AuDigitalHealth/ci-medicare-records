@@ -114,7 +114,7 @@ This table lists known issues with this specification at the time of publishing.
 
     <tr>
         <td>Terminology publication</td>
-        <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/type/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
+        <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
     </tr>
     <tr>
         <td>Source material errors</td>

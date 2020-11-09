@@ -56,7 +56,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/type/australian-immunisation-register-immunisation-status-1" />
+        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1" />
       </binding>
     </element>
   </differential>
