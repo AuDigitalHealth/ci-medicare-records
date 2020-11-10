@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to describe the Australian Immunisation Register (AIR) immunisation status.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to describe the Australian Immunisation Register (AIR) immunisation status for an individual.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -32,7 +32,7 @@
     <element id="Observation">
       <path value="Observation" />
       <short value="AIR Immunisation Status" />
-      <definition value="Australian Immunisation Register Immunisation Status." />
+      <definition value="Individual's immunisation status in the Australian Immunisation Register." />
       <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
@@ -85,6 +85,7 @@
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="AIR immunisation status" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
