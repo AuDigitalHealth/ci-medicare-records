@@ -44,28 +44,10 @@
     <element id="Flag">
       <path value="Flag"/>
       <short value="Australian Immunisation Register Notice"/>
-      <constraint>
-        <key value="inv-dh-fla-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"
-        />
-      </constraint>
     </element>
     <element id="Flag.meta">
       <path value="Flag.meta"/>
       <min value="1"/>
-      <constraint>
-        <key value="inv-dh-fla-01"/>
-        <severity value="error"/>
-        <human
-          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1'"/>
-        <expression
-          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1').exists()"
-        />
-      </constraint>
     </element>
     <element id="Flag.meta.profile">
       <path value="Flag.meta.profile"/>
@@ -99,6 +81,19 @@
           value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1"/>
       </type>
       <mustSupport value="true"/>
+    </element>
+    <element id="Flag.subject.identifier">
+      <path value="Flag.subject.identifier"/>
+      <min value="1"/>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/v2/0203"/>
+            <code value="NI"/>
+          </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+      </patternIdentifier>
     </element>
   </differential>
 </StructureDefinition>

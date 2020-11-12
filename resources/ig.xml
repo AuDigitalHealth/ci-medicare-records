@@ -80,18 +80,18 @@
         <reference value="StructureDefinition/medication-pbs"/>
       </sourceReference>
     </resource>
-    <resource>
+    <!--<resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/air-immunisation-status-1"/>
       </sourceReference>
-    </resource>
-    <resource>
+    </resource>-->
+    <!--<resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/air-covid19-immunisation-status-1"/>
       </sourceReference>
-    </resource>
+    </resource>-->
     <resource>
       <example value="false"/>
       <sourceReference>

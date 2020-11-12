@@ -111,19 +111,14 @@ This table lists known issues with this specification at the time of publishing.
     <th>Reference</th>
     <th>Description</th>
   </tr>
-
-    <tr>
-        <td>Terminology publication</td>
-        <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
-    </tr>
-    <tr>
+  <tr>
         <td>Source material errors</td>
         <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
         <td>Non-resolving profile URLs</td>
         <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
-    </tr>
+  </tr>
  </tbody>
 </table> 
 

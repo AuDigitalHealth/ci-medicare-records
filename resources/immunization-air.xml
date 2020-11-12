@@ -34,15 +34,6 @@
     <element id="Immunization">
       <path value="Immunization"/>
       <short value="Australian Immunisation Register Vaccination Information"/>
-      <constraint>
-        <key value="inv-dh-imm-03"/>
-        <severity value="error"/>
-        <human
-          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"
-        />
-      </constraint>
     </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension"/>
@@ -114,6 +105,19 @@
           value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1"/>
       </type>
       <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.patient.identifier">
+      <path value="Immunization.patient.identifier"/>
+      <min value="1"/>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/v2/0203"/>
+            <code value="NI"/>
+          </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+      </patternIdentifier>
     </element>
     <element id="Immunization.date">
       <path value="Immunization.date"/>

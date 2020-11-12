@@ -2,8 +2,7 @@
 The purpose of this profile is to define a representation of a patient for exchange usage scenarios in an Australian context where unambiguous identification of a patient is mandatory. This profile is intended to support the electronic exchange of health information between healthcare providers in Australia.
 
 #### Implementation guidance
-For the overarching usage scenarios in this implementation guide it is expected that:
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
+No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
 
 This profile is referenced by
 [Australian Immunisation Register Immunisation Recommendation](StructureDefinition-immunizationrecommendation-air-1.html),

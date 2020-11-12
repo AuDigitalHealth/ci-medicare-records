@@ -46,7 +46,7 @@
                         <td class="frm-set">
                           <ul class="frm-set">
                               <li><a href="StructureDefinition-patient-ihi-1.html">Patient (Patient with Mandatory IHI)</a></li>
-                              <li><a href="StructureDefinition-patient-ihi-1.html">Practitioner (Base Practitioner)</a></li>
+                              <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>
                           </ul>
                         </td>
                         <td class="frm-set">

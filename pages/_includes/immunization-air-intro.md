@@ -7,7 +7,6 @@ The following are the overarching usage scenarios this profile is intended to su
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
-* In order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so doseStatus has been set to NAVU Not Available
-* Though not expected to be provided, a cancelled, rejected, or not administered vaccination can be represented using notGiven=true and status=completed 
+* if a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
+* in order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so doseStatus has been set to NAVU Not Available
+

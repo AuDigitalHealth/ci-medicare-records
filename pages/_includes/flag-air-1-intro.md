@@ -7,6 +7,5 @@ The following are the overarching usage scenarios this profile is intended to su
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
+* if a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
 
