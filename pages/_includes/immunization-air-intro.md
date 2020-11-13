@@ -3,7 +3,7 @@ The purpose of this profile is to define a representation of vaccination informa
 
 #### Usage Scenarios
 The following are the overarching usage scenarios this profile is intended to support:
-* DHS Medicare sends records of administered vaccines to the My Health Record system
+* Services Australia Medicare sends records of administered vaccines to the My Health Record system
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
