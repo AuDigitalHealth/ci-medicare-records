@@ -42,7 +42,7 @@
       <path value="Observation.meta"/>
       <min value="1"/>
       <constraint>
-        <key value="inv-dh-obs-02"/>
+        <key value="inv-dh-obs-01"/>
         <severity value="error"/>
         <human
           value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1'"/>
@@ -109,12 +109,6 @@
         <code value="CodeableConcept"/>
       </type>
       <mustSupport value="true"/>
-      <!--<binding>
-        <strength value="required"/>
-        <valueSetUri
-          value="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1"
-        />
-      </binding>-->
     </element>
   </differential>
 </StructureDefinition>

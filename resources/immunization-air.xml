@@ -60,7 +60,7 @@
       <path value="Immunization.meta"/>
       <min value="1"/>
       <constraint>
-        <key value="inv-dh-imm-02"/>
+        <key value="inv-dh-imm-01"/>
         <severity value="error"/>
         <human
           value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'"/>
