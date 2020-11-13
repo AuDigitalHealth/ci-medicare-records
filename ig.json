@@ -108,9 +108,9 @@
             "base": "StructureDefinition-flag-air-1.html",
             "defns": "StructureDefinition-flag-air-1-definitions.html"
         },
-        "StructureDefinition/immunization-dose-schedule-1": {
-            "base": "StructureDefinition-immunization-dose-schedule-1.html",
-            "defns": "StructureDefinition-immunization-dose-schedule-1-definitions.html"
+        "StructureDefinition/immunisation-dose-schedule-1": {
+            "base": "StructureDefinition-immunisation-dose-schedule-1.html",
+            "defns": "StructureDefinition-immunisation-dose-schedule-1-definitions.html"
         },
         "StructureDefinition/patient-ihi-1": {
             "base": "StructureDefinition-patient-ihi-1.html",

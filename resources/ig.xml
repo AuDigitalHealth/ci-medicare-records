@@ -113,7 +113,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/immunization-dose-schedule-1"/>
+        <reference value="StructureDefinition/immunisation-dose-schedule-1"/>
       </sourceReference>
     </resource>
     <resource>
