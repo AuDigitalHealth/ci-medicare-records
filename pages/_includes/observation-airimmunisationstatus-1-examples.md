@@ -5,7 +5,7 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Observation-observation-air-immunisation-status-example-01.html">Observation AIR Immunisation Status example 1</a></td>
+      <td><a href="Observation-observation-air-immunisation-status-example-01.html">AIR Immunisation Status</a></td>
       <td>observation-air-immunisation-status-example-01</td>
       <td><a href="Observation-observation-air-immunisation-status-example-01.xml.html">XML</a></td>
       <td><a href="Observation-observation-air-immunisation-status-example-01.json.html">JSON</a></td>

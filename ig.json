@@ -131,6 +131,10 @@
         "StructureDefinition/vaccine-serial-number-1": {
             "base": "StructureDefinition-vaccine-serial-number-1.html",
             "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"
+        },
+           "StructureDefinition/observation-aircovid19vaccinationstatus-1": {
+            "base": "StructureDefinition-observation-aircovid19vaccinationstatus-1.html",
+            "defns": "StructureDefinition-observation-aircovid19vaccinationstatus-1-definitions.html"
         }
     },
     "tool": "jekyll",

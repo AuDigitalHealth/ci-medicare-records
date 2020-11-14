@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="observation-air-immunisation-status-example-01"/>
+    <id value="e22a9149-fc11-4af6-8ca3-c378689c590d"/>
     <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19vaccinationstatus-1"
         />
     </meta>
     <status value="final"/>
@@ -11,8 +11,8 @@
         <coding>
             <system
                 value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-            <code value="103.32028"/>
-            <display value="Australian Immunisation Register Immunisation Status"/>
+            <code value="103.32029"/>
+            <display value="Australian Immunisation Register COVID-19 Immunisation Status"/>
         </coding>
     </code>
     <subject>
@@ -29,7 +29,5 @@
         </identifier>
     </subject>
     <effectiveDateTime value="2020-07-06"/>
-    <valueCodeableConcept>
-        <text value="Up to date"/>
-    </valueCodeableConcept>
+    <valueString value="This individual has received all required COVID-19 vaccines."/>
 </Observation>

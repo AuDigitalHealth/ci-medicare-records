@@ -80,18 +80,6 @@
         <reference value="StructureDefinition/medication-pbs"/>
       </sourceReference>
     </resource>
-    <!--<resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/air-immunisation-status-1"/>
-      </sourceReference>
-    </resource>-->
-    <!--<resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/air-covid19-immunisation-status-1"/>
-      </sourceReference>
-    </resource>-->
     <resource>
       <example value="false"/>
       <sourceReference>
@@ -146,16 +134,14 @@
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
+      </sourceReference>
+    </resource>
 
     <!--    Examples-->
-    <!--<resource>
-      <example value="true"/>
-      <name value="Immunization example 1"/>
-      <description value="Immunization given example."/>
-      <sourceReference>
-        <reference value="Immunization/immunization-air-example-administration"/>
-      </sourceReference>
-    </resource>-->
     <resource>
       <example value="true"/>
       <name value="Immunization example 1"/>
@@ -164,30 +150,6 @@
         <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
       </sourceReference>
     </resource>
-    <!--<resource>
-      <example value="true"/>
-      <name value="Immunization short example"/>
-      <description value="Immunization given example 3 - short."/>
-      <sourceReference>
-        <reference value="Immunization/immunization-air-example-administration-short"/>
-      </sourceReference>
-    </resource>-->
-    <!--<resource>
-      <example value="true"/>
-      <name value="Immunisation example 3"/>
-      <description value="Immunisation not given example"/>
-      <sourceReference>
-        <reference value="Immunization/immunization-air-example-notGiven"/>
-      </sourceReference>
-    </resource>-->
-    <!--<resource>
-      <example value="true"/>
-      <name value="Immunisation example 4"/>
-      <description value="Immunisation example - with targetDisease as text"/>
-      <sourceReference>
-        <reference value="Immunization/immunization-air-example-administration-text"/>
-      </sourceReference>
-    </resource>-->
     <resource>
       <example value="true"/>
       <name value="Explanation of Benefit MBS example 1"/>
@@ -282,6 +244,14 @@
       <description value="AIR Immunisation Status - up to date"/>
       <sourceReference>
         <reference value="Observation/observation-air-immunisation-status-example-01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="AIR COVID-19 Vaccination Status"/>
+      <description value="AIR COVID-19 Vaccination Status"/>
+      <sourceReference>
+        <reference value="Observation/e22a9149-fc11-4af6-8ca3-c378689c590d"/>
       </sourceReference>
     </resource>
   </package>
