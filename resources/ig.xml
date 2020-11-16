@@ -140,6 +140,12 @@
         <reference value="StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/observation-disclaimer-1"/>
+      </sourceReference>
+    </resource>
 
     <!--    Examples-->
     <resource>
@@ -260,6 +266,14 @@
       <description value="AIR Immunisation Status (Not up to date with catch up schedule message)"/>
       <sourceReference>
         <reference value="Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="AID Disclaimer"/>
+      <description value="AIR disclaimer"/>
+      <sourceReference>
+        <reference value="Observation/observation-disclaimer-example-01"/>
       </sourceReference>
     </resource>
   </package>

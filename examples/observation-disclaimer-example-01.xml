@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-disclaimer-example-01" />
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-disclaimer-1"
+         />
+    </meta>
+    <status value="final" />
+    <code>
+        <coding>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+            <code value="103.32031" />
+            <display value="Disclaimer" />
+        </coding>
+    </code>
+    <subject>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://hl7.org/fhir/v2/0203" />
+                    <code value="NI" />
+                    <display value="National unique individual identifier" />
+                </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
+            <value value="8003608166690503" />
+        </identifier>
+    </subject>
+    <effectiveDateTime value="2020-07-06" />
+    <valueString
+        value="The Australian Immunisation Register records immunisations given to people of all ages in Australia. Immunisations given before 1 January 1996 are not displayed on the statement.&#xA;&#xA;Every effort is made..."
+     />
+</Observation>

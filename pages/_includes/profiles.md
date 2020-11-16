@@ -78,6 +78,7 @@
                               <li><a href="StructureDefinition-bodysite-aodr.html">BodySite (BodySite Australian Organ Donor Register)</a></li>
                               <li><a href="StructureDefinition-observation-airimmunisationstatus-1.html">Observation (AIR Immunisation Status)</a></li>
                               <li><a href="StructureDefinition-observation-aircovid19vaccinationstatus-1.html">Observation (AIR COVID-19 Vaccination Status)</a></li>
+                              <li><a href="StructureDefinition-observation-disclaimer-1.html">Observation (Disclaimer)</a></li>
                           </ul>
                       </td>
                       <td class="frm-set">
