@@ -254,6 +254,14 @@
         <reference value="Observation/e22a9149-fc11-4af6-8ca3-c378689c590d"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="true"/>
+      <name value="AIR Immunisation Status"/>
+      <description value="AIR Immunisation Status (Not up to date with catch up schedule message)"/>
+      <sourceReference>
+        <reference value="Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
+      </sourceReference>
+    </resource>
   </package>
   <page>
     <source value="index.html"/>
