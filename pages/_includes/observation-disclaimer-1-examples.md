@@ -6,9 +6,9 @@
    </tr>
    <tr>
       <td><a href="Observation-observation-disclaimer-example-01.html">Disclaimer</a></td>
-      <td>observation-disclaimer-example-01</td>
-      <td><a href="Observation-observation-disclaimer-example-01.xml.html">XML</a></td>
-      <td><a href="Observation-observation-disclaimer-example-01.json.html">JSON</a></td>
-      <td><a href="Observation-observation-disclaimer-example-01.ttl.html">Turtle</a></td>
+      <td>2a3ea044-27d5-11eb-adc1-0242ac120002</td>
+      <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.xml.html">XML</a></td>
+      <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.json.html">JSON</a></td>
+      <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.ttl.html">Turtle</a></td>
    </tr> 
 </table>

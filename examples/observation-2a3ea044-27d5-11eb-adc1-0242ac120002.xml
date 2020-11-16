@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="observation-disclaimer-example-01" />
+    <id value="2a3ea044-27d5-11eb-adc1-0242ac120002" />
     <meta>
         <profile
             value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-disclaimer-1"

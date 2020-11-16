@@ -273,7 +273,7 @@
       <name value="AID Disclaimer"/>
       <description value="AIR disclaimer"/>
       <sourceReference>
-        <reference value="Observation/observation-disclaimer-example-01"/>
+        <reference value="Observation/2a3ea044-27d5-11eb-adc1-0242ac120002"/>
       </sourceReference>
     </resource>
   </package>
