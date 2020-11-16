@@ -83,29 +83,29 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Flag.category.coding:AIR_notice">
+    <element id="Flag.category.coding:airNotice">
       <path value="Flag.category.coding" />
-      <sliceName value="AIR_notice" />
+      <sliceName value="airNotice" />
       <max value="1" />
     </element>
-    <element id="Flag.category.coding:AIR_notice.system">
+    <element id="Flag.category.coding:airNotice.system">
       <path value="Flag.category.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Flag.category.coding:AIR_notice.code">
+    <element id="Flag.category.coding:airNotice.code">
       <path value="Flag.category.coding.code" />
       <fixedCode value="1500551000168103" />
     </element>
-    <element id="Flag.category.coding:AIR_medical_contraindication_notice">
+    <element id="Flag.category.coding:airMedicalContraindicationNotice">
       <path value="Flag.category.coding" />
-      <sliceName value="AIR_medical_contraindication_notice" />
+      <sliceName value="airMedicalContraindicationNotice" />
       <max value="1" />
     </element>
-    <element id="Flag.category.coding:AIR_medical_contraindication_notice.system">
+    <element id="Flag.category.coding:airMedicalContraindicationNotice.system">
       <path value="Flag.category.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Flag.category.coding:AIR_medical_contraindication_notice.code">
+    <element id="Flag.category.coding:airMedicalContraindicationNotice.code">
       <path value="Flag.category.coding.code" />
       <fixedCode value="1509451000168107" />
     </element>
