@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="23a639de-27d2-11eb-adc1-0242ac120002"/>
+  <meta>
+    <lastUpdated value="2020-04-06T09:01:00+10:00"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="84225856-27d2-11eb-adc1-0242ac120002"/>
+  </identifier>
+  <type value="collection"/>
+
+  <!--Patient1-->
+  <!--Immunisation status-->
+  <entry>
+    <fullUrl value="urn:uuid:12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system
+              value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="103.32028"/>
+            <display value="Australian Immunisation Register Immunisation Status"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </subject>
+        <effectiveDateTime value="2020-04-06"/>
+        <valueCodeableConcept>
+          <text value="Not up to date"/>
+        </valueCodeableConcept>
+        <comment value="Catch up schedule active until 11 Jun 2020"/>
+      </Observation>
+    </resource>
+  </entry>
+  <!--Covid 19 vaccination status-->
+  <entry>
+    <fullUrl value="urn:uuid:e22a9149-fc11-4af6-8ca3-c378689c590d"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="e22a9149-fc11-4af6-8ca3-c378689c590d"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system
+              value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="103.32029"/>
+            <display
+              value="Australian Immunisation Register COVID-19 Immunisation Status"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </subject>
+        <effectiveDateTime value="2020-07-06"/>
+        <valueString
+          value="This individual has received all required COVID-19 vaccines."/>
+      </Observation>      
+    </resource>
+  </entry>
+  <!--Immunisation-->
+  <entry>
+    <fullUrl value="urn:uuid:88d35c33-414c-4d55-98e9-29f9c954df03"/>
+    <resource>
+      <Immunization xmlns="http://hl7.org/fhir">
+        <id value="88d35c33-414c-4d55-98e9-29f9c954df03"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 87276918-b7f1-4813-a85c-667beea6f2c3</p><p><b>status</b>: completed</p><p><b>notGiven</b>: false</p><p><b>vaccineCode</b>: <span title="Codes: {urn:oid:1.2.36.1.2001.1005.17 IFHX}">Infanrix Hexa</span></p><p><b>patient</b>: <span></span></p><p><b>date</b>: 2019-05-02</p><p><b>primarySource</b>: true</p><h3>VaccinationProtocols</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>DoseSequence</b></td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseStatus</b></td></tr><tr><td>*</td><td></td><td>1</td><td><span>National Imunisation Program</span></td><td><span title="Codes: {http://snomed.info/sct 397430003}, {http://snomed.info/sct 76902006}, {http://snomed.info/sct 27836007}, {http://snomed.info/sct 66071002}, {http://snomed.info/sct 398102009}">Diphtheria due to Corynebacterium diphtheriae</span></td><td><span title="Codes: {http://hl7.org/fhir/v3/NullFlavor NAVU}">Not available</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="87276918-b7f1-4813-a85c-667beea6f2c3"/>
+        </identifier>
+        <status value="completed"/>
+        <notGiven value="false"/>
+        <vaccineCode>
+          <coding>
+            <system value="urn:oid:1.2.36.1.2001.1005.17"/>
+            <code value="IFHX"/>
+          </coding>
+          <text value="Infanrix Hexa"/>
+        </vaccineCode>
+        <patient>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </patient>
+        <date value="2019-05-02"/>
+        <primarySource value="true"/>
+        <vaccinationProtocol>
+          <extension
+            url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1">
+            <valueString value="6 months"/>
+          </extension>
+          <doseSequence value="1"/>
+          <authority>
+            <display value="National Imunisation Program"/>
+          </authority>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397430003"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="76902006"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="27836007"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="66071002"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="398102009"/>
+            </coding>
+          </targetDisease>
+          <doseStatus>
+            <coding>
+              <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+              <code value="NAVU"/>
+            </coding>
+          </doseStatus>
+        </vaccinationProtocol>
+      </Immunization>
+    </resource>
+  </entry>
+  <!--Next immunisation due-->
+  <entry>
+    <fullUrl value="urn:uuid:a83d0305-7970-4f29-be4e-0f6979de9329"/>
+    <resource>
+      <ImmunizationRecommendation xmlns="http://hl7.org/fhir">
+        <id value="a83d0305-7970-4f29-be4e-0f6979de9329"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunizationrecommendation-air-1"/>
+        </meta>
+        <patient>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </patient>
+        <recommendation>
+          <date value="2020-10-29"/>
+          <targetDisease>
+            <text value="Diphtheria Tetanus Pertussis"/>
+          </targetDisease>
+          <forecastStatus>
+            <coding>
+              <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+              <code value="NAVU"/>
+            </coding>
+          </forecastStatus>
+          <dateCriterion>
+            <code>
+              <coding>
+                <system
+                  value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                <code value="due"/>
+              </coding>
+            </code>
+            <value value="2018-04-02"/>
+          </dateCriterion>
+        </recommendation>
+        <recommendation>
+          <date value="2020-10-29"/>
+          <targetDisease>
+            <text value="Hepatitis B"/>
+          </targetDisease>
+          <forecastStatus>
+            <coding>
+              <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+              <code value="NAVU"/>
+            </coding>
+          </forecastStatus>
+          <dateCriterion>
+            <code>
+              <coding>
+                <system
+                  value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                <code value="due"/>
+              </coding>
+            </code>
+            <value value="2019-05-10"/>
+          </dateCriterion>
+        </recommendation>
+        <recommendation>
+          <date value="2020-10-29"/>
+          <targetDisease>
+            <text value="Varicella"/>
+          </targetDisease>
+          <forecastStatus>
+            <coding>
+              <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+              <code value="NAVU"/>
+            </coding>
+          </forecastStatus>
+          <dateCriterion>
+            <code>
+              <coding>
+                <system
+                  value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                <code value="due"/>
+              </coding>
+            </code>
+            <value value="2019-08-02"/>
+          </dateCriterion>
+        </recommendation>
+        <recommendation>
+          <date value="2020-10-29"/>
+          <targetDisease>
+            <text value="Polio"/>
+          </targetDisease>
+          <forecastStatus>
+            <coding>
+              <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+              <code value="NAVU"/>
+            </coding>
+          </forecastStatus>
+          <dateCriterion>
+            <code>
+              <coding>
+                <system
+                  value="http://hl7.org/fhir/immunization-recommendation-date-criterion"/>
+                <code value="due"/>
+              </coding>
+            </code>
+            <value value="2022-05-05"/>
+          </dateCriterion>
+        </recommendation>
+      </ImmunizationRecommendation>
+    </resource>
+  </entry>
+  <!--Notice-->
+  <entry>
+    <fullUrl value="urn:uuid:4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
+    <resource>
+      <Flag xmlns="http://hl7.org/fhir">
+        <id value="4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 1500551000168103}">Australian Immunisation Register notice</span></p><p><b>code</b>: <span title="Codes: ">Your child has received a dose of             meningococcal C vaccine. Please check with your immunisation provider to ensure that the course             has been completed.</span></p><p><b>subject</b>: <span></span></p></div>
+        </text>
+        <status value="active"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1500551000168103"/>
+          </coding>
+          <text value="Australian Immunisation Register notice"/>
+        </category>
+        <code>
+          <text
+            value="Your child has received a dose of meningococcal C vaccine. Please check with your immunisation provider to ensure that the course has been completed."/>
+        </code>
+        <subject>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </subject>
+      </Flag>
+    </resource>
+  </entry>
+  <!--Disclaimer-->
+  <entry>
+    <fullUrl value="urn:uuid:2a3ea044-27d5-11eb-adc1-0242ac120002"/>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="2a3ea044-27d5-11eb-adc1-0242ac120002"/>
+        <meta>
+          <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-disclaimer-1"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system
+              value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="103.32031"/>
+            <display value="Disclaimer"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/v2/0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+              </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608166690503"/>
+          </identifier>
+        </subject>
+        <effectiveDateTime value="2020-07-06"/>
+        <valueString
+          value="The Australian Immunisation Register records immunisations given to people of all ages in Australia. Immunisations given before 1 January 1996 are not displayed on the statement.
+          
+          Every effort is made..."/>
+      </Observation>
+    </resource>
+  </entry>
+
+</Bundle>

@@ -10,5 +10,12 @@
       <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.xml.html">XML</a></td>
       <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.json.html">JSON</a></td>
       <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.ttl.html">Turtle</a></td>
-   </tr> 
+   </tr>
+      <tr>
+      <td><a href="Bundle-23a639de-27d2-11eb-adc1-0242ac120002.html">AIR bundle</a></td>
+      <td>23a639de-27d2-11eb-adc1-0242ac120002</td>
+      <td><a href="Bundle-23a639de-27d2-11eb-adc1-0242ac120002.xml.html">XML</a></td>
+      <td><a href="Bundle-23a639de-27d2-11eb-adc1-0242ac120002.json.html">JSON</a></td>
+      <td><a href="Bundle-23a639de-27d2-11eb-adc1-0242ac120002.ttl.html">Turtle</a></td>
+   </tr>
 </table>
