@@ -5,7 +5,7 @@
     value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
   <version value="1.0.0"/>
   <name value="ObservationAIRCOVID19VaccinationStatus"/>
-  <title value="AIR COVID-19 Vaccination Status"/>
+  <title value="Australian Immunisation Register COVID-19 Vaccination Status"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>

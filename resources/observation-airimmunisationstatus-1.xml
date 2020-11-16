@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
   <version value="1.0.0" />
   <name value="ObservationAIRImmunisationStatus" />
-  <title value="AIR Immunisation Status" />
+  <title value="Australian Immunisation Register Immunisation Status" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
