@@ -34,7 +34,7 @@
 	<primarySource value="true"/>
 	<vaccinationProtocol>
 		<extension
-			url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-dose-schedule-1">
+			url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1">
 			<valueString value="6 months"/>
 		</extension>
 		<doseSequence value="1"/>
