@@ -34,7 +34,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Schedule point for a vaccination schedule" />
-      <definition value="A schedule point for the National Immunisation Programme childhood and adolescent vaccination schedules, and for other vaccines not part of the National Immunisation Programme." />
+      <definition value="A schedule point for the National Immunisation Program childhood and adolescent vaccination schedules, and for other vaccines not part of the National Immunisation Program." />
       <max value="1" />
     </element>
     <element id="Extension.url">
