@@ -33,6 +33,20 @@
       <path value="Immunization" />
       <short value="An Australian Immunisation Register record of administered vaccine for an individual" />
     </element>
+    <element id="Immunization.meta">
+      <path value="Immunization.meta" />
+      <min value="1" />
+      <constraint>
+        <key value="inv-dh-imm-01" />
+        <severity value="error" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()" />
+      </constraint>
+    </element>
+    <element id="Immunization.meta.profile">
+      <path value="Immunization.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension" />
       <slicing>
@@ -51,20 +65,6 @@
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Immunization.meta">
-      <path value="Immunization.meta" />
-      <min value="1" />
-      <constraint>
-        <key value="inv-dh-imm-01" />
-        <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()" />
-      </constraint>
-    </element>
-    <element id="Immunization.meta.profile">
-      <path value="Immunization.meta.profile" />
-      <min value="1" />
     </element>
     <element id="Immunization.identifier">
       <path value="Immunization.identifier" />
