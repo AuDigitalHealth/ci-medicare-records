@@ -7,16 +7,16 @@
 
 ## Introduction
 
-This implementation guide is an Australian realm implementation guide of the HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent atomic Medicare records in the My Health Record system and related applications.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent structured Medicare information for the My Health Record system and related applications.
 
-This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html) is based on [FHIR<sup>&reg;</sup> version 3.0.2](http://hl7.org/fhir/STU3/index.html).
+This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
-### Document purpose and scope
-The primary aim of this implementation guide is to ...
+## Document purpose and scope
+The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system. Information includes registration as an organ donor, prescribed and dispensed medications, and administered vaccinations.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
-This implementation guide does not describe transport or persistence mechanism of the resources described by it.
+This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
 
 Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:
 * [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3)
@@ -96,8 +96,8 @@ This implementation guide and related artefacts are technical in nature and the 
         </tr>
         <tr>
             <td>2.0.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px"></span></td>
-            <td></td>
+            <td><span style="padding-left: 3px; padding-right: 3px">?? 2020</span></td>
+            <td>Release at draft. Implemented in FHIR Release 3.0.2 (STU).<br/>This version includes new features for immunisations. </td>
         </tr>
       </tbody>
 </table> 
@@ -111,18 +111,17 @@ This table lists known issues with this specification at the time of publishing.
     <th>Reference</th>
     <th>Description</th>
   </tr>
-   <tr>
-        <td>Terminology publication</td>
-        <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
-    </tr>
-  
   <tr>
-        <td>Source material errors</td>
-        <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+    <td>Terminology publication</td>
+    <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
   </tr>
   <tr>
-        <td>Non-resolving profile URLs</td>
-        <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+    <td>Source material errors</td>
+    <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+  </tr>
+  <tr>
+    <td>Non-resolving profile URLs</td>
+    <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
   </tr>
  </tbody>
 </table> 
