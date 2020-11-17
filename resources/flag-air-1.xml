@@ -42,7 +42,7 @@
     <element id="Flag">
       <path value="Flag" />
       <short value="An Australian Immunisation Register notice for an individual" />
-      <definition value="Australian Immunisation register notice an individual has an exemption record, or has finished a National Immunisation Program schedule." />
+      <definition value="Australian Immunisation Register notice that an individual has an exemption record, or has finished a National Immunisation Program schedule." />
     </element>
     <element id="Flag.meta">
       <path value="Flag.meta" />
