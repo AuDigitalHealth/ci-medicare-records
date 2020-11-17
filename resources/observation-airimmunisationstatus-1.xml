@@ -96,7 +96,7 @@
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <short value="AIR immunisation status" />
+      <short value="Australian Immunisation Register immunisation status" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -109,7 +109,7 @@
     </element>
     <element id="Observation.comment">
       <path value="Observation.comment" />
-      <short value="Annotation to AIR immunisation status" />
+      <short value="Annotation to Australian Immunisation Register immunisation status" />
       <mustSupport value="true" />
     </element>
   </differential>
