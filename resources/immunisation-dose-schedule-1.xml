@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to indicate a schedule point for the National Immunisation Programme childhood and adolescent vaccination schedules, and for other vaccines not part of the National Immunisation Programme." />
+  <description value="The purpose of this profile is to indicate a schedule point for the National Immunisation Program childhood and adolescent vaccination schedules, and for other vaccines not part of the National Immunisation Program." />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
