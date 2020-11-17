@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="Serial number of the vaccine." />
+  <description value="The purpose of this profile is to provide representation" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -38,8 +38,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Vaccine Serial Number" />
-      <definition value="Vaccine Serial Number" />
+      <short value="Vaccine vial serial number" />
+      <definition value="Vaccine vial serial number." />
       <max value="1" />
     </element>
     <element id="Extension.url">

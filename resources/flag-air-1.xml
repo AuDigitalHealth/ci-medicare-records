@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a notice from the Australian Immunisation Register. &#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to define a representation of the Australian Immunisation register notice an individual has an exemption record, or has finished a National Immunisation Program schedule. &#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -41,7 +41,8 @@
   <differential>
     <element id="Flag">
       <path value="Flag" />
-      <short value="Australian Immunisation Register Notice" />
+      <short value="An Australian Immunisation Register notice for an individual" />
+      <definition value="Australian Immunisation register notice an individual has an exemption record, or has finished a National Immunisation Program schedule." />
     </element>
     <element id="Flag.meta">
       <path value="Flag.meta" />
@@ -111,7 +112,7 @@
     </element>
     <element id="Flag.code">
       <path value="Flag.code" />
-      <short value="Notice" />
+      <short value="AIR Notice" />
       <mustSupport value="true" />
     </element>
     <element id="Flag.subject">

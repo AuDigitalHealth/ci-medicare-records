@@ -137,7 +137,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
+        <reference value="StructureDefinition/observation-aircovid19immunisationstatus-1"/>
       </sourceReference>
     </resource>
     <resource>

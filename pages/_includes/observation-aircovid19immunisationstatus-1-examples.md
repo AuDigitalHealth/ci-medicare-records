@@ -5,7 +5,7 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.html">AIR COVID-19 Vaccination Status</a></td>
+      <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.html">AIR COVID-19 Immunisation Status example 1</a></td>
       <td>e22a9149-fc11-4af6-8ca3-c378689c590d</td>
       <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.xml.html">XML</a></td>
       <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.json.html">JSON</a></td>
