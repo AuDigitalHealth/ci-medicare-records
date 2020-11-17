@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide representation" />
+  <description value="The purpose of this profile is to define a representation of a vaccine vial serial number." />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
