@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-airimmunisationstatus-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
+  <id value="observation-aircovid19immunisationstatus-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19immunisationstatus-1" />
   <version value="1.0.0" />
-  <name value="ObservationAIRImmunisationStatus" />
-  <title value="Australian Immunisation Register Immunisation Status" />
+  <name value="ObservationAIRCOVID19ImmunisationStatus" />
+  <title value="Australian Immunisation Register COVID-19 Immunisation Status" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to describe the immunisation status for an individual specific to the National Immunisation Programme childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to describe the Australian Immunisation Register (AIR) COVID-19 immunisation status for an individual.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -31,8 +31,8 @@
   <differential>
     <element id="Observation">
       <path value="Observation" />
-      <short value="Australian Immunisation Register immunisation status for an individual" />
-      <definition value="Australian Immunisation Register immunisation status for an individual specific to the National Immunisation Programme childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule." />
+      <short value="Australian Immunisation Register COVID-19 immunisation status for an individual" />
+      <definition value="Australian Immunisation Register COVID-19  immunisation status for an individual." />
     </element>
     <element id="Observation.meta">
       <path value="Observation.meta" />
@@ -40,8 +40,8 @@
       <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19immunisationstatus-1'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-aircovid19immunisationstatus-1').exists()" />
       </constraint>
     </element>
     <element id="Observation.meta.profile">
@@ -57,7 +57,7 @@
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="103.32028" />
+          <code value="103.32029" />
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
@@ -93,23 +93,14 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <short value="AIR immunisation status" />
+    <element id="Observation.value[x]:valueString">
+      <path value="Observation.valueString" />
+      <sliceName value="valueString" />
+      <short value="AIR COVID-19 vaccination status" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="string" />
       </type>
-      <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1" />
-      </binding>
-    </element>
-    <element id="Observation.comment">
-      <path value="Observation.comment" />
-      <short value="Annotation to AIR immunisation status" />
       <mustSupport value="true" />
     </element>
   </differential>

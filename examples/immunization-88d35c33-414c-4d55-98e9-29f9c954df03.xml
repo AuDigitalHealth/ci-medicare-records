@@ -38,30 +38,23 @@
 			<valueString value="6 months"/>
 		</extension>
 		<doseSequence value="1"/>
-		<authority>
-			<display value="National Imunisation Program"/>
-		</authority>
 		<targetDisease>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="397430003"/>
-			</coding>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="76902006"/>
-			</coding>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="27836007"/>
-			</coding>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="66071002"/>
-			</coding>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="398102009"/>
-			</coding>
+			<text value="Diphtheria"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Tetanus"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Pertussis"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hepatitis B"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Polio"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hib"/>
 		</targetDisease>
 		<doseStatus>
 			<coding>
