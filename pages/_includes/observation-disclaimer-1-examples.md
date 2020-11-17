@@ -5,7 +5,7 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Observation-observation-disclaimer-example-01.html">Disclaimer</a></td>
+      <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.xml.html.html">Disclaimer</a></td>
       <td>2a3ea044-27d5-11eb-adc1-0242ac120002</td>
       <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.xml.html">XML</a></td>
       <td><a href="Observation-2a3ea044-27d5-11eb-adc1-0242ac120002.json.html">JSON</a></td>
