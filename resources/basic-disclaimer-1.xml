@@ -59,6 +59,12 @@
       <path value="Basic.text.status" />
       <fixedCode value="additional" />
     </element>
+    <element id="Basic.identifier">
+      <path value="Basic.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Basic.code">
       <path value="Basic.code" />
       <patternCodeableConcept>

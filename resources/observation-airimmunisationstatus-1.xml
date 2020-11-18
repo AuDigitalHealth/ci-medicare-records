@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-airimmunisationstatus-1" />
-  <url
-    value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1" />
   <version value="1.0.0" />
   <name value="ObservationAIRImmunisationStatus" />
   <title value="Australian Immunisation Register Immunisation Status" />
@@ -15,16 +14,14 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description
-    value="The purpose of this profile is to describe the immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to describe the immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
       <code value="AU" />
     </coding>
   </jurisdiction>
-  <copyright
-    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
@@ -35,9 +32,7 @@
     <element id="Observation">
       <path value="Observation" />
       <short value="Australian Immunisation Register immunisation status for an individual" />
-      <definition
-        value="Australian Immunisation Register immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule."
-       />
+      <definition value="Australian Immunisation Register immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule." />
     </element>
     <element id="Observation.meta">
       <path value="Observation.meta" />
@@ -45,16 +40,19 @@
       <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
-        <human
-          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1'" />
-        <expression
-          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1').exists()"
-         />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1').exists()" />
       </constraint>
     </element>
     <element id="Observation.meta.profile">
       <path value="Observation.meta.profile" />
       <min value="1" />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
@@ -75,8 +73,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -104,9 +101,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri
-          value="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1"
-         />
+        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1" />
       </binding>
     </element>
     <element id="Observation.comment">

@@ -63,6 +63,12 @@
       <path value="ImmunizationRecommendation.meta.profile" />
       <min value="1" />
     </element>
+    <element id="ImmunizationRecommendation.identifier">
+      <path value="ImmunizationRecommendation.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="ImmunizationRecommendation.patient">
       <path value="ImmunizationRecommendation.patient" />
       <type>
