@@ -47,17 +47,8 @@
                         <td class="frm-null"/>
                     </tr> 
                         <tr class="frm-contents">
-                        <td class="frm-set">
-                          <ul class="frm-set">
-                              <li><a href="StructureDefinition-patient-ihi-1.html">Patient (Patient with Mandatory IHI)</a></li>
-                              <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>
-                          </ul>
-                        </td>
-                        <td class="frm-set">
-                          <ul class="frm-set">
-                              <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organisation)</a></li>
-                          </ul>
-                        </td>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
                         <td class="frm-null"/>
                        <td class="frm-set">
                           <ul class="frm-set">

@@ -107,30 +107,6 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/patient-ihi-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/humanname-dh-base-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/organization-dh-base-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/practitioner-dh-base-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
     </resource>

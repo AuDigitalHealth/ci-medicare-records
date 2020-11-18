@@ -112,22 +112,6 @@
             "base": "StructureDefinition-immunisation-dose-schedule-1.html",
             "defns": "StructureDefinition-immunisation-dose-schedule-1-definitions.html"
         },
-        "StructureDefinition/patient-ihi-1": {
-            "base": "StructureDefinition-patient-ihi-1.html",
-            "defns": "StructureDefinition-patient-ihi-1-definitions.html"
-        },
-        "StructureDefinition/organization-dh-base-1": {
-            "base": "StructureDefinition-organization-dh-base-1.html",
-            "defns": "StructureDefinition-organization-dh-base-1-definitions.html"
-        },
-        "StructureDefinition/practitioner-dh-base-1": {
-            "base": "StructureDefinition-practitioner-dh-base-1.html",
-            "defns": "StructureDefinition-practitioner-dh-base-1-definitions.html"
-        },
-        "StructureDefinition/humanname-dh-base-1": {
-            "base": "StructureDefinition-humanname-dh-base-1.html",
-            "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
-        },
         "StructureDefinition/vaccine-serial-number-1": {
             "base": "StructureDefinition-vaccine-serial-number-1.html",
             "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"

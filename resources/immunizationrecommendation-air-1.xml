@@ -72,8 +72,8 @@
     <element id="ImmunizationRecommendation.patient">
       <path value="ImmunizationRecommendation.patient" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ihi-1" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
       </type>
       <mustSupport value="true" />
     </element>
