@@ -31,8 +31,8 @@
   <differential>
     <element id="Observation">
       <path value="Observation" />
-      <short value="Explanatory note" />
-      <definition value="Disclaimer inclued with some information." />
+      <short value="Disclaimer" />
+      <definition value="Disclaimer included with some information." />
     </element>
     <element id="Observation.meta">
       <path value="Observation.meta" />
