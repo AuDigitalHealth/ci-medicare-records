@@ -5,6 +5,5 @@ The following are the overarching usage scenarios this profile is intended to su
 * Services Australia Medicare sends a disclaimer with an immunisation history statement to the My Health Record system
 
 #### Implementation guidance
-For the overarching usage scenarios in this implementation guide it is expected that:
-* if a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
+No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
 

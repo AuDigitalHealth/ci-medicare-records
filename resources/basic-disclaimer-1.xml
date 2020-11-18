@@ -14,14 +14,16 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to describe a disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description
+    value="The purpose of this profile is to describe a disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
       <code value="AU" />
     </coding>
   </jurisdiction>
-  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <copyright
+    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
@@ -40,8 +42,11 @@
       <constraint>
         <key value="inv-dh-bas-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1').exists()" />
+        <human
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1'" />
+        <expression
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1').exists()"
+         />
       </constraint>
     </element>
     <element id="Basic.meta.profile">
@@ -54,10 +59,6 @@
       <definition value="Disclaimer text." />
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.text.status">
-      <path value="Basic.text.status" />
-      <fixedCode value="additional" />
     </element>
     <element id="Basic.identifier">
       <path value="Basic.identifier" />
