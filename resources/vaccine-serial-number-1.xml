@@ -39,7 +39,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Vaccine vial serial number" />
-      <definition value="Vaccine vial serial number." />
+      <definition value="Serial number for a vial of vaccine." />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -49,6 +49,7 @@
     <element id="Extension.value[x]:valueString">
       <path value="Extension.value[x]" />
       <sliceName value="valueString" />
+      <short value="Vaccine vial serial number"/>
       <min value="1" />
       <type>
         <code value="string" />
