@@ -326,40 +326,38 @@
   <entry>
     <fullUrl value="urn:uuid:2a3ea044-27d5-11eb-adc1-0242ac120002"/>
     <resource>
-      <Observation xmlns="http://hl7.org/fhir">
-        <id value="2a3ea044-27d5-11eb-adc1-0242ac120002"/>
+      <Basic xmlns="http://hl7.org/fhir">
+        <id value="2a3ea044-27d5-11eb-adc1-0242ac120002" />
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-disclaimer-1"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1"
+          />
         </meta>
-        <status value="final"/>
+        <text>
+          <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"><p>The Australian Immunisation Register records immunisations given to people of all ages in Australia. Immunisations given before 1 January 1996 are not displayed on the statement.</p><p>Every effort is made...</p></div>
+        </text>
         <code>
           <coding>
             <system
-              value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-            <code value="103.32031"/>
-            <display value="Disclaimer"/>
+              value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+            <code value="103.32031" />
+            <display value="Disclaimer" />
           </coding>
         </code>
         <subject>
           <identifier>
             <type>
               <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
-                <code value="NI"/>
-                <display value="National unique individual identifier"/>
+                <system value="http://hl7.org/fhir/v2/0203" />
+                <code value="NI" />
+                <display value="National unique individual identifier" />
               </coding>
             </type>
-            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-            <value value="8003608166690503"/>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
+            <value value="8003608166690503" />
           </identifier>
         </subject>
-        <effectiveDateTime value="2020-07-06"/>
-        <valueString
-          value="The Australian Immunisation Register records immunisations given to people of all ages in Australia. Immunisations given before 1 January 1996 are not displayed on the statement.
-          
-          Every effort is made..."/>
-      </Observation>
+      </Basic>
     </resource>
   </entry>
 

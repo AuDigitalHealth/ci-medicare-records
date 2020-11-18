@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="basic-disclaimer-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1" />
+  <version value="1.0.0" />
+  <name value="BasicDisclaimer" />
+  <title value="Disclaimer" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to describe a disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="3.0.2" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Basic" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Basic">
+      <path value="Basic" />
+      <short value="Disclaimer" />
+      <definition value="Disclaimer included with some information." />
+    </element>
+    <element id="Basic.meta">
+      <path value="Basic.meta" />
+      <min value="1" />
+      <constraint>
+        <key value="inv-dh-bas-01" />
+        <severity value="error" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1').exists()" />
+      </constraint>
+    </element>
+    <element id="Basic.meta.profile">
+      <path value="Basic.meta.profile" />
+      <min value="1" />
+    </element>
+    <element id="Basic.text">
+      <path value="Basic.text" />
+      <short value="Disclaimer text" />
+      <definition value="Disclaimer text." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.text.status">
+      <path value="Basic.text.status" />
+      <fixedCode value="additional" />
+    </element>
+    <element id="Basic.code">
+      <path value="Basic.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+          <code value="103.32031" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

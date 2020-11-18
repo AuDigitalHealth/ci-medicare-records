@@ -136,9 +136,9 @@
             "base": "StructureDefinition-observation-aircovid19immunisationstatus-1.html",
             "defns": "StructureDefinition-observation-aircovid19immunisationstatus-1-definitions.html"
         },
-           "StructureDefinition/observation-disclaimer-1": {
-            "base": "StructureDefinition-observation-disclaimer-1.html",
-            "defns": "StructureDefinition-observation-disclaimer-1-definitions.html"
+           "StructureDefinition/basic-disclaimer-1": {
+            "base": "StructureDefinition-basic-disclaimer-1.html",
+            "defns": "StructureDefinition-basic-disclaimer-1-definitions.html"
         }
     },
     "tool": "jekyll",
