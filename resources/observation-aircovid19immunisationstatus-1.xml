@@ -92,13 +92,13 @@
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
     </element>
-    <element id="Observation.value[x]:valueString">
-      <path value="Observation.valueString" />
-      <sliceName value="valueString" />
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <short value="Australian Immunisation Register COVID-19 immunisation status" />
       <min value="1" />
       <type>
-        <code value="string" />
+        <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
     </element>
