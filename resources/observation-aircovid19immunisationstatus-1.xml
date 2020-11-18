@@ -96,7 +96,7 @@
     <element id="Observation.value[x]:valueString">
       <path value="Observation.valueString" />
       <sliceName value="valueString" />
-      <short value="Australian Immunisation Register COVID-19 vaccination status" />
+      <short value="Australian Immunisation Register COVID-19 immunisation status" />
       <min value="1" />
       <type>
         <code value="string" />

@@ -3,4 +3,4 @@
 #### Implementation guidance
 No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
 
-This profile is referenced by  [Patient with Mandatory IHI](StructureDefinition-patient-ihi-1.html) and [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html).
+This profile is referenced by  [Patient with Mandatory IHI](StructureDefinition-patient-ihi-1.html) and [Immunization Australian Immunisation Register](StructureDefinition-immunization-air-2.html).

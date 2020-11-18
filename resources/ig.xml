@@ -59,7 +59,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/immunization-air"/>
+        <reference value="StructureDefinition/immunization-air-2"/>
       </sourceReference>
     </resource>
     <resource>

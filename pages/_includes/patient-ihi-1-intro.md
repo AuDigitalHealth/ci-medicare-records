@@ -8,5 +8,5 @@ This profile is referenced by
 [Australian Immunisation Register Immunisation Recommendation](StructureDefinition-immunizationrecommendation-air-1.html),
 [Australian Immunisation Register Notice](StructureDefinition-flag-air-1.html),
 [AIR Immunisation Status](StructureDefinition-observation-airimmunisationstatus-1.html), and
-[Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html).
+[Immunization Australian Immunisation Register](StructureDefinition-immunization-air-2.html).
 
