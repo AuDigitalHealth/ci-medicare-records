@@ -79,6 +79,7 @@
     </element>
     <element id="ImmunizationRecommendation.patient.identifier">
       <path value="ImmunizationRecommendation.patient.identifier" />
+      <short value="Individual Healthcare Identifier (IHI)"/>
       <min value="1" />
       <patternIdentifier>
         <type>
@@ -92,6 +93,7 @@
     </element>
     <element id="ImmunizationRecommendation.patient.identifier.value">
       <path value="ImmunizationRecommendation.patient.identifier.value"/>
+      <short value="IHI"/>
       <min value="1"/>
     </element>
     <element id="ImmunizationRecommendation.recommendation">

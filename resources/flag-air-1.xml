@@ -94,6 +94,7 @@
     </element>
     <element id="Flag.subject.identifier">
       <path value="Flag.subject.identifier" />
+      <short value="Individual Healthcare Identifier (IHI)"/>
       <min value="1" />
       <patternIdentifier>
         <type>
@@ -107,6 +108,7 @@
     </element>
     <element id="Flag.subject.identifier.value">
       <path value="Flag.subject.identifier.value"/>
+      <short value="IHI"/>
       <min value="1"/>
     </element>
   </differential>
