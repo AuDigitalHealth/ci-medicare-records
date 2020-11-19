@@ -6,6 +6,5 @@ The following are the overarching usage scenarios this profile is intended to su
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* if a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
 * in order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so doseStatus has been set to NAVU Not Available
 

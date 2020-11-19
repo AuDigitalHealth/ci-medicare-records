@@ -14,14 +14,16 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* identifier&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description
+    value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register (AIR).&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* identifier&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
       <code value="AU" />
     </coding>
   </jurisdiction>
-  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <copyright
+    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
@@ -31,7 +33,7 @@
   <differential>
     <element id="Immunization">
       <path value="Immunization" />
-      <short value="An Australian Immunisation Register record of administered vaccine for an individual" />
+      <short value="Record of administered vaccine held in the AIR" />
     </element>
     <element id="Immunization.meta">
       <path value="Immunization.meta" />
@@ -39,8 +41,11 @@
       <constraint>
         <key value="inv-dh-imm-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()" />
+        <human
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air'" />
+        <expression
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air').exists()"
+         />
       </constraint>
     </element>
     <element id="Immunization.meta.profile">
@@ -60,9 +65,12 @@
     <element id="Immunization.extension:serialNumber">
       <path value="Immunization.extension" />
       <sliceName value="serialNumber" />
+      <short value="Serial number" />
       <type>
         <code value="Extension" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1" />
+        <profile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1"
+         />
       </type>
       <mustSupport value="true" />
     </element>
@@ -84,23 +92,25 @@
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
+      <short value="Brand name given" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1" />
+        <valueSetUri value="https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1"
+         />
       </binding>
     </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Immunization.patient.identifier">
       <path value="Immunization.patient.identifier" />
-      <short value="Individual Healthcare Identifier (IHI)"/>
+      <short value="Individual Healthcare Identifier (IHI)" />
       <min value="1" />
       <patternIdentifier>
         <type>
@@ -113,12 +123,13 @@
       </patternIdentifier>
     </element>
     <element id="Immunization.patient.identifier.value">
-      <path value="Immunization.patient.identifier.value"/>
-      <short value="IHI"/>
-      <min value="1"/>
+      <path value="Immunization.patient.identifier.value" />
+      <short value="IHI" />
+      <min value="1" />
     </element>
     <element id="Immunization.date">
       <path value="Immunization.date" />
+      <short value="Date given" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -151,9 +162,13 @@
     <element id="Immunization.vaccinationProtocol.extension:doseSchedule">
       <path value="Immunization.vaccinationProtocol.extension" />
       <sliceName value="doseSchedule" />
+      <short value="Schedule" />
+      <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1" />
+        <profile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1"
+         />
       </type>
       <mustSupport value="true" />
     </element>
@@ -163,6 +178,7 @@
     </element>
     <element id="Immunization.vaccinationProtocol.targetDisease">
       <path value="Immunization.vaccinationProtocol.targetDisease" />
+      <short value="Antigen" />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccinationProtocol.doseStatus">
