@@ -111,6 +111,10 @@
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
     </element>
+    <element id="Immunization.patient.identifier.value">
+      <path value="Immunization.patient.identifier.value"/>
+      <min value="1"/>
+    </element>
     <element id="Immunization.date">
       <path value="Immunization.date" />
       <min value="1" />

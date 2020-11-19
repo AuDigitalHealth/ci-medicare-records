@@ -90,6 +90,10 @@
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
     </element>
+    <element id="Observation.subject.identifier.value">
+      <path value="Observation.subject.identifier.value"/>
+      <min value="1"/>
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />

@@ -90,6 +90,10 @@
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
     </element>
+    <element id="ImmunizationRecommendation.patient.identifier.value">
+      <path value="ImmunizationRecommendation.patient.identifier.value"/>
+      <min value="1"/>
+    </element>
     <element id="ImmunizationRecommendation.recommendation">
       <path value="ImmunizationRecommendation.recommendation" />
       <mustSupport value="true" />

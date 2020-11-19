@@ -5,6 +5,10 @@
             value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunizationrecommendation-air-1"
         />
     </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.25.129844986816735724544008039955538526131"/>
+    </identifier>
     <patient>
         <identifier>
             <type>

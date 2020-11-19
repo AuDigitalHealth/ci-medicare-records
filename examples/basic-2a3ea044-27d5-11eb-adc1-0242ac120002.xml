@@ -6,6 +6,10 @@
             value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/basic-disclaimer-1"
          />
     </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:4122"/>
+        <value value="87276918-b7f1-4813-a85c-667beea6f2c3"/>
+    </identifier>
     <text>
         <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"><p>The Australian Immunisation Register records immunisations given to people of all ages in Australia. Immunisations given before 1 January 1996 are not displayed on the statement.</p><p>Every effort is made...</p></div>
     </text>

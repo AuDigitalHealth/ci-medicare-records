@@ -105,5 +105,9 @@
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
     </element>
+    <element id="Flag.subject.identifier.value">
+      <path value="Flag.subject.identifier.value"/>
+      <min value="1"/>
+    </element>
   </differential>
 </StructureDefinition>
