@@ -1,7 +1,7 @@
 <Flag xmlns="http://hl7.org/fhir">
     <id value="4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/flag-air-1"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/flag-air-1"/>
     </meta>
     <status value="active"/>
     <category>

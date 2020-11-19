@@ -72,9 +72,9 @@
             "base": "StructureDefinition-extension-donationdecision.html",
             "defns": "StructureDefinition-extension-donationdecision-definitions.html"
         },
-        "StructureDefinition/immunization-air-2": {
-            "base": "StructureDefinition-immunization-air-2.html",
-            "defns": "StructureDefinition-immunization-air-2-definitions.html"
+        "StructureDefinition/immunization-air": {
+            "base": "StructureDefinition-immunization-air.html",
+            "defns": "StructureDefinition-immunization-air-definitions.html"
         },
         "StructureDefinition/medicationrequest-pbs": {
             "base": "StructureDefinition-medicationrequest-pbs.html",

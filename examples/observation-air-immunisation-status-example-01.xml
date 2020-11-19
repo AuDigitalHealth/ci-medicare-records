@@ -3,7 +3,7 @@
     <id value="observation-air-immunisation-status-example-01"/>
     <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/observation-airimmunisationstatus-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1"
         />
     </meta>
     <identifier>

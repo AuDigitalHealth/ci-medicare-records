@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="immunization-air-2" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2" />
+  <id value="immunization-air" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunization-air" />
   <version value="2.0.0" />
   <name value="ImmunizationAustralianImmunisationRegister" />
   <title value="Immunization Australian Immunisation Register" />
@@ -39,8 +39,8 @@
       <constraint>
         <key value="inv-dh-imm-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunization-air'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunization-air').exists()" />
       </constraint>
     </element>
     <element id="Immunization.meta.profile">
