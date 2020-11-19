@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunization-air-2" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air-2" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2" />
   <version value="2.0.0" />
   <name value="ImmunizationAustralianImmunisationRegister" />
   <title value="Immunization Australian Immunisation Register" />

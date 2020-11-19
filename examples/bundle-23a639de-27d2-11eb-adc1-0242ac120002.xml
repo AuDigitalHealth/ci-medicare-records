@@ -98,7 +98,7 @@
         <id value="88d35c33-414c-4d55-98e9-29f9c954df03"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air-2"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2"/>
         </meta>
         <text>
           <status value="generated"/>
