@@ -44,12 +44,6 @@
         <reference value="StructureDefinition/explanationofbenefit-medicare"/>
       </sourceReference>
     </resource>
-    <!--<resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/extension-immunization-cancellationperiod"/>
-      </sourceReference>
-    </resource>-->
     <resource>
       <example value="false"/>
       <sourceReference>
