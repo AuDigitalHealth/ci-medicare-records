@@ -83,7 +83,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/observation-airimmunisationstatus-1"/>
+        <reference value="StructureDefinition/observation-airimmstatus-1"/>
       </sourceReference>
     </resource>
     <resource>

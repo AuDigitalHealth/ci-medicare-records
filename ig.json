@@ -88,17 +88,9 @@
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
-        "StructureDefinition/air-immunisation-status-1": {
-            "base": "StructureDefinition-air-immunisation-status-1.html",
-            "defns": "StructureDefinition-air-immunisation-status-1-definitions.html"
-        },
-        "StructureDefinition/air-covid19-immunisation-status-1": {
-            "base": "StructureDefinition-air-covid19-immunisation-status-1.html",
-            "defns": "StructureDefinition-air-covid19-immunisation-status-1-definitions.html"
-        },
-        "StructureDefinition/observation-airimmunisationstatus-1": {
-            "base": "StructureDefinition-observation-airimmunisationstatus-1.html",
-            "defns": "StructureDefinition-observation-airimmunisationstatus-1-definitions.html"
+       "StructureDefinition/observation-airimmstatus-1": {
+            "base": "StructureDefinition-observation-airimmstatus-1.html",
+            "defns": "StructureDefinition-observation-airimmstatus-1-definitions.html"
         },
         "StructureDefinition/immunizationrecommendation-air-1": {
             "base": "StructureDefinition-immunizationrecommendation-air-1.html",

@@ -3,7 +3,7 @@
     <id value="observation-air-immunisation-status-example-01"/>
     <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1"
         />
     </meta>
     <identifier>
@@ -34,6 +34,11 @@
     </subject>
     <effectiveDateTime value="2020-07-06"/>
     <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="171258008" />
+            <display value="Up-to-date with vaccinations" />
+        </coding>
         <text value="Up to date"/>
     </valueCodeableConcept>
 </Observation>
