@@ -39,8 +39,8 @@
       <constraint>
         <key value="inv-dh-imm-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air-2'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air-2').exists()" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2'" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-air-2').exists()" />
       </constraint>
     </element>
     <element id="Immunization.meta.profile">
