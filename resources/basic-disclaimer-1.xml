@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="basic-disclaimer-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/basic-disclaimer-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1" />
   <version value="1.0.0" />
   <name value="BasicDisclaimer" />
   <title value="Disclaimer" />
@@ -43,9 +43,9 @@
         <key value="inv-dh-bas-01" />
         <severity value="error" />
         <human
-          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/basic-disclaimer-1'" />
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1'" />
         <expression
-          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/basic-disclaimer-1').exists()"
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1').exists()"
          />
       </constraint>
     </element>
