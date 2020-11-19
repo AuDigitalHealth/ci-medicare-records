@@ -6,5 +6,5 @@ The following are the overarching usage scenarios this profile is intended to su
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* notice text will be sent in Flag.code.CodeableConcept.text
+* notice text will be sent in the text portion of the Flag.code
 

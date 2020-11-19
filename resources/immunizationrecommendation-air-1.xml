@@ -46,7 +46,7 @@
   <differential>
     <element id="ImmunizationRecommendation">
       <path value="ImmunizationRecommendation" />
-      <short value="Australian Immunisation Register Next Immunisation/s Due" />
+      <short value="AIR next immunisation/s due" />
       <definition value="Antigens for which an individual is due within the National Immunisation Program, based upon their history of immunisations." />
     </element>
     <element id="ImmunizationRecommendation.meta">
@@ -72,14 +72,14 @@
     <element id="ImmunizationRecommendation.patient">
       <path value="ImmunizationRecommendation.patient" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="ImmunizationRecommendation.patient.identifier">
       <path value="ImmunizationRecommendation.patient.identifier" />
-      <short value="Individual Healthcare Identifier (IHI)"/>
+      <short value="Individual Healthcare Identifier (IHI)" />
       <min value="1" />
       <patternIdentifier>
         <type>
@@ -92,9 +92,9 @@
       </patternIdentifier>
     </element>
     <element id="ImmunizationRecommendation.patient.identifier.value">
-      <path value="ImmunizationRecommendation.patient.identifier.value"/>
-      <short value="IHI"/>
-      <min value="1"/>
+      <path value="ImmunizationRecommendation.patient.identifier.value" />
+      <short value="IHI" />
+      <min value="1" />
     </element>
     <element id="ImmunizationRecommendation.recommendation">
       <path value="ImmunizationRecommendation.recommendation" />
@@ -106,6 +106,7 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.targetDisease">
       <path value="ImmunizationRecommendation.recommendation.targetDisease" />
+      <short value="Antigen" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -120,6 +121,7 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion" />
+      <short value="Date due" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -136,7 +138,7 @@
     </element>
     <element id="ImmunizationRecommendation.recommendation.dateCriterion.value">
       <path value="ImmunizationRecommendation.recommendation.dateCriterion.value" />
-      <short value="Date due" />
+      <short value="Due date" />
       <mustSupport value="true" />
     </element>
   </differential>
