@@ -3,6 +3,10 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1"/>
     </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:4122" />
+        <value value="87276918-b7f1-4813-a85c-667beea6f2c3" />
+    </identifier>
     <status value="active"/>
     <category>
         <coding>
@@ -13,9 +17,7 @@
     </category>
     <code>
         <text
-            value="Your child has received a dose of
-            meningococcal C vaccine. Please check with your immunisation provider to ensure that the course
-            has been completed."
+            value="Your child has received a dose of meningococcal C vaccine. Please check with your immunisation provider to ensure that the course has been completed."
         />
     </code>
     <subject>
