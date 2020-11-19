@@ -19,7 +19,7 @@
         <id value="12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/observation-airimmunisationstatus-1"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmunisationstatus-1"/>
         </meta>
         <status value="final"/>
         <code>
@@ -59,7 +59,7 @@
         <id value="e22a9149-fc11-4af6-8ca3-c378689c590d"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19vaccinationstatus-1"/>
         </meta>
         <status value="final"/>
         <code>
@@ -98,7 +98,7 @@
         <id value="88d35c33-414c-4d55-98e9-29f9c954df03"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunization-air"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -174,7 +174,7 @@
         <id value="a83d0305-7970-4f29-be4e-0f6979de9329"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunizationrecommendation-air-1"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1"/>
         </meta>
         <patient>
           <identifier>
@@ -288,7 +288,7 @@
         <id value="4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/flag-air-1"/>
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1"/>
         </meta>
         <text>
           <status value="generated"/>
@@ -330,7 +330,7 @@
         <id value="2a3ea044-27d5-11eb-adc1-0242ac120002" />
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/basic-disclaimer-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1"
           />
         </meta>
         <text>

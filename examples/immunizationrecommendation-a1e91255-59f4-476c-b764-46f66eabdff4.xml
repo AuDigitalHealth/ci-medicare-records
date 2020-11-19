@@ -2,7 +2,7 @@
     <id value="a1e91255-59f4-476c-b764-46f66eabdff4"/>
     <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/fhir/StructureDefinition/immunizationrecommendation-air-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1"
         />
     </meta>
     <identifier>
