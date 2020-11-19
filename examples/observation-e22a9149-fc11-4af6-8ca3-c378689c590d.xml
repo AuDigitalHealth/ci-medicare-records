@@ -3,7 +3,7 @@
     <id value="e22a9149-fc11-4af6-8ca3-c378689c590d" />
     <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19vaccinationstatus-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1"
          />
     </meta>
     <identifier>

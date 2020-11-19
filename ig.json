@@ -108,9 +108,9 @@
             "base": "StructureDefinition-vaccine-serial-number-1.html",
             "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"
         },
-           "StructureDefinition/observation-aircovid19immunisationstatus-1": {
-            "base": "StructureDefinition-observation-aircovid19immunisationstatus-1.html",
-            "defns": "StructureDefinition-observation-aircovid19immunisationstatus-1-definitions.html"
+           "StructureDefinition/observation-aircovid19immstatus-1": {
+            "base": "StructureDefinition-observation-aircovid19immstatus-1.html",
+            "defns": "StructureDefinition-observation-aircovid19immstatus-1-definitions.html"
         },
            "StructureDefinition/basic-disclaimer-1": {
             "base": "StructureDefinition-basic-disclaimer-1.html",

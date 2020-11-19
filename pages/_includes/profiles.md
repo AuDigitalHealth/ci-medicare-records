@@ -72,7 +72,7 @@
                           <ul class="frm-set">
                               <li><a href="StructureDefinition-bodysite-aodr.html">BodySite (BodySite Australian Organ Donor Register)</a></li>
                               <li><a href="StructureDefinition-observation-airimmstatus-1.html">Observation (Australian Immunisation Register Immunisation Status)</a></li>
-                              <li><a href="StructureDefinition-observation-aircovid19immunisationstatus-1.html">Observation (Australian Immunisation Register COVID-19 Immunisation Status)</a></li>
+                              <li><a href="StructureDefinition-observation-aircovid19immstatus-1.html">Observation (Australian Immunisation Register COVID-19 Immunisation Status)</a></li>
                           </ul>
                       </td>
                       <td class="frm-set">

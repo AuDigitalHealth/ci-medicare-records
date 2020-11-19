@@ -5,6 +5,11 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
+    <tr>
+        <td>Comment not in design</td>
+        <td>At this point status comment is not included in the design. If required it may be sent in Observation.comment.</td>
+        <td>N/A</td>
+  </tr>
   <tr>
         <td>Constraint presentation</td>
         <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>
