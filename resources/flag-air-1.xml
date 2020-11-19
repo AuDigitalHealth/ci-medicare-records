@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of the Australian Immunisation register notice an individual has an exemption record, or has finished a National Immunisation Program schedule. &#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to define a representation of the Australian Immunisation Register (AIR) notice such as notice an individual has an exemption record or has finished a National Immunisation Program schedule. &#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* subject&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -41,8 +41,8 @@
   <differential>
     <element id="Flag">
       <path value="Flag" />
-      <short value="An Australian Immunisation Register notice for an individual" />
-      <definition value="Australian Immunisation Register notice that an individual has an exemption record, or has finished a National Immunisation Program schedule." />
+      <short value="AIR notice" />
+      <definition value="Australian Immunisation Register notice such as an individual has an exemption record or has finished a National Immunisation Program schedule." />
     </element>
     <element id="Flag.meta">
       <path value="Flag.meta" />
@@ -70,6 +70,7 @@
     </element>
     <element id="Flag.category">
       <path value="Flag.category" />
+      <short value="Australian Immunisation Register notice" />
       <min value="1" />
       <patternCodeableConcept>
         <coding>
@@ -81,20 +82,20 @@
     </element>
     <element id="Flag.code">
       <path value="Flag.code" />
-      <short value="AIR Notice" />
+      <short value="Notice text" />
       <mustSupport value="true" />
     </element>
     <element id="Flag.subject">
       <path value="Flag.subject" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Flag.subject.identifier">
       <path value="Flag.subject.identifier" />
-      <short value="Individual Healthcare Identifier (IHI)"/>
+      <short value="Individual Healthcare Identifier (IHI)" />
       <min value="1" />
       <patternIdentifier>
         <type>
@@ -107,9 +108,9 @@
       </patternIdentifier>
     </element>
     <element id="Flag.subject.identifier.value">
-      <path value="Flag.subject.identifier.value"/>
-      <short value="IHI"/>
-      <min value="1"/>
+      <path value="Flag.subject.identifier.value" />
+      <short value="IHI" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
