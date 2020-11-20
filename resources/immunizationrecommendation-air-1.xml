@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of the antigens for which an individual is due within the National Immunisation Program, based upon their history of immunisations.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+  <description value="The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -47,7 +47,7 @@
     <element id="ImmunizationRecommendation">
       <path value="ImmunizationRecommendation" />
       <short value="AIR next immunisation/s due" />
-      <definition value="Antigens for which an individual is due within the National Immunisation Program, based upon their history of immunisations." />
+      <definition value="Antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations." />
     </element>
     <element id="ImmunizationRecommendation.meta">
       <path value="ImmunizationRecommendation.meta" />
