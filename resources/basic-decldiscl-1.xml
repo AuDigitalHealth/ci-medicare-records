@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="basic-disclaimer-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1" />
+  <id value="basic-decldiscl-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1" />
   <version value="1.0.0" />
-  <name value="BasicDisclaimer" />
-  <title value="Disclaimer" />
+  <name value="BasicDeclaredDisclaimer" />
+  <title value="Declared Disclaimer" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to describe a disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element" />
+    value="The purpose of this profile is to describe a declared disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element" />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -33,8 +33,8 @@
   <differential>
     <element id="Basic">
       <path value="Basic" />
-      <short value="Disclaimer" />
-      <definition value="Disclaimer included with some information." />
+      <short value="Declared Disclaimer" />
+      <definition value="Disclaimer included with some information. Includes a declaration of conformance to this profile." />
     </element>
     <element id="Basic.meta">
       <path value="Basic.meta" />
@@ -43,9 +43,9 @@
         <key value="inv-dh-bas-01" />
         <severity value="error" />
         <human
-          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1'" />
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1'" />
         <expression
-          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1').exists()"
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1').exists()"
          />
       </constraint>
     </element>

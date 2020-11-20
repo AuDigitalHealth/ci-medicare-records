@@ -31,7 +31,7 @@
                        <td class="frm-null"/>
                       <td class="frm-set">
                           <ul class="frm-set">
-                              <li><a href="StructureDefinition-basic-disclaimer-1.html">Basic (Disclaimer)</a></li>
+                              <li><a href="StructureDefinition-basic-decldiscl-1.html">Basic (Declared Disclaimer)</a></li>
                           </ul>
                       </td>
                     </tr>
