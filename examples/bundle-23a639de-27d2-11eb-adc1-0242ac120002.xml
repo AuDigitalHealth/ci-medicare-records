@@ -335,7 +335,7 @@
         <id value="2a3ea044-27d5-11eb-adc1-0242ac120002" />
         <meta>
           <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-disclaimer-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1"
           />
         </meta>
         <text>

@@ -112,9 +112,9 @@
             "base": "StructureDefinition-observation-aircovid19immstatus-1.html",
             "defns": "StructureDefinition-observation-aircovid19immstatus-1-definitions.html"
         },
-           "StructureDefinition/basic-disclaimer-1": {
-            "base": "StructureDefinition-basic-disclaimer-1.html",
-            "defns": "StructureDefinition-basic-disclaimer-1-definitions.html"
+           "StructureDefinition/basic-decldiscl-1": {
+            "base": "StructureDefinition-basic-decldiscl-1.html",
+            "defns": "StructureDefinition-basic-decldiscl-1-definitions.html"
         }
     },
     "tool": "jekyll",

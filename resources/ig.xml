@@ -113,7 +113,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/basic-disclaimer-1"/>
+        <reference value="StructureDefinition/basic-decldiscl-1"/>
       </sourceReference>
     </resource>
 
@@ -240,7 +240,7 @@
     </resource>
     <resource>
       <example value="true"/>
-      <name value="AID Disclaimer"/>
+      <name value="AIR Disclaimer"/>
       <description value="AIR disclaimer"/>
       <sourceReference>
         <reference value="Basic/2a3ea044-27d5-11eb-adc1-0242ac120002"/>
