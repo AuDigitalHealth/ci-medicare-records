@@ -11,6 +11,13 @@
       <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.json.html">JSON</a></td>
       <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.ttl.html">Turtle</a></td>
    </tr>
+   <tr>
+      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.html">AIR notice - natural immunity to measles</a></td>
+      <td>8a620ec8-6a17-4b33-8f13-ca2f788654ac</td>
+      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.xml.html">XML</a></td>
+      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.json.html">JSON</a></td>
+      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.ttl.html">Turtle</a></td>
+   </tr>
       <tr>
       <td><a href="Bundle-23a639de-27d2-11eb-adc1-0242ac120002.html">AIR bundle</a></td>
       <td>23a639de-27d2-11eb-adc1-0242ac120002</td>

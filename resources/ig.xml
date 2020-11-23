@@ -216,6 +216,14 @@
     </resource>
     <resource>
       <example value="true"/>
+      <name value="Flag 1"/>
+      <description value="AIR notice - Natural immunity to Measles"/>
+      <sourceReference>
+        <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
       <name value="AIR Immunisation Status 01"/>
       <description value="AIR Immunisation Status - up to date"/>
       <sourceReference>
