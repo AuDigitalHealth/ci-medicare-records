@@ -128,6 +128,14 @@
     </resource>
     <resource>
       <example value="true"/>
+      <name value="Immunization example 2"/>
+      <description value="Vaccination administration (Panvax for influenza)"/>
+      <sourceReference>
+        <reference value="Immunization/7d0dab26-bc12-471e-a228-527c645db404"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
       <name value="Explanation of Benefit MBS example 1"/>
       <description value="MBS example 1"/>
       <sourceReference>
