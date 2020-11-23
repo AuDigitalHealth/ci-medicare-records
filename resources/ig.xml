@@ -217,6 +217,14 @@
     <resource>
       <example value="true"/>
       <name value="Flag 1"/>
+      <description value="AIR notice - Medical contraindication to MMR II"/>
+      <sourceReference>
+        <reference value="Flag/d75a3b06-0397-4472-bc7e-8651668e8f40"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <name value="Flag 1"/>
       <description value="AIR notice - Natural immunity to Measles"/>
       <sourceReference>
         <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
