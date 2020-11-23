@@ -240,6 +240,14 @@
     </resource>
     <resource>
       <example value="true"/>
+      <name value="AIR Immunisation Status"/>
+      <description value="AIR Immunisation Status (Not up to date)"/>
+      <sourceReference>
+        <reference value="Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
       <name value="AIR Disclaimer"/>
       <description value="AIR disclaimer"/>
       <sourceReference>
