@@ -278,14 +278,7 @@
         <reference value="Basic/2a3ea044-27d5-11eb-adc1-0242ac120002"/>
       </sourceReference>
     </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR bundle"/>
-      <description value="AIR bundle"/>
-      <sourceReference>
-        <reference value="Bundle/23a639de-27d2-11eb-adc1-0242ac120002"/>
-      </sourceReference>
-    </resource>
+    
   </package>
   <page>
     <source value="index.html"/>
