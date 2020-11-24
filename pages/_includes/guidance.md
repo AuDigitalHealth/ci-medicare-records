@@ -52,67 +52,6 @@ Existing validation tools differ in their support for machine-processable rules.
 
 The validation tools used during development of the profiles and extensions described in this implementation guide include [Forge](https://fire.ly/products/forge/) and the [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) (with its in-built validation process).
 
-## Known issues relating to the support and implementation of FHIR
-
-The table below describes some issues that may affect implementing the content of this guide or supporting the described usage scenarios. [Implementation Support Module](http://hl7.org/fhir/stu3/implsupport-module.html) provides a helpful reference for information about available tools, libraries and other similar resources.
-
-Readers of this implementation guide are encouraged to actively participate in the FHIR community and get involved in the development of the standard and related tooling. 
-
-<table border="1" cellpadding="1" valign="middle">
-<tbody>
-  <tr bgcolor="#DCDCDC">
-    <th>Reference</th>
-    <th>Description</th>
-    <th>Issue No.</th>
-  </tr>
-  <tr>
-    <td>Invariants may not constrain as intended</td>
-    <td>
-        <p>Currently the FHIR Validator (which is used by IG Publisher) does not fully support all constraints defined in the FHIR specification. For example invariants using conformsTo() have not been able to be confirmed and do not reject resources that are expected to fail.</p>
-    </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179177-conformance">conformance</a> stream</td>
-  </tr>
-  <tr>
-    <td>Rendering of Composition narrative in examples</td>
-    <td>
-        <p>The tooling used to generate this implementation guide (IG Publisher) does not render narrative in Composition examples in line with the expectations for presenting a FHIR document for human consumption.</p>
-        <p>The human friendly rendered format of Composition examples in this implementation guide may be missing content, e.g. section narrative, forcing the reader to refer to XML or JSON format to view the full example narrative. Alternatively in order to demonstrate example narrative rendering the construction of the narrative is against good practice in order to provide complete readable content.</p>
-    </td>
-    <td>
-        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=17401">#17401</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td>Slicing types may not constrain as intended</td>
-    <td>
-        <p>Currently the FHIR Validator and IG Publisher do not fully support the use of all discriminator types defined by the FHIR standard.</p>
-        <p>At this stage we are not using designs that control the members of sets such as Composition.section.entry that use slicing. Slicing by type:resolve() and profile:resolve() do not function as expected.</p>
-        <p>Designs that use slicing on value set binding are not supported by the FHIR Validator or IG Publisher.</p>
-    </td>
-    <td>
-        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=20572">#20572</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td>Constraining via a derived profile an extension added to source profile</td>
-    <td>
-        <p>The tooling (Forge) used to author profiles does not allow for the constraining of an extension via reference.</p>
-        <p>At this stage only designs that use an invariant to constrain the reference may be authored (though they may not constrain as intended).</p>
-    </td>
-    <td>
-        <p>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179177-conformance">Constraining Extension Values in Profiles</a> stream</p>
-    </td>
-  </tr>
- </tbody>
-</table> 
-
-The following resources are available to raise questions or issues relating to FHIR and FHIR tooling:
-* [FHIR Chat Channel Zulip](https://chat.fhir.org/)
-* [FHIR Community Forum](http://community.fhir.org/)
-* [StackOverflow](https://stackoverflow.com/questions/tagged/hl7_fhir)
-* [gForge](https://gforge.hl7.org/gf/project/fhir/)
-
-
 ## Conformance conventions
 
 ### StructureDefinition
