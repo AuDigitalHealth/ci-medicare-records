@@ -12,8 +12,7 @@ This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specificat
 This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
 ## Document purpose and scope
-The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system. Information includes registration as an organ donor, prescribed and dispensed medications, and administered vaccinations.
-
+The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system. 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
 This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
@@ -22,29 +21,30 @@ Reference has been made to International and Australian Standards, and to Standa
 * [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3)
 * [Australian Base Implementation Guide (AU Base 1.1.1) [HL7AUF3B2]](#HL7AUF3B2)
 
-Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards ([Australian Base Implementation Guide (AU Base 1.1.1) [HL7AUF3B2]](#HL7AUF3B2)) to provide for system interoperability and compatibility with other profiles. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.
-
-This implementation guide makes reference to the set of profiles and extensions (StructureDefinitions) that form part of this implementation guide. Some profiles and extensions are described by this implementation guide, and some are described by other published sources such as the [Australian Base Implementation Guide (AU Base 1.1.1) [HL7AUF3B2]](#HL7AUF3B2) or [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3). The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. Any profile-specific mappings to another format is the subject of an implementation guide for that particular format, e.g. a corresponding CDA implementation guide. The base FHIR® STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+Wherever possible, material in this specification is based on existing standards. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.
 
 
-## Context and use
-A FHIR implementation guide is part of a package of documents and files that support the development of software to exchange a type of clinical document, an end-product clinical specification package.
+## Profiles
+The FHIR profiles that form part of this implementation guide are shown below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
-An Agency end-product clinical specification package supports software developers to create and interpret instances of a clinical document. The core of each package is a specification of the information content of instances of the clinical document.
+Profile that define the representation of vaccination information from the Australian Immunisation Register:
+* [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
+* [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
+* [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html)
+* [Australian Immunisation Register Immunisation Recommendation](StructureDefinition-immunizationrecommendation-air-1.html)
+* [Australian Immunisation Register Notice](StructureDefinition-flag-air-1.html)
+* [Declared Disclaimer](StructureDefinition-basic-decldiscl-1.html)
 
-Supplementary contents of the package include statements of scenarios for which the specification is appropriate, guidance on implementing the specification, and guidance on testing purported instances.
+Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
+* [Explanation of Benefit Medicare](StructureDefinition-explanationofbenefit-medicare.html)
+* [Medication Request Pharmaceutical Benefits Scheme](StructureDefinition-medicationrequest-pbs.html)
+* [Medication Pharmaceutical Benefits Scheme](StructureDefinition-medication-pbs.html)
+* [Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs](StructureDefinition-referralrequest-mbsdva.html)
 
-The contents may include:
-* statement of requirements
-* CDA implementation guide (CDA IG) – a statement of constraints and custom extensions on [HL7 Clinical Document Architecture [HL7CDAR2]](#HL7CDAR2)
-* FHIR implementation guide (FHIR IG) - a statement of constraints and custom extensions on [HL7 FHIR [HL7FHIR3]](#HL7FHIR3)
-* template package library – a set of Schematron schema to test conformance of CDA documents with the specification
-* conformance profile – a statement of conformance requirements for exchanging documents within a particular scenario such as the My Health Record
-* release notes
+Profiles that define representation of donation decision information from the Australian Organ Donor Register:
+* [Consent Australian Organ Donor Register](StructureDefinition-consent-aodr.html)
+* [BodySite Australian Organ Donor Register](StructureDefinition-bodysite-aodr.html)
 
-
-## How to read this document
-This implementation guide contains descriptions of both constraints on HL7 FHIR and, where necessary, custom extensions to HL7 FHIR, for the purposes of fulfilling the requirements for Australian implementations of shared medicines lists. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/stu3/profiling.html).  
 
 ## Editorial note
 This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
