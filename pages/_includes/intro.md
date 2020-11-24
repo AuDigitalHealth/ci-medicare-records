@@ -12,7 +12,8 @@ This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specificat
 This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
 ## Document purpose and scope
-The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system. 
+The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system.
+
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
 This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
