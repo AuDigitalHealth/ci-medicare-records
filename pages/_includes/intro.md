@@ -113,10 +113,6 @@ This table lists known issues with this specification at the time of publishing.
     <th>Description</th>
   </tr>
   <tr>
-    <td>Terminology publication</td>
-    <td>The following terminology resources are not yet available in NCTS:<ul><li><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1">Australian Immunisation Register Immunisation Status</a></li></ul></td>
-  </tr>
-  <tr>
     <td>Source material errors</td>
     <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
   </tr>
