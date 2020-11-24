@@ -123,10 +123,10 @@ This implementation guide includes FHIR profiles that are a set of constraints a
 A profile or extension is identified by its canonical URL (e.g. http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/composition-es-1). These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
 
 ### Must Support
-The Must Support rules for this implementation guide are defined in [Conformance](conformance.html). A must support flag, when present in this implementation guide, is displayed as letter “S” with red background in the Flag column of the Differential Table and Snapshot Table of a profile or extension, as such <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>.
+A must support flag, when present in this implementation guide, is displayed as letter “S” with red background in the Flag column of the Differential Table and Snapshot Table of a profile or extension, as such <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>.
 
 ### Conformance verbs
-The conformance verbs used in this implementation guide are defined in [FHIR Conformance Rules](http://hl7.org/fhir/STU3/conformance-rules.html#conflang). Conformance verbs are present in this implementation guide in [Conformance requirements](conformance.html), and in invariants which are visible in the “Description & Constraints” column of the Differential Table and Snapshot Table of a profile or extension.
+The conformance verbs used in this implementation guide are defined in [FHIR Conformance Rules](http://hl7.org/fhir/STU3/conformance-rules.html#conflang). Conformance verbs are present in this implementation guide in invariants which are visible in the “Description & Constraints” column of the Differential Table and Snapshot Table of a profile or extension.
 
 ### Terminology binding
 The terminology binding rules are defined in [Controlling the use of Coded Values](http://hl7.org/fhir/stu3/terminologies.html#binding). Terminology is specified in this implementation guide, 
