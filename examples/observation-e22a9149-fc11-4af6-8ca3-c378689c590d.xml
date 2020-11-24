@@ -32,7 +32,6 @@
             <value value="8003608166690503" />
         </identifier>
     </subject>
-    <effectiveDateTime value="2020-07-06" />
     <valueCodeableConcept>
         <text value="This individual has received all required COVID-19 vaccines." />
     </valueCodeableConcept>
