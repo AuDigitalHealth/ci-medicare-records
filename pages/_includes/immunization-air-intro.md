@@ -12,5 +12,6 @@ The following are the expected usage scenarios this profile is intended to suppo
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* in order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so doseStatus has been set to NAVU Not Available
-
+* the patient is identified with an IHI in patient.identifier, not with a reference to a Patient resource
+* in order to provide identification of a target disease to be protected against, the resource requires a dose status; this data is not available so vaccinationProtocol.doseStatus is set to NAVU Not Available
+* the antigen is recorded as text in vaccinationProtocol.targetDisease

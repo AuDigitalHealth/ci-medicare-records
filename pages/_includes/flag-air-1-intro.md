@@ -12,5 +12,6 @@ The following are the expected usage scenarios this profile is intended to suppo
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* notice text will be sent in the text portion of the Flag.code
+* the patient is identified with an IHI in subject.identifier, not with a reference to a Patient resource
+* notice text is sent in the text portion of code
 

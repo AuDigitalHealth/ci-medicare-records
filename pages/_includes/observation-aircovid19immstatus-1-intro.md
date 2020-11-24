@@ -11,5 +11,5 @@ The following are the expected usage scenarios this profile is intended to suppo
   * one explanatory text
 
 #### Implementation guidance
-No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
-
+For the overarching usage scenarios in this implementation guide it is expected that:
+* the patient is identified with an IHI in subject.identifier, not with a reference to a Patient resource
