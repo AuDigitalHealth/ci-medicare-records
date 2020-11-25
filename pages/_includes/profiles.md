@@ -2,7 +2,7 @@
 
 The profiles listed below form part of this implementation guide. 
 
-Profile that define the representation of vaccination information from the Australian Immunisation Register:
+Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
 * [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
 * [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html)
