@@ -2,13 +2,7 @@
 
 #### Usage Scenarios
 The following are the expected usage scenarios this profile is intended to support:
-* Services Australia Medicare sends to the My Health Record system an Australian Immunisation Register (AIR) bundle with
-  * one or more records of administered vaccines
-  * zero or one records of immunisation status
-  * zero of one records of COVID-19 immunisation status
-  * zero or more records of vaccinations not received and due in the next schedule point
-  * zero of more notices 
-  * one explanatory text
+* Services Australia Medicare sends immunisation information about a patient to the My Health Record
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
