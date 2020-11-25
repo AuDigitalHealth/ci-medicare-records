@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air" />
   <version value="2.0.0" />
   <name value="ImmunizationAustralianImmunisationRegister" />
-  <title value="Immunization Australian Immunisation Register" />
+  <title value="Australian Immunisation Register Immunisation" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />

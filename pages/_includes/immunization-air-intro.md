@@ -1,4 +1,4 @@
-#### Immunization Australian Immunisation Register  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Australian Immunisation Register Immunisation  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 #### Usage Scenarios
 The following are the expected usage scenarios this profile is intended to support:

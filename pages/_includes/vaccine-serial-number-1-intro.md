@@ -7,4 +7,4 @@ The following are the expected usage scenarios this profile is intended to suppo
 #### Implementation guidance
 No additional guidance.
 
-This profile is referenced by [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html). 
+This profile is referenced by [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html). 

@@ -31,7 +31,7 @@ The FHIR profiles that form part of this implementation guide are shown below. T
 Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
 * [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
-* [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html)
+* [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html)
 * [Australian Immunisation Register Immunisation Recommendation](StructureDefinition-immunizationrecommendation-air-1.html)
 * [Australian Immunisation Register Notice](StructureDefinition-flag-air-1.html)
 * [Declared Disclaimer](StructureDefinition-basic-decldiscl-1.html)
