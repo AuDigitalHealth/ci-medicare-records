@@ -57,7 +57,7 @@ The validation tools used during development of the profiles and extensions desc
 ### StructureDefinition
 The content of this implementation guide is a set of FHIR [StructureDefinition](http://hl7.org/fhir/stu3/structuredefinition.html) resources for implementing the document model that is the subject of this implementation guide.
 
-This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or a data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
+This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
 
 A profile or extension is identified by its canonical URL (e.g. http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/composition-es-1). These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
 
