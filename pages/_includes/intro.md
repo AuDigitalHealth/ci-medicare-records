@@ -28,7 +28,7 @@ Wherever possible, material in this specification is based on existing standards
 ## Profiles
 The FHIR profiles that form part of this implementation guide are shown below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
-Profile that define the representation of vaccination information from the Australian Immunisation Register:
+Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
 * [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
 * [Immunization Australian Immunisation Register](StructureDefinition-immunization-air.html)
