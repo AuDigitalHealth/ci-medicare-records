@@ -15,7 +15,6 @@
         "txCache": "txCache"
     },
     "extraTemplates": [
-        "mappings",
         "examples"
     ],
     "do-transforms": "true",
@@ -30,8 +29,7 @@
         "StructureDefinition": {
             "template-defns": "sd-definitions.html",
             "template-examples": "sd-examples.html",
-            "template-base": "sd.html",
-            "template-mappings": "sd-mappings.html"
+            "template-base": "sd.html"
         },
         "StructureMap": {"template-base": "sm.html"},
         "Basic": {"template-base": "ex.html"},
