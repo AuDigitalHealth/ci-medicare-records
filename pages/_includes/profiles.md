@@ -1,6 +1,5 @@
 # {{ page.title }}
-
-The profiles listed below form part of this implementation guide. 
+The following profiles form part of this implementation guide.
 
 Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
