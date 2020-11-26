@@ -1,6 +1,6 @@
 # {{ page.title }}
 
-**Validator pack and definitions**
+**Full implementation guide**
 
 The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
 
