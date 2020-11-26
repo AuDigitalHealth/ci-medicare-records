@@ -6,12 +6,12 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-        <td>valueCodeableConcept</td>
-        <td>This has no binding as the set of possible values has not been defined.</td>
+        <td>valueCodeableConcept (missing terminology)</td>
+        <td>Terminology binding is missing as the set of possible values has not been defined.</td>
         <td>N/A</td>
   </tr>
   <tr>
-        <td>Comment</td>
+        <td>Comment (not included)</td>
         <td>At this point status comment is not included in the design as there is no clear requirement for it. If required it may be sent in Observation.comment.</td>
         <td>N/A</td>
   </tr>
