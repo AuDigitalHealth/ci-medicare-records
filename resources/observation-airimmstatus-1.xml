@@ -100,7 +100,7 @@
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <short value="Status value" />
+      <short value="Immunisation status" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
