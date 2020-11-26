@@ -2,8 +2,7 @@
 
 **Validator pack and definitions**
 
-The following file contains the profiles and extensions described as part of this implementation guide:
-- [Validator Pack](validator.pack)
+The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
 
 In addition there are format specific definitions files:
 - [XML](definitions.xml.zip)
