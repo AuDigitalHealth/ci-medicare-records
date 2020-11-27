@@ -47,12 +47,6 @@ Profiles that define representation of donation decision information from the Au
 * [BodySite Australian Organ Donor Register](StructureDefinition-bodysite-aodr.html)
 
 
-## Editorial note
-This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
-
-This implementation guide may not be considered to be complete enough or sufficiently reviewed to be safe for implementation and use in production systems. It may have known issues and still be in development.
-
-
 ## Intended audience
 This implementation guide is aimed at software development teams, architects, designers, clinicians and informatics researchers who are responsible for the delivery of clinical applications, infrastructure components and messaging interfaces, and also for those who wish to evaluate the clinical suitability of the Agency-endorsed specifications.
 
