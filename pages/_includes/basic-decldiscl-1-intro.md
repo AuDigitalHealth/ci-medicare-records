@@ -5,4 +5,5 @@ The following are the expected usage scenarios this profile is intended to suppo
 * Services Australia Medicare sends Australian Immunisation Register records to the My Health Record system
 
 #### Implementation guidance
-No additional guidance.
+For the overarching usage scenarios in this implementation guide it is expected that:
+* AIR explanatory text is sent in text
