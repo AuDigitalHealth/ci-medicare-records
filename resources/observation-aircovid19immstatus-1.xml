@@ -7,7 +7,7 @@
   <name value="ObservationAIRCOVID19ImmunisationStatus" />
   <title value="Australian Immunisation Register COVID-19 Immunisation Status" />
   <status value="draft" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>

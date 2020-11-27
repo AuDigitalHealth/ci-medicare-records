@@ -1,5 +1,5 @@
 # {{ site.data.fhir.igName }} FHIR Implementation Guide
-<h3>Draft for external review</h3>
+<h3>Draft for external use</h3>
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -97,8 +97,8 @@ This implementation guide and related artefacts are technical in nature and the 
         </tr>
         <tr>
             <td>2.0.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">?? 2020</span></td>
-            <td>Release at draft. Implemented in FHIR Release 3.0.2 (STU).<br/>This version includes new features for immunisations. </td>
+            <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
+            <td>Release at draft for external use. Implemented in FHIR Release 3.0.2 (STU).<br/>This version includes new features for immunisations. </td>
         </tr>
       </tbody>
 </table> 

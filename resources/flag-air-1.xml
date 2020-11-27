@@ -6,7 +6,7 @@
   <name value="FlagAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Notice" />
   <status value="draft" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
