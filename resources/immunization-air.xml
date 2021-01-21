@@ -163,7 +163,6 @@
       <path value="Immunization.vaccinationProtocol.extension" />
       <sliceName value="doseSchedule" />
       <short value="Schedule" />
-      <min value="1" />
       <type>
         <code value="Extension" />
         <profile
