@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-airimmstatus-1" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="ObservationAIRImmunisationStatus" />
   <title value="Australian Immunisation Register Immunisation Status" />
   <status value="draft" />
