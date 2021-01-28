@@ -3,7 +3,7 @@
   <id value="explanationofbenefit-medicare"/>
   <url
     value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
-  <version value="2.0.0"/>
+  <version value="1.0.0"/>
   <name value="ExplanationofBenefitMedicare"/>
   <status value="active"/>
   <experimental value="false"/>

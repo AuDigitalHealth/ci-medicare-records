@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="vaccine-serial-number-1" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1" />
-  <version value="2.0.0" />
+  <version value="1.0.0" />
   <name value="VaccineSerialNumber" />
   <title value="Vaccine Vial Serial Number" />
   <status value="draft" />

@@ -3,7 +3,7 @@
   <id value="extension-donationdecision"/>
   <url
     value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
-  <version value="2.0.0"/>
+  <version value="1.0.0"/>
   <name value="ExtensionConsentDonationDecision"/>
   <status value="active"/>
   <experimental value="false"/>
