@@ -2,12 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunization-air" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air" />
-  <version value="1.0.0" />
+  <version value="2.0.0" />
   <name value="ImmunizationAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Immunisation" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2021-01-27"/>
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
