@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.au.dh.medicare-records"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MedicareRecords</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records</pre><div><p>Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications.</p>
+</div></div>
+  </text>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records"/>
+  <version value="2.0.0"/>
+  <name value="MedicareRecords"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-02-02T09:15:25+10:00"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications."/>
+  <copyright value="Copyright &#xA9; 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="3.0.2"/>
+  <dependency>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId">
+      <valueId value="hl7.fhir.au.base"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version">
+      <valueString value="1.1.1"/>
+    </extension>
+    <type value="reference"/>
+    <uri value="http://hl7.org.au/fhir"/>
+  </dependency>
+  <package id="p1">
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/consent-aodr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/bodysite-aodr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-dateinitialregistration"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-donationdecision"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/immunization-air"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/medicationrequest-pbs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/referralrequest-mbsdva"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/medication-pbs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/immunizationrecommendation-air-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/observation-airimmstatus-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/flag-air-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/immunisation-dose-schedule-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/vaccine-serial-number-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/observation-aircovid19immstatus-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/basic-decldiscl-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <example value="true"/>
+      <name value="Immunization example 1"/>
+      <description value="Vaccination administration (Infanix Hexa at 6 months of age)"/>
+      <sourceReference>
+        <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <example value="true"/>
+      <name value="Immunization example 2"/>
+      <description value="Vaccination administration (Panvax for influenza)"/>
+      <sourceReference>
+        <reference value="Immunization/7d0dab26-bc12-471e-a228-527c645db404"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <example value="true"/>
+      <name value="Explanation of Benefit MBS example 1"/>
+      <description value="MBS example 1"/>
+      <sourceReference>
+        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <example value="true"/>
+      <name value="Explanation of Benefit MBS example 2"/>
+      <description value="MBS example 3"/>
+      <sourceReference>
+        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-02"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <example value="true"/>
+      <name value="Explanation of Benefit MBS example 4"/>
+      <description value="MBS example min"/>
+      <sourceReference>
+        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-min"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <example value="true"/>
+      <name value="Explanation of Benefit PBS example 1"/>
+      <description value="PBS example 1"/>
+      <sourceReference>
+        <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <example value="true"/>
+      <name value="Explanation of Benefit PBS example 2"/>
+      <description value="PBS example 2"/>
+      <sourceReference>
+        <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-02"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <example value="true"/>
+      <name value="Consent example 1"/>
+      <description value="Willing to donate"/>
+      <sourceReference>
+        <reference value="Consent/aodr-example-willingtodonate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <example value="true"/>
+      <name value="Consent example 2"/>
+      <description value="Willing to donate some"/>
+      <sourceReference>
+        <reference value="Consent/aodr-example-willingtodonatesome"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <example value="true"/>
+      <name value="Consent example 3"/>
+      <description value="Not willing to donate"/>
+      <sourceReference>
+        <reference value="Consent/aodr-example-notwillingtodonate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImmunizationRecommendation"/>
+      </extension>
+      <example value="true"/>
+      <name value="ImmunizationRecommendation 1"/>
+      <description value="Polio vaccine with the forecast status of &#39;due&#39; (text only)"/>
+      <sourceReference>
+        <reference value="ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImmunizationRecommendation"/>
+      </extension>
+      <example value="true"/>
+      <name value="ImmunizationRecommendation 2"/>
+      <description value="Polio vaccine with the forecast status of &#39;overdue&#39; (text only)"/>
+      <sourceReference>
+        <reference value="ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <example value="true"/>
+      <name value="Flag 1"/>
+      <description value="AIR notice - meningococcal C vaccine"/>
+      <sourceReference>
+        <reference value="Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <example value="true"/>
+      <name value="Flag 1"/>
+      <description value="AIR notice - Medical contraindication to MMR II"/>
+      <sourceReference>
+        <reference value="Flag/d75a3b06-0397-4472-bc7e-8651668e8f40"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <example value="true"/>
+      <name value="Flag 1"/>
+      <description value="AIR notice - Natural immunity to Measles"/>
+      <sourceReference>
+        <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <example value="true"/>
+      <name value="AIR Immunisation Status 01"/>
+      <description value="AIR Immunisation Status - up to date"/>
+      <sourceReference>
+        <reference value="Observation/observation-air-immunisation-status-example-01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <example value="true"/>
+      <name value="AIR COVID-19 Vaccination Status"/>
+      <description value="AIR COVID-19 Vaccination Status"/>
+      <sourceReference>
+        <reference value="Observation/e22a9149-fc11-4af6-8ca3-c378689c590d"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <example value="true"/>
+      <name value="AIR Immunisation Status"/>
+      <description value="AIR Immunisation Status (Not up to date with catch up schedule message)"/>
+      <sourceReference>
+        <reference value="Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <example value="true"/>
+      <name value="AIR Immunisation Status"/>
+      <description value="AIR Immunisation Status (Not up to date)"/>
+      <sourceReference>
+        <reference value="Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <example value="true"/>
+      <name value="AIR Disclaimer"/>
+      <description value="AIR disclaimer"/>
+      <sourceReference>
+        <reference value="Basic/2a3ea044-27d5-11eb-adc1-0242ac120002"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Medicare Records"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

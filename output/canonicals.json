@@ -1,0 +1,121 @@
+[
+  {
+    "id": "hl7.fhir.au.dh.medicare-records",
+    "type": "ImplementationGuide",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records",
+    "version": "2.0.0",
+    "name": "MedicareRecords"
+  },
+  {
+    "id": "basic-decldiscl-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1",
+    "version": "1.0.0",
+    "name": "BasicDeclaredDisclaimer"
+  },
+  {
+    "id": "bodysite-aodr",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/bodysite-aodr",
+    "version": "1.0.0",
+    "name": "BodySiteAustralianOrganDonorRegister"
+  },
+  {
+    "id": "consent-aodr",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr",
+    "version": "1.0.0",
+    "name": "ConsentAustralianOrganDonorRegister"
+  },
+  {
+    "id": "explanationofbenefit-medicare",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare",
+    "version": "1.0.0",
+    "name": "ExplanationofBenefitMedicare"
+  },
+  {
+    "id": "extension-dateinitialregistration",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration",
+    "version": "1.0.0",
+    "name": "ExtensionDateInitialRegistration"
+  },
+  {
+    "id": "extension-donationdecision",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision",
+    "version": "1.0.0",
+    "name": "ExtensionConsentDonationDecision"
+  },
+  {
+    "id": "flag-air-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1",
+    "version": "1.0.0",
+    "name": "FlagAustralianImmunisationRegister"
+  },
+  {
+    "id": "immunisation-dose-schedule-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1",
+    "version": "1.0.0",
+    "name": "ImmunisationDoseSchedule"
+  },
+  {
+    "id": "immunization-air",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air",
+    "version": "2.0.0",
+    "name": "ImmunizationAustralianImmunisationRegister"
+  },
+  {
+    "id": "immunizationrecommendation-air-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1",
+    "version": "1.0.0",
+    "name": "ImmunizationRecommendationAustralianImmunisationRegister"
+  },
+  {
+    "id": "medication-pbs",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs",
+    "version": "1.0.0",
+    "name": "MedicationPharmaceuticalBenefitsScheme"
+  },
+  {
+    "id": "medicationrequest-pbs",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
+    "version": "1.0.0",
+    "name": "MedicationRequestPharmaceuticalBenefitsScheme"
+  },
+  {
+    "id": "observation-aircovid19immstatus-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1",
+    "version": "1.0.0",
+    "name": "ObservationAIRCOVID19ImmunisationStatus"
+  },
+  {
+    "id": "observation-airimmstatus-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1",
+    "version": "1.0.0",
+    "name": "ObservationAIRImmunisationStatus"
+  },
+  {
+    "id": "referralrequest-mbsdva",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva",
+    "version": "1.0.0",
+    "name": "ReferralRequestMedicareBenefitsScheduleDepartmentofVeterans\u0027Affairs"
+  },
+  {
+    "id": "vaccine-serial-number-1",
+    "type": "StructureDefinition",
+    "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1",
+    "version": "1.0.0",
+    "name": "VaccineSerialNumber"
+  }
+]

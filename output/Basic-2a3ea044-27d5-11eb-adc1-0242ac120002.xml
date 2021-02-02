@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="2a3ea044-27d5-11eb-adc1-0242ac120002"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1"/>
+  </meta>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <p>The Australian Immunisation Register records immunisations given to people of all
+                ages in Australia. Immunisations given before 1 January 1996 are not displayed on
+                the statement.</p>
+            <p>Every effort is made to ensure that the information contained on the Australian
+                Immunisation Register is correct. The data is based on information provided by
+                vaccination providers and the accuracy of data is dependent on the quality and
+                timeliness of information provided.</p>
+            <p>If an immunisation is missing from this statement and was given more than one month
+                ago, your vaccination provider will need to send the missing information to the
+                Australian Immunisation Register. If any of the immunisation details shown on the
+                statement are not correct, please ask your vaccination provider to provide the
+                correct details by calling us on 1800 653 809 (call changes may apply).</p>
+            <p>If you have any questions about this statement, please call the Australian
+                Immunisation Register on the number above.</p>
+        </div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="87276918-b7f1-4813-a85c-667beea6f2c3"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+      <code value="103.32031"/>
+      <display value="Disclaimer"/>
+    </coding>
+  </code>
+</Basic>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="d75a3b06-0397-4472-bc7e-8651668e8f40"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0985f047-de42-478d-a56c-c37cc9ae5d10</p><p><b>status</b>: active</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 1500551000168103}">Australian Immunisation Register notice</span></p><p><b>code</b>: <span title="Codes: ">Medical contraindication to MMR II recorded on 12 Oct 2020.</span></p><p><b>subject</b>: <span></span></p></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="0985f047-de42-478d-a56c-c37cc9ae5d10"/>
+  </identifier>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1500551000168103"/>
+    </coding>
+    <text value="Australian Immunisation Register notice"/>
+  </category>
+  <code>
+    <text value="Medical contraindication to MMR II recorded on 12 Oct 2020."/>
+  </code>
+  <subject>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="NI"/>
+          <display value="National unique individual identifier"/>
+        </coding>
+      </type>
+      <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+      <value value="8003608166690503"/>
+    </identifier>
+  </subject>
+</Flag>

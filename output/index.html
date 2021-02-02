@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>Medicare Records FHIR Implementation Guide</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Medicare Records FHIR Implementation Guide version 1.0.0" />
+<meta name="author" content="http://argonautwiki.hl7.org"/>
+
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+
+<body markdown="1">
+
+
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+      <!-- <div id="hl7-nav">
+     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>-->
+
+   <div id="ig-status">
+    <b>Medicare Records FHIR Implementation Guide version 2.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div></div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <li><a href="extensions.html">Extensions</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+     <!--   <li><a href="searchparams.html">Search Parameters</a></li>
+        <li><a href="capstatements.html">Capability Statements</a></li>
+        <li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+		<li><a href="disclaimers.html">Disclaimers</a></li>
+            </ul>
+
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+<!--ReleaseHeader--><p id="publish-box">MedicareRecords - Local Development build (v2.0.0). See the <a href="http://ns.electronichealth.net.au/ci/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+<!-- ============CONTENT CONTENT=============== -->
+<h1 id="medicarerecords-fhir-implementation-guide">MedicareRecords FHIR Implementation Guide</h1>
+<h3>Draft for external use</h3>
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+<ul id="markdown-toc">
+  <li><a href="#medicarerecords-fhir-implementation-guide" id="markdown-toc-medicarerecords-fhir-implementation-guide">MedicareRecords FHIR Implementation Guide</a>    <ul>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#document-purpose-and-scope" id="markdown-toc-document-purpose-and-scope">Document purpose and scope</a></li>
+      <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+      <li><a href="#intended-audience" id="markdown-toc-intended-audience">Intended audience</a></li>
+      <li><a href="#document-information" id="markdown-toc-document-information">Document Information</a>        <ul>
+          <li><a href="#key-information" id="markdown-toc-key-information">Key Information</a></li>
+          <li><a href="#product-version-history" id="markdown-toc-product-version-history">Product Version History</a></li>
+        </ul>
+      </li>
+      <li><a href="#known-issues" id="markdown-toc-known-issues">Known issues</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+<!-- end TOC -->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This implementation guide is an HL7<sup>TM</sup> FHIR<sup>®</sup> specification to represent structured Medicare information for the My Health Record system and related applications.</p>
+
+<p>This <a href="http://hl7.org/fhir/STU3/implementationguide.html#scope">implementation guide</a> is based on <a href="#HL7FHIR3">FHIR Release 3 (STU) [HL7FHIR3]</a>.</p>
+
+<h2 id="document-purpose-and-scope">Document purpose and scope</h2>
+<p>The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system.</p>
+
+<p>This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.</p>
+
+<p>This implementation guide does not describe transport or persistence mechanisms of the resources described by it.</p>
+
+<p>Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:</p>
+<ul>
+  <li><a href="#HL7FHIR3">FHIR Release 3 (STU) [HL7FHIR3]</a></li>
+  <li><a href="#HL7AUF3B2">Australian Base Implementation Guide (AU Base 1.1.1) [HL7AUF3B2]</a></li>
+</ul>
+
+<p>Wherever possible, material in this specification is based on existing standards. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</p>
+
+<h2 id="profiles">Profiles</h2>
+<p>The FHIR profiles that form part of this implementation guide are shown below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the <a href="#HL7FHIR3">FHIR Release 3 (STU) [HL7FHIR3]</a>.</p>
+
+<p>Profiles that define the representation of vaccination information from the Australian Immunisation Register:</p>
+<ul>
+  <li><a href="StructureDefinition-observation-airimmstatus-1.html">Australian Immunisation Register Immunisation Status</a></li>
+  <li><a href="StructureDefinition-observation-aircovid19immstatus-1.html">Australian Immunisation Register COVID-19 Immunisation Status</a></li>
+  <li><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></li>
+  <li><a href="StructureDefinition-immunizationrecommendation-air-1.html">Australian Immunisation Register Immunisation Recommendation</a></li>
+  <li><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></li>
+  <li><a href="StructureDefinition-basic-decldiscl-1.html">Declared Disclaimer</a></li>
+</ul>
+
+<p>Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:</p>
+<ul>
+  <li><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></li>
+  <li><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
+  <li><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></li>
+  <li><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
+</ul>
+
+<p>Profiles that define representation of donation decision information from the Australian Organ Donor Register:</p>
+<ul>
+  <li><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></li>
+  <li><a href="StructureDefinition-bodysite-aodr.html">BodySite Australian Organ Donor Register</a></li>
+</ul>
+
+<h2 id="intended-audience">Intended audience</h2>
+<p>This implementation guide is aimed at software development teams, architects, designers, clinicians and informatics researchers who are responsible for the delivery of clinical applications, infrastructure components and messaging interfaces, and also for those who wish to evaluate the clinical suitability of the Agency-endorsed specifications.</p>
+
+<p>This implementation guide and related artefacts are technical in nature and the audience is expected to be familiar with the language of health data specifications and to have some familiarity with health information standards and specifications, such as <a href="#HL7FHIR3">HL7 FHIR [HL7FHIR3]</a> and Standards Australia IT-014 documents. Definitions and examples are provided to clarify relevant terminology usage and intent.</p>
+
+<h2 id="document-information">Document Information</h2>
+
+<h3 id="key-information">Key Information</h3>
+
+<table class="list" width="100%" cellspacing="6">
+    <tbody>
+        <tr>
+            <td><b>Owner</b></td>
+            <td>National Health Chief Information Officer, Infrastructure Operations</td>
+        </tr>
+        <tr>
+            <td><b>Contact for enquiries</b></td>
+            <td>
+                <p>Australian Digital Health Agency Help Centre <br />
+                t:   1300 901 001<br />
+                e:  <a href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>    
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="product-version-history">Product Version History</h3>
+<table class="list" width="100%" cellspacing="6">
+	<col style="width:15%" />
+	<col style="width:15%" />
+	<col style="width:70%" />
+    <tbody>
+        <tr>
+            <th>Product version</th>
+            <th>Date</th>
+            <th>Release comments</th>
+        </tr>
+        <tr>
+            <td>1.0.0</td>
+            <td><span style="padding-left: 3px; padding-right: 3px">1 Nov 2018</span></td>
+            <td>Initial public release at approved for external trial use. Implemented in FHIR Release 3 (STU).</td>
+        </tr>
+        <tr>
+            <td>2.0.0</td>
+            <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
+            <td>Release at draft for external use. Implemented in FHIR Release 3.0.2 (STU).<br />This version includes new features for immunisations. </td>
+        </tr>
+        <tr>
+            <td>2.0.0</td>
+            <td><span style="padding-left: 3px; padding-right: 3px">27 Jan 2021</span></td>
+            <td>Minor change in Australian Immunisation Register Immunisation, relaxation of cardinality constraint.</td>
+        </tr>
+      </tbody>
+</table>
+
+<h2 id="known-issues">Known issues</h2>
+<p>This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.</p>
+
+<table border="1" cellpadding="1" valign="middle">
+<tbody>
+  <tr bgcolor="#DCDCDC">
+    <th>Reference</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Source material errors</td>
+    <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+  </tr>
+  <tr>
+    <td>Non-resolving profile URLs</td>
+    <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="references">References</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7AUF3B2">HL7AUF3B2</a>]</td>
+      <td>HL7 Australia, Australian Base Implementation Guide (AU Base 1.1.1), build version 1.1.1 21 January 2020.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://hl7.org.au/fhir/aubase1.1/index.html">http://hl7.org.au/fhir/aubase1.1/index.html</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7CDAR2">HL7CDAR2</a>]</td>
+      <td>Health Level Seven, Inc., January 2010, HL7 Clinical Document Architecture, Release 2.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7FHIR">HL7FHIR</a>]</td>
+      <td>Health Level Seven, Inc., FHIR - HL7Wiki.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://wiki.hl7.org/index.php?title=FHIR">http://wiki.hl7.org/index.php?title=FHIR</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7FHIR3">HL7FHIR3</a>]</td>
+      <td>Health Level Seven, Inc., 24 October 2019, FHIR Release 3 (STU).</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://hl7.org/fhir/STU3/">http://hl7.org/fhir/STU3/</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7FHIR4">HL7FHIR4</a>]</td>
+      <td>Health Level Seven, Inc., 30 October 2019, FHIR R4.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://hl7.org/fhir/R4/">http://hl7.org/fhir/R4/</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+  <div class="container">  <!-- container -->
+   <div class="inner-wrapper">
+       <p>Document ID: DH-3411:2021</p>
+       <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+       <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+       <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+    <p>Medicare Records FHIR Implementation Guide Version: 2.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Tue, Feb 2, 2021 09:15+1000.
+             <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        </span>
+        </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+
+

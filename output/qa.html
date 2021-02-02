@@ -1,0 +1,1565 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 52, errors = 52, warn = 42, info = 28 -->
+<head>
+  <title>MedicareRecords : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for MedicareRecords</h1>
+ <p>Generated Tue Feb 02 09:16:45 AEST 2021, FHIR version 3.0.2 for hl7.fhir.au.dh.medicare-records#2.0.0 (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir">http://ns.electronichealth.net.au/ci/fhir</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/history.html">history</a>)). See <a href="c:\work\git\ci-medicare-records\output\qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.56, which is out of date. The current version is v1.1.59 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.au.dh.medicare-records, Canonical = http://ns.electronichealth.net.au/ci/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>2.0.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\work\git\ci-medicare-records\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.au.dh.medicare-records</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://ns.electronichealth.net.au/ci/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\work\git\ci-medicare-records\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.au.base</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org.au/fhir</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org.au/fhir/aubase1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: </para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ns.electronichealth.net.au/ci/fhir (Problem #1 with package-list.json at http://ns.electronichealth.net.au/ci/fhir: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 52, errors = 52, warn = 42, info = 28</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>52</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_aodr-example-notwillingtodonate"><b>C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_aodr-example-willingtodonate"><b>C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate</b></a></td><td><b>11</b></td><td><b>1</b></td><td><b>12</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_aodr-example-willingtodonatesome"><b>C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome</b></a></td><td><b>11</b></td><td><b>1</b></td><td><b>12</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_basic-2a3ea044-27d5-11eb-adc1-0242ac120002"><b>C:\work\git\ci-medicare-records\examples\basic-2a3ea044-27d5-11eb-adc1-0242ac120002</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-01"><b>C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>9</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-02"><b>C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-min"><b>C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_explanationofbenefit-pbs-example-01"><b>C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_explanationofbenefit-pbs-example-02"><b>C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a"><b>C:\work\git\ci-medicare-records\examples\flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac"><b>C:\work\git\ci-medicare-records\examples\flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_examples_flag-d75a3b06-0397-4472-bc7e-8651668e8f40"><b>C:\work\git\ci-medicare-records\examples\flag-d75a3b06-0397-4472-bc7e-8651668e8f40</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_immunization-7d0dab26-bc12-471e-a228-527c645db404"><b>C:\work\git\ci-medicare-records\examples\immunization-7d0dab26-bc12-471e-a228-527c645db404</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_immunization-88d35c33-414c-4d55-98e9-29f9c954df03"><b>C:\work\git\ci-medicare-records\examples\immunization-88d35c33-414c-4d55-98e9-29f9c954df03</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_immunizationrecommendation-a1e91255-59f4-476c-b764-46f66eabdff4"><b>C:\work\git\ci-medicare-records\examples\immunizationrecommendation-a1e91255-59f4-476c-b764-46f66eabdff4</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_immunizationrecommendation-a83d0305-7970-4f29-be4e-0f6979de9329"><b>C:\work\git\ci-medicare-records\examples\immunizationrecommendation-a83d0305-7970-4f29-be4e-0f6979de9329</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3"><b>C:\work\git\ci-medicare-records\examples\observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_observation-air-immunisation-status-example-01"><b>C:\work\git\ci-medicare-records\examples\observation-air-immunisation-status-example-01</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"><b>C:\work\git\ci-medicare-records\examples\observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_examples_observation-e22a9149-fc11-4af6-8ca3-c378689c590d"><b>C:\work\git\ci-medicare-records\examples\observation-e22a9149-fc11-4af6-8ca3-c378689c590d</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_basic-decldiscl-1"><b>C:\work\git\ci-medicare-records\resources\basic-decldiscl-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_bodysite-aodr"><b>C:\work\git\ci-medicare-records\resources\bodysite-aodr</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_consent-aodr"><b>C:\work\git\ci-medicare-records\resources\consent-aodr</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_explanationofbenefit-medicare"><b>C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare</b></a></td><td><b>4</b></td><td><b>6</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_extension-dateinitialregistration"><b>C:\work\git\ci-medicare-records\resources\extension-dateinitialregistration</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_extension-donationdecision"><b>C:\work\git\ci-medicare-records\resources\extension-donationdecision</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_flag-air-1"><b>C:\work\git\ci-medicare-records\resources\flag-air-1</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_ig"><b>C:\work\git\ci-medicare-records\resources\ig</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_immunisation-dose-schedule-1"><b>C:\work\git\ci-medicare-records\resources\immunisation-dose-schedule-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_immunization-air"><b>C:\work\git\ci-medicare-records\resources\immunization-air</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_immunizationrecommendation-air-1"><b>C:\work\git\ci-medicare-records\resources\immunizationrecommendation-air-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_medication-pbs"><b>C:\work\git\ci-medicare-records\resources\medication-pbs</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_medicationrequest-pbs"><b>C:\work\git\ci-medicare-records\resources\medicationrequest-pbs</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_observation-aircovid19immstatus-1"><b>C:\work\git\ci-medicare-records\resources\observation-aircovid19immstatus-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_observation-airimmstatus-1"><b>C:\work\git\ci-medicare-records\resources\observation-airimmstatus-1</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-medicare-records_resources_referralrequest-mbsdva"><b>C:\work\git\ci-medicare-records\resources\referralrequest-mbsdva</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-medicare-records_resources_vaccine-serial-number-1"><b>C:\work\git\ci-medicare-records\resources\vaccine-serial-number-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-basic-decldiscl-1-examples.html#aeac3658-d8e2-4c99-b609-e24a20ffcf11">StructureDefinition-basic-decldiscl-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 130</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-basic-decldiscl-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 31 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-basic-decldiscl-1.html#32519a3c-5cf2-4c50-bf4e-ba9c1f5d4a10">StructureDefinition-basic-decldiscl-1.html#/html/body/div/div/div/div/div/h4/a at Line 461, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-basic-decldiscl-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bodysite-aodr-examples.html#9e9172f1-130d-4a56-ba97-4f5be8388501">StructureDefinition-bodysite-aodr-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 126</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-bodysite-aodr-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bodysite-aodr.html#82d3a83e-ddd6-4c9f-af93-e82364bb0d22">StructureDefinition-bodysite-aodr.html#/html/body/div/div/div/div/div/h4/a at Line 448, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-bodysite-aodr.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 46 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-consent-aodr-definitions.html#ff0befec-a4cd-4073-888a-4944f78ca149">StructureDefinition-consent-aodr-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 183, column 68</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-consent-aodr-definitions.html#ff0befec-a4cd-4073-888a-4944f78ca149">StructureDefinition-consent-aodr-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 183, column 206</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-consent-aodr-examples.html#41d916da-6cc9-43ae-9b0e-dcbb0712d07c">StructureDefinition-consent-aodr-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 125</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-consent-aodr-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 88 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-consent-aodr.html#5c1deaca-cfb7-48b3-b74c-0225488524cb">StructureDefinition-consent-aodr.html#/html/body/div/div/div/div/div/h4/a at Line 934, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-consent-aodr.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 102 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare-definitions.html#89622f7d-f38a-41d1-ab40-992016f23d45">StructureDefinition-explanationofbenefit-medicare-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 68</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare-definitions.html#89622f7d-f38a-41d1-ab40-992016f23d45">StructureDefinition-explanationofbenefit-medicare-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 206</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare-examples.html#71c73e64-a4c3-47b0-ba68-e3ced1eb4ea5">StructureDefinition-explanationofbenefit-medicare-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 142</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-explanationofbenefit-medicare-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 264 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#8ef731e7-b6fb-4ca3-9cd9-d4b3b8b1876d">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 529, column 1478</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#4dde7a6e-1997-4b3f-ab17-243cdca3db24">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 547, column 1589</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#c2baf293-6b53-4209-b4a0-afaf9ac23518">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 559, column 1383</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#327a2d2e-81f3-47f4-88aa-4dece13c858d">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 570, column 1500</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#224ad95e-477b-46f7-9ff9-a345e0408c33">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1150, column 1478</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#632fcfbf-f3e7-41d6-997f-093c53164b5a">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1168, column 1589</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#c058f24c-e162-4368-befe-2b1a8672f1b9">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1180, column 1383</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#584caa0c-bb03-47d5-ac14-944dd7961761">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1191, column 1500</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication' for &quot;adjudication (ExplanationOfBenefit)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-explanationofbenefit-medicare.html#a918ac32-ccd7-4b0b-af21-98fe85ee1238">StructureDefinition-explanationofbenefit-medicare.html#/html/body/div/div/div/div/div/h4/a at Line 1527, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-explanationofbenefit-medicare.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 262 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-dateinitialregistration-examples.html#77aa698f-a39e-40c2-b04a-f84830c1cae5">StructureDefinition-extension-dateinitialregistration-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 146</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-dateinitialregistration-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: [Extension.valueDateTime:valueDateTime, segment-header, Extension.extension, Extension.valueDateTime, publish-box, segment-post-footer, Extension.value[x], Extension.id, Extension, Extension.value[x]:valueDateTime, ig-status, D.5.1.4, stripe, segment-footer, logo, segment-navbar, segment-content, Extension.url])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-dateinitialregistration.html#6e0d9c86-a640-4be4-860f-acdf7941c741">StructureDefinition-extension-dateinitialregistration.html#/html/body/div/div/div/div/div/h4/a at Line 379, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-dateinitialregistration.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 35 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-donationdecision-examples.html#2304d2c5-806b-4604-9110-2e3197e44c38">StructureDefinition-extension-donationdecision-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 139</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-donationdecision-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: [Extension.valueCodeableConcept, segment-header, Extension.extension, publish-box, segment-post-footer, Extension.value[x], Extension.id, Extension, ig-status, D.5.1.4, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, logo, segment-navbar, segment-content, Extension.url, Extension.valueCodeableConcept:valueCodeableConcept])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-donationdecision.html#c766e704-1ad3-4bff-8da2-82ddfbd9915d">StructureDefinition-extension-donationdecision.html#/html/body/div/div/div/div/div/h4/a at Line 383, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-donationdecision.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 35 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-flag-air-1-examples.html#888ff4b2-27d9-446b-aabf-37f6c076242e">StructureDefinition-flag-air-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 123</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-flag-air-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 47 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-flag-air-1.html#235cfc62-6b42-45bc-9c2e-c0cd28f88eac">StructureDefinition-flag-air-1.html#/html/body/div/div/div/div/div/h4/a at Line 608, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-flag-air-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 66 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunisation-dose-schedule-1-examples.html#fcf792dd-d295-47aa-9f26-f6017854b12d">StructureDefinition-immunisation-dose-schedule-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 141</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunisation-dose-schedule-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: [segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, segment-post-footer, Extension.value[x], Extension.id, Extension, ig-status, D.5.1.4, Extension.valueString:valueString, stripe, segment-footer, logo, segment-navbar, segment-content, Extension.url])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunisation-dose-schedule-1.html#96a44265-9bcf-4725-accb-e5e4c352d1c8">StructureDefinition-immunisation-dose-schedule-1.html#/html/body/div/div/div/div/div/h4/a at Line 365, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunisation-dose-schedule-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 35 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunization-air-examples.html#6aa35d24-eb49-4431-9b78-a98b9065034e">StructureDefinition-immunization-air-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunization-air-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunization-air.html#28dfa9f2-fc80-4f27-9843-153482a74046">StructureDefinition-immunization-air.html#/html/body/div/div/div/div/div/h4/a at Line 829, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunization-air.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 106 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunizationrecommendation-air-1-examples.html#a0a07ded-d0f2-4b16-94f5-ef6a07c92fbe">StructureDefinition-immunizationrecommendation-air-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunizationrecommendation-air-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 66 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunizationrecommendation-air-1.html#c3f51d6e-b3f2-4bc8-bfad-0bf6ede236eb">StructureDefinition-immunizationrecommendation-air-1.html#/html/body/div/div/div/div/div/h4/a at Line 720, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-immunizationrecommendation-air-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 85 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medication-pbs-examples.html#2140f89a-053e-48d8-9379-2e1d1e539eac">StructureDefinition-medication-pbs-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 127</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-medication-pbs-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 54 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medication-pbs.html#f8050538-0a2d-43f9-b681-5790f4d834b2">StructureDefinition-medication-pbs.html#/html/body/div/div/div/div/div/h4/a at Line 562, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-medication-pbs.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 70 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medicationrequest-pbs-definitions.html#4764db85-52e0-4731-ab1f-0fdb0df140a3">StructureDefinition-medicationrequest-pbs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 68</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medicationrequest-pbs-definitions.html#4764db85-52e0-4731-ab1f-0fdb0df140a3">StructureDefinition-medicationrequest-pbs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 206</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medicationrequest-pbs-examples.html#44caca1e-4245-414b-b324-c95f9a7a4adb">StructureDefinition-medicationrequest-pbs-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 134</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-medicationrequest-pbs-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-medicationrequest-pbs.html#6bc2b6d6-e2bf-4e19-ad20-70c0f7f1bfa6">StructureDefinition-medicationrequest-pbs.html#/html/body/div/div/div/div/div/h4/a at Line 690, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-medicationrequest-pbs.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-aircovid19immstatus-1-examples.html#7c0d5ff0-091b-45b3-9c58-4e196d8c81ec">StructureDefinition-observation-aircovid19immstatus-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 146</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-observation-aircovid19immstatus-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 97 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-aircovid19immstatus-1.html#7f947ce9-aeeb-4bc2-9276-87d37b45cd6e">StructureDefinition-observation-aircovid19immstatus-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 399, column 1443</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-aircovid19immstatus-1.html#aefad373-8b2f-4c26-9f6c-97f1917a72a2">StructureDefinition-observation-aircovid19immstatus-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 1443</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-aircovid19immstatus-1.html#00427d94-15cd-416d-be2b-6b9707d3b5d7">StructureDefinition-observation-aircovid19immstatus-1.html#/html/body/div/div/div/div/div/h4/a at Line 806, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-observation-aircovid19immstatus-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 102 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-airimmstatus-1-examples.html#59a21385-5788-4f41-8bf3-d8cacfb7605d">StructureDefinition-observation-airimmstatus-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 139</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-observation-airimmstatus-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 97 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-airimmstatus-1.html#2f932280-e133-4158-8f8c-e2cf530c6c7d">StructureDefinition-observation-airimmstatus-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 401, column 1436</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-airimmstatus-1.html#6965c1f3-20a7-48a6-8493-215322d04b04">StructureDefinition-observation-airimmstatus-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 683, column 1436</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-observation-airimmstatus-1.html#11ae886e-6365-4429-8803-62b7621d977c">StructureDefinition-observation-airimmstatus-1.html#/html/body/div/div/div/div/div/h4/a at Line 809, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-observation-airimmstatus-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 102 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-referralrequest-mbsdva-definitions.html#cd5dddef-0529-4fa5-9059-c1a8a2ca5841">StructureDefinition-referralrequest-mbsdva-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 68</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-referralrequest-mbsdva-definitions.html#cd5dddef-0529-4fa5-9059-c1a8a2ca5841">StructureDefinition-referralrequest-mbsdva-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 182, column 206</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-referralrequest-mbsdva-examples.html#92da0b76-4471-4c39-af3f-d5635ec975d9">StructureDefinition-referralrequest-mbsdva-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 135</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-referralrequest-mbsdva-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: 56 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-referralrequest-mbsdva.html#b805a558-82fe-4413-8c63-28163ffbb8bb">StructureDefinition-referralrequest-mbsdva.html#/html/body/div/div/div/div/div/h4/a at Line 610, column 63</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-referralrequest-mbsdva.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 74 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-vaccine-serial-number-1-examples.html#5694c4af-8959-4ef0-a652-b9a5dd51b32a">StructureDefinition-vaccine-serial-number-1-examples.html#/html/body/div/div/div/div/div/h4/a at Line 131, column 136</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-vaccine-serial-number-1-definitions.html#D.4.1.4' for &quot;null&quot; cannot be resolved (valid targets: [segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, segment-post-footer, Extension.id, Extension, ig-status, D.5.1.4, stripe, segment-footer, logo, segment-navbar, segment-content, Extension.url])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-vaccine-serial-number-1.html#f03c8b98-c1d6-4283-8d79-8a8b026c8288">StructureDefinition-vaccine-serial-number-1.html#/html/body/div/div/div/div/div/h4/a at Line 355, column 64</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-vaccine-serial-number-1.html#issues' for &quot;null&quot; cannot be resolved (valid targets: 34 targets)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_aodr-example-notwillingtodonate"> </a>
+<h2><a href="Consent-aodr-example-notwillingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Consent</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent.extension[1].value.ofType(CodeableConcept) (l22/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent (l1/c38)</b></td><td><b>error</b></td><td title="inv-dh-cons-01: If donation decision is 'permit', there SHALL be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '160654005') implies except.exists()]"><b>inv-dh-cons-01: If donation decision is 'permit', there SHALL be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '160654005') implies except.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent.category[0] (l35/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Consent/aodr-example-notwillingtodonate: Consent (l1/c38)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_aodr-example-willingtodonate"> </a>
+<h2><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Consent</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[0].ofType(BodySite) (l27/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[1].ofType(BodySite) (l52/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[2].ofType(BodySite) (l77/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[3].ofType(BodySite) (l102/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[4].ofType(BodySite) (l127/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[5].ofType(BodySite) (l152/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[6].ofType(BodySite) (l177/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[7].ofType(BodySite) (l202/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.contained[8].ofType(BodySite) (l227/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.extension[1].value.ofType(CodeableConcept) (l256/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonate: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent (l1/c38)</b></td><td><b>error</b></td><td title="inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '161034004') implies except.empty()]"><b>inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '161034004') implies except.empty()]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.category[0] (l269/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Consent/aodr-example-willingtodonate: Consent (l1/c38)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[0].action[0].coding.display (l300/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[1].action[0].coding.display (l316/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[2].action[0].coding.display (l332/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[3].action[0].coding.display (l348/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[4].action[0].coding.display (l364/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[5].action[0].coding.display (l380/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[6].action[0].coding.display (l396/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[7].action[0].coding.display (l412/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonate: Consent.except[8].action[0].coding.display (l428/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_aodr-example-willingtodonatesome"> </a>
+<h2><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Consent</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[0].ofType(BodySite) (l27/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[1].ofType(BodySite) (l52/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[2].ofType(BodySite) (l77/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[3].ofType(BodySite) (l102/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[4].ofType(BodySite) (l127/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[5].ofType(BodySite) (l152/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[6].ofType(BodySite) (l177/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[7].ofType(BodySite) (l202/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.contained[8].ofType(BodySite) (l227/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/BodySite</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.extension[1].value.ofType(CodeableConcept) (l256/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent (l1/c38)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent (l1/c38)</b></td><td><b>error</b></td><td title="inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '161034004') implies except.empty()]"><b>inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference). [(donationDecision.valueCodeableConcept.coding.code = '161034004') implies except.empty()]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.category[0] (l269/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent (l1/c38)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[0].action[0].coding.display (l300/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[1].action[0].coding.display (l316/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[2].action[0].coding.display (l332/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[3].action[0].coding.display (l348/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[4].action[0].coding.display (l364/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[5].action[0].coding.display (l380/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[6].action[0].coding.display (l396/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[7].action[0].coding.display (l412/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Consent/aodr-example-willingtodonatesome: Consent.except[8].action[0].coding.display (l428/c52)</b></td><td><b>error</b></td><td title="Profile_VAL_NotAllowed"><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_basic-2a3ea044-27d5-11eb-adc1-0242ac120002"> </a>
+<h2><a href="Basic-2a3ea044-27d5-11eb-adc1-0242ac120002.html">C:\work\git\ci-medicare-records\examples\basic-2a3ea044-27d5-11eb-adc1-0242ac120002.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Basic/2a3ea044-27d5-11eb-adc1-0242ac120002: Basic (l2/c36)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Basic</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Basic/2a3ea044-27d5-11eb-adc1-0242ac120002: Basic.code.coding[0] (l33/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Basic/2a3ea044-27d5-11eb-adc1-0242ac120002: Basic (l2/c36)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-01"> </a>
+<h2><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.contained[0].ofType(ReferralRequest) (l6/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ReferralRequest</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.contained[0].ofType(ReferralRequest) (l6/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.contained[1].ofType(Practitioner) (l34/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.contained[1].ofType(Practitioner) (l34/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://hl7.org.au/fhir/StructureDefinition/au-practitioner - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.subType[0].coding[0] (l65/c11)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.item[0].category.coding[0] (l93/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.item[0].service.coding[0] (l100/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.subType[0] (l64/c11)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.item[0].category (l92/c13)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-01: ExplanationOfBenefit.item[0].service (l99/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-02"> </a>
+<h2><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit.identifier[0] (l6/c14)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE"><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit.subType[0].coding[0] (l17/c11)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit.item[0].service.coding[0] (l39/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>error</b></td><td title="inv-dh-eob-01: A PBS or RPBS claim SHALL include a prescription. [((item.category.coding.code = 'pbs') or (item.category.coding.code = 'rpbs')) implies prescription.exists()]"><b>inv-dh-eob-01: A PBS or RPBS claim SHALL include a prescription. [((item.category.coding.code = 'pbs') or (item.category.coding.code = 'rpbs')) implies prescription.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit.subType[0] (l16/c11)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-02: ExplanationOfBenefit.item[0].service (l38/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_explanationofbenefit-mbs-example-min"> </a>
+<h2><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit.item[0].category.coding[0] (l27/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit.item[0].service.coding[0] (l33/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit (l1/c51)</b></td><td><b>error</b></td><td title="inv-dh-eob-04: A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy'). [(subType.coding.code = 'pbs') implies (type.coding.code = 'pharmacy')]"><b>inv-dh-eob-04: A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy'). [(subType.coding.code = 'pbs') implies (type.coding.code = 'pharmacy')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit.item[0].category (l26/c13)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-mbs-example-min: ExplanationOfBenefit.item[0].service (l32/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_explanationofbenefit-pbs-example-01"> </a>
+<h2><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit (l2/c30)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.contained.ofType(MedicationRequest) (l9/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationRequest</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.contained.ofType(MedicationRequest) (l9/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.item[0].category.coding[0] (l69/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.item[0].service.coding[0] (l77/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit (l2/c30)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit (l2/c30)</b></td><td><b>error</b></td><td title="inv-dh-eob-04: A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy'). [(subType.coding.code = 'pbs') implies (type.coding.code = 'pharmacy')]"><b>inv-dh-eob-04: A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy'). [(subType.coding.code = 'pbs') implies (type.coding.code = 'pharmacy')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.item[0].category (l68/c13)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-01: ExplanationOfBenefit.item[0].service (l76/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_explanationofbenefit-pbs-example-02"> </a>
+<h2><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.contained.ofType(MedicationRequest) (l8/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationRequest</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.contained.ofType(MedicationRequest) (l8/c13)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.subType[0].coding[0] (l54/c11)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.item[0].service.coding[0] (l80/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit (l1/c51)</b></td><td><b>error</b></td><td title="inv-dh-eob-02: A MBS or DVABS claim SHALL NOT include a prescription. [((item.category.coding.code = 'mbs') or (item.category.coding.code = 'dva')) implies prescription.exists().not()]"><b>inv-dh-eob-02: A MBS or DVABS claim SHALL NOT include a prescription. [((item.category.coding.code = 'mbs') or (item.category.coding.code = 'dva')) implies prescription.exists().not()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.subType[0] (l53/c11)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExplanationOfBenefit/explanationofbenefit-pbs-example-02: ExplanationOfBenefit.item[0].service (l79/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a"> </a>
+<h2><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.html">C:\work\git\ci-medicare-records\examples\flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Flag</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a: Flag.category.coding[0] (l12/c17)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac"> </a>
+<h2><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.html">C:\work\git\ci-medicare-records\examples\flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Flag</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac: Flag.category.coding[0] (l12/c17)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_flag-d75a3b06-0397-4472-bc7e-8651668e8f40"> </a>
+<h2><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.html">C:\work\git\ci-medicare-records\examples\flag-d75a3b06-0397-4472-bc7e-8651668e8f40.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/d75a3b06-0397-4472-bc7e-8651668e8f40: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Flag</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Flag/d75a3b06-0397-4472-bc7e-8651668e8f40: Flag.category.coding[0] (l12/c17)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Flag/d75a3b06-0397-4472-bc7e-8651668e8f40: Flag (l1/c35)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_immunization-7d0dab26-bc12-471e-a228-527c645db404"> </a>
+<h2><a href="Immunization-7d0dab26-bc12-471e-a228-527c645db404.html">C:\work\git\ci-medicare-records\examples\immunization-7d0dab26-bc12-471e-a228-527c645db404.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Immunization/7d0dab26-bc12-471e-a228-527c645db404: Immunization (l1/c43)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Immunization/7d0dab26-bc12-471e-a228-527c645db404: Immunization (l1/c43)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization/7d0dab26-bc12-471e-a228-527c645db404: Immunization.vaccineCode (l13/c15)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_immunization-88d35c33-414c-4d55-98e9-29f9c954df03"> </a>
+<h2><a href="Immunization-88d35c33-414c-4d55-98e9-29f9c954df03.html">C:\work\git\ci-medicare-records\examples\immunization-88d35c33-414c-4d55-98e9-29f9c954df03.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Immunization/88d35c33-414c-4d55-98e9-29f9c954df03: Immunization (l1/c43)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Immunization/88d35c33-414c-4d55-98e9-29f9c954df03: Immunization (l1/c43)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization/88d35c33-414c-4d55-98e9-29f9c954df03: Immunization.vaccineCode (l13/c15)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_immunizationrecommendation-a1e91255-59f4-476c-b764-46f66eabdff4"> </a>
+<h2><a href="ImmunizationRecommendation-a1e91255-59f4-476c-b764-46f66eabdff4.html">C:\work\git\ci-medicare-records\examples\immunizationrecommendation-a1e91255-59f4-476c-b764-46f66eabdff4.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4: ImmunizationRecommendation (l1/c57)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4: ImmunizationRecommendation (l1/c57)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_immunizationrecommendation-a83d0305-7970-4f29-be4e-0f6979de9329"> </a>
+<h2><a href="ImmunizationRecommendation-a83d0305-7970-4f29-be4e-0f6979de9329.html">C:\work\git\ci-medicare-records\examples\immunizationrecommendation-a83d0305-7970-4f29-be4e-0f6979de9329.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329: ImmunizationRecommendation (l1/c57)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329: ImmunizationRecommendation (l1/c57)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3"> </a>
+<h2><a href="Observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.html">C:\work\git\ci-medicare-records\examples\observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3: Observation.code.coding[0] (l15/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1 - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3: Observation.value.ofType(CodeableConcept) (l35/c27)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_observation-air-immunisation-status-example-01"> </a>
+<h2><a href="Observation-observation-air-immunisation-status-example-01.html">C:\work\git\ci-medicare-records\examples\observation-air-immunisation-status-example-01.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/observation-air-immunisation-status-example-01: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/observation-air-immunisation-status-example-01: Observation.code.coding[0] (l15/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/observation-air-immunisation-status-example-01: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1 - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/observation-air-immunisation-status-example-01: Observation.value.ofType(CodeableConcept) (l35/c27)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"> </a>
+<h2><a href="Observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.html">C:\work\git\ci-medicare-records\examples\observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1: Observation.code.coding[0] (l15/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1 - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1: Observation.value.ofType(CodeableConcept) (l35/c27)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_examples_observation-e22a9149-fc11-4af6-8ca3-c378689c590d"> </a>
+<h2><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.html">C:\work\git\ci-medicare-records\examples\observation-e22a9149-fc11-4af6-8ca3-c378689c590d.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/e22a9149-fc11-4af6-8ca3-c378689c590d: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/e22a9149-fc11-4af6-8ca3-c378689c590d: Observation.code.coding[0] (l15/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/e22a9149-fc11-4af6-8ca3-c378689c590d: Observation (l2/c42)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1 - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_basic-decldiscl-1"> </a>
+<h2><a href="StructureDefinition-basic-decldiscl-1.html">C:\work\git\ci-medicare-records\resources\basic-decldiscl-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/basic-decldiscl-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/basic-decldiscl-1: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/basic-decldiscl-1: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_bodysite-aodr"> </a>
+<h2><a href="StructureDefinition-bodysite-aodr.html">C:\work\git\ci-medicare-records\resources\bodysite-aodr.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/bodysite-aodr: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/bodysite-aodr: StructureDefinition.snapshot.element[11].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/bodysite-aodr: StructureDefinition.differential.element[1].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 on element BodySite.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/bodysite-aodr: StructureDefinition.snapshot.element[11].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 on element BodySite.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/bodysite-aodr')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_consent-aodr"> </a>
+<h2><a href="StructureDefinition-consent-aodr.html">C:\work\git\ci-medicare-records\resources\consent-aodr.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/consent-aodr: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/consent-aodr: StructureDefinition.snapshot.element[18].example[0].value.ofType(Identifier)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE"><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_explanationofbenefit-medicare"> </a>
+<h2><a href="StructureDefinition-explanationofbenefit-medicare.html">C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[19].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[109].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[110].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.differential.element[6].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.subType could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.differential.element[16].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.item.category could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.differential.element[17].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 on element ExplanationOfBenefit.item.service could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[19].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.subType could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[109].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.item.category could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/explanationofbenefit-medicare: StructureDefinition.snapshot.element[110].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 on element ExplanationOfBenefit.item.service could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_extension-dateinitialregistration"> </a>
+<h2><a href="StructureDefinition-extension-dateinitialregistration.html">C:\work\git\ci-medicare-records\resources\extension-dateinitialregistration.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/extension-dateinitialregistration: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_extension-donationdecision"> </a>
+<h2><a href="StructureDefinition-extension-donationdecision.html">C:\work\git\ci-medicare-records\resources\extension-donationdecision.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/extension-donationdecision: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/extension-donationdecision: StructureDefinition.snapshot.element[5].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-donationdecision: StructureDefinition.differential.element[2].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.valueCodeableConcept could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-donationdecision: StructureDefinition.snapshot.element[5].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.value[x] could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_flag-air-1"> </a>
+<h2><a href="StructureDefinition-flag-air-1.html">C:\work\git\ci-medicare-records\resources\flag-air-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/flag-air-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/flag-air-1: StructureDefinition.snapshot.element[18].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/flag-air-1: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_ig"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.au.dh.medicare-records.html">C:\work\git\ci-medicare-records\resources\ig.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/hl7.fhir.au.dh.medicare-records: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/hl7.fhir.au.dh.medicare-records: ImplementationGuide.dependency[0]</b></td><td><b>warning</b></td><td title="EXTENSION_EXT_CONTEXT_WRONG_XVER"><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/hl7.fhir.au.dh.medicare-records: ImplementationGuide.dependency[0]</b></td><td><b>warning</b></td><td title="EXTENSION_EXT_CONTEXT_WRONG_XVER"><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_immunisation-dose-schedule-1"> </a>
+<h2><a href="StructureDefinition-immunisation-dose-schedule-1.html">C:\work\git\ci-medicare-records\resources\immunisation-dose-schedule-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/immunisation-dose-schedule-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_immunization-air"> </a>
+<h2><a href="StructureDefinition-immunization-air.html">C:\work\git\ci-medicare-records\resources\immunization-air.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/immunization-air: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/immunization-air: StructureDefinition.snapshot.element[20].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/immunization-air: StructureDefinition.differential.element[8].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 on element Immunization.vaccineCode could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/immunization-air: StructureDefinition.snapshot.element[20].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 on element Immunization.vaccineCode could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_immunizationrecommendation-air-1"> </a>
+<h2><a href="StructureDefinition-immunizationrecommendation-air-1.html">C:\work\git\ci-medicare-records\resources\immunizationrecommendation-air-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/immunizationrecommendation-air-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_medication-pbs"> </a>
+<h2><a href="StructureDefinition-medication-pbs.html">C:\work\git\ci-medicare-records\resources\medication-pbs.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/medication-pbs: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/medication-pbs: StructureDefinition.snapshot.element[9].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/medication-pbs: StructureDefinition.differential.element[1].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1 on element Medication.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/medication-pbs: StructureDefinition.snapshot.element[9].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1 on element Medication.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_medicationrequest-pbs"> </a>
+<h2><a href="StructureDefinition-medicationrequest-pbs.html">C:\work\git\ci-medicare-records\resources\medicationrequest-pbs.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/medicationrequest-pbs: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_observation-aircovid19immstatus-1"> </a>
+<h2><a href="StructureDefinition-observation-aircovid19immstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-aircovid19immstatus-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/observation-aircovid19immstatus-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/observation-aircovid19immstatus-1: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/observation-aircovid19immstatus-1: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_observation-airimmstatus-1"> </a>
+<h2><a href="StructureDefinition-observation-airimmstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-airimmstatus-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition.snapshot.element[40].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition.differential.element[9].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 on element Observation.valueCodeableConcept could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/observation-airimmstatus-1: StructureDefinition.snapshot.element[40].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 on element Observation.value[x] could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_referralrequest-mbsdva"> </a>
+<h2><a href="StructureDefinition-referralrequest-mbsdva.html">C:\work\git\ci-medicare-records\resources\referralrequest-mbsdva.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/referralrequest-mbsdva: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/referralrequest-mbsdva: StructureDefinition.snapshot.element[36].binding.valueSet.ofType(Reference)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/referralrequest-mbsdva: StructureDefinition.differential.element[10].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1 on element ReferralRequest.specialty could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/referralrequest-mbsdva: StructureDefinition.snapshot.element[36].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1 on element ReferralRequest.specialty could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-medicare-records_resources_vaccine-serial-number-1"> </a>
+<h2><a href="StructureDefinition-vaccine-serial-number-1.html">C:\work\git\ci-medicare-records\resources\vaccine-serial-number-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/vaccine-serial-number-1: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="EXTENSION_EXT_CONTEXT_WRONG_XVER"> </a>
+<h2>EXTENSION_EXT_CONTEXT_WRONG_XVER</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.au.dh.medicare-records.html">C:\work\git\ci-medicare-records\resources\ig.xml</a></td><td><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.au.dh.medicare-records.html">C:\work\git\ci-medicare-records\resources\ig.xml</a></td><td><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Profile_VAL_NotAllowed"> </a>
+<h2>Profile_VAL_NotAllowed</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>The element display is present in the instance but not allowed in the applicable fixed value specified in profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_JURISDICTION_MISMATCH"> </a>
+<h2>RESOURCE_JURISDICTION_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-bodysite-aodr.html">C:\work\git\ci-medicare-records\resources\bodysite-aodr.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-consent-aodr.html">C:\work\git\ci-medicare-records\resources\consent-aodr.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-explanationofbenefit-medicare.html">C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-extension-dateinitialregistration.html">C:\work\git\ci-medicare-records\resources\extension-dateinitialregistration.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-extension-donationdecision.html">C:\work\git\ci-medicare-records\resources\extension-donationdecision.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.au.dh.medicare-records.html">C:\work\git\ci-medicare-records\resources\ig.xml</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-medication-pbs.html">C:\work\git\ci-medicare-records\resources\medication-pbs.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-medicationrequest-pbs.html">C:\work\git\ci-medicare-records\resources\medicationrequest-pbs.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-referralrequest-mbsdva.html">C:\work\git\ci-medicare-records\resources\referralrequest-mbsdva.xml</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.au.dh.medicare-records, jurisdiction = urn:iso:std:iso:3166#AU) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#AU &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-bodysite-aodr.html">C:\work\git\ci-medicare-records\resources\bodysite-aodr.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-explanationofbenefit-medicare.html">C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-explanationofbenefit-medicare.html">C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-explanationofbenefit-medicare.html">C:\work\git\ci-medicare-records\resources\explanationofbenefit-medicare.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-extension-donationdecision.html">C:\work\git\ci-medicare-records\resources\extension-donationdecision.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-immunization-air.html">C:\work\git\ci-medicare-records\resources\immunization-air.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-medication-pbs.html">C:\work\git\ci-medicare-records\resources\medication-pbs.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-observation-airimmstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-airimmstatus-1.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-referralrequest-mbsdva.html">C:\work\git\ci-medicare-records\resources\referralrequest-mbsdva.xml</a></td><td><b>Unable to resolve resource 'https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SLICING_CANNOT_BE_EVALUATED"> </a>
+<h2>SLICING_CANNOT_BE_EVALUATED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-notwillingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate.xml</a></td><td><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>Slicing cannot be evaluated: Could not match any discriminators ([coding.system, coding.code]) for slice Consent.category:organDonationConsent in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr - None of the discriminator [coding.system, coding.code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></td><td><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-consent-aodr.html">C:\work\git\ci-medicare-records\resources\consent-aodr.xml</a></td><td><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.html">C:\work\git\ci-medicare-records\examples\flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.xml</a></td><td><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.html">C:\work\git\ci-medicare-records\examples\flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.xml</a></td><td><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.html">C:\work\git\ci-medicare-records\examples\flag-d75a3b06-0397-4472-bc7e-8651668e8f40.xml</a></td><td><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-flag-air-1.html">C:\work\git\ci-medicare-records\resources\flag-air-1.xml</a></td><td><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-flag-air-1.html">C:\work\git\ci-medicare-records\resources\flag-air-1.xml</a></td><td><b>Unable to find code 1500551000168103 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20200831); The code &quot;1500551000168103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1500551000168103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#1500551000168103'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Basic-2a3ea044-27d5-11eb-adc1-0242ac120002.html">C:\work\git\ci-medicare-records\examples\basic-2a3ea044-27d5-11eb-adc1-0242ac120002.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></td><td><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min.xml</a></td><td><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01.xml</a></td><td><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02.xml</a></td><td><b>Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.html">C:\work\git\ci-medicare-records\examples\observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-observation-air-immunisation-status-example-01.html">C:\work\git\ci-medicare-records\examples\observation-air-immunisation-status-example-01.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.html">C:\work\git\ci-medicare-records\examples\observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-e22a9149-fc11-4af6-8ca3-c378689c590d.html">C:\work\git\ci-medicare-records\examples\observation-e22a9149-fc11-4af6-8ca3-c378689c590d.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-basic-decldiscl-1.html">C:\work\git\ci-medicare-records\resources\basic-decldiscl-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-basic-decldiscl-1.html">C:\work\git\ci-medicare-records\resources\basic-decldiscl-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-observation-aircovid19immstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-aircovid19immstatus-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-observation-aircovid19immstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-aircovid19immstatus-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-observation-airimmstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-airimmstatus-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-observation-airimmstatus-1.html">C:\work\git\ci-medicare-records\resources\observation-airimmstatus-1.xml</a></td><td><b>Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Consent-aodr-example-notwillingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-02.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-mbs-example-min.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-mbs-example-min.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-01.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ExplanationOfBenefit-explanationofbenefit-pbs-example-02.html">C:\work\git\ci-medicare-records\examples\explanationofbenefit-pbs-example-02.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Immunization-7d0dab26-bc12-471e-a228-527c645db404.html">C:\work\git\ci-medicare-records\examples\immunization-7d0dab26-bc12-471e-a228-527c645db404.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Immunization-88d35c33-414c-4d55-98e9-29f9c954df03.html">C:\work\git\ci-medicare-records\examples\immunization-88d35c33-414c-4d55-98e9-29f9c954df03.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.html">C:\work\git\ci-medicare-records\examples\observation-12e8af92-d9d5-49e6-8ff4-a57aed9834b3.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-observation-air-immunisation-status-example-01.html">C:\work\git\ci-medicare-records\examples\observation-air-immunisation-status-example-01.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.html">C:\work\git\ci-medicare-records\examples\observation-ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-immunisation-status-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_NoCheckMin"> </a>
+<h2>Validation_VAL_Profile_NoCheckMin</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Consent-aodr-example-notwillingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate.xml</a></td><td><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Consent-aodr-example-willingtodonate.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonate.xml</a></td><td><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Consent-aodr-example-willingtodonatesome.html">C:\work\git\ci-medicare-records\examples\aodr-example-willingtodonatesome.xml</a></td><td><b>Consent.category:organDonationConsent: Unable to check minimum required (Consent.category) due to lack of slicing validation (from http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr)</b></td>
+   </tr>
+</table>
+</body>
+</html>

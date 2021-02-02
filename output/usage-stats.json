@@ -1,0 +1,153 @@
+{
+  "package": "hl7.fhir.au.dh.medicare-records",
+  "version": "2.0.0",
+  "fhirVersion": "3.0.2",
+  "extensions": [
+    {
+      "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration",
+      "title": "ExtensionDateInitialRegistration",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision",
+      "title": "ExtensionConsentDonationDecision",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1",
+      "title": "Immunisation Dose Schedule",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1",
+      "title": "Vaccine Vial Serial Number",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Basic": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1",
+        "title": "Declared Disclaimer"
+      }
+    ],
+    "BodySite": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/bodysite-aodr",
+        "title": "BodySiteAustralianOrganDonorRegister"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr",
+        "title": "ConsentAustralianOrganDonorRegister"
+      }
+    ],
+    "ExplanationOfBenefit": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare",
+        "title": "ExplanationofBenefitMedicare"
+      }
+    ],
+    "Flag": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1",
+        "title": "Australian Immunisation Register Notice"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air",
+        "title": "Australian Immunisation Register Immunisation"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1",
+        "title": "Australian Immunisation Register Immunisation Recommendation"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs",
+        "title": "MedicationPharmaceuticalBenefitsScheme"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
+        "title": "MedicationRequestPharmaceuticalBenefitsScheme"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1",
+        "title": "Australian Immunisation Register COVID-19 Immunisation Status"
+      },
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1",
+        "title": "Australian Immunisation Register Immunisation Status"
+      }
+    ],
+    "ReferralRequest": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva",
+        "title": "ReferralRequestMedicareBenefitsScheduleDepartmentofVeterans\u0027Affairs"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId": [
+      "ImplementationGuide.dependency"
+    ],
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version": [
+      "ImplementationGuide.dependency"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.package.resource"
+    ],
+    "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration": [
+      "Consent"
+    ],
+    "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision": [
+      "Consent"
+    ],
+    "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1": [
+      "Immunization.vaccinationProtocol"
+    ],
+    "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1": [
+      "Immunization"
+    ]
+  }
+}
