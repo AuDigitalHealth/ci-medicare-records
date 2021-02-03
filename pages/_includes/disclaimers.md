@@ -9,14 +9,14 @@ The Australian Digital Health Agency (“the Agency”) makes the information an
 This document is maintained in electronic form and is uncontrolled in printed form. It is the responsibility of the user to verify that this copy is the latest revision.
 
 
-**Copyright © 2020 Australian Digital Health Agency**
+**Copyright © 2021 Australian Digital Health Agency**
 
 This document contains information which is protected by copyright. All Rights Reserved. No part of this work may be reproduced or used in any form or by any means – graphic, electronic, or mechanical, including photocopying, recording, taping, or information storage and retrieval systems – without the permission of the Australian Digital Health Agency. All copies of this document must include the copyright and other information contained on this page.
 
 
 **Regenstrief Institute (LOINC)**
 
-This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The LOINC table, LOINC codes, LOINC panels and forms file, and LOINC linguistic variants file are copyright © 1995– 2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at the [LOINC Terms of Use](https://loinc.org/terms-of-use/). LOINC is a trademark of Regenstrief Institute, Inc., registered in the United States.
+This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The LOINC table, LOINC codes, LOINC panels and forms file, and LOINC linguistic variants file are copyright © 1995– 2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at the [LOINC Terms of Use](https://loinc.org/terms-of-use/). LOINC is a trademark of Regenstrief Institute, Inc., registered in the United States.
 
 **IHTSDO (SNOMED CT)**
 
