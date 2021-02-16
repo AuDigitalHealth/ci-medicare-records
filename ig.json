@@ -1,7 +1,5 @@
 {
-    "sct-edition": "http://snomed.info/sct/32506021000036107",
     "version": "3.0.2",
-    "source": "ig.xml",
     "paths": {
         "output": "output",
         "pages": "pages",
@@ -14,12 +12,25 @@
         "specification": "http://hl7.org/fhir/STU3/",
         "txCache": "txCache"
     },
-    "extraTemplates": [
-        "examples"
+    "sct-edition": "http://snomed.info/sct/32506021000036107",
+    "extraTemplates": ["examples"],
+    "source": "ig.xml",
+    "npm-name": "hl7.fhir.au.dh.medicare-records",
+    "tool": "jekyll",
+    "license": "CC0-1.0",
+    "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir",
+    "logging": [
+        "init",
+        "progress",
+        "context",
+        "html",
+        "tx"
     ],
-    "do-transforms": "true",
-    "spreadsheets": [],
-    "special-urls": ["http://hl7.org.au/fhir/ValueSet/valueset-anzsco"],
+    "dependencyList": [{
+        "name": "aubase",
+        "location": "http://hl7.org.au/fhir",
+        "version": "1.1.1"
+    }],
     "defaults": {
         "ValueSet": {"template-base": "vs.html"},
         "Any": {
@@ -29,26 +40,15 @@
         "StructureDefinition": {
             "template-defns": "sd-definitions.html",
             "template-examples": "sd-examples.html",
-            "template-base": "sd.html"
+            "template-base": "sd.html",
+            "template-mappings": "sd-mappings.html"
         },
         "StructureMap": {"template-base": "sm.html"},
         "Basic": {"template-base": "ex.html"},
         "CodeSystem": {"template-base": "cs.html"},
-        "ConceptMap": {"template-base": "cm.html"},
-        "Consent": {
-            "template-base": "ex.html",
-            "template-format": "ex-format.html"
-        },
-        "Immunization": {
-            "template-base": "ex.html",
-            "template-format": "ex-format.html"
-        },
-        "ExplanationOfBenefit": {
-            "template-base": "ex.html",
-            "template-format": "ex-format.html"
-        }
+        "ConceptMap": {"template-base": "cm.html"}
     },
-    "npm-name": "hl7.fhir.au.dh.medicare-records",
+    "special-urls": ["http://hl7.org.au/fhir/ValueSet/valueset-anzsco"],
     "resources": {
         "StructureDefinition/consent-aodr": {
             "base": "StructureDefinition-consent-aodr.html",
@@ -86,7 +86,7 @@
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
-       "StructureDefinition/observation-airimmstatus-1": {
+        "StructureDefinition/observation-airimmstatus-1": {
             "base": "StructureDefinition-observation-airimmstatus-1.html",
             "defns": "StructureDefinition-observation-airimmstatus-1-definitions.html"
         },
@@ -106,23 +106,13 @@
             "base": "StructureDefinition-vaccine-serial-number-1.html",
             "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"
         },
-           "StructureDefinition/observation-aircovid19immstatus-1": {
+        "StructureDefinition/observation-aircovid19immstatus-1": {
             "base": "StructureDefinition-observation-aircovid19immstatus-1.html",
             "defns": "StructureDefinition-observation-aircovid19immstatus-1-definitions.html"
         },
-           "StructureDefinition/basic-decldiscl-1": {
+        "StructureDefinition/basic-decldiscl-1": {
             "base": "StructureDefinition-basic-decldiscl-1.html",
             "defns": "StructureDefinition-basic-decldiscl-1-definitions.html"
         }
-    },
-    "tool": "jekyll",
-    "license": "CC0-1.0",
-    "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir",
-    "dependencyList": [{
-        "name": "aubase",
-        "location": "http://hl7.org.au/fhir",
-        "version": "1.1.1"
-    }],
-    "broken-links": "warning",
-    "title": "Medicare Records"
+    }
 }
