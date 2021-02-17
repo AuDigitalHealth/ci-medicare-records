@@ -10,8 +10,8 @@
   "name": "ImmunisationDoseSchedule",
   "title": "Immunisation Dose Schedule",
   "status": "draft",
-  "experimental": false,
-  "date": "2021-02-17T10:38:18+10:00",
+  "experimental": true,
+  "date": "2021-02-17T13:29:27+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -34,7 +34,7 @@
       ]
     }
   ],
-  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "copyright": "Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.2",
   "mapping": [
     {

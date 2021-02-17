@@ -28,8 +28,8 @@
   <name value="FlagAustralianImmunisationRegister"/>
   <title value="Australian Immunisation Register Notice"/>
   <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2021-02-17T10:38:18+10:00"/>
+  <experimental value="true"/>
+  <date value="2021-02-17T13:29:27+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -44,7 +44,7 @@
       <code value="AU"/>
     </coding>
   </jurisdiction>
-  <copyright value="Copyright &#xA9; 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms&#x2122; (SNOMED CT&#xAE;) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT&#xAE;, was originally created by The College of American Pathologists. &#x201C;SNOMED&#x201D; and &#x201C;SNOMED CT&#x201D; are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <copyright value="Copyright &#xA9; 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms&#x2122; (SNOMED CT&#xAE;) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT&#xAE;, was originally created by The College of American Pathologists. &#x201C;SNOMED&#x201D; and &#x201C;SNOMED CT&#x201D; are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement."/>
   <fhirVersion value="3.0.2"/>
   <mapping>
     <identity value="rim"/>

@@ -94,11 +94,6 @@ This implementation guide and related artefacts are technical in nature and the 
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
             <td>Release at draft for external use. Implemented in FHIR Release 3.0.2 (STU).<br/>This version includes new features for immunisations. </td>
         </tr>
-        <tr>
-            <td>2.0.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">27 Jan 2021</span></td>
-            <td>Minor change in Australian Immunisation Register Immunisation, relaxation of cardinality constraint.</td>
-        </tr>
       </tbody>
 </table> 
 
