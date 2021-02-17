@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records."/>
-  <copyright value="Copyright &#xA9; 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright &#xA9; 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <mapping>
     <identity value="w5"/>

@@ -28,7 +28,7 @@
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records."];
-  fhir:StructureDefinition.copyright [ fhir:value "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."];
+  fhir:StructureDefinition.copyright [ fhir:value "Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.2"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

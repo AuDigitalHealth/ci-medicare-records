@@ -17,8 +17,8 @@
   </contact>
   <description value="The individual's decision about donation."/>
   <copyright
-    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
-  <fhirVersion value="3.0.2"/>
+    value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <contextType value="resource"/>
