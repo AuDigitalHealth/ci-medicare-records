@@ -3,7 +3,7 @@
 
 err = 52, warn = 42, info = 28
 IG Publisher Version: 1.1.59
-Generated Wed Feb 17 13:30:25 AEST 2021. FHIR version 3.0.2 for hl7.fhir.au.dh.medicare-records#2.0.0 (canonical = http://ns.electronichealth.net.au/ci/fhir)
+Generated Mon Mar 01 12:46:23 AEST 2021. FHIR version 3.0.2 for hl7.fhir.au.dh.medicare-records#2.0.0 (canonical = http://ns.electronichealth.net.au/ci/fhir)
 
  Build Errors : 40 / 0 / 0
  C:\work\git\ci-medicare-records\examples\aodr-example-notwillingtodonate : 2 / 1 / 3

@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Vaccine Vial Serial Number"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2021-02-17T13:29:27+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-01T12:44:59+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

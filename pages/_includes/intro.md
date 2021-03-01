@@ -1,5 +1,7 @@
 # {{ site.data.fhir.igName }} FHIR Implementation Guide
-<h3>Draft for external use</h3>
+<h3>Draft for restricted external review</h3>
+<h3 style="color:orange">THIS SPECIFICATION HAS NOT YET RECEIVED FORMAL SIGN-OFF FROM THE AUSTRALIAN DIGITAL HEALTH AGENCY AND SHOULD NOT BE USED FOR IMPLEMENTATION.</h3>
+
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -47,6 +49,11 @@ Profiles that define representation of donation decision information from the Au
 * [BodySite Australian Organ Donor Register](StructureDefinition-bodysite-aodr.html)
 
 
+## Editorial note
+This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
+
+This implementation guide may not be considered to be complete enough or sufficiently reviewed to be safe for implementation and use in production systems. It may have known issues and still be in development.
+
 ## Intended audience
 This implementation guide is aimed at software development teams, architects, designers, clinicians and informatics researchers who are responsible for the delivery of clinical applications, infrastructure components and messaging interfaces, and also for those who wish to evaluate the clinical suitability of the Agency-endorsed specifications.
 
@@ -87,12 +94,13 @@ This implementation guide and related artefacts are technical in nature and the 
         <tr>
             <td>1.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">1 Nov 2018</span></td>
-            <td>Initial public release at approved for external trial use. Implemented in FHIR Release 3 (STU).</td>
+            <td>Initial public release at approved for external use. Implemented in FHIR Release 3 (STU).</td>
         </tr>
         <tr>
             <td>2.0.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
-            <td>Release at draft for external use. Implemented in FHIR Release 3.0.2 (STU).<br/>This version includes new features for immunisations. </td>
+            <td><span style="padding-left: 3px; padding-right: 3px">NaN NaN</span></td>
+            <td>Implemented in FHIR Release 3.0.2 (STU).<br/>This version of the Medicare Records FHIR implementation guide includes changes to allow for additional vaccine administration information, and new immunisations related information such as immunisation status, COVID-19 immunisation status, next immunisation(s) due and immunisation notices. This specification has also been updated to include non-technical corrections from version 1.0.0.</td>
+
         </tr>
       </tbody>
 </table> 
