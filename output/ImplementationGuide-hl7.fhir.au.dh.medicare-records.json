@@ -10,7 +10,7 @@
   "name": "MedicareRecords",
   "status": "active",
   "experimental": false,
-  "date": "2021-03-01T12:44:59+10:00",
+  "date": "2021-03-02T10:12:38+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -34,7 +34,7 @@
         },
         {
           "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version",
-          "valueString": "1.1.1"
+          "valueString": "0.9.3"
         }
       ],
       "type": "reference",
