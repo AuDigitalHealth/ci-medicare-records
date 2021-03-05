@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a vaccine vial serial number." />
+  <description value="The purpose of this profile is to define a representation of the serial number of the vial of vaccine used in an administration of a vaccine." />
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -39,7 +39,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Vaccine vial serial number" />
-      <definition value="Serial number for a vial of vaccine." />
+      <definition value="Serial number for the vial of vaccine used in an administration." />
       <max value="1" />
     </element>
     <element id="Extension.url">
