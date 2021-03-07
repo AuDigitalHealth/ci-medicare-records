@@ -14,7 +14,7 @@ The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined
         </tr>    
         <tr>
             <td><a href ="StructureDefinition-observation-airimmstatus-1.html">Australian Immunisation Register Immunisation Status</a></td>
-            <td>This profile describes the immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules</td>
+            <td>This profile describes the immunisation status for an individual specific to the National Immunisation Program.</td>
             <td><a href ="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
         </tr>
         <tr>
@@ -32,8 +32,8 @@ The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined
             <td>This profile defines a representation of the antigen(s) for which an individual is due within the National Immunisation Program.</td>
             <td><a href ="http://hl7.org/fhir/STU3/immunizationrecommendation.html">ImmunizationRecommendation</a></td>
         </tr>
-		<tr>
-            <td><a href ="StructureDefinition-flag-air-1.html"></a>Australian Immunisation Register Notice</td>
+        		<tr>
+            <td><a href ="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
             <td>This profile defines a representation of the Australian Immunisation Register (AIR) notice.</td>
             <td><a href ="http://hl7.org/fhir/STU3/flag.html">Flag</a></td>
         </tr>
@@ -48,7 +48,7 @@ The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined
 <p> </p>
 <p> </p>
 
-## Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
+## Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) or Medicare Benefits Schedule (MBS) claim items:
 <table class="list" width="100%" cellspacing="6" border="1" valign="middle">
     <tbody>
         <col width="20%" />
