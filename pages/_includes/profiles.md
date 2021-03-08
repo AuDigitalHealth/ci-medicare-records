@@ -1,7 +1,8 @@
 # {{ page.title }}
-The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined as part of this implementation guide. HL7 Australia base profiles referenced by this implementation guide can be found in the [Australian Base Profiles Implementation Guide](http://www.hl7.org.au/fhir/2018Sep/).
+The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined as part of this implementation guide. HL7 Australia base profiles referenced by this implementation guide can be found in [Australian Base Implementation Guide [HL7AUF3B2]](index.html#HL7FHIR3).
 
-##  Profiles that define the representation of vaccination information from the Australian Immunisation Register:
+###  Australian Immunisation Register
+Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 <table class="list" width="100%" cellspacing="6" border="1" valign="middle">
     <tbody>
         <col width="20%" />
@@ -45,10 +46,8 @@ The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined
     </tbody>
 </table> 
 
-<p> </p>
-<p> </p>
-
-## Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) or Medicare Benefits Schedule (MBS) claim items:
+###  Pharmaceutical Benefits Schedule (PBS) and Medicare Benefits Schedule (MBS)
+Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
 <table class="list" width="100%" cellspacing="6" border="1" valign="middle">
     <tbody>
         <col width="20%" />
@@ -80,12 +79,10 @@ The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined
             <td><a href ="http://hl7.org/fhir/STU3/referralrequest.html">ReferralRequest</a></td>
         </tr>      
     </tbody>
-</table> 
+</table>
 
-<p> </p>
-<p> </p>
-
-## Profiles that define representation of donation decision information from the Australian Organ Donor Register:
+### Australian Organ Donor Register
+Profiles that define representation of donation decision information from the Australian Organ Donor Register:
 <table class="list" width="100%" cellspacing="6" border="1" valign="middle">
     <tbody>
         <col width="20%" />
