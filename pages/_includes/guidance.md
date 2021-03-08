@@ -29,7 +29,7 @@ The content of each page is structured as follows:
 * Usage scenarios, if present, includes a short description of the example or expected usage scenarios for that profile that are supported by this implementation guide. Usage scenarios are only present if a profile is of the primary grouping resource for exchange purposes.
 * Implementation guidance includes guidance specific to the usage scenarios supported by this implementation guide. This content is informative; there may be valid reasons not to follow this guidance, but the full implications must be understood and carefully weighed before choosing a different course.
 * Formal Views of Profile Content includes the human readable view of the normative definition of the profile or extension.
-* Known Issues includes the list of unintended or unexpected behaviours associated with that profile we are aware of that have an impact that implementers should take note of.
+* Quick Start includes an overview of the required search and read operations. 
 
 The Formal Views of Profile Content contains:
 * The canonical url e.g. http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/composition-es-1 
