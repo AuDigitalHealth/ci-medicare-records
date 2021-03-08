@@ -6,6 +6,6 @@ The following are the expected usage scenarios this profile is intended to suppo
 * Services Australia Medicare sends Australian Immunisation Register records to the My Health Record system
 
 #### Implementation guidance
-Other usage scenarios may use a different approach, such as using Immunization.identifier.
+No additional guidance.
 
 This profile is referenced by [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html). 
