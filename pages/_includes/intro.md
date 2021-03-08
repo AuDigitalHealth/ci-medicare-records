@@ -1,7 +1,5 @@
 # {{ site.data.fhir.igName }} FHIR Implementation Guide
 <h3>Draft for restricted external review</h3>
-<h3 style="color:orange">THIS SPECIFICATION HAS NOT YET RECEIVED FORMAL SIGN-OFF FROM THE AUSTRALIAN DIGITAL HEALTH AGENCY AND SHOULD NOT BE USED FOR IMPLEMENTATION.</h3>
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
