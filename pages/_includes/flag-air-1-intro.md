@@ -5,6 +5,4 @@ The following are the expected usage scenarios this profile is intended to suppo
 * Services Australia Medicare sends Australian Immunisation Register records to the My Health Record system
 
 #### Implementation guidance
-For the overarching usage scenarios in this implementation guide it is expected that:
-* the patient is identified with an IHI in subject.identifier, not with a reference to a Patient resource
-* notice text is sent in the text portion of code
+No specific guidance.
