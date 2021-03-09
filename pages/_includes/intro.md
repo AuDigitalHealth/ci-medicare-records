@@ -15,10 +15,10 @@ This implementation guide is not to be used as a guide to presentation (or rende
 
 This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
 
+This implementation guide does not include mappings to another format, for more information see the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 ## Usage Scenarios
-The FHIR profiles for each usage scenario are listed below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
-
-Profiles that define the representation of vaccination information from the Australian Immunisation Register:
+The FHIR profiles for each usage scenario are listed below. 
+### Australian Immunisation Register:
 * [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html)
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
 * [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
@@ -26,13 +26,13 @@ Profiles that define the representation of vaccination information from the Aust
 * [Australian Immunisation Register Notice](StructureDefinition-flag-air-1.html)
 * [Declared Disclaimer](StructureDefinition-basic-decldiscl-1.html)
 
-Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
+### Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
 * [Explanation of Benefit Medicare](StructureDefinition-explanationofbenefit-medicare.html)
 * [Medication Request Pharmaceutical Benefits Scheme](StructureDefinition-medicationrequest-pbs.html)
 * [Medication Pharmaceutical Benefits Scheme](StructureDefinition-medication-pbs.html)
 * [Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs](StructureDefinition-referralrequest-mbsdva.html)
 
-Profiles that define representation of donation decision information from the Australian Organ Donor Register:
+### Australian Organ Donor Register:
 * [Consent Australian Organ Donor Register](StructureDefinition-consent-aodr.html)
 * [BodySite Australian Organ Donor Register](StructureDefinition-bodysite-aodr.html)
 
@@ -55,7 +55,7 @@ This implementation guide and related artefacts are technical in nature and the 
     <tbody>
         <tr>
             <td><b>Owner</b></td>
-            <td>National Health Chief Information Officer, Infrastructure Operations</td>
+            <td>Product Manager, Connectivity and Informatics</td>
         </tr>
         <tr>
             <td><b>Contact for enquiries</b></td>
@@ -82,13 +82,17 @@ This implementation guide and related artefacts are technical in nature and the 
         <tr>
             <td>1.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">1 Nov 2018</span></td>
-            <td>Initial public release at approved for external use. Implemented in FHIR Release 3 (STU).</td>
+            <td>Proof of concept release. Implemented in FHIR Release 3 (STU).</td>
         </tr>
         <tr>
             <td>2.0.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">NaN NaN</span></td>
-            <td>Implemented in FHIR Release 3.0.2 (STU).<br/>This version of the Medicare Records FHIR implementation guide includes changes to allow for additional vaccine administration information, and new immunisations related information such as immunisation status, COVID-19 immunisation status, next immunisation(s) due and immunisation notices. This specification has also been updated to include non-technical corrections from version 1.0.0.</td>
-
+            <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
+            <td>Update to use FHIR 3.0.2. Add new features for immunisations.</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td><span style="padding-left: 3px; padding-right: 3px">Current</span></td>
+            <td>Current draft. Further changes for immunisations.</td>
         </tr>
       </tbody>
 </table> 
