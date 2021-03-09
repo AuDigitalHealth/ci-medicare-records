@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent structured Medicare information for the My Health Record system and related applications.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent Medicare information for the My Health Record system and related applications.
 
 This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
