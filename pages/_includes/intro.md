@@ -11,27 +11,17 @@ This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specificat
 
 This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
-## Document purpose and scope
-The primary aim of this implementation guide is to support the transmission of structured information from Medicare systems to the My Health Record system.
-
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
 This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
 
-Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:
-* [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3)
-* [Australian Base Implementation Guide [HL7AUF3B2]](#HL7AUF3B2)
-
-Wherever possible, material in this specification is based on existing standards. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.
-
-
-## Profiles
-The FHIR profiles that form part of this implementation guide are shown below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+## Usage Scenarios
+The FHIR profiles for each usage scenario are listed below. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. The base FHIR STU3 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
 
 Profiles that define the representation of vaccination information from the Australian Immunisation Register:
+* [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html)
 * [Australian Immunisation Register Immunisation Status](StructureDefinition-observation-airimmstatus-1.html)
 * [Australian Immunisation Register COVID-19 Immunisation Status](StructureDefinition-observation-aircovid19immstatus-1.html)
-* [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html)
 * [Australian Immunisation Register Immunisation Recommendation](StructureDefinition-immunizationrecommendation-air-1.html)
 * [Australian Immunisation Register Notice](StructureDefinition-flag-air-1.html)
 * [Declared Disclaimer](StructureDefinition-basic-decldiscl-1.html)
