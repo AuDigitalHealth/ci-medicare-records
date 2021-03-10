@@ -1,6 +1,6 @@
 This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records.
 
-#####  **Usage Scenarios**
+#####  **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends MBS records to the My Health Record system
 

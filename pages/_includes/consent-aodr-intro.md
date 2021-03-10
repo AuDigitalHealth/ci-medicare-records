@@ -1,6 +1,6 @@
 This profile defines a representation of donation decision information from the Australian Organ Donor Register.
 
-##### **Usage Scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Organ Donor Register records to the My Health Record system
 

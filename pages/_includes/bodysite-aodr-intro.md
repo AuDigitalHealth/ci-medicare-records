@@ -1,6 +1,6 @@
 This profile defines a representation of organ and tissue details to support representation of Australian Organ Donor Register records.
 
-##### **Usage Scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Organ Donor Register records to the My Health Record system
 

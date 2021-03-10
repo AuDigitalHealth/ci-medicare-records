@@ -1,6 +1,6 @@
 This profile defines a representation of medication data to support representation of PBS claim items.
 
-##### **Usage Scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends PBS records to the My Health Record system
 
