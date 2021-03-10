@@ -3,7 +3,7 @@ This extension records in an immunisation statement the serial number of the via
 
 #### Usage scenarios
 The following are the expected usage scenarios this profile is intended to support:
-* Services Australia Medicare sends Australian Immunisation Register records to the My Health Record system
+* Medicare sends Australian Immunisation Register records to the My Health Record system
 
 #### Implementation guidance
 No additional guidance.

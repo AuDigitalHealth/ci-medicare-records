@@ -2,7 +2,7 @@ This profile defines a representation of medication data to support representati
 
 ##### **Usage Scenarios**
 The following are the usage scenarios expected:
-* DHS Medicare sends PBS records to the My Health Record system
+* Medicare sends PBS records to the My Health Record system
 
 ##### **Each Medication SHALL have**
 1. a code identifying the medication

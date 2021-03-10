@@ -2,7 +2,7 @@ This profile defines a representation of donation decision information from the 
 
 ##### **Usage Scenarios**
 The following are the usage scenarios expected:
-* DHS Medicare sends Australian Organ Donor Register records to the My Health Record system
+* Medicare sends Australian Organ Donor Register records to the My Health Record system
 
 ##### **Each Consent SHALL have**
 1. a profile assertion to this profile
