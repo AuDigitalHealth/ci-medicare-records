@@ -1,7 +1,7 @@
 #### Australian Immunisation Register Immunisation  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 #### **Usage scenarios**
-The following are the expected usage scenarios this profile is intended to support:
+The following are the usage scenarios expected:
 * Medicare sends Australian Immunisation Register records to the My Health Record system
 
 #### **Each Immunization SHALL have**

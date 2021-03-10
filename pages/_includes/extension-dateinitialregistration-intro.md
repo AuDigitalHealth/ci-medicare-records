@@ -1,3 +1,5 @@
+#### Date of Initial Registration *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+
 ##### **Context of Use**
 Resource
 
