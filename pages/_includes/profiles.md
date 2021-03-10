@@ -23,7 +23,6 @@ Profiles that define the representation of vaccination information from the Aust
      <td><a href="StructureDefinition-observation-aircovid19immstatus-1.html">Australian Immunisation Register COVID-19 Immunisation Status</a></td>
      <td>The purpose of this profile is to describe the Australian Immunisation Register (AIR) COVID-19 immunisation status for an individual.</td>
   </tr>
-
   <tr>
      <td><a href="StructureDefinition-immunizationrecommendation-air-1.html">Australian Immunisation Register Immunisation Recommendation</a></td>
      <td>The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations.</td>
@@ -31,12 +30,12 @@ Profiles that define the representation of vaccination information from the Aust
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
       <td>The purpose of this profile is to define a representation of the Australian Immunisation Register (AIR) notice such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
-   </tr>
+   </tr>   
    <tr>
       <td><a href="StructureDefinition-basic-decldiscl-1.html">Declared Disclaimer</a></td>
       <td>The purpose of this profile is to describe a declared disclaimer included with some information.</td>
    </tr>
-  </tbody>
+ </tbody>   
 </table>
 <br/>
 ###  Pharmaceutical Benefits Schedule (PBS) and Medicare Benefits Schedule (MBS)
@@ -88,7 +87,3 @@ Profiles that define representation of donation decision information from the Au
      </tr>
   </tbody>
 </table>
-
-
-
-
