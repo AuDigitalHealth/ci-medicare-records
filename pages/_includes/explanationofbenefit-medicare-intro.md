@@ -1,6 +1,6 @@
 This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. PBS claim items include information about pharmaceutical items prescribed and dispensed to an individual that were partially or fully funded under the PBS or Repatriation Pharmaceutical Benefits Scheme (RPBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by Medicare or the Department of Veterans' Affairs.
 
-#####  **Usage scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends MBS records to the My Health Record system
 * Medicare sends PBS records to the My Health Record system
@@ -14,7 +14,7 @@ The following are the usage scenarios expected:
 1. an item that was claimed
 1. a date of supply or service
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
     * status

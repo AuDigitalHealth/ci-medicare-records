@@ -1,6 +1,6 @@
-#### Australian Immunisation Register Immunisation Status *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+The purpose of this profile is to describe the immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule.
 
-#### **Usage scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Immunisation Register records to the My Health Record system
 

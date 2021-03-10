@@ -1,10 +1,10 @@
-#### Australian Immunisation Register Notice  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+The purpose of this profile is to define a representation of an Australian Immunisation Register (AIR) notice for an individual, such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.
 
-#### Usage scenarios
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Immunisation Register records to the My Health Record system
 
-#### **Each Flag SHALL have**
+##### **Each Flag SHALL have**
 1. a profile assertion to this profile
 1. an identifier for this notice
 1. a status of this notice
@@ -12,7 +12,7 @@ The following are the usage scenarios expected:
 1. a code that includes the notice text
 1. a patient
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
    * category
@@ -21,5 +21,5 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * identifier
     * patient
     
-#### **Profile-specific implementation guidance**
+##### **Profile-specific implementation guidance**
 No specific guidance.

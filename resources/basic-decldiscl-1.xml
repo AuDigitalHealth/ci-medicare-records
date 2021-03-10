@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to describe a declared disclaimer included with some information.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element" />
+    value="The purpose of this profile is to describe the Australian Immunisation Register (AIR) COVID-19 immunisation status for an individual." />
   <copyright
     value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
@@ -28,7 +28,9 @@
     <element id="Basic">
       <path value="Basic" />
       <short value="Declared Disclaimer" />
-      <definition value="Disclaimer included with some information. Includes a declaration of conformance to this profile." />
+      <definition
+        value="Disclaimer included with some information. Includes a declaration of conformance to this profile."
+       />
     </element>
     <element id="Basic.meta">
       <path value="Basic.meta" />

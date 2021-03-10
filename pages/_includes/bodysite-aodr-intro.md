@@ -5,10 +5,10 @@ The following are the usage scenarios expected:
 * Medicare sends Australian Organ Donor Register records to the My Health Record system
 
 ##### **Each BodySite SHALL have**
-2.	a code identifying the organ or tissue
-3.	a patient
+1. a code identifying the organ or tissue
+1. a patient
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
     * code

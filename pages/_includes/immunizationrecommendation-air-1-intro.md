@@ -1,4 +1,4 @@
-#### Australian Immunisation Register Immunisation Recommendation  *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations.
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
@@ -14,7 +14,7 @@ The following are the usage scenarios expected:
 1. a due date
 
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
     * recommendation

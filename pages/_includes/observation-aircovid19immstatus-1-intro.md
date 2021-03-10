@@ -1,6 +1,6 @@
-#### Australian Immunisation Register COVID-19 Immunisation Status *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+The purpose of this profile is to describe the Australian Immunisation Register (AIR) COVID-19 immunisation status for an individual.
 
-#### **Usage scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Immunisation Register records to the My Health Record system
 

@@ -1,6 +1,6 @@
-#### Declared Disclaimer *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+The purpose of this profile is to describe a declared disclaimer included with some information.
 
-#### **Usage scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Immunisation Register records to the My Health Record system
 
