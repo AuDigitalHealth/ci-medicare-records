@@ -2,7 +2,7 @@ This profile defines a representation of the practitioner that requested the ser
 
 #####  **Usage Scenarios**
 The following are the usage scenarios expected:
-* DHS Medicare sends MBS records to the My Health Record system
+* Medicare sends MBS records to the My Health Record system
 
 ##### **Each ReferralRequest SHALL have**
 1. a profile assertion to this profile 

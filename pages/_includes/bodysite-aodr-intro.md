@@ -2,7 +2,7 @@ This profile defines a representation of organ and tissue details to support rep
 
 ##### **Usage Scenarios**
 The following are the usage scenarios expected:
-* DHS Medicare sends Australian Organ Donor Register records to the My Health Record system
+* Medicare sends Australian Organ Donor Register records to the My Health Record system
 
 ##### **Each BodySite SHALL have**
 2.	a code identifying the organ or tissue
