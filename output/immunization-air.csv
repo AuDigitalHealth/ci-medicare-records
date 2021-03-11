@@ -39,7 +39,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"",""
 "Immunization.extension","serialNumber","","",0,1,"Y","","","Extension {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1]]} {[]}
-","Serial number","Serial number for a vial of vaccine.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Serial number","Serial number for the vial of vaccine used in an administration.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.modifierExtension","","extensions
@@ -180,13 +180,9 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","(HL7 v2 doesn't seem to provide for this)","outboundRelationship[typeCode=INST].target[classCode=SBADM]"
 "Immunization.vaccinationProtocol.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Immunization.vaccinationProtocol.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","",,"open","Element.extension",0,*,"",""
-"Immunization.vaccinationProtocol.extension","doseSchedule","","",0,1,"Y","","","Extension {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1]]} {[]}
-","Schedule","A schedule point for the National Immunisation Program childhood and adolescent vaccination schedules, and for other vaccines not part of the National Immunisation Program.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Immunization.vaccinationProtocol.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","","n/a"
 "Immunization.vaccinationProtocol.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","","N/A"

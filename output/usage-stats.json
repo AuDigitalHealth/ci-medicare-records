@@ -20,14 +20,6 @@
       ]
     },
     {
-      "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1",
-      "title": "Immunisation Dose Schedule",
-      "types": [
-        "string",
-        "string"
-      ]
-    },
-    {
       "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1",
       "title": "Vaccine Vial Serial Number",
       "types": [
@@ -36,12 +28,6 @@
     }
   ],
   "profiles": {
-    "Basic": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1",
-        "title": "Declared Disclaimer"
-      }
-    ],
     "BodySite": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/bodysite-aodr",
@@ -72,12 +58,6 @@
         "title": "Australian Immunisation Register Immunisation"
       }
     ],
-    "ImmunizationRecommendation": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1",
-        "title": "Australian Immunisation Register Immunisation Recommendation"
-      }
-    ],
     "Medication": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs",
@@ -88,16 +68,6 @@
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
         "title": "MedicationRequestPharmaceuticalBenefitsScheme"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1",
-        "title": "Australian Immunisation Register COVID-19 Immunisation Status"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1",
-        "title": "Australian Immunisation Register Immunisation Status"
       }
     ],
     "ReferralRequest": [
@@ -127,9 +97,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
@@ -142,9 +109,6 @@
     ],
     "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision": [
       "Consent"
-    ],
-    "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1": [
-      "Immunization.vaccinationProtocol"
     ],
     "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1": [
       "Immunization"
