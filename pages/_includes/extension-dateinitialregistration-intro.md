@@ -1,7 +1,7 @@
 ##### **Context of Use**
 Resource
 
-#####  **Usage Scenarios**
+#####  **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Organ Donor consent records to the My Health Record system
 

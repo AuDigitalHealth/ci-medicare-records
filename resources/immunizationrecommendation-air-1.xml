@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunizationrecommendation-air-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1" />
+  <url
+    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1" />
   <version value="1.0.0" />
   <name value="ImmunizationRecommendationAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Immunisation Recommendation" />
@@ -14,8 +15,10 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
-  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <description
+    value="The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations." />
+  <copyright
+    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
   <mapping>
     <identity value="v2" />
@@ -41,7 +44,9 @@
     <element id="ImmunizationRecommendation">
       <path value="ImmunizationRecommendation" />
       <short value="AIR next immunisation/s due" />
-      <definition value="Antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations." />
+      <definition
+        value="Antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations."
+       />
     </element>
     <element id="ImmunizationRecommendation.meta">
       <path value="ImmunizationRecommendation.meta" />
@@ -49,8 +54,11 @@
       <constraint>
         <key value="inv-dh-imr-01" />
         <severity value="error" />
-        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1'" />
-        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1').exists()" />
+        <human
+          value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1'" />
+        <expression
+          value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1').exists()"
+         />
       </constraint>
     </element>
     <element id="ImmunizationRecommendation.meta.profile">

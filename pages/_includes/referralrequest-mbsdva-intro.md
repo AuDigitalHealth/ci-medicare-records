@@ -1,6 +1,6 @@
 This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records.
 
-#####  **Usage Scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends MBS records to the My Health Record system
 
@@ -11,7 +11,7 @@ The following are the usage scenarios expected:
 1. a patient
 1. a practitioner that requested the service
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
     * status

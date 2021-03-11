@@ -1,6 +1,6 @@
 This profile defines a representation of donation decision information from the Australian Organ Donor Register.
 
-##### **Usage Scenarios**
+##### **Usage scenarios**
 The following are the usage scenarios expected:
 * Medicare sends Australian Organ Donor Register records to the My Health Record system
 
@@ -14,7 +14,7 @@ The following are the usage scenarios expected:
 1. an identification that the consent is to the Australian Organ Donor Register policy (policy.uri)
 1. a decision of whether or not the individual consents to be an organ donor
 
-#####  **Must Support**
+##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
     * status
