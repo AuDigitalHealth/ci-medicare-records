@@ -15,26 +15,10 @@ Profiles that define the representation of vaccination information from the Aust
      <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
      <td>The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register (AIR).</td>
   </tr>
-  <tr>
-     <td><a href="StructureDefinition-observation-airimmstatus-1.html">Australian Immunisation Register Immunisation Status</a></td>
-     <td>The purpose of this profile is to describe the immunisation status for an individual specific to the National Immunisation Program childhood and adolescent vaccination schedules, and if the individual is on a catch up schedule.</td>
-  </tr>
-  <tr>
-     <td><a href="StructureDefinition-observation-aircovid19immstatus-1.html">Australian Immunisation Register COVID-19 Immunisation Status</a></td>
-     <td>The purpose of this profile is to describe the Australian Immunisation Register (AIR) COVID-19 immunisation status for an individual.</td>
-  </tr>
-  <tr>
-     <td><a href="StructureDefinition-immunizationrecommendation-air-1.html">Australian Immunisation Register Immunisation Recommendation</a></td>
-     <td>The purpose of this profile is to define a representation of the antigen(s) for which an individual is due within the National Immunisation Program, based upon their history of immunisations.</td>
-   </tr>
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
       <td>The purpose of this profile is to define a representation of the Australian Immunisation Register (AIR) notice such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
-   </tr>   
-   <tr>
-      <td><a href="StructureDefinition-basic-decldiscl-1.html">Declared Disclaimer</a></td>
-      <td>The purpose of this profile is to describe a declared disclaimer included with some information.</td>
-   </tr>
+   </tr> 
  </tbody>   
 </table>
 <br/>

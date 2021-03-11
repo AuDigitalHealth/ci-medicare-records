@@ -73,49 +73,19 @@
       <sourceReference>
         <reference value="StructureDefinition/medication-pbs"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/immunizationrecommendation-air-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/observation-airimmstatus-1"/>
-      </sourceReference>
-    </resource>
+    </resource>        
     <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/flag-air-1"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/immunisation-dose-schedule-1"/>
-      </sourceReference>
-    </resource>
+    </resource>    
     <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/observation-aircovid19immstatus-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/basic-decldiscl-1"/>
-      </sourceReference>
-    </resource>
+    </resource>        
 
     <!--    Examples-->
     <resource>

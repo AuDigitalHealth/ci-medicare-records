@@ -21,12 +21,6 @@ The following extensions form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/stu3/Resource.html">Resource</a></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-immunisation-dose-schedule-1.html">Immunisation Dose Schedule</a></td>
-        <td>immunisation-dose-schedule-1</td>
-        <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a></td>
-        <td><a href="http://hl7.org/fhir/STU3/immunization-definitions.html#Immunization.vaccinationProtocol">Immunization.vaccinationProtocol</a></td>
-    </tr>
-        <tr>
         <td><a href="StructureDefinition-vaccine-serial-number-1.html">Vaccine Vial Serial Number</a></td>
         <td>vaccine-serial-number-1</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#string">string</a></td>

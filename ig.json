@@ -86,33 +86,13 @@
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"
         },
-        "StructureDefinition/observation-airimmstatus-1": {
-            "base": "StructureDefinition-observation-airimmstatus-1.html",
-            "defns": "StructureDefinition-observation-airimmstatus-1-definitions.html"
-        },
-        "StructureDefinition/immunizationrecommendation-air-1": {
-            "base": "StructureDefinition-immunizationrecommendation-air-1.html",
-            "defns": "StructureDefinition-immunizationrecommendation-air-1-definitions.html"
-        },
         "StructureDefinition/flag-air-1": {
             "base": "StructureDefinition-flag-air-1.html",
             "defns": "StructureDefinition-flag-air-1-definitions.html"
         },
-        "StructureDefinition/immunisation-dose-schedule-1": {
-            "base": "StructureDefinition-immunisation-dose-schedule-1.html",
-            "defns": "StructureDefinition-immunisation-dose-schedule-1-definitions.html"
-        },
         "StructureDefinition/vaccine-serial-number-1": {
             "base": "StructureDefinition-vaccine-serial-number-1.html",
             "defns": "StructureDefinition-vaccine-serial-number-1-definitions.html"
-        },
-        "StructureDefinition/observation-aircovid19immstatus-1": {
-            "base": "StructureDefinition-observation-aircovid19immstatus-1.html",
-            "defns": "StructureDefinition-observation-aircovid19immstatus-1-definitions.html"
-        },
-        "StructureDefinition/basic-decldiscl-1": {
-            "base": "StructureDefinition-basic-decldiscl-1.html",
-            "defns": "StructureDefinition-basic-decldiscl-1-definitions.html"
         }
     }
 }
