@@ -143,28 +143,6 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.vaccinationProtocol.extension">
-      <path value="Immunization.vaccinationProtocol.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.vaccinationProtocol.extension:doseSchedule">
-      <path value="Immunization.vaccinationProtocol.extension" />
-      <sliceName value="doseSchedule" />
-      <short value="Schedule" />
-      <type>
-        <code value="Extension" />
-        <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1"
-         />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Immunization.vaccinationProtocol.doseSequence">
       <path value="Immunization.vaccinationProtocol.doseSequence" />
       <mustSupport value="true" />
