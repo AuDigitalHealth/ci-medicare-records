@@ -10,7 +10,7 @@
   "name": "MedicareRecords",
   "status": "active",
   "experimental": false,
-  "date": "2021-03-02T10:12:38+10:00",
+  "date": "2021-03-11T12:53:53+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -163,30 +163,6 @@
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/immunizationrecommendation-air-1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/observation-airimmstatus-1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
             "reference": "StructureDefinition/flag-air-1"
           }
         },
@@ -199,43 +175,7 @@
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/immunisation-dose-schedule-1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:extension"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
             "reference": "StructureDefinition/vaccine-serial-number-1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/observation-aircovid19immstatus-1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "StructureDefinition:resource"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/basic-decldiscl-1"
           }
         },
         {
@@ -382,48 +322,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "ImmunizationRecommendation"
-            }
-          ],
-          "example": true,
-          "name": "ImmunizationRecommendation 1",
-          "description": "Polio vaccine with the forecast status of 'due' (text only)",
-          "sourceReference": {
-            "reference": "ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "ImmunizationRecommendation"
-            }
-          ],
-          "example": true,
-          "name": "ImmunizationRecommendation 2",
-          "description": "Polio vaccine with the forecast status of 'overdue' (text only)",
-          "sourceReference": {
-            "reference": "ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Flag"
-            }
-          ],
-          "example": true,
-          "name": "Flag 1",
-          "description": "AIR notice - meningococcal C vaccine",
-          "sourceReference": {
-            "reference": "Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
               "valueString": "Flag"
             }
           ],
@@ -446,76 +344,6 @@
           "description": "AIR notice - Natural immunity to Measles",
           "sourceReference": {
             "reference": "Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Observation"
-            }
-          ],
-          "example": true,
-          "name": "AIR Immunisation Status 01",
-          "description": "AIR Immunisation Status - up to date",
-          "sourceReference": {
-            "reference": "Observation/observation-air-immunisation-status-example-01"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Observation"
-            }
-          ],
-          "example": true,
-          "name": "AIR COVID-19 Vaccination Status",
-          "description": "AIR COVID-19 Vaccination Status",
-          "sourceReference": {
-            "reference": "Observation/e22a9149-fc11-4af6-8ca3-c378689c590d"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Observation"
-            }
-          ],
-          "example": true,
-          "name": "AIR Immunisation Status",
-          "description": "AIR Immunisation Status (Not up to date with catch up schedule message)",
-          "sourceReference": {
-            "reference": "Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Observation"
-            }
-          ],
-          "example": true,
-          "name": "AIR Immunisation Status",
-          "description": "AIR Immunisation Status (Not up to date)",
-          "sourceReference": {
-            "reference": "Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-              "valueString": "Basic"
-            }
-          ],
-          "example": true,
-          "name": "AIR Disclaimer",
-          "description": "AIR disclaimer",
-          "sourceReference": {
-            "reference": "Basic/2a3ea044-27d5-11eb-adc1-0242ac120002"
           }
         }
       ]

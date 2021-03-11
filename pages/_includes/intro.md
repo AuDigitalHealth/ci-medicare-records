@@ -95,11 +95,6 @@ This implementation guide is an early working specification that is available fo
 
 This implementation guide may not be considered to be complete enough or sufficiently reviewed to be safe for implementation and use in production systems. It may have known issues and still be in development.
 
-## Intended audience
-This implementation guide is aimed at software development teams, architects, designers, clinicians and informatics researchers who are responsible for the delivery of clinical applications, infrastructure components and messaging interfaces, and also for those who wish to evaluate the clinical suitability of the Agency-endorsed specifications.
-
-This implementation guide and related artefacts are technical in nature and the audience is expected to be familiar with the language of health data specifications and to have some familiarity with health information standards and specifications, such as [HL7 FHIR [HL7FHIR3]](#HL7FHIR3) and Standards Australia IT-014 documents. Definitions and examples are provided to clarify relevant terminology usage and intent.
-
 ## Document Information
 
 ### Key Information
@@ -135,39 +130,19 @@ This implementation guide and related artefacts are technical in nature and the 
         <tr>
             <td>1.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">1 Nov 2018</span></td>
-            <td>Proof of concept release. Implemented in FHIR Release 3 (STU).</td>
+            <td>Initial release at approved for external use. Implemented in FHIR Release 3 (STU).</td>
         </tr>
         <tr>
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
-            <td>Update to use FHIR 3.0.2. Add new features for immunisations.</td>
+            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). Added new features for immunisations. Included non-technical corrections from version 1.0.0.</td>
         </tr>
         <tr>
-            <td>TBD</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">Current</span></td>
+            <td>2.0.1</td>
+            <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
             <td>Current draft. Further changes for immunisations.</td>
         </tr>
       </tbody>
-</table> 
-
-## Known issues
-This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
-
-<table border="1" cellpadding="1" valign="middle">
-<tbody>
-  <tr bgcolor="#DCDCDC">
-    <th>Reference</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Source material errors</td>
-    <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
-  </tr>
-  <tr>
-    <td>Non-resolving profile URLs</td>
-    <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
-  </tr>
- </tbody>
 </table> 
 
 ## References

@@ -107,32 +107,78 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 <h1 id="profiles">Profiles</h1>
-<p>The following profiles form part of this implementation guide.</p>
+<p>The <a href="http://hl7.org/fhir/STU3/profiling.html">profiles</a> listed below are defined as part of this implementation guide. HL7 Australia base profiles referenced by this implementation guide can be found in <a href="index.html#HL7FHIR3">Australian Base Implementation Guide [HL7AUF3B2]</a>.</p>
 
+<h3 id="australian-immunisation-register">Australian Immunisation Register</h3>
 <p>Profiles that define the representation of vaccination information from the Australian Immunisation Register:</p>
-<ul>
-  <li><a href="StructureDefinition-observation-airimmstatus-1.html">Australian Immunisation Register Immunisation Status</a></li>
-  <li><a href="StructureDefinition-observation-aircovid19immstatus-1.html">Australian Immunisation Register COVID-19 Immunisation Status</a></li>
-  <li><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></li>
-  <li><a href="StructureDefinition-immunizationrecommendation-air-1.html">Australian Immunisation Register Immunisation Recommendation</a></li>
-  <li><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></li>
-  <li><a href="StructureDefinition-basic-decldiscl-1.html">Declared Disclaimer</a></li>
-</ul>
-
+<table class="list" width="100%">
+  <tbody>
+   <col width="30%" />
+   <col width="70%" />
+  <tr>
+     <th>Profile</th>
+     <th>Description</th>
+  </tr>
+  <tr>
+     <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
+     <td>The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register (AIR).</td>
+  </tr>
+   <tr>
+      <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
+      <td>The purpose of this profile is to define a representation of the Australian Immunisation Register (AIR) notice such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
+   </tr> 
+ </tbody>   
+</table>
+<p><br /></p>
+<h3 id="pharmaceutical-benefits-schedule-pbs-and-medicare-benefits-schedule-mbs">Pharmaceutical Benefits Schedule (PBS) and Medicare Benefits Schedule (MBS)</h3>
 <p>Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:</p>
-<ul>
-  <li><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></li>
-  <li><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
-  <li><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></li>
-  <li><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
-</ul>
-
+<table class="list" width="100%">
+   <tbody>
+      <col width="30%" />
+      <col width="70%" />
+      <tr>
+         <th>Profile</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></td>
+         <td>This profile defines a representation of prescription data to support representation of PBS claim items.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></td>
+         <td>This profile defines a representation of pharmaceutical item data to support representation of PBS claim items.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></td>
+         <td>This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records.</td>
+       </tr>
+ </tbody>
+</table>
+<p><br /></p>
+<h3 id="australian-organ-donor-register">Australian Organ Donor Register</h3>
 <p>Profiles that define representation of donation decision information from the Australian Organ Donor Register:</p>
-<ul>
-  <li><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></li>
-  <li><a href="StructureDefinition-bodysite-aodr.html">BodySite Australian Organ Donor Register</a></li>
-</ul>
-
+<table class="list" width="100%">
+  <tbody>
+     <col width="30%" />
+     <col width="70%" />
+     <tr>
+       <th>Profile</th>
+       <th>Description</th>
+     </tr>
+     <tr>
+       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
+       <td>This profile defines a representation of donation decision information from the Australian Organ Donor Register.</td>
+     </tr>
+     <tr>
+       <td><a href="StructureDefinition-bodysite-aodr.html">BodySite Australian Organ Donor Register</a></td>
+       <td>This profile defines a representation of organ and tissue details to support representation of Australian Organ Donor Register records.</td>
+     </tr>
+  </tbody>
+</table>
 
 
 <!-- ==============END CONTENT END CONTENT=================== -->
@@ -162,7 +208,7 @@
        <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
        <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
        <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-    <p>Medicare Records FHIR Implementation Guide Version: 2.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Tue, Mar 2, 2021 10:12+1000.
+    <p>Medicare Records FHIR Implementation Guide Version: 2.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Thu, Mar 11, 2021 12:53+1000.
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

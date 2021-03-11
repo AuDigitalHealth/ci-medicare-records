@@ -6,7 +6,7 @@
     <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ceb0c9d5-62c1-4d86-bad0-15fe96dc39b9</p><p><b>status</b>: completed</p><p><b>notGiven</b>: false</p><p><b>vaccineCode</b>: <span title="Codes: {urn:oid:1.2.36.1.2001.1005.17 PANVAX}">Panvax</span></p><p><b>patient</b>: <span></span></p><p><b>date</b>: 2019-08-01</p><p><b>primarySource</b>: true</p><h3>VaccinationProtocols</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>TargetDisease</b></td><td><b>DoseStatus</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: ">Influenza</span></td><td><span title="Codes: {http://hl7.org/fhir/v3/NullFlavor NAVU}">Not available</span></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ceb0c9d5-62c1-4d86-bad0-15fe96dc39b9</p><p><b>status</b>: completed</p><p><b>notGiven</b>: false</p><p><b>vaccineCode</b>: <span title="Codes: {urn:oid:1.2.36.1.2001.1005.17 PANVAX}">Panvax</span></p><p><b>patient</b>: <span></span></p><p><b>date</b>: 2019-08-01</p><p><b>primarySource</b>: true</p><h3>VaccinationProtocols</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseStatus</b></td></tr><tr><td>*</td><td><span title="Codes: ">Influenza</span></td><td><span title="Codes: {http://hl7.org/fhir/v3/NullFlavor NAVU}">Not available</span></td></tr></table></div>
   </text>
   <identifier>
     <system value="urn:ietf:rfc:4122"/>
@@ -37,9 +37,6 @@
   <date value="2019-08-01"/>
   <primarySource value="true"/>
   <vaccinationProtocol>
-    <extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1">
-      <valueString value="Other"/>
-    </extension>
     <targetDisease>
       <text value="Influenza"/>
     </targetDisease>
