@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="consent-aodr"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
-  <version value="1.1.0"/>
+  <version value="1.0.1"/>
   <name value="ConsentAustralianOrganDonorRegister"/>
-  <status value="active"/>
-  <experimental value="false"/>
+  <status value="draft"/>
+  <experimental value="true"/>
   <!--<date value="2018-08-28"/>-->
   <publisher value="Australian Digital Health Agency"/>
   <contact>
