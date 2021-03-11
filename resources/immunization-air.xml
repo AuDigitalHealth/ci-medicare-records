@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register (AIR).&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;Except for the following elements:&#xA;&#xA;* identifier&#xA;&#xA;* patient&#xA;&#xA;for which it SHALL be interpreted as:&#xA;&#xA;* The system SHALL be able to take the element into account when performing processing" />
+    value="The purpose of this profile is to define a representation of a given vaccination of a patient for transmission from the Australian Immunisation Register immunisation history to the My Health Record system." />
   <copyright
     value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="3.0.2" />
@@ -141,28 +141,6 @@
       <path value="Immunization.vaccinationProtocol" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.extension">
-      <path value="Immunization.vaccinationProtocol.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.vaccinationProtocol.extension:doseSchedule">
-      <path value="Immunization.vaccinationProtocol.extension" />
-      <sliceName value="doseSchedule" />
-      <short value="Schedule" />
-      <type>
-        <code value="Extension" />
-        <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1"
-         />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccinationProtocol.doseSequence">

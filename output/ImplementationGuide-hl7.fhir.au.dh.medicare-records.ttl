@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MedicareRecords"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-02T10:12:38+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-11T12:53:53+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -165,47 +165,11 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunizationrecommendation-air-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/immunizationrecommendation-air-1" ]
-       ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-airimmstatus-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-airimmstatus-1" ]
-       ]
-     ], [
-       fhir:index 11;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/flag-air-1" ]
        ]
      ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/immunisation-dose-schedule-1" ]
-       ]
-     ], [
-       fhir:index 13;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -217,31 +181,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/vaccine-serial-number-1" ]
        ]
      ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-aircovid19immstatus-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-aircovid19immstatus-1" ]
-       ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/basic-decldiscl-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/basic-decldiscl-1" ]
-       ]
-     ], [
-       fhir:index 16;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -255,7 +195,7 @@
          fhir:Reference.reference [ fhir:value "Immunization/88d35c33-414c-4d55-98e9-29f9c954df03" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -269,7 +209,7 @@
          fhir:Reference.reference [ fhir:value "Immunization/7d0dab26-bc12-471e-a228-527c645db404" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -283,7 +223,7 @@
          fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/explanationofbenefit-mbs-example-01" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -297,7 +237,7 @@
          fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/explanationofbenefit-mbs-example-02" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -311,7 +251,7 @@
          fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/explanationofbenefit-mbs-example-min" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -325,7 +265,7 @@
          fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/explanationofbenefit-pbs-example-01" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -339,7 +279,7 @@
          fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/explanationofbenefit-pbs-example-02" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -353,7 +293,7 @@
          fhir:Reference.reference [ fhir:value "Consent/aodr-example-willingtodonate" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -367,7 +307,7 @@
          fhir:Reference.reference [ fhir:value "Consent/aodr-example-willingtodonatesome" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -381,49 +321,7 @@
          fhir:Reference.reference [ fhir:value "Consent/aodr-example-notwillingtodonate" ]
        ]
      ], [
-       fhir:index 26;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "ImmunizationRecommendation 1" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "Polio vaccine with the forecast status of 'due' (text only)" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4>;
-         fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4" ]
-       ]
-     ], [
-       fhir:index 27;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "ImmunizationRecommendation 2" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "Polio vaccine with the forecast status of 'overdue' (text only)" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329>;
-         fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329" ]
-       ]
-     ], [
-       fhir:index 28;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Flag" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "Flag 1" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR notice - meningococcal C vaccine" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a>;
-         fhir:Reference.reference [ fhir:value "Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a" ]
-       ]
-     ], [
-       fhir:index 29;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -437,7 +335,7 @@
          fhir:Reference.reference [ fhir:value "Flag/d75a3b06-0397-4472-bc7e-8651668e8f40" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -449,76 +347,6 @@
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac>;
          fhir:Reference.reference [ fhir:value "Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac" ]
-       ]
-     ], [
-       fhir:index 31;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "AIR Immunisation Status 01" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR Immunisation Status - up to date" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Observation/observation-air-immunisation-status-example-01>;
-         fhir:Reference.reference [ fhir:value "Observation/observation-air-immunisation-status-example-01" ]
-       ]
-     ], [
-       fhir:index 32;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "AIR COVID-19 Vaccination Status" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR COVID-19 Vaccination Status" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Observation/e22a9149-fc11-4af6-8ca3-c378689c590d>;
-         fhir:Reference.reference [ fhir:value "Observation/e22a9149-fc11-4af6-8ca3-c378689c590d" ]
-       ]
-     ], [
-       fhir:index 33;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "AIR Immunisation Status" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR Immunisation Status (Not up to date with catch up schedule message)" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3>;
-         fhir:Reference.reference [ fhir:value "Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3" ]
-       ]
-     ], [
-       fhir:index 34;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "AIR Immunisation Status" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR Immunisation Status (Not up to date)" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1>;
-         fhir:Reference.reference [ fhir:value "Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1" ]
-       ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Basic" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "AIR Disclaimer" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "AIR disclaimer" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/Basic/2a3ea044-27d5-11eb-adc1-0242ac120002>;
-         fhir:Reference.reference [ fhir:value "Basic/2a3ea044-27d5-11eb-adc1-0242ac120002" ]
        ]
      ]
   ];

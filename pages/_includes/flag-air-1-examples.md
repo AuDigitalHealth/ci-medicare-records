@@ -5,13 +5,6 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.html">AIR notice - meningococcal C vaccine</a></td>
-      <td>4fe3c7c3-9208-4a67-bb61-b8359f591a8a</td>
-      <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.xml.html">XML</a></td>
-      <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.json.html">JSON</a></td>
-      <td><a href="Flag-4fe3c7c3-9208-4a67-bb61-b8359f591a8a.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.html">AIR notice - medical contraindication to MMR II</a></td>
       <td>d75a3b06-0397-4472-bc7e-8651668e8f40</td>
       <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.xml.html">XML</a></td>

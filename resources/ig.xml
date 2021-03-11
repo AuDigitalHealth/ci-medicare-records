@@ -73,49 +73,19 @@
       <sourceReference>
         <reference value="StructureDefinition/medication-pbs"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/immunizationrecommendation-air-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/observation-airimmstatus-1"/>
-      </sourceReference>
-    </resource>
+    </resource>        
     <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/flag-air-1"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/immunisation-dose-schedule-1"/>
-      </sourceReference>
-    </resource>
+    </resource>    
     <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/observation-aircovid19immstatus-1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/basic-decldiscl-1"/>
-      </sourceReference>
-    </resource>
+    </resource>        
 
     <!--    Examples-->
     <resource>
@@ -197,31 +167,7 @@
       <sourceReference>
         <reference value="Consent/aodr-example-notwillingtodonate"/>
       </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="ImmunizationRecommendation 1"/>
-      <description value="Polio vaccine with the forecast status of 'due' (text only)"/>
-      <sourceReference>
-        <reference value="ImmunizationRecommendation/a1e91255-59f4-476c-b764-46f66eabdff4"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="ImmunizationRecommendation 2"/>
-      <description value="Polio vaccine with the forecast status of 'overdue' (text only)"/>
-      <sourceReference>
-        <reference value="ImmunizationRecommendation/a83d0305-7970-4f29-be4e-0f6979de9329"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="Flag 1"/>
-      <description value="AIR notice - meningococcal C vaccine"/>
-      <sourceReference>
-        <reference value="Flag/4fe3c7c3-9208-4a67-bb61-b8359f591a8a"/>
-      </sourceReference>
-    </resource>
+    </resource>    
     <resource>
       <example value="true"/>
       <name value="Flag 1"/>
@@ -236,46 +182,6 @@
       <description value="AIR notice - Natural immunity to Measles"/>
       <sourceReference>
         <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR Immunisation Status 01"/>
-      <description value="AIR Immunisation Status - up to date"/>
-      <sourceReference>
-        <reference value="Observation/observation-air-immunisation-status-example-01"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR COVID-19 Vaccination Status"/>
-      <description value="AIR COVID-19 Vaccination Status"/>
-      <sourceReference>
-        <reference value="Observation/e22a9149-fc11-4af6-8ca3-c378689c590d"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR Immunisation Status"/>
-      <description value="AIR Immunisation Status (Not up to date with catch up schedule message)"/>
-      <sourceReference>
-        <reference value="Observation/12e8af92-d9d5-49e6-8ff4-a57aed9834b3"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR Immunisation Status"/>
-      <description value="AIR Immunisation Status (Not up to date)"/>
-      <sourceReference>
-        <reference value="Observation/ba3bc856-5a80-4e9b-bf93-8e2a1af0ded1"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <name value="AIR Disclaimer"/>
-      <description value="AIR disclaimer"/>
-      <sourceReference>
-        <reference value="Basic/2a3ea044-27d5-11eb-adc1-0242ac120002"/>
       </sourceReference>
     </resource>
     

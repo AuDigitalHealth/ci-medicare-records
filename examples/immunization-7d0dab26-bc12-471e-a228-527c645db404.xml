@@ -33,10 +33,6 @@
 	<date value="2019-08-01"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
-		<extension
-			url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunisation-dose-schedule-1">
-			<valueString value="Other"/>
-		</extension>
 		<targetDisease>
 			<text value="Influenza"/>
 		</targetDisease>

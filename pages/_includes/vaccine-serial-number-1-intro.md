@@ -1,10 +1,14 @@
-#### Vaccine Vial Serial Number *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
-#### Usage scenarios
-The following are the expected usage scenarios this profile is intended to support:
-* Services Australia Medicare sends Australian Immunisation Register records to the My Health Record system
+##### **Context of Use**
+Australian Immunisation Register Immunisation
 
-#### Implementation guidance
-No additional guidance.
+##### **Usage scenarios**
+The following are the usage scenarios expected:
+* Medicare sends Australian Immunisation Register records to the My Health Record system
 
-This profile is referenced by [Australian Immunisation Register Immunisation](StructureDefinition-immunization-air.html). 
+##### **Each Extension SHALL have**
+1. an extension identifier (url)
+1. a vaccine vial serial number
+
+
+
