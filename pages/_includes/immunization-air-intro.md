@@ -1,3 +1,5 @@
+#### Australian Immunisation Register Immunisation *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+
 The purpose of this profile is to define a representation of a given vaccination of a patient for transmission from the Australian Immunisation Register immunisation history to the My Health Record system.
 
 ##### **Usage scenarios**
