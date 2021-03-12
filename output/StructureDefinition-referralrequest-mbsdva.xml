@@ -17,11 +17,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ReferralRequestMedicareBenefitsScheduleDepartmentofVeterans&#39;Affairs"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2018-08-28"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-12T12:35:16+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records."/>
-  <copyright value="Copyright &#xA9; 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright &#xA9; 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <mapping>
     <identity value="w5"/>

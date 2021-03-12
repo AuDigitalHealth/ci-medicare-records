@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records"/>
-  <version value="2.0.0"/>
+  <version value="2.0.1"/>
   <name value="MedicareRecords"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2021-03-11T12:53:53+10:00"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-12T12:35:16+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -20,7 +20,7 @@
     </telecom>
   </contact>
   <description value="Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications."/>
-  <copyright value="Copyright &#xA9; 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright &#xA9; 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <dependency>
     <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId">

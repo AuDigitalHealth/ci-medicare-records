@@ -48,7 +48,7 @@
    </div>-->
 
    <div id="ig-status">
-    <b>Medicare Records FHIR Implementation Guide version 2.0.0</b>
+    <b>Medicare Records FHIR Implementation Guide version 2.0.1</b>
 </div>
 
   </div>
@@ -103,7 +103,7 @@
 
 <div class="col-12">
 
-<!--ReleaseHeader--><p id="publish-box">MedicareRecords - Local Development build (v2.0.0). See the <a href="http://ns.electronichealth.net.au/ci/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">MedicareRecords - Local Development build (v2.0.1). See the <a href="http://ns.electronichealth.net.au/ci/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 <!-- ============BreadCrumb=============== -->
 <!--
@@ -154,6 +154,8 @@
 </ul>-->
 
 <a name="introduction"> </a>
+
+<h4 id="explanation-of-benefit-medicare-draft">Explanation of Benefit Medicare <em>[<a href="http://hl7.org/fhir/stu3/valueset-publication-status.html">Draft</a>]</em></h4>
 
 <p>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. PBS claim items include information about pharmaceutical items prescribed and dispensed to an individual that were partially or fully funded under the PBS or Repatriation Pharmaceutical Benefits Scheme (RPBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by Medicare or the Department of Veterans’ Affairs.</p>
 
@@ -250,7 +252,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="http://hl7.org/fhir/STU3/explanationofbenefit.html">ExplanationOfBenefit</a>.</p>
 <p>
-This profile was published on Tue Aug 28 00:00:00 AEST 2018 as a active by Australian Digital Health Agency.
+This profile was published on Fri Mar 12 12:35:16 AEST 2021 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -304,24 +306,24 @@ Summary
       <li>inv-dh-eob-04:  A PBS claim (subType=’pbs’) SHALL be of type ‘Pharmacy’ (type=’pharmacy’).</li>
     </ul>
   </li>
-  <li>One <code class="language-plaintext highlighter-rouge">meta.profile</code> is ‘http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare’</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">identifier</code></li>
-  <li><code class="language-plaintext highlighter-rouge">status</code> is ‘active’</li>
-  <li><code class="language-plaintext highlighter-rouge">subType</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">patient</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-patient.html">AU Base Patient</a></li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">created</code></li>
-  <li><code class="language-plaintext highlighter-rouge">insurer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
-  <li><code class="language-plaintext highlighter-rouge">provider</code> as <a href="http://fhir.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></li>
-  <li><code class="language-plaintext highlighter-rouge">organization</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
-  <li><code class="language-plaintext highlighter-rouge">referral</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
-  <li><code class="language-plaintext highlighter-rouge">prescription</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item</code></li>
-  <li><code class="language-plaintext highlighter-rouge">item.sequence</code> is ‘1’</li>
-  <li><code class="language-plaintext highlighter-rouge">item.category</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#extensible">extensible</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item.service</code></li>
-  <li><code class="language-plaintext highlighter-rouge">item.service</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1">Australian Department of Human Services Modifications of Pharmaceutical Benefits Scheme Schedule Item, Medicare Benefits Schedule Item and Department of Veterans’ Affairs Fee Schedule Item</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item.serviced</code></li>
+  <li>One <code class="highlighter-rouge">meta.profile</code> is ‘http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare’</li>
+  <li>Exactly one <code class="highlighter-rouge">identifier</code></li>
+  <li><code class="highlighter-rouge">status</code> is ‘active’</li>
+  <li><code class="highlighter-rouge">subType</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">patient</code></li>
+  <li><code class="highlighter-rouge">patient</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-patient.html">AU Base Patient</a></li>
+  <li>Exactly one <code class="highlighter-rouge">created</code></li>
+  <li><code class="highlighter-rouge">insurer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li><code class="highlighter-rouge">provider</code> as <a href="http://fhir.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></li>
+  <li><code class="highlighter-rouge">organization</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li><code class="highlighter-rouge">referral</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
+  <li><code class="highlighter-rouge">prescription</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
+  <li>Exactly one <code class="highlighter-rouge">item</code></li>
+  <li><code class="highlighter-rouge">item.sequence</code> is ‘1’</li>
+  <li><code class="highlighter-rouge">item.category</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#extensible">extensible</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">item.service</code></li>
+  <li><code class="highlighter-rouge">item.service</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1">Australian Department of Human Services Modifications of Pharmaceutical Benefits Scheme Schedule Item, Medicare Benefits Schedule Item and Department of Veterans’ Affairs Fee Schedule Item</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">item.serviced</code></li>
 </ol>
 
 
@@ -928,24 +930,24 @@ Summary
       <li>inv-dh-eob-04:  A PBS claim (subType=’pbs’) SHALL be of type ‘Pharmacy’ (type=’pharmacy’).</li>
     </ul>
   </li>
-  <li>One <code class="language-plaintext highlighter-rouge">meta.profile</code> is ‘http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare’</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">identifier</code></li>
-  <li><code class="language-plaintext highlighter-rouge">status</code> is ‘active’</li>
-  <li><code class="language-plaintext highlighter-rouge">subType</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">patient</code></li>
-  <li><code class="language-plaintext highlighter-rouge">patient</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-patient.html">AU Base Patient</a></li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">created</code></li>
-  <li><code class="language-plaintext highlighter-rouge">insurer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
-  <li><code class="language-plaintext highlighter-rouge">provider</code> as <a href="http://fhir.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></li>
-  <li><code class="language-plaintext highlighter-rouge">organization</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
-  <li><code class="language-plaintext highlighter-rouge">referral</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
-  <li><code class="language-plaintext highlighter-rouge">prescription</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item</code></li>
-  <li><code class="language-plaintext highlighter-rouge">item.sequence</code> is ‘1’</li>
-  <li><code class="language-plaintext highlighter-rouge">item.category</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#extensible">extensible</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item.service</code></li>
-  <li><code class="language-plaintext highlighter-rouge">item.service</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1">Australian Department of Human Services Modifications of Pharmaceutical Benefits Scheme Schedule Item, Medicare Benefits Schedule Item and Department of Veterans’ Affairs Fee Schedule Item</a> value set</li>
-  <li>Exactly one <code class="language-plaintext highlighter-rouge">item.serviced</code></li>
+  <li>One <code class="highlighter-rouge">meta.profile</code> is ‘http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare’</li>
+  <li>Exactly one <code class="highlighter-rouge">identifier</code></li>
+  <li><code class="highlighter-rouge">status</code> is ‘active’</li>
+  <li><code class="highlighter-rouge">subType</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">patient</code></li>
+  <li><code class="highlighter-rouge">patient</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-patient.html">AU Base Patient</a></li>
+  <li>Exactly one <code class="highlighter-rouge">created</code></li>
+  <li><code class="highlighter-rouge">insurer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li><code class="highlighter-rouge">provider</code> as <a href="http://fhir.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></li>
+  <li><code class="highlighter-rouge">organization</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li><code class="highlighter-rouge">referral</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></li>
+  <li><code class="highlighter-rouge">prescription</code> <a href="http://hl7.org/fhir/STU3/references.html#contained">contained</a> as <a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></li>
+  <li>Exactly one <code class="highlighter-rouge">item</code></li>
+  <li><code class="highlighter-rouge">item.sequence</code> is ‘1’</li>
+  <li><code class="highlighter-rouge">item.category</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#extensible">extensible</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1">Australian Medicare Benefit and Claim Category</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">item.service</code></li>
+  <li><code class="highlighter-rouge">item.service</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1">Australian Department of Human Services Modifications of Pharmaceutical Benefits Scheme Schedule Item, Medicare Benefits Schedule Item and Department of Veterans’ Affairs Fee Schedule Item</a> value set</li>
+  <li>Exactly one <code class="highlighter-rouge">item.serviced</code></li>
 </ol>
 
 
@@ -1699,7 +1701,7 @@ Summary
        <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
        <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
        <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-    <p>Medicare Records FHIR Implementation Guide Version: 2.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Thu, Mar 11, 2021 12:53+1000.
+    <p>Medicare Records FHIR Implementation Guide Version: 2.0.1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Fri, Mar 12, 2021 12:35+1000.
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

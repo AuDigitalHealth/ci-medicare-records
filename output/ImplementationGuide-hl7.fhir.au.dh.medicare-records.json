@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicareRecords</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records</pre><div><p>Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications.</p>\n</div></div>"
   },
   "url": "http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "name": "MedicareRecords",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-03-11T12:53:53+10:00",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-03-12T12:35:16+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -23,7 +23,7 @@
     }
   ],
   "description": "Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications.",
-  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "copyright": "Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.2",
   "dependency": [
     {

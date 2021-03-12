@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Australian Immunisation Register Immunisation"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-11T12:53:53+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-12T12:35:16+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

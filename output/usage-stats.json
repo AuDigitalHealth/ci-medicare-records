@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.au.dh.medicare-records",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "fhirVersion": "3.0.2",
   "extensions": [
     {
