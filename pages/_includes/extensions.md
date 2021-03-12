@@ -9,13 +9,13 @@ The following extensions form part of this implementation guide.
         <th>Context</th>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-extension-donationdecision.html">ExtensionConsentDonationDecision</a></td>
+        <td><a href="StructureDefinition-extension-donationdecision.html">Consent Donation Decision</a></td>
         <td>extension-donationdecision</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Consent.html">Consent</a></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-extension-dateinitialregistration.html">ExtensionDateInitialRegistration</a></td>
+        <td><a href="StructureDefinition-extension-dateinitialregistration.html">Date Initial Registration</a></td>
         <td>extension-dateinitialregistration</td>
         <td><a href="http://hl7.org/fhir/stu3/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/stu3/Resource.html">Resource</a></td>
