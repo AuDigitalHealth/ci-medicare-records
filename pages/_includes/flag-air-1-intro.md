@@ -24,4 +24,4 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * patient
     
 ##### **Profile-specific implementation guidance**
-No specific guidance.
+* The notice text is sent in the text portion of code

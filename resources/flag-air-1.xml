@@ -85,11 +85,6 @@
       <path value="Flag.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Flag.code.text">
-      <path value="Flag.code.text" />
-      <short value="Notice text" />
-      <min value="1" />
-    </element>
     <element id="Flag.subject">
       <path value="Flag.subject" />
       <type>
