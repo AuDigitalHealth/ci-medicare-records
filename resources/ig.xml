@@ -5,7 +5,7 @@
     value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/implementationguide-medicare-records"/>
   <version value="2.0.1"/>
   <name value="MedicareRecords"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>

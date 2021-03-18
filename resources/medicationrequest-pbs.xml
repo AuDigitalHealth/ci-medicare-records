@@ -4,9 +4,8 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"/>
   <version value="1.0.1"/>
   <name value="MedicationRequestPharmaceuticalBenefitsScheme"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="true"/>
-  <!--<date value="2018-08-28"/>-->
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
