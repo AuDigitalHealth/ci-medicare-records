@@ -7,6 +7,7 @@
   <title value="Australian Immunisation Register Immunisation" />
   <status value="active" />
   <experimental value="true" />
+  <date value="2021-03-19"/>
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
