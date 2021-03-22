@@ -145,6 +145,30 @@ This implementation guide may not be considered to be complete enough or suffici
       </tbody>
 </table> 
 
+## Known issues
+This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
+
+<table class="list" width="100%" cellspacing="6">
+    <tbody>
+        <tr>
+            <th>Reference</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Source material errors</td>
+            <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+        </tr>
+        <tr>
+            <td>Non-resolving profile URLs</td>
+            <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+        </tr>
+        <tr>
+            <td>Unnecessary rejection of instances</td>
+            <td>The profiles Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation unnecessarily reject instances that contain irrelevant information. Profiles should only reject what is problematic, not what is irrelevant. They prevent inclusion of display values or alternate codings in their CodeableConcept elements, Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus.</td>
+        </tr>
+    </tbody>
+</table> 
+
 ## References
 
 |[<a name="HL7AUF3B2">HL7AUF3B2</a>]| HL7 Australia, Australian Base Implementation Guide.|
