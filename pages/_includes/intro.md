@@ -166,6 +166,10 @@ This table lists known issues with this specification at the time of publishing.
             <td>Use of fixedCodeableConcept in Immunization and Consent profiles</td>
             <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
         </tr>
+        <tr>
+            <td>In Explanation of Benefit Medicare inv-dh-eob-01 and -2 have incorrect FHIRPath</td>
+            <td>The invariants <span style="font-family:courier;">inv-dh-eob-01: A PBS or RPBS claim SHALL include a prescription</span> and <span style="font-family:courier;">inv-dh-eob-02: A MBS or DVABS claim SHALL NOT include a prescription</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an MBS claim without a prescription instance fails validation.</td>
+        </tr>
     </tbody>
 </table> 
 
