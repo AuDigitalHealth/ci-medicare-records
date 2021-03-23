@@ -167,8 +167,10 @@ This table lists known issues with this specification at the time of publishing.
             <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
         </tr>
         <tr>
-            <td>Overuse of contained resources in Explanation of Benefit Medicare</td>
-            <td>In Explanation of Benefit Medicare the elements referral and prescription are required to refer to contained resources. This assertion was made due to a misunderstanding of contained resources and prevents using this resource as intended. The most serious problem is that it is impossible to validly include a prescription in Explanation of Benefit Medicare. This is because the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, it has a required element, medicationReference, which is a contained reference, and contained resources cannot be nested.</td>
+            <td>Incorrect use of contained resources in Explanation of Benefit Medicare</td>
+            <td>In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes another contained reference, to Medication Pharmaceutical Benefits Scheme. This prevents having an instance of Explanation Of Benefit Medicare that conforms to this profile as intended, as FHIR does not allow nested contained resources.
+
+</td>
         </tr>
     </tbody>
 </table> 
