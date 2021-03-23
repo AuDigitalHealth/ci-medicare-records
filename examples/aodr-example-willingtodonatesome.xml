@@ -297,7 +297,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -313,7 +312,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -329,7 +327,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -345,7 +342,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -361,7 +357,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -377,7 +372,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -393,7 +387,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -409,7 +402,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
@@ -425,7 +417,6 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="53958007"/>
-				<display value="Harvesting of donor material"/>
 			</coding>
 		</action>
 		<data>
