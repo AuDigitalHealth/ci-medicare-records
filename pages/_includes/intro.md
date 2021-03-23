@@ -167,8 +167,16 @@ This table lists known issues with this specification at the time of publishing.
             <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
         </tr>
         <tr>
+            <td>Incorrect use of contained resources in Explanation of Benefit Medicare</td>
+            <td>In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes another contained reference, to Medication Pharmaceutical Benefits Scheme. This prevents having an instance of Explanation Of Benefit Medicare that conforms to this profile as intended, as FHIR does not allow nested contained resources.</td>
+        </tr>
+        <tr>
             <td>Incorrect FHIRPath in Consent Australian Organ Donor Register inv-dh-cons-01 and -2</td>
             <td>The invariants <span style="font-family:courier;">inv-dh-cons-01: If donation decision is 'permit', there SHALL be a specific organ (except.data.reference).</span> and <span style="font-family:courier;">inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference).</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an instance with donation-decision of 'permit' and with a specific organ (except.data.reference) will fail with an error against inv-dh-cons-02.</td>
+        </tr>
+        <tr>
+            <td>Incorrect FHIRPath in Explanation of Benefit Medicare inv-dh-eob-01 and -2</td>
+            <td>The invariants <span style="font-family:courier;">inv-dh-eob-01: A PBS or RPBS claim SHALL include a prescription</span> and <span style="font-family:courier;">inv-dh-eob-02: A MBS or DVABS claim SHALL NOT include a prescription</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an MBS claim without a prescription instance fails validation.</td>
         </tr>
     </tbody>
 </table> 
