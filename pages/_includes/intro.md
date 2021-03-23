@@ -166,6 +166,12 @@ This table lists known issues with this specification at the time of publishing.
             <td>Use of fixedCodeableConcept in Immunization and Consent profiles</td>
             <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
         </tr>
+        <tr>
+            <td>Incorrect use of contained resources in Explanation of Benefit Medicare</td>
+            <td>In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes another contained reference, to Medication Pharmaceutical Benefits Scheme. This prevents having an instance of Explanation Of Benefit Medicare that conforms to this profile as intended, as FHIR does not allow nested contained resources.
+
+</td>
+        </tr>
     </tbody>
 </table> 
 
