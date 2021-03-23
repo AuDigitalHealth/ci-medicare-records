@@ -17,12 +17,5 @@
       <td><a href="Consent-aodr-example-willingtodonatesome.xml.html">XML</a></td>
       <td><a href="Consent-aodr-example-willingtodonatesome.json.html">JSON</a></td>
       <td><a href="Consent-aodr-example-willingtodonatesome.ttl.html">Turtle</a></td>
-   </tr>    
-  <tr>
-      <td><a href="Consent-aodr-example-notwillingtodonate.html">Not willing to donate</a></td>
-      <td>aodr-example-notwillingtodonate</td>
-      <td><a href="Consent-aodr-example-notwillingtodonate.xml.html">XML</a></td>
-      <td><a href="Consent-aodr-example-notwillingtodonate.json.html">JSON</a></td>
-      <td><a href="Consent-aodr-example-notwillingtodonate.ttl.html">Turtle</a></td>
    </tr>
 </table>
