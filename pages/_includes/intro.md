@@ -167,7 +167,7 @@ This table lists known issues with this specification at the time of publishing.
             <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
         </tr>
         <tr>
-            <td>In Consent Australian Organ Donor Register inv-dh-cons-01 and -2 have incorrect FHIRPath</td>
+            <td>Incorrect FHIRPath in Consent Australian Organ Donor Register inv-dh-cons-01 and -2</td>
             <td>The invariants <span style="font-family:courier;">inv-dh-cons-01: If donation decision is 'permit', there SHALL be a specific organ (except.data.reference).</span> and <span style="font-family:courier;">inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference).</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an instance with donation-decision of 'permit' and with a specific organ (except.data.reference) will fail with an error against inv-dh-cons-02.</td>
         </tr>
     </tbody>
