@@ -163,29 +163,29 @@ This table lists known issues with this specification at the time of publishing.
             <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
         </tr>
         <tr>
-            <td>Consent Australian Organ Donor Register</td>
-            <td>This profile cannot be used for automated validation.
+            <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
+            <td>All instances of Consent will fail validation against this profile.
                 <ul>
-                    <li>All instances of Consent will fail validation against this profile as nothing can satisfy the required slice category:organDonationConsent. Its use of fixedCodeableConcept does not set discriminator values in a way suitable for slicing.</li>
-                    <li>All instances of Consent will fail validation against this profile as nothing can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-cons-01</span> and <span style="font-family:courier;">inv-dh-cons-02</span>. In the FHIRPath expressions the antecedents are always true, so e.g. an instance with donation-decision of 'permit' and with a specific organ (except.data.reference) will fail with an error against <span style="font-family:courier;">inv-dh-cons-02</span>.</li>
-                    <li>Instances of Consent that contain parts of Consent.category:organDonationConsent or Consent.except.action that are intended to be optional, including text and coding.display, will be rejected. Values of CodeableConcepts are set using fixedCodeableConcept, which prohibits parts of CodeableConcept that are intended to be optional, including CodeableConcept.text and CodeableConcept.coding.display.</li>
+                    <li>Nothing can satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> Github issue 6</a>.</li>
+                    <li>Nothing can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-cons-01</span> and <span style="font-family:courier;">inv-dh-cons-02</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> Github issue 5</a>.</li>
+                    <li>Instances of Consent that contain parts of Consent.category:organDonationConsent or Consent.except.action that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
                 </ul>
             </td>
         </tr>
         <tr>
-            <td>Explanation of Benefit Medicare</td>
-            <td>This profile has very limited use for automated validation.
+            <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+            <td>Many wanted instances of Explanation of Benefit will fail validation against this profile.
                 <ul>
-                    <li>Instances of Explanation of Benefit that include medications will fail validation against this profile due to its use of contained resources. In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes a contained reference to Medication Pharmaceutical Benefits Scheme. FHIR does not allow nesting of contained resources.</li>
-                    <li>Many true instances of Explanation of Benefit will fail validation against this profile as few things can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span> and <span style="font-family:courier;">inv-dh-eob-02</span>. In the FHIRPath expressions the antecedents are always true, so e.g. an MBS claim without a prescription instance fails validation.</li>
+                    <li>Instances that include medications will fail as it uses nested contained resources.  See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
+                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span> and <span style="font-family:courier;">inv-dh-eob-02</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
                 </ul>
             </td>
         </tr>
         <tr>
-            <td>Australian Immunisation Register Immunisation</td>
-            <td>This profile has slightly limited use for automated validation.
+            <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
+            <td>Some wanted instances of Immunization will fail validation against this profile.
                 <ul>
-                    <li>Instances of Immunisation that contain parts of Immunization.vaccinationProtocol.doseStatus that are intended to be optional, including text and coding.display, will be rejected. Values of CodeableConcepts are set using fixedCodeableConcept, which prohibits parts of CodeableConcept that are intended to be optional, including CodeableConcept.text and CodeableConcept.coding.display.</li>
+                    <li>Instances of Immunization that contain parts of Immunization.vaccinationProtocol.doseStatus that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
                 </ul>
             </td>
         </tr>
