@@ -163,20 +163,31 @@ This table lists known issues with this specification at the time of publishing.
             <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
         </tr>
         <tr>
-            <td>Use of fixedCodeableConcept in Immunization and Consent profiles</td>
-            <td>Consent Australian Organ Donor Register and Australian Immunisation Register Immunisation profiles set the value on Consent.category:organDonationConsent, Consent.except.action and Immunization.vaccinationProtocol.doseStatus using fixedCodeableConcept. Fixing the value in this way prohibits parts of CodeableConcept that are intended to be optional including CodeableConcept.text and CodeableConcept.coding.display.</td>
+            <td>Consent Australian Organ Donor Register</td>
+            <td>This profile cannot be used for automated validation.
+                <ul>
+                    <li>All instances of Consent will fail validation against this profile as nothing can satisfy the required slice category:organDonationConsent. Its use of fixedCodeableConcept does not set discriminator values in a way suitable for slicing.</li>
+                    <li>All instances of Consent will fail validation against this profile as nothing can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-cons-01</span> and <span style="font-family:courier;">inv-dh-cons-02</span>. In the FHIRPath expressions the antecedents are always true, so e.g. an instance with donation-decision of 'permit' and with a specific organ (except.data.reference) will fail with an error against <span style="font-family:courier;">inv-dh-cons-02</span>.</li>
+                    <li>Instances of Consent that contain parts of Consent.category:organDonationConsent or Consent.except.action that are intended to be optional, including text and coding.display, will be rejected. Values of CodeableConcepts are set using fixedCodeableConcept, which prohibits parts of CodeableConcept that are intended to be optional, including CodeableConcept.text and CodeableConcept.coding.display.</li>
+                </ul>
+            </td>
         </tr>
         <tr>
-            <td>Incorrect use of contained resources in Explanation of Benefit Medicare</td>
-            <td>In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes another contained reference, to Medication Pharmaceutical Benefits Scheme. This prevents having an instance of Explanation Of Benefit Medicare that conforms to this profile as intended, as FHIR does not allow nested contained resources.</td>
+            <td>Explanation of Benefit Medicare</td>
+            <td>This profile has very limited use for automated validation.
+                <ul>
+                    <li>Instances of Explanation of Benefit that include medications will fail validation against this profile due to its use of contained resources. In Explanation of Benefit Medicare the element prescription is a contained reference to Medication Request Pharmaceutical Benefits Scheme, which includes a contained reference to Medication Pharmaceutical Benefits Scheme. FHIR does not allow nesting of contained resources.</li>
+                    <li>Many true instances of Explanation of Benefit will fail validation against this profile as few things can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span> and <span style="font-family:courier;">inv-dh-eob-02</span>. In the FHIRPath expressions the antecedents are always true, so e.g. an MBS claim without a prescription instance fails validation.</li>
+                </ul>
+            </td>
         </tr>
         <tr>
-            <td>Incorrect FHIRPath in Consent Australian Organ Donor Register inv-dh-cons-01 and -2</td>
-            <td>The invariants <span style="font-family:courier;">inv-dh-cons-01: If donation decision is 'permit', there SHALL be a specific organ (except.data.reference).</span> and <span style="font-family:courier;">inv-dh-cons-02: If donation decision is 'deny', there SHALL NOT be a specific organ (except.data.reference).</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an instance with donation-decision of 'permit' and with a specific organ (except.data.reference) will fail with an error against inv-dh-cons-02.</td>
-        </tr>
-        <tr>
-            <td>Incorrect FHIRPath in Explanation of Benefit Medicare inv-dh-eob-01 and -2</td>
-            <td>The invariants <span style="font-family:courier;">inv-dh-eob-01: A PBS or RPBS claim SHALL include a prescription</span> and <span style="font-family:courier;">inv-dh-eob-02: A MBS or DVABS claim SHALL NOT include a prescription</span> fail for valid examples. In the FHIRPath expressions the antecedents are always true, so e.g. an MBS claim without a prescription instance fails validation.</td>
+            <td>Australian Immunisation Register Immunisation</td>
+            <td>This profile has slightly limited use for automated validation.
+                <ul>
+                    <li>Instances of Immunisation that contain parts of Immunization.vaccinationProtocol.doseStatus that are intended to be optional, including text and coding.display, will be rejected. Values of CodeableConcepts are set using fixedCodeableConcept, which prohibits parts of CodeableConcept that are intended to be optional, including CodeableConcept.text and CodeableConcept.coding.display.</li>
+                </ul>
+            </td>
         </tr>
     </tbody>
 </table> 
