@@ -181,14 +181,6 @@ This table lists known issues with this specification at the time of publishing.
                 </ul>
             </td>
         </tr>
-        <tr>
-            <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
-            <td>Some wanted instances of Immunization will fail validation against this profile.
-                <ul>
-                    <li>Instances of Immunization that contain parts of Immunization.vaccinationProtocol.doseStatus that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
-                </ul>
-            </td>
-        </tr>
     </tbody>
 </table> 
 
