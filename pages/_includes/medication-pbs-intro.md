@@ -17,5 +17,4 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * manufacturer
 
 ##### **Profile-specific implementation guidance**
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
-
+No specific guidance.
