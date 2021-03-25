@@ -38,7 +38,6 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
  
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
 * PBS record: 
     * An ExplanationOfBenefit for a PBS record will represent prescription data as a MedicationRequest, including date of prescribing, number of repeats, and quantity
     * Generic name of a PBS item can be represented by the supplied item service code

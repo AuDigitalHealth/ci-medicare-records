@@ -31,7 +31,6 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the subject element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
-* If a resource is referenced rather than identified in the applicable element, the referenced resource should be [contained](https://www.hl7.org/fhir/STU3/references.html#contained)
 * The referenced medication resource will include the code for the medication and the manufacturer if known
 * If the number of permitted repeats for a prescription are zero, the numberOfRepeatsAllowed element should not be included - the value of '0' cannot be used
 
