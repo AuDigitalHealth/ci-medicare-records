@@ -7,6 +7,18 @@
 		/>
 	</meta>
 	<contained>
+		<Medication>
+			<id value="Medication1"/>
+			<code>
+				<coding>
+					<system value="urn:oid:1.2.36.1.2001.1005.22"/>
+					<code value="03119E"/>
+					<display value="cephalexin 500 mg capsule, 20"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<contained>
 		<MedicationRequest xmlns="http://hl7.org/fhir">
 			<id value="MedicationRequest1"/>
 			<meta>
@@ -17,7 +29,7 @@
 			<status value="active"/>
 			<intent value="order"/>
 			<medicationReference>
-				<display value="cephalexin 500 mg capsule, 20, 03119E"/>
+				<reference value="#Medication1"/>
 			</medicationReference>
 			<subject>
 				<identifier>
