@@ -177,7 +177,7 @@ This table lists known issues with this specification at the time of publishing.
             <td>Many wanted instances of Explanation of Benefit will fail validation against this profile.
                 <ul>
                     <li>Instances that include prescription will fail as they use nested contained resources.  See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
-                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span>, <span style="font-family:courier;">inv-dh-eob-02</span>, <span style="font-family:courier;">inv-dh-eob-03</span> and <span style="font-family:courier;">inv-dh-eob-04</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
+                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span>, <span style="font-family:courier;">inv-dh-eob-02</span> and <span style="font-family:courier;">inv-dh-eob-04</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
                 </ul>
             </td>
         </tr>
