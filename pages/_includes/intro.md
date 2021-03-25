@@ -168,7 +168,7 @@ This table lists known issues with this specification at the time of publishing.
                 <ul>
                     <li>Nothing can satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> Github issue 6</a>.</li>
                     <li>Nothing can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-cons-01</span> and <span style="font-family:courier;">inv-dh-cons-02</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> Github issue 5</a>.</li>
-                    <li>Instances of Consent that contain parts of Consent.category:organDonationConsent or Consent.except.action that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
+                    <li>Instances of Consent that contain parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
                 </ul>
             </td>
         </tr>
@@ -176,8 +176,8 @@ This table lists known issues with this specification at the time of publishing.
             <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
             <td>Many wanted instances of Explanation of Benefit will fail validation against this profile.
                 <ul>
-                    <li>Instances that include medications will fail as it uses nested contained resources.  See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
-                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span> and <span style="font-family:courier;">inv-dh-eob-02</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
+                    <li>Instances that include prescription will fail as they use nested contained resources.  See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
+                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span>, <span style="font-family:courier;">inv-dh-eob-02</span>, <span style="font-family:courier;">inv-dh-eob-03</span> and <span style="font-family:courier;">inv-dh-eob-04</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
                 </ul>
             </td>
         </tr>
