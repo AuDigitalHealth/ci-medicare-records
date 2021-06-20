@@ -186,7 +186,7 @@ This table lists known issues with this specification at the time of publishing.
 
 ## References
 
-|[<a name="HL7AUF3B2">HL7AUF3B2</a>]| HL7 Australia, Australian Base Implementation Guide.|
+|[<a name="HL7AUF3B2">HL7AUF3B2</a>]| HL7 Australia, 12 September 2018, Australian Base Implementation Guide, Version 0.9.3.|
 | |[http://hl7.org.au/fhir/2018Sep/index.html](http://hl7.org.au/fhir/2018Sep/index.html)|
 
 |[<a name="HL7FHIR">HL7FHIR</a>]| Health Level Seven, Inc., FHIR - HL7Wiki.|
