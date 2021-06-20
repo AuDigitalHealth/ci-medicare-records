@@ -1,4 +1,4 @@
-#### Consent Australian Organ Donor Register *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Consent Australian Organ Donor Register *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 This profile defines a representation of donation decision information from the Australian Organ Donor Register.
 

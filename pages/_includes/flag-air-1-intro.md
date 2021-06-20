@@ -1,4 +1,4 @@
-#### Australian Immunisation Register Notice *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Australian Immunisation Register Notice *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 The purpose of this profile is to define a representation of an Australian Immunisation Register (AIR) notice for an individual, such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.
 

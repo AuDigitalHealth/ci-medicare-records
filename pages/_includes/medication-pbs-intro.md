@@ -1,4 +1,4 @@
-#### Medication Pharmaceutical Benefits Scheme *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Medication Pharmaceutical Benefits Scheme *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 This profile defines a representation of medication data to support representation of PBS claim items.
 

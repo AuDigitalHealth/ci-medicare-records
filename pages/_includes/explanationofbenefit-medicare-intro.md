@@ -1,4 +1,4 @@
-#### Explanation of Benefit Medicare *[[Draft](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Explanation of Benefit Medicare *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
 This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. PBS claim items include information about pharmaceutical items prescribed and dispensed to an individual that were partially or fully funded under the PBS or Repatriation Pharmaceutical Benefits Scheme (RPBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by Medicare or the Department of Veterans' Affairs.
 
