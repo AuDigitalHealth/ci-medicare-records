@@ -13,11 +13,13 @@ This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#sc
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
-This implementation guide does not describe transport or persistence mechanisms of the resources described by it.
+This implementation guide does not describe transport or persistence mechanisms of the resources described by it. The repository gateway and API specification are defined in separate publications.
 
 This implementation guide does not include mappings to another format, for more information see the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+
 ## Usage Scenarios
 The FHIR profiles for each usage scenario are listed below. 
+
 ###  Australian Immunisation Register
 Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 <table class="list" width="100%">
