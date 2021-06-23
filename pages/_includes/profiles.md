@@ -13,7 +13,7 @@ Profiles that define the representation of vaccination information from the Aust
   </tr>
   <tr>
      <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
-     <td>The purpose of this profile is to define a representation of vaccination information from the Australian Immunisation Register (AIR).</td>
+     <td>This profiles defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR).</td>
   </tr>
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>

@@ -1,15 +1,15 @@
 #### Australian Immunisation Register Immunisation *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
-The purpose of this profile is to define a representation of a given vaccination of a patient for transmission from the Australian Immunisation Register immunisation history to the My Health Record system.
+This profiles defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR).
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends Australian Immunisation Register records to the My Health Record system
+* An individual’s Australian Immunisation Register records are uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each Immunization SHALL have**
 1. a profile assertion to this profile
 1. an identifier for this immunisation record
-1. a status of vaccination event
+1. a status of the vaccination event set to completed
 1. a flag to indicate that the vaccine was administered
 1. a vaccine
 1. a patient
