@@ -17,7 +17,7 @@ Profiles that define the representation of vaccination information from the Aust
   </tr>
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
-      <td>The purpose of this profile is to define a representation of the Australian Immunisation Register (AIR) notice such as notice an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
+      <td>This profile defines a representation of an Australian Immunisation Register (AIR) notice for an individual. A notice may include information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
    </tr> 
  </tbody>   
 </table>
