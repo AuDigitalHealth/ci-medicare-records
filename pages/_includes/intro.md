@@ -148,40 +148,40 @@ This implementation guide may not be considered to be complete enough or suffici
 ## Known issues
 This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
 
-<table class="list" width="100%" cellspacing="6">
-    <tbody>
-        <tr>
-            <th>Reference</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Source material errors</td>
-            <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
-        </tr>
-        <tr>
-            <td>Non-resolving profile URLs</td>
-            <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
-        </tr>
-        <tr>
-            <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
-            <td>All instances of Consent will fail validation against this profile.
-                <ul>
-                    <li>Nothing can satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> Github issue 6</a>.</li>
-                    <li>Nothing can satisfy the implementations of invariants <span style="font-family:courier;">inv-dh-cons-01</span> and <span style="font-family:courier;">inv-dh-cons-02</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> Github issue 5</a>.</li>
-                    <li>Instances of Consent that contain parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display, will be rejected. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
-            <td>Many wanted instances of Explanation of Benefit will fail validation against this profile.
-                <ul>
-                    <li>Instances that include prescription will fail as they use nested contained resources.  See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
-                    <li>Many wanted instances will fail against the implementations of invariants <span style="font-family:courier;">inv-dh-eob-01</span>, <span style="font-family:courier;">inv-dh-eob-02</span> and <span style="font-family:courier;">inv-dh-eob-04</span>. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
+<table border="1" cellpadding="1" valign="middle">
+   <tbody>
+     <tr bgcolor="#DCDCDC">
+       <th>Reference</th>
+       <th>Description</th>
+     </tr>
+     <tr>
+       <td>Source material errors</td>
+       <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+     </tr>
+     <tr>
+       <td>Non-resolving profile URLs</td>
+       <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+     </tr>
+     <tr>
+       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
+       <td>Normative defects; behaves as a failure case. All instances of Consent will fail validation against this profile.
+         <ul>
+           <li>cannot satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> Github issue 6</a>.</li>
+           <li>cannot satisfy invariants inv-dh-cons-01 and inv-dh-cons-02. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> Github issue 5</a>.</li>
+           <li>cannot include parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
+         </ul>
+       </td>
+     </tr>
+     <tr>
+       <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+       <td>Normative defects; unintended failure cases.
+         <ul>
+           <li>cannot include prescriptions; failure caused by nested contained resources. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
+           <li>Additional unintended failure cases due to definition of inv-dh-eob-01, inv-dh-eob-02 and inv-dh-eob-04. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
+         </ul>
+       </td>
+     </tr>
+  </tbody>
 </table> 
 
 ## References
