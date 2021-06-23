@@ -4,7 +4,7 @@ This profile defines a representation of organ and tissue details to support rep
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends Australian Organ Donor Register records to the My Health Record system
+* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each BodySite SHALL have**
 1. a code identifying the organ or tissue

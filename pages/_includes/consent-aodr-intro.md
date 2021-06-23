@@ -4,7 +4,7 @@ This profile defines a representation of donation decision information from the 
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends Australian Organ Donor Register records to the My Health Record system
+* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each Consent SHALL have**
 1. a profile assertion to this profile
