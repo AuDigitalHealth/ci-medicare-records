@@ -4,8 +4,8 @@ This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) 
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends MBS records to the My Health Record system
-* Medicare sends PBS records to the My Health Record system
+* An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare Repository
+* An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each Explanation of Benefit SHALL have**
 1. a profile assertion to this profile
