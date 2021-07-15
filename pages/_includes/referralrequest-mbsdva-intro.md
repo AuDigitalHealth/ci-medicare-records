@@ -4,7 +4,7 @@ This profile defines a representation of the practitioner that requested the ser
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends MBS records to the My Health Record system
+* An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each ReferralRequest SHALL have**
 1. a profile assertion to this profile 
