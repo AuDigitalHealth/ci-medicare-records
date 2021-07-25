@@ -94,7 +94,7 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Flag.subject.identifier">
+    <!--<element id="Flag.subject.identifier">
       <path value="Flag.subject.identifier" />
       <short value="Individual Healthcare Identifier (IHI)" />
       <min value="1" />
@@ -107,11 +107,11 @@
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
-    </element>
-    <element id="Flag.subject.identifier.value">
+    </element>-->
+    <!--<element id="Flag.subject.identifier.value">
       <path value="Flag.subject.identifier.value" />
       <short value="IHI" />
       <min value="1" />
-    </element>
+    </element>-->
   </differential>
 </StructureDefinition>

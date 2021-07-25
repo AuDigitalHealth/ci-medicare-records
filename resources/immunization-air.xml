@@ -103,7 +103,7 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.patient.identifier">
+    <!--<element id="Immunization.patient.identifier">
       <path value="Immunization.patient.identifier" />
       <short value="Individual Healthcare Identifier (IHI)" />
       <min value="1" />
@@ -116,12 +116,12 @@
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
       </patternIdentifier>
-    </element>
-    <element id="Immunization.patient.identifier.value">
+    </element>-->
+    <!--<element id="Immunization.patient.identifier.value">
       <path value="Immunization.patient.identifier.value" />
       <short value="IHI" />
       <min value="1" />
-    </element>
+    </element>-->
     <element id="Immunization.date">
       <path value="Immunization.date" />
       <short value="Date given" />

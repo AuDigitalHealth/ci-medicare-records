@@ -24,4 +24,5 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * patient
     
 ##### **Profile-specific implementation guidance**
+* The patient resource should be identified in the subject element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI
 * The notice text is sent in the text portion of code
