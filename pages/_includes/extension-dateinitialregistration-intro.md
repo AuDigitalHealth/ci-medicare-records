@@ -3,7 +3,7 @@ Resource
 
 #####  **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends Australian Organ Donor consent records to the My Health Record system
+* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare Repository
 
 #####  **Each Extension SHALL have**
 1. an extension identifier (url)

@@ -4,7 +4,7 @@ Australian Immunisation Register Immunisation
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* Medicare sends Australian Immunisation Register records to the My Health Record system
+* An individual’s Australian Immunisation Register records are uploaded to the My Health Record system from a Medicare Repository
 
 ##### **Each Extension SHALL have**
 1. an extension identifier (url)

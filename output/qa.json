@@ -3,7 +3,7 @@
   "name": "MedicareRecords",
   "package-id": "hl7.fhir.au.dh.medicare-records",
   "ig-ver": "2.1.0",
-  "date": "Mon, 26 Jul, 2021 13:02:43 +1000",
+  "date": "Tue, 27 Jul, 2021 07:00:22 +1000",
   "errs": 39,
   "warnings": 36,
   "hints": 29,

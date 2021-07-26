@@ -1,6 +1,6 @@
 {
   "version": "2.1.0",
   "fhirVersion": "[3.0.2]",
-  "date": "20210726130224",
+  "date": "20210727070000",
   "name": "hl7.fhir.au.dh.medicare-records"
 }
