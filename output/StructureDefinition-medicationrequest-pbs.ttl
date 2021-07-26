@@ -15,9 +15,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"];
   fhir:StructureDefinition.version [ fhir:value "1.0.1"];
   fhir:StructureDefinition.name [ fhir:value "MedicationRequestPharmaceuticalBenefitsScheme"];
-  fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-12T12:35:16+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.status [ fhir:value "active"];
+  fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-19"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -957,7 +957,11 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs" ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs" ];
+         fhir:ElementDefinition.type.aggregation [
+           fhir:value "contained";
+           fhir:index 0
+         ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -2139,7 +2143,11 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs" ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs" ];
+         fhir:ElementDefinition.type.aggregation [
+           fhir:value "contained";
+           fhir:index 0
+         ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [

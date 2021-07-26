@@ -8,9 +8,9 @@
   "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
   "version": "1.0.1",
   "name": "MedicationRequestPharmaceuticalBenefitsScheme",
-  "status": "draft",
-  "experimental": true,
-  "date": "2021-03-12T12:35:16+10:00",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-03-19",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -969,7 +969,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true,
@@ -2191,7 +2194,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medication-pbs",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true

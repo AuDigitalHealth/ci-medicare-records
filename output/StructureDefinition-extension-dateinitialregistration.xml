@@ -11,9 +11,9 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration"/>
   <version value="1.0.1"/>
   <name value="ExtensionDateInitialRegistration"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2021-03-12T12:35:16+10:00"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-03-19"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>

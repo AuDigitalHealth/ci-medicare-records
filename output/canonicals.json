@@ -3,7 +3,7 @@
     "id": "hl7.fhir.au.dh.medicare-records",
     "type": "ImplementationGuide",
     "url": "http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "name": "MedicareRecords"
   },
   {
@@ -45,14 +45,14 @@
     "id": "flag-air-1",
     "type": "StructureDefinition",
     "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "name": "FlagAustralianImmunisationRegister"
   },
   {
     "id": "immunization-air",
     "type": "StructureDefinition",
     "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air",
-    "version": "2.0.0",
+    "version": "2.0.2",
     "name": "ImmunizationAustralianImmunisationRegister"
   },
   {
@@ -80,7 +80,7 @@
     "id": "vaccine-serial-number-1",
     "type": "StructureDefinition",
     "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "VaccineSerialNumber"
   }
 ]

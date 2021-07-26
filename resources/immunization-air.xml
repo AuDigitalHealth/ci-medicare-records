@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="immunization-air" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air" />
-  <version value="2.0.1" />
+  <version value="2.0.2" />
   <name value="ImmunizationAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Immunisation" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2021-06-23"/>
+  <date value="2021-07-26"/>
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
@@ -103,25 +103,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <!--<element id="Immunization.patient.identifier">
-      <path value="Immunization.patient.identifier" />
-      <short value="Individual Healthcare Identifier (IHI)" />
-      <min value="1" />
-      <patternIdentifier>
-        <type>
-          <coding>
-            <system value="http://hl7.org/fhir/v2/0203" />
-            <code value="NI" />
-          </coding>
-        </type>
-        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
-      </patternIdentifier>
-    </element>-->
-    <!--<element id="Immunization.patient.identifier.value">
-      <path value="Immunization.patient.identifier.value" />
-      <short value="IHI" />
-      <min value="1" />
-    </element>-->
     <element id="Immunization.date">
       <path value="Immunization.date" />
       <short value="Date given" />

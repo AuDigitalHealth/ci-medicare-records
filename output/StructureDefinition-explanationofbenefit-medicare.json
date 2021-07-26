@@ -8,9 +8,9 @@
   "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare",
   "version": "1.0.1",
   "name": "ExplanationofBenefitMedicare",
-  "status": "draft",
-  "experimental": true,
-  "date": "2021-03-12T12:35:16+10:00",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-03-19",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -916,7 +916,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true,
@@ -1267,7 +1270,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true
@@ -6735,7 +6741,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/referralrequest-mbsdva",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true
@@ -6746,7 +6755,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"
+            "targetProfile": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs",
+            "aggregation": [
+              "contained"
+            ]
           }
         ],
         "mustSupport": true

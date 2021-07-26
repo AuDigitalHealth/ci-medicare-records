@@ -2,11 +2,11 @@
   "url": "http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/implementationguide-medicare-records",
   "name": "MedicareRecords",
   "package-id": "hl7.fhir.au.dh.medicare-records",
-  "ig-ver": "2.0.1",
-  "date": "Fri, 12 Mar, 2021 12:35:16 +1000",
-  "errs": 53,
-  "warnings": 37,
-  "hints": 17,
+  "ig-ver": "2.1.0",
+  "date": "Mon, 26 Jul, 2021 13:02:43 +1000",
+  "errs": 39,
+  "warnings": 36,
+  "hints": 29,
   "version": "3.0.2",
-  "tool": "4.5.0 (3)"
+  "tool": "4.6.0 (3)"
 }

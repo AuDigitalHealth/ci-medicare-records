@@ -325,8 +325,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -345,8 +344,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -365,8 +363,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -385,8 +382,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -405,8 +401,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -425,8 +420,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -445,8 +439,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -465,8 +458,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [
@@ -485,8 +477,7 @@
          fhir:index 0;
          a sct:53958007;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "53958007" ];
-         fhir:Coding.display [ fhir:value "Harvesting of donor material" ]
+         fhir:Coding.code [ fhir:value "53958007" ]
        ]
      ];
      fhir:Consent.except.data [

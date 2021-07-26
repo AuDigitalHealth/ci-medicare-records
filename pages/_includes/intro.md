@@ -117,6 +117,10 @@ This table lists known issues with this specification at the time of publishing.
          </ul>
        </td>
      </tr>
+     <tr>
+       <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
+       <td>URL does not include major version number. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/9"> Github issue 9</a>.</td>
+     </tr>
   </tbody>
 </table> 
 

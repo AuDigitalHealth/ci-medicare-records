@@ -8,9 +8,34 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.25.129844986816735724544008039950138526110</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/ex-claimtype pharmacy}\">Pharmacy</span></p><p><b>subType</b>: <span title=\"Codes: {https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1 pbs}\">pbs</span></p><p><b>patient</b>: <span></span></p><p><b>created</b>: 2017-01-16</p><p><b>prescription</b>: <a name=\"MedicationRequest2\"> </a></p><blockquote><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span>03119E, Manuf: MM</span></p><p><b>subject</b>: <span></span></p><p><b>authoredOn</b>: 2017-01-15</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>100 tablet</td></tr></table></blockquote><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Service</b></td><td><b>Serviced[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {urn:oid:1.2.36.1.2001.1005.22 03119E}\">cephalexin 500 mg capsule, 20</span></td><td>2017-01-16</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.25.129844986816735724544008039950138526110</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/ex-claimtype pharmacy}\">Pharmacy</span></p><p><b>subType</b>: <span title=\"Codes: {https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1 pbs}\">pbs</span></p><p><b>patient</b>: <span></span></p><p><b>created</b>: 2017-01-16</p><p><b>prescription</b>: <a name=\"MedicationRequest2\"> </a></p><blockquote><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"#Medication2\">#Medication2</a></p><p><b>subject</b>: <span></span></p><p><b>authoredOn</b>: 2017-01-15</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>100 tablet</td></tr></table></blockquote><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Service</b></td><td><b>Serviced[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {urn:oid:1.2.36.1.2001.1005.22 03119E}\">cephalexin 500 mg capsule, 20</span></td><td>2017-01-16</td></tr></table></div>"
   },
   "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "Organization2",
+      "identifier": [
+        {
+          "system": "http://pbs.gov.au/code/manufacturer",
+          "value": "MM"
+        }
+      ]
+    },
+    {
+      "resourceType": "Medication",
+      "id": "Medication2",
+      "code": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.36.1.2001.1005.22",
+            "code": "03119E"
+          }
+        ]
+      },
+      "manufacturer": {
+        "reference": "#Organization2"
+      }
+    },
     {
       "resourceType": "MedicationRequest",
       "id": "MedicationRequest2",
@@ -22,7 +47,7 @@
       "status": "active",
       "intent": "order",
       "medicationReference": {
-        "display": "03119E, Manuf: MM"
+        "reference": "#Medication2"
       },
       "subject": {
         "identifier": {

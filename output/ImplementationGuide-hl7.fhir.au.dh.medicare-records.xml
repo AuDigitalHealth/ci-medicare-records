@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/hl7.fhir.au.dh.medicare-records"/>
-  <version value="2.0.1"/>
+  <version value="2.1.0"/>
   <name value="MedicareRecords"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2021-03-12T12:35:16+10:00"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-07-23"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>

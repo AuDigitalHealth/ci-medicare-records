@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.au.dh.medicare-records",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "fhirVersion": "3.0.2",
   "extensions": [
     {
@@ -93,9 +93,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.differential.element",

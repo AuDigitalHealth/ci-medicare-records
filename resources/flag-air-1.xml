@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="flag-air-1" />
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1" />
-  <version value="1.0.1" />
+  <version value="1.0.2" />
   <name value="FlagAustralianImmunisationRegister" />
   <title value="Australian Immunisation Register Notice" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2021-06-23"/>
+  <date value="2021-07-26"/>
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
@@ -94,24 +94,5 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <!--<element id="Flag.subject.identifier">
-      <path value="Flag.subject.identifier" />
-      <short value="Individual Healthcare Identifier (IHI)" />
-      <min value="1" />
-      <patternIdentifier>
-        <type>
-          <coding>
-            <system value="http://hl7.org/fhir/v2/0203" />
-            <code value="NI" />
-          </coding>
-        </type>
-        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0" />
-      </patternIdentifier>
-    </element>-->
-    <!--<element id="Flag.subject.identifier.value">
-      <path value="Flag.subject.identifier.value" />
-      <short value="IHI" />
-      <min value="1" />
-    </element>-->
   </differential>
 </StructureDefinition>

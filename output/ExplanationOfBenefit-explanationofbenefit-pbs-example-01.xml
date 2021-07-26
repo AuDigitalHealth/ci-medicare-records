@@ -6,8 +6,20 @@
     <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.25.129844986816735724544008039950138526110</p><p><b>patient</b>: <span></span></p><p><b>created</b>: 2017-01-16</p><p><b>prescription</b>: <a name="MedicationRequest1"> </a></p><blockquote><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span>cephalexin 500 mg capsule, 20, 03119E</span></p><p><b>subject</b>: <span></span></p><p><b>authoredOn</b>: 2017-01-15</p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>1</td><td>500 tablet</td></tr></table></blockquote><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Service</b></td><td><b>Serviced[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1 pbs}">PBS</span></td><td><span title="Codes: {urn:oid:1.2.36.1.2001.1005.22 03119E}">cephalexin 500 mg capsule, 20</span></td><td>2017-01-16</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.25.129844986816735724544008039950138526110</p><p><b>patient</b>: <span></span></p><p><b>created</b>: 2017-01-16</p><p><b>prescription</b>: <a name="MedicationRequest1"> </a></p><blockquote><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="#Medication1">#Medication1</a></p><p><b>subject</b>: <span></span></p><p><b>authoredOn</b>: 2017-01-15</p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>1</td><td>500 tablet</td></tr></table></blockquote><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Service</b></td><td><b>Serviced[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1 pbs}">PBS</span></td><td><span title="Codes: {urn:oid:1.2.36.1.2001.1005.22 03119E}">cephalexin 500 mg capsule, 20</span></td><td>2017-01-16</td></tr></table></div>
   </text>
+  <contained>
+    <Medication>
+      <id value="Medication1"/>
+      <code>
+        <coding>
+          <system value="urn:oid:1.2.36.1.2001.1005.22"/>
+          <code value="03119E"/>
+          <display value="cephalexin 500 mg capsule, 20"/>
+        </coding>
+      </code>
+    </Medication>
+  </contained>
   <contained>
     <MedicationRequest>
       <id value="MedicationRequest1"/>
@@ -17,7 +29,7 @@
       <status value="active"/>
       <intent value="order"/>
       <medicationReference>
-        <display value="cephalexin 500 mg capsule, 20, 03119E"/>
+        <reference value="#Medication1"/>
       </medicationReference>
       <subject>
         <identifier>

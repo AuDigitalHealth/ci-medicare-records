@@ -48,7 +48,7 @@
    </div>-->
 
    <div id="ig-status">
-    <b>Medicare Records FHIR Implementation Guide version 2.0.1</b>
+    <b>Medicare Records FHIR Implementation Guide version 2.1.0</b>
 </div>
 
   </div>
@@ -103,7 +103,7 @@
 
 <div class="col-12">
 
-<!--ReleaseHeader--><p id="publish-box">MedicareRecords - Local Development build (v2.0.1). See the <a href="http://ns.electronichealth.net.au/ci/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">MedicareRecords - Local Development build (v2.1.0). See the <a href="http://ns.electronichealth.net.au/ci/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 <!-- ============BreadCrumb=============== -->
 <!--
@@ -155,14 +155,14 @@
 
 <a name="introduction"> </a>
 
-<h4 id="medication-pharmaceutical-benefits-scheme-draft">Medication Pharmaceutical Benefits Scheme <em>[<a href="http://hl7.org/fhir/stu3/valueset-publication-status.html">Draft</a>]</em></h4>
+<h4 id="medication-pharmaceutical-benefits-scheme-active">Medication Pharmaceutical Benefits Scheme <em>[<a href="http://hl7.org/fhir/stu3/valueset-publication-status.html">Active</a>]</em></h4>
 
 <p>This profile defines a representation of medication data to support representation of PBS claim items.</p>
 
 <h5 id="usage-scenarios"><strong>Usage scenarios</strong></h5>
 <p>The following are the usage scenarios expected:</p>
 <ul>
-  <li>Medicare sends PBS records to the My Health Record system</li>
+  <li>An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare Repository</li>
 </ul>
 
 <h5 id="each-medication-shall-have"><strong>Each Medication SHALL have</strong></h5>
@@ -186,10 +186,7 @@
 </ul>
 
 <h5 id="profile-specific-implementation-guidance"><strong>Profile-specific implementation guidance</strong></h5>
-<ul>
-  <li>If a resource is referenced rather than identified in the applicable element, the referenced resource should be <a href="https://www.hl7.org/fhir/STU3/references.html#contained">contained</a></li>
-</ul>
-
+<p>No specific guidance.</p>
 
 
 <!-- example here -->
@@ -217,7 +214,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="http://hl7.org/fhir/STU3/medication.html">Medication</a>.</p>
 <p>
-This profile was published on Fri Mar 12 12:35:16 AEST 2021 as a draft by Australian Digital Health Agency.
+This profile was published on Fri Mar 19 00:00:00 AEST 2021 as a active by Australian Digital Health Agency.
 </p>
 
 
@@ -259,9 +256,9 @@ Summary
 
 <p>This profile introduces the following variations from the above core resource:</p>
 <ol>
-  <li>Exactly one <code class="highlighter-rouge">code</code></li>
-  <li><code class="highlighter-rouge">code</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1">Australian Department of Human Services Modified Pharmaceutical Benefits Scheme Schedule Item</a> value set</li>
-  <li><code class="highlighter-rouge">manufacturer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li>Exactly one <code class="language-plaintext highlighter-rouge">code</code></li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1">Australian Department of Human Services Modified Pharmaceutical Benefits Scheme Schedule Item</a> value set</li>
+  <li><code class="language-plaintext highlighter-rouge">manufacturer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
 </ol>
 
 
@@ -418,9 +415,9 @@ Summary
 
 <p>This profile introduces the following variations from the above core resource:</p>
 <ol>
-  <li>Exactly one <code class="highlighter-rouge">code</code></li>
-  <li><code class="highlighter-rouge">code</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1">Australian Department of Human Services Modified Pharmaceutical Benefits Scheme Schedule Item</a> value set</li>
-  <li><code class="highlighter-rouge">manufacturer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
+  <li>Exactly one <code class="language-plaintext highlighter-rouge">code</code></li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> <a href="http://hl7.org/fhir/STU3/terminologies.html#code">required</a> binding to <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1">Australian Department of Human Services Modified Pharmaceutical Benefits Scheme Schedule Item</a> value set</li>
+  <li><code class="language-plaintext highlighter-rouge">manufacturer</code> as <a href="http://www.hl7.org.au/fhir/base2018Sep/StructureDefinition-au-organisation.html">AU Base Organisation</a></li>
 </ol>
 
 
@@ -661,7 +658,7 @@ Summary
        <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
        <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
        <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-    <p>Medicare Records FHIR Implementation Guide Version: 2.0.1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Fri, Mar 12, 2021 12:35+1000.
+    <p>Medicare Records FHIR Implementation Guide Version: 2.1.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.2</a> generated on Mon, Jul 26, 2021 13:02+1000.
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
