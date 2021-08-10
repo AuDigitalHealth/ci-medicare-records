@@ -102,9 +102,9 @@ This table lists known issues with this specification at the time of publishing.
        <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
        <td>Normative defects; behaves as a failure case. All instances of Consent will fail validation against this profile.
          <ul>
-           <li>cannot satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> Github issue 6</a>.</li>
-           <li>cannot satisfy invariants inv-dh-cons-01 and inv-dh-cons-02. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> Github issue 5</a>.</li>
-           <li>cannot include parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> Github issue 2</a>.</li>
+           <li>cannot satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> ci-medicare-records/issues/6</a>.</li>
+           <li>cannot satisfy invariants inv-dh-cons-01 and inv-dh-cons-02. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> ci-medicare-records/issues/5</a>.</li>
+           <li>cannot include parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> ci-medicare-records/issues/2</a>.</li>
          </ul>
        </td>
      </tr>
@@ -112,14 +112,10 @@ This table lists known issues with this specification at the time of publishing.
        <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
        <td>Normative defects; unintended failure cases.
          <ul>
-           <li>cannot include prescriptions; failure caused by nested contained resources. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> Github issue 3</a>. </li>
-           <li>Additional unintended failure cases due to definition of inv-dh-eob-01, inv-dh-eob-02 and inv-dh-eob-04. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> Github issue 4</a>. </li>
+           <li>cannot include prescriptions; failure caused by nested contained resources. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> ci-medicare-records/issues/3</a>. </li>
+           <li>Additional unintended failure cases due to definition of inv-dh-eob-01, inv-dh-eob-02 and inv-dh-eob-04. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> ci-medicare-records/issues/4</a>. </li>
          </ul>
        </td>
-     </tr>
-     <tr>
-       <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
-       <td>URL does not include major version number. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/9"> Github issue 9</a>.</td>
      </tr>
   </tbody>
 </table> 
