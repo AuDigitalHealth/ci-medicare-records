@@ -71,12 +71,22 @@ This implementation guide may not be considered to be complete enough or suffici
         <tr>
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
-            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). Added Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Australian Immunisation Register Notice, Declared Disclaimer, Immunisation Dose Schedule and Vaccine Serial Number. Ammended Immunization Australian Immunisation Register to represent record of administered vaccination only including new features to represent vaccine serial number and schedule information. Removed Immunisation Cancellation Period extension. Included non-technical corrections from version 1.0.0.</td>
+            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the Enhanced Use of Immunisations Record Phase 2 and includes support for sending additional immunisation information via FHIR bundle from Services Australia to the My Health Record system.
+            <br/><br/>
+            Added structure definitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Australian Immunisation Register Notice, Declared Disclaimer, Immunisation Dose Schedule and Vaccine Serial Number.
+            <br/><br/>
+            Ammended Immunization Australian Immunisation Register to represent record of administered vaccination only including new features to represent vaccine serial number and schedule information.
+            <br/><br/>
+            Removed unused Immunisation Cancellation Period extension.</td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
-            <td>Current draft. Implemented in FHIR Release 3.0.2 (STU). Removed Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Declared Disclaimer, and Immunisation Dose Schedule. Made minor information changes to all remaining profiles.</td>
+            <td>Current draft. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information obtained from Services Australia via newly established intergration service.
+             <br/><br/>
+             Removed structure definitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Declared Disclaimer, and Immunisation Dose Schedule.
+             <br/><br/>
+             Made minor informative changes to all remaining profiles.</td>
         </tr>
       </tbody>
 </table> 
@@ -90,6 +100,13 @@ This table lists known issues with this specification at the time of publishing.
        <th>Reference</th>
        <th>Description</th>
      </tr>
+     <tr>
+        <td>Medicare Records FHIR implementation guide roadmap</td>
+        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project included in MHR Release 12 29 April 2021.
+        <br/><br/>
+        ....
+        </td>
+     </tr> 
      <tr>
        <td>Source material errors</td>
        <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
