@@ -102,9 +102,11 @@ This table lists known issues with this specification at the time of publishing.
      </tr>
      <tr>
         <td>Medicare Records FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project included in MHR Release 12 29 April 2021.
-        <br/><br/>
-        ....
+        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project included in MHR Release 12 (April 2021).
+            <br/><br/>
+            The Enhanced Use of Immunisation Records Phase 2 project includes a number of scope items including receiving additional AIR information via FHIR bundle from Services Australia. 
+            <br/><br/>
+            This implementation guide will not be be progressed through to publication.
         </td>
      </tr> 
      <tr>
