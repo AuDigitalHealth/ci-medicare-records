@@ -87,7 +87,7 @@ This implementation guide may not be considered to be complete enough or suffici
         <tr>
             <td>2.1.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
-            <td>TBD. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information obtained from Services Australia via newly established integration service.
+            <td>TBD. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information added in the previous version.
               <ul>
                 <li>Amended StructureDefinitions:
                   <ul>
