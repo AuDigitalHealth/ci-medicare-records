@@ -57,7 +57,7 @@ This implementation guide may not be considered to be complete enough or suffici
 	<col style="width:15%"/>
 	<col style="width:15%"/>
 	<col style="width:70%"/>
-    <tbody>
+     <tbody>
         <tr>
             <th>Product version</th>
             <th>Date</th>
@@ -71,22 +71,34 @@ This implementation guide may not be considered to be complete enough or suffici
         <tr>
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
-            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the Enhanced Use of Immunisations Record Phase 2 and includes support for sending additional immunisation information via FHIR bundle from Services Australia to the My Health Record system.
-            <br/><br/>
-            Added structure definitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Australian Immunisation Register Notice, Declared Disclaimer, Immunisation Dose Schedule and Vaccine Serial Number.
-            <br/><br/>
-            Ammended Immunization Australian Immunisation Register to represent record of administered vaccination only including new features to represent vaccine serial number and schedule information.
-            <br/><br/>
-            Removed unused Immunisation Cancellation Period extension.</td>
+            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the Enhanced Use of Immunisations Record Phase 2 and includes support for sending additional immunisation information.
+              <ul>
+                <li>Added StructureDefinitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Australian Immunisation Register Notice, Declared Disclaimer, Immunisation Dose Schedule and Vaccine Serial Number</li>
+                <li>Amended StructureDefinitions:
+                  <ul>
+                    <li>Immunization Australian Immunisation Register - amended to represent record of administered vaccination only including new features to represent vaccine serial number and schedule information</li>
+                    <li>all StructureDefinitions - updated copyright year and FHIR version </li>
+                  </ul>
+                </li>
+                <li>Removed StructureDefinitions: unused extension Immunisation Cancellation Period</li>
+              </ul>
+            </td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
-            <td>Current draft. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information obtained from Services Australia via newly established intergration service.
-             <br/><br/>
-             Removed structure definitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Declared Disclaimer, and Immunisation Dose Schedule.
-             <br/><br/>
-             Made minor informative changes to all remaining profiles.</td>
+            <td>TBD. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information obtained from Services Australia via newly established integration service.
+              <ul>
+                <li>Amended StructureDefinitions:
+                  <ul>
+                    <li>Immunization Australian Immunisation Register, and Australian Immunisation Register Notice - removed IHI rules</li>
+                    <li>all StructureDefinitions - updated copyright year, date and version</li>
+                  </ul>
+                </li>  
+                <li>Removed StructureDefinitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Declared Disclaimer, and Immunisation Dose Schedule</li>
+                <li>Corrections of editorial nature</li>
+              </ul>
+            </td>
         </tr>
       </tbody>
 </table> 
@@ -102,11 +114,11 @@ This table lists known issues with this specification at the time of publishing.
      </tr>
      <tr>
         <td>Medicare Records FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project included in MHR Release 12 (April 2021).
+        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project.
             <br/><br/>
-            The Enhanced Use of Immunisation Records Phase 2 project includes a number of scope items including receiving additional AIR information via FHIR bundle from Services Australia. 
+            Version 2.1.0 is now available to stakeholders for review however it is not expected to be progressed to publication. 
             <br/><br/>
-            This implementation guide will not be be progressed through to publication.
+            It is expected that work on this implementation guide is not going to be progressed until a new project is established. 
         </td>
      </tr> 
      <tr>
@@ -115,7 +127,7 @@ This table lists known issues with this specification at the time of publishing.
      </tr>
      <tr>
        <td>Non-resolving profile URLs</td>
-       <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+       <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that StructureDefinition (i.e. profile) and is expected to be an address at which that StructureDefinition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
      </tr>
      <tr>
        <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
