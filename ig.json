@@ -5,19 +5,25 @@
         "pages": "pages",
         "resources": [
             "resources",
-            "examples"
+            "examples",
+            "examples/Consent",
+            "examples/ExplanationOfBenefit",
+            "examples/Flag",
+            "examples/Immunization"
         ],
         "temp": "temp",
         "qa": "qa",
-        "specification": "http://hl7.org/fhir/STU3/",
+        "specification": "http://hl7.org/fhir/STU3",
         "txCache": "txCache"
     },
     "sct-edition": "http://snomed.info/sct/32506021000036107",
     "extraTemplates": ["examples"],
     "source": "ig.xml",
-    "npm-name": "hl7.fhir.au.dh.medicare-records",
+    "npm-name": "au.digitalhealth.stu3.medicare-records",
+    "jurisdiction" : "AU",
     "tool": "jekyll",
-    "license": "CC0-1.0",
+    "suppressedWarningFile": "ignoreWarnings.txt",
+    "license": "Apache-2.0",
     "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir",
     "logging": [
         "init",
@@ -39,16 +45,15 @@
         },
         "StructureDefinition": {
             "template-defns": "sd-definitions.html",
-            "template-examples": "sd-examples.html",
             "template-base": "sd.html",
+            "template-examples": "sd-examples.html",
             "template-mappings": "sd-mappings.html"
         },
         "StructureMap": {"template-base": "sm.html"},
         "Basic": {"template-base": "ex.html"},
-        "CodeSystem": {"template-base": "cs.html"},
+        "CodeSystem": {"template-base": "codesys.html"},
         "ConceptMap": {"template-base": "cm.html"}
     },
-    "special-urls": ["http://hl7.org.au/fhir/ValueSet/valueset-anzsco"],
     "resources": {
         "StructureDefinition/consent-aodr": {
             "base": "StructureDefinition-consent-aodr.html",

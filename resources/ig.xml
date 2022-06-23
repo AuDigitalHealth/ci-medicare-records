@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="implementationguide-medicare-records"/>
+  <id value="au.digitalhealth.stu3.medicare-records"/>
   <url
     value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/implementationguide-medicare-records"/>
-  <version value="2.1.0"/>
+  <version value="2.1.0-qapreview"/>
   <name value="MedicareRecords"/>
-  <status value="active"/>
+    <title value="Australian Digital Health Agency FHIR"/>
+    <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-23"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -15,12 +15,10 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description
-    value="Australian realm implementation guide of the FHIR specification to represent atomic Medicare records in the My Health Record system and related applications."/>
-  <copyright
-    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description value="The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Services Australia and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <package>
-    <name value="base"/>
+    <name value="au.digitalhealth.stu3.medicare-records"/>
     <resource>
       <example value="false"/>
       <sourceReference>

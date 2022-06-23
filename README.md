@@ -10,7 +10,7 @@ The contents of this repository include:
 - example resources conforming to the profiles or extensions
 - files necessary to build the FHIR implementation guides e.g. template files
 
-### See the latest live content via the continuous integration build of the [Australian Digital Health Agency Core Asset Implementation Guide](https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/).
+### See the latest live content via the continuous integration build of the [Australian Digital Health Agency Medicare Records Implementation Guide](https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/).
 
 ## Structure
 This repository has the following structure: 
