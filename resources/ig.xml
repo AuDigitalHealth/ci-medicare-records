@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
-  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <package>
     <name value="base"/>
     <resource>
@@ -25,6 +25,8 @@
     </resource>
     <resource>
       <example value="false"/>
+      <name value="BodySiteAustralianOrganDonorRegister"/>
+      <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/bodysite-aodr"/>
       </sourceReference>

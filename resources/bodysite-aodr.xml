@@ -2,11 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="bodysite-aodr"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/bodysite-aodr"/>
-  <version value="1.0.1"/>
-  <name value="BodySiteAustralianOrganDonorRegister"/>
+  <version value="1.0.2"/>
+  <name value="BodySiteAODR"/>
+  <title value="BodySite Australian Organ Donor Register" />
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-03-19"/>
+  <date value="2022-06-24"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -14,8 +15,8 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <copyright
-    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <kind value="resource"/>
   <abstract value="false"/>

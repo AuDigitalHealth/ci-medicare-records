@@ -2,11 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="explanationofbenefit-medicare"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
-  <version value="1.0.1"/>
+  <version value="1.0.2"/>
   <name value="ExplanationofBenefitMedicare"/>
+  <title value="Explanation of Benefit Medicare" />
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-03-19"/>
+  <date value="2022-06-24"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -14,10 +15,8 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description
-    value="This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. "/>
-  <copyright
-    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description value="This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. "/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2"/>
   <kind value="resource"/>
   <abstract value="false"/>

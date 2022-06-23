@@ -5,15 +5,18 @@
 {:toc}
 <!-- end TOC -->
 
+> <p style="color:#ff0000;">This material is under active development.</p>
+
 ## Introduction
 
-This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU) [HL7FHIR3]](#HL7FHIR3) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
+This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU) ](http://hl7.org/fhir/stu3/index.html) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
 This implementation guide does not describe transport or persistence mechanisms of the resources described by it. The repository gateway and API specification are defined in separate publications.
 
 This implementation guide does not include mappings to another format, for more information see the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+
 
 ## Usage scenarios
 The Medicare Records FHIR implementation guide is defined to support the following scenarios:
@@ -24,9 +27,8 @@ The Medicare Records FHIR implementation guide is defined to support the followi
 
 The profiles for each usage scenario are listed on the [Profiles](profiles.html) page.
 
-## Document Information
 
-### Key Information
+## Key Information
 
 <table class="list" width="100%" cellspacing="6">
     <tbody>
@@ -96,7 +98,9 @@ The profiles for each usage scenario are listed on the [Profiles](profiles.html)
       </tbody>
 </table> 
 
+
 ## Known issues
+
 This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
 
 <table border="1" cellpadding="1" valign="middle">
