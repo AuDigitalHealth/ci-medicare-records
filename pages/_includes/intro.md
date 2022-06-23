@@ -1,5 +1,5 @@
-# {{ site.data.fhir.igName }} FHIR Implementation Guide
-<h3>Draft for restricted external review</h3>
+# Medicare Records FHIR Implementation Guide
+<h3>Draft for external review</h3>
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -7,9 +7,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent Medicare information for the My Health Record system and related applications.
-
-This [implementation guide](http://hl7.org/fhir/STU3/implementationguide.html#scope) is based on [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU) [HL7FHIR3]](#HL7FHIR3) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
@@ -26,11 +24,6 @@ The Medicare Records FHIR implementation guide is defined to support the followi
 
 The profiles for each usage scenario are listed on the [Profiles](profiles.html) page.
 
-## Editorial note
-This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
-
-This implementation guide may not be considered to be complete enough or sufficiently reviewed to be safe for implementation and use in production systems. It may have known issues and still be in development.
-
 ## Document Information
 
 ### Key Information
@@ -39,7 +32,7 @@ This implementation guide may not be considered to be complete enough or suffici
     <tbody>
         <tr>
             <td><b>Owner</b></td>
-            <td>Director, Connectivity and Informatics</td>
+            <td>Director, Interoperability Products</td>
         </tr>
         <tr>
             <td><b>Contact for enquiries</b></td>
@@ -150,25 +143,6 @@ This table lists known issues with this specification at the time of publishing.
      </tr>
   </tbody>
 </table> 
-
-## References
-
-|[<a name="HL7AUF3B2">HL7AUF3B2</a>]| HL7 Australia, 12 September 2018, Australian Base Implementation Guide, Version 0.9.3.|
-| |[http://hl7.org.au/fhir/2018Sep/index.html](http://hl7.org.au/fhir/2018Sep/index.html)|
-
-|[<a name="HL7FHIR">HL7FHIR</a>]| Health Level Seven, Inc., FHIR - HL7Wiki.|
-| |[http://wiki.hl7.org/index.php?title=FHIR](http://wiki.hl7.org/index.php?title=FHIR)|
-
-|[<a name="HL7FHIR3">HL7FHIR3</a>]| Health Level Seven, Inc., 24 October 2019, FHIR Release 3 (STU).|
-| |[http://hl7.org/fhir/STU3/](http://hl7.org/fhir/STU3/)|
-
-|[<a name="HL7FHIR4">HL7FHIR4</a>]|Health Level Seven, Inc., 30 October 2019, FHIR R4.|
-||[http://hl7.org/fhir/R4/](http://hl7.org/fhir/R4/)|
-
-
-
-
-
 
 
 

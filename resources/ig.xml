@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="au.digitalhealth.stu3.medicare-records"/>
-  <url
-    value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/implementationguide-medicare-records"/>
-  <version value="2.1.0-qapreview"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
+  <version value="2.1.0"/>
   <name value="MedicareRecords"/>
-    <title value="Australian Digital Health Agency FHIR"/>
-    <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
@@ -15,10 +13,10 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Services Australia and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
+  <description value="The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <package>
-    <name value="au.digitalhealth.stu3.medicare-records"/>
+    <name value="base"/>
     <resource>
       <example value="false"/>
       <sourceReference>
@@ -94,6 +92,9 @@
       <sourceReference>
         <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/immunization-air"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -102,6 +103,9 @@
       <sourceReference>
         <reference value="Immunization/7d0dab26-bc12-471e-a228-527c645db404"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/immunization-air"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -110,6 +114,9 @@
       <sourceReference>
         <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-01"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -118,6 +125,9 @@
       <sourceReference>
         <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-02"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -126,6 +136,9 @@
       <sourceReference>
         <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-min"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -134,6 +147,9 @@
       <sourceReference>
         <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-01"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -142,6 +158,9 @@
       <sourceReference>
         <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-02"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -150,6 +169,9 @@
       <sourceReference>
         <reference value="Consent/aodr-example-willingtodonate"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/consent-aodr"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -158,6 +180,9 @@
       <sourceReference>
         <reference value="Consent/aodr-example-willingtodonatesome"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/consent-aodr"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -166,6 +191,9 @@
       <sourceReference>
         <reference value="Consent/aodr-example-notwillingtodonate"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/consent-aodr"/> 
+      </exampleFor>
     </resource>    
     <resource>
       <example value="true"/>
@@ -174,6 +202,9 @@
       <sourceReference>
         <reference value="Flag/d75a3b06-0397-4472-bc7e-8651668e8f40"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/flag-air-1"/> 
+      </exampleFor>
     </resource>
     <resource>
       <example value="true"/>
@@ -182,6 +213,9 @@
       <sourceReference>
         <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
       </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/flag-air-1"/> 
+      </exampleFor>
     </resource>
     
   </package>
