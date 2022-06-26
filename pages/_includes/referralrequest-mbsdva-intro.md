@@ -1,10 +1,12 @@
 #### Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
-This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records.
+The purpose of this profile is to define a representation of service item claimed information, including practitioner that requested the service, in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans' Affairs (DVA) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
+
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare Repository
+* An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare repository
+
 
 ##### **Each ReferralRequest SHALL have**
 1. a profile assertion to this profile 
@@ -12,6 +14,7 @@ The following are the usage scenarios expected:
 1. an intent
 1. a patient
 1. a practitioner that requested the service
+
 
 ##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
@@ -25,6 +28,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * The system SHALL be able to take the following elements into account when performing processing:
    * identifier
     * subject
+
 
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the subject element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI

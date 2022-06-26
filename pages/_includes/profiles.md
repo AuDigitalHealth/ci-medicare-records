@@ -1,8 +1,10 @@
 # {{ page.title }}
 The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined as part of this implementation guide. HL7 Australia base profiles referenced by this implementation guide can be found in [Australian Base Implementation Guide [HL7AUF3B2]](index.html#HL7FHIR3).
 
-###  Australian Immunisation Register
+###  Australian Immunisation Register record
+
 Profiles that define the representation of vaccination information from the Australian Immunisation Register:
+
 <table class="list" width="100%">
   <tbody>
    <col width="30%" />
@@ -22,37 +24,11 @@ Profiles that define the representation of vaccination information from the Aust
  </tbody>   
 </table>
 <br/>
-###  Pharmaceutical Benefits Schedule (PBS) and Medicare Benefits Schedule (MBS)
-Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
-<table class="list" width="100%">
-   <tbody>
-      <col width="30%" />
-      <col width="70%" />
-      <tr>
-         <th>Profile</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
-         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
-      </tr>
-      <tr>
-         <td><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></td>
-         <td>This profile defines a representation of prescription data to support representation of PBS claim items.</td>
-      </tr>
-      <tr>
-         <td><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></td>
-         <td>This profile defines a representation of pharmaceutical item data to support representation of PBS claim items.</td>
-      </tr>
-      <tr>
-         <td><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></td>
-         <td>This profile defines a representation of the practitioner that requested the service to support representation of Medicare Benefits Schedule (MBS) claim item records.</td>
-       </tr>
- </tbody>
-</table>
-<br/>
-### Australian Organ Donor Register
+
+### Australian Organ Donor Register record
+
 Profiles that define representation of donation decision information from the Australian Organ Donor Register:
+
 <table class="list" width="100%">
   <tbody>
      <col width="30%" />
@@ -67,7 +43,61 @@ Profiles that define representation of donation decision information from the Au
      </tr>
      <tr>
        <td><a href="StructureDefinition-bodysite-aodr.html">BodySite Australian Organ Donor Register</a></td>
-       <td>This profile defines a representation of organ and tissue details to support representation of Australian Organ Donor Register records.</td>
+       <td>This profile defines a representation of an organ or tissue for donation as part of an Australian Organ Donor Register record.</td>
      </tr>
   </tbody>
 </table>
+
+###  Medicare Benefits Schedule (MBS) claim item record
+
+Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
+
+<table class="list" width="100%">
+   <tbody>
+      <col width="30%" />
+      <col width="70%" />
+      <tr>
+         <th>Profile</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></td>
+         <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of Medicare Benefits Schedule (MBS) claim item records.</td>
+       </tr>
+ </tbody>
+</table>
+<br/>
+
+###  Pharmaceutical Benefits Schedule (PBS) claim item record
+
+Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items:
+
+<table class="list" width="100%">
+   <tbody>
+      <col width="30%" />
+      <col width="70%" />
+      <tr>
+         <th>Profile</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></td>
+         <td>This profile defines a representation of prescription data to as part of a PBS claim item.</td>
+      </tr>
+      <tr>
+         <td><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></td>
+         <td>This profile defines a representation of pharmaceutical item data as part of a PBS claim item.</td>
+      </tr>
+ </tbody>
+</table>
+<br/>
+
+

@@ -13,19 +13,13 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
+  <description value="The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <package>
     <name value="base"/>
     <resource>
       <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/consent-aodr"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <name value="BodySiteAustralianOrganDonorRegister"/>
+      <name value="BodySiteAODR"/>
       <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/bodysite-aodr"/>
@@ -33,54 +27,80 @@
     </resource>
     <resource>
       <example value="false"/>
+      <name value="ConsentAODR"/>
+      <description value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
-        <reference value="StructureDefinition/extension-dateinitialregistration"/>
+        <reference value="StructureDefinition/consent-aodr"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
+      <name value="ExplanationofBenefitMedicare"/>
+      <description value="The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/explanationofbenefit-medicare"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
+      <name value="ExtensionDateInitialRegistration"/>
+      <description value="This extension applies to any resource and represents the date an individual first registered, for example in the context of an organ donor register this date is not updated if a consent decision or provision is changed."/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-dateinitialregistration"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <name value="ExtensionDonationDecision"/>
+      <description value="This extension applies to the Consent resource and represents an individual's decision about organ and tissue donation."/>
       <sourceReference>
         <reference value="StructureDefinition/extension-donationdecision"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
+      <name value="FlagAIR"/>
+      <description value="The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <sourceReference>
+        <reference value="StructureDefinition/flag-air-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <name value="ImmunizationAIR"/>
+      <description value="The purpose of this profile is to define a representation of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/immunization-air"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
+      <name value="MedicationPBS"/>
+      <description value="The purpose of this profile is to define a representation of medicinal product information for a prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <sourceReference>
+        <reference value="StructureDefinition/medication-pbs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <name value="MedicationRequestPBS"/>
+      <description value="The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/medicationrequest-pbs"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
+      <name value="ReferralRequestMBSDVA"/>
+      <description value="The purpose of this profile is to define a representation of service item claimed information, including practitioner that requested the service, in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans' Affairs (DVA) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/referralrequest-mbsdva"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/medication-pbs"/>
-      </sourceReference>
-    </resource>        
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/flag-air-1"/>
-      </sourceReference>
-    </resource>    
-    <resource>
-      <example value="false"/>
+      <name value="VaccineSerialNumber"/>
+      <description value="This extension applies to the Immunization resource and is used to represent the serial number of the vial of vaccine."/>
       <sourceReference>
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </sourceReference>
@@ -90,7 +110,7 @@
     <resource>
       <example value="true"/>
       <name value="Immunization example 1"/>
-      <description value="Vaccination administration (Infanix Hexa at 6 months of age)"/>
+      <description value="Vaccination administration (Infanrix Hexa at 6 months of age)"/>
       <sourceReference>
         <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
       </sourceReference>

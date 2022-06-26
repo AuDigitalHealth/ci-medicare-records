@@ -4,7 +4,8 @@ This profile defines a representation of prescription data to support representa
 
 #####  **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare Repository
+* An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare repository
+
 
 ##### **Each MedicationRequest SHALL have**
 1.	a profile assertion to this profile 
@@ -14,6 +15,7 @@ The following are the usage scenarios expected:
 5.	a date of prescribing
 6.	a number of repeats allowed
 6.  an amount of medication per dispense 
+
 
 ##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
@@ -28,6 +30,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * The system SHALL be able to take the following elements into account when performing processing:
     * identifier
     * subject
+
 
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the subject element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI

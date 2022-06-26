@@ -1,10 +1,11 @@
 #### Consent Australian Organ Donor Register *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
-This profile defines a representation of donation decision information from the Australian Organ Donor Register.
+The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
 * An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare Repository
+
 
 ##### **Each Consent SHALL have**
 1. a profile assertion to this profile
@@ -15,6 +16,7 @@ The following are the usage scenarios expected:
 1. a creation date
 1. an identification that the consent is to the Australian Organ Donor Register policy (policy.uri)
 1. a decision of whether or not the individual consents to be an organ donor
+
 
 ##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
@@ -35,6 +37,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * The system SHALL be able to take the following elements into account when performing processing:
     * identifier
     * patient
+
 
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI

@@ -1,11 +1,13 @@
 #### Explanation of Benefit Medicare *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
 
-This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items. PBS claim items include information about pharmaceutical items prescribed and dispensed to an individual that were partially or fully funded under the PBS or Repatriation Pharmaceutical Benefits Scheme (RPBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by Medicare or the Department of Veterans' Affairs.
+The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
+
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
 * An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare Repository
 * An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare Repository
+
 
 ##### **Each Explanation of Benefit SHALL have**
 1. a profile assertion to this profile
@@ -15,6 +17,7 @@ The following are the usage scenarios expected:
 1. an identification of the Medicare benefit (subtype or item.category)
 1. an item that was claimed
 1. a date of supply or service
+
 
 ##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
@@ -35,6 +38,7 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
 * The system SHALL be able to take the following elements into account when performing processing:
     * identifier
     * patient
+ 
  
 ##### **Profile-specific implementation guidance**
 * The patient resource should be identified in the patient element with a [logical reference](https://www.hl7.org/fhir/STU3/references.html#logical), i.e. an Australian IHI

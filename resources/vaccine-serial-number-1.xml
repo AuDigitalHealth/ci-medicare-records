@@ -7,7 +7,7 @@
   <title value="Vaccine Vial Serial Number" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2022-06-24"/>
+  <date value="2022-06-27"/>
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
@@ -15,7 +15,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of the serial number of the vial of vaccine used in an administration of a vaccine." />
+  <description value="This extension applies to the Immunization resource and is used to represent the serial number of the vial of vaccine."/>
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="3.0.2" />
   <mapping>
