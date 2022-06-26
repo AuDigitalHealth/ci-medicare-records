@@ -1,9 +1,8 @@
 # {{ page.title }}
-The [profiles](http://hl7.org/fhir/STU3/profiling.html) listed below are defined as part of this implementation guide. HL7 Australia base profiles referenced by this implementation guide can be found in [Australian Base Implementation Guide [HL7AUF3B2]](index.html#HL7FHIR3).
+The profiles listed below are defined as part of this implementation guide. These profiles make reference to profiles published by HL7 Australia in the [Australian Base Implementation Guide v0.9.3](http://hl7.org.au/fhir/2018Sep/index.html).
+
 
 ###  Australian Immunisation Register record
-
-Profiles that define the representation of vaccination information from the Australian Immunisation Register:
 
 <table class="list" width="100%">
   <tbody>
@@ -15,19 +14,17 @@ Profiles that define the representation of vaccination information from the Aust
   </tr>
   <tr>
      <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
-     <td>This profiles defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR).</td>
+     <td>This profile defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register.</td>
   </tr>
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
-      <td>This profile defines a representation of an Australian Immunisation Register (AIR) notice for an individual. A notice may include information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
+      <td>This profile defines a representation of an Australian Immunisation Register notice for an individual. A notice may include information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
    </tr> 
  </tbody>   
 </table>
 <br/>
 
 ### Australian Organ Donor Register record
-
-Profiles that define representation of donation decision information from the Australian Organ Donor Register:
 
 <table class="list" width="100%">
   <tbody>
@@ -38,7 +35,7 @@ Profiles that define representation of donation decision information from the Au
        <th>Description</th>
      </tr>
      <tr>
-       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
+       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></td>
        <td>This profile defines a representation of donation decision information from the Australian Organ Donor Register.</td>
      </tr>
      <tr>
@@ -47,10 +44,9 @@ Profiles that define representation of donation decision information from the Au
      </tr>
   </tbody>
 </table>
+<br/>
 
 ###  Medicare Benefits Schedule (MBS) claim item record
-
-Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items:
 
 <table class="list" width="100%">
    <tbody>
@@ -62,19 +58,18 @@ Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) cl
       </tr>
       <tr>
          <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
-         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
+         <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
          <td><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></td>
-         <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of Medicare Benefits Schedule (MBS) claim item records.</td>
+         <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of MBS claim item records.</td>
        </tr>
  </tbody>
 </table>
 <br/>
 
-###  Pharmaceutical Benefits Schedule (PBS) claim item record
 
-Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) claim items:
+###  Pharmaceutical Benefits Schedule (PBS) claim item record
 
 <table class="list" width="100%">
    <tbody>
@@ -86,7 +81,7 @@ Profiles that define representation of Pharmaceutical Benefits Schedule (PBS) cl
       </tr>
       <tr>
          <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
-         <td>This profile defines a representation of Pharmaceutical Benefits Schedule (PBS) claim items or Medicare Benefits Schedule (MBS) claim items.</td>
+         <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
          <td><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></td>
