@@ -1,4 +1,4 @@
-#### Vaccine Vial Serial Number *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Vaccine Vial Serial Number *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
 
 This extension applies to the Immunization resource and is used to represent the serial number of the vial of vaccine.
 

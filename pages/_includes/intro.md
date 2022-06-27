@@ -9,26 +9,28 @@
 
 ## Introduction
 
-This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU) ](http://hl7.org/fhir/stu3/index.html) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
+This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU)](http://hl7.org/fhir/STU3/index.html) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. 
 
-This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
+Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
-This implementation guide does not describe transport or persistence mechanisms of the resources described by it. The repository gateway and API specification are defined in separate publications.
+This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data should be displayed and no such guidance should be inferred.
 
-This implementation guide does not include mappings to another format, for more information see the applicable resource documentation in the [FHIR Release 3 (STU) [HL7FHIR3]](#HL7FHIR3).
+This implementation guide does not describe transport or persistence mechanisms of the resources described by it. API specifications are defined in separate publications.
+
+This implementation guide does not include mappings to another format, for more information see the applicable FHIR resource documentation.
+<br/>
 
 
 ## Usage scenarios
-The Medicare Records FHIR implementation guide is defined to support the following scenarios:
-* An individual’s Australian Immunisation Register (AIR) records are uploaded to the My Health Record system from a Medicare Repository
-* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare Repository
-* An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare Repository
-* An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare Repository
+[Profiles](profiles.html) in Medicare Records FHIR implementation guide are defined to support the following scenarios:
+1. An individual’s Australian Immunisation Register (AIR) records are uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare repository
+<br/>
 
-The profiles for each usage scenario are listed on the [Profiles](profiles.html) page.
 
-
-## Key Information
+## Key information
 
 <table class="list" width="100%" cellspacing="6">
     <tbody>
@@ -46,8 +48,10 @@ The profiles for each usage scenario are listed on the [Profiles](profiles.html)
         </tr>
     </tbody>
 </table> 
+<br/>
 
-### Product Version History
+
+### Product version history
 <table class="list" width="100%" cellspacing="6">
 	<col style="width:15%"/>
 	<col style="width:15%"/>
@@ -97,6 +101,7 @@ The profiles for each usage scenario are listed on the [Profiles](profiles.html)
         </tr>
       </tbody>
 </table> 
+<br/>
 
 
 ## Known issues
@@ -147,6 +152,6 @@ This table lists known issues with this specification at the time of publishing.
      </tr>
   </tbody>
 </table> 
-
+<br/>
 
 

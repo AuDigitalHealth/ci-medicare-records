@@ -1,4 +1,4 @@
-#### Date Initial Registration *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Date Initial Registration *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
 
 This extension applies to any resource and represents the date an individual first registered, for example in the context of an organ donor register this date is not updated if a consent decision or provision is changed.
 

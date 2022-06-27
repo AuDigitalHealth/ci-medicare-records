@@ -1,4 +1,4 @@
-#### Australian Immunisation Register Immunisation *[[Active](http://hl7.org/fhir/stu3/valueset-publication-status.html)]*
+#### Australian Immunisation Register Immunisation *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
 
 The purpose of this profile is to define a representation of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 

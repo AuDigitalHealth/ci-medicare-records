@@ -18,7 +18,7 @@ The profiles listed below are defined as part of this implementation guide. Thes
   </tr>
    <tr>
       <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
-      <td>This profile defines a representation of an Australian Immunisation Register notice for an individual. A notice may include information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
+      <td>This profile defines a representation of an Australian Immunisation Register notice for an individual, e.g. information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
    </tr> 
  </tbody>   
 </table>
