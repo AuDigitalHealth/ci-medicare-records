@@ -72,8 +72,7 @@ This implementation guide does not include mappings to another format, for more 
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
             <td>Pre-release for review. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the enhanced use of immunisation records.
-              <ul>
-                <li>Added:
+              <br/>Added:
                   <ul>
                     <li>profile Australian Immunisation Register Immunisation Status</li>
                     <li>profile Australian Immunisation Register COVID-19 Immunisation Status</li>
@@ -83,42 +82,34 @@ This implementation guide does not include mappings to another format, for more 
                     <li>extension Immunisation Dose Schedule</li>
                     <li>extension Vaccine Serial Number</li>
                   </ul>
-                </li>
-                <li>Amended:
+                Amended:
                   <ul>
                     <li>profile Australian Immunisation Register Immunisation - corrected to represent only administered vaccines, added vaccine serial number and schedule information</li>
                   </ul>
-                </li>
-                <li>Removed: 
+                Removed: 
                   <ul>
                     <li>extension Immunisation Cancellation Period</li>
                   </ul>
-                </li>
-              </ul>
             </td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
             <td>Approved for external use. Implemented in FHIR Release 3.0.2 (STU). This version includes addresses changes in implementation scope.
-              <ul>
-                <li>Amended StructureDefinitions:
+              <br/>Amended:
                   <ul>
                     <li>Australian Immunisation Register Immunisation - removed constraints on population of Immunization.patient.identifier</li>
                     <li>Australian Immunisation Register Notice - removed constraints on population of Flag.subject.identifier</li>
                     <li>Consent Australian Organ Donor Register - corrected category slicing <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6">ci-medicare-records #6</a>, corrected FHIRPath for inv-dh-cons-01 & inv-dh-cons-02 <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5">ci-medicare-records #5</a>, corrected Consent.except.action to patternCodeableConcept <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2">ci-medicare-records #2</a></li>
                     <li>Explanation of Benefit Medicare - corrected FHIRPath for inv-dh-eob-01, inv-dh-eob-02 & inv-dh-eob-04 <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4">ci-medicare-records #4</a></li>
-                  </ul>
-                </li>  
-                <li>Removed:
-                  <ul>
+                  </ul> 
+                Removed:
+                <ul>
                     <li>profile Australian Immunisation Register Immunisation Status</li>
                     <li>profile Australian Immunisation Register COVID-19 Immunisation Status</li>
                     <li>profile Australian Immunisation Register Immunisation Recommendation</li>
                     <li>profile Declared Disclaimer</li>
                     <li>extension Immunisation Dose Schedule</li>
-                  </ul>
-                </li>
               </ul>
             </td>
         </tr>
@@ -131,7 +122,7 @@ This implementation guide does not include mappings to another format, for more 
 
 The profiles defined in this implementation guide are designed to support upload of Medicare records from a Medicare repository to the MHR system. The version currently supported is FHIR STU3
 
-This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications will define those interactions.
+This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications define interactions for each system endpoint.
 
 
 
