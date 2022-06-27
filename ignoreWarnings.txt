@@ -4,6 +4,9 @@ Attempt to use Terminology server when no Terminology server is available
 
 This element does not match any known slice defined in the profile http://hl7.org.au/fhir/StructureDefinition/au-practitioner
 
+The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
+The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
+
 # The following code systems are external and not supported by terminology server
 Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/anzsco-designation-type-1' is unknown so the code cannot be validated
 
