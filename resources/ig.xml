@@ -135,7 +135,7 @@
       <name value="Explanation of Benefit MBS example 1"/>
       <description value="MBS example 1"/>
       <sourceReference>
-        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-01"/>
+        <reference value="ExplanationOfBenefit/mbs-01"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
@@ -144,9 +144,9 @@
     <resource>
       <example value="true"/>
       <name value="Explanation of Benefit MBS example 2"/>
-      <description value="MBS example 3"/>
+      <description value="MBS example 2"/>
       <sourceReference>
-        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-02"/>
+        <reference value="ExplanationOfBenefit/mbs-02"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
@@ -157,7 +157,7 @@
       <name value="Explanation of Benefit MBS example 4"/>
       <description value="MBS example min"/>
       <sourceReference>
-        <reference value="ExplanationOfBenefit/explanationofbenefit-mbs-example-min"/>
+        <reference value="ExplanationOfBenefit/mbs-min"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
@@ -168,7 +168,7 @@
       <name value="Explanation of Benefit PBS example 1"/>
       <description value="PBS example 1"/>
       <sourceReference>
-        <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-01"/>
+        <reference value="ExplanationOfBenefit/pbs-01"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
@@ -179,7 +179,7 @@
       <name value="Explanation of Benefit PBS example 2"/>
       <description value="PBS example 2"/>
       <sourceReference>
-        <reference value="ExplanationOfBenefit/explanationofbenefit-pbs-example-02"/>
+        <reference value="ExplanationOfBenefit/pbs-02"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/explanationofbenefit-medicare"/> 
@@ -190,7 +190,7 @@
       <name value="Consent example 1"/>
       <description value="Willing to donate"/>
       <sourceReference>
-        <reference value="Consent/aodr-example-willingtodonate"/>
+        <reference value="Consent/aodr-willingtodonate"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/consent-aodr"/> 
@@ -201,7 +201,7 @@
       <name value="Consent example 2"/>
       <description value="Willing to donate some"/>
       <sourceReference>
-        <reference value="Consent/aodr-example-willingtodonatesome"/>
+        <reference value="Consent/aodr-willingtodonatesome"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/consent-aodr"/> 
@@ -212,7 +212,7 @@
       <name value="Consent example 3"/>
       <description value="Not willing to donate"/>
       <sourceReference>
-        <reference value="Consent/aodr-example-notwillingtodonate"/>
+        <reference value="Consent/aodr-notwillingtodonate"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/consent-aodr"/> 

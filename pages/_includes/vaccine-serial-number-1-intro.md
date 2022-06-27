@@ -5,7 +5,7 @@ This extension applies to the Immunization resource and is used to represent the
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Australian Immunisation Register records are uploaded to the My Health Record system from a Medicare repository
+* An individual’s Australian Immunisation Register record is uploaded to the My Health Record system from a Medicare repository
 
 ##### **Each Extension SHALL have**
 1. an extension identifier (url)

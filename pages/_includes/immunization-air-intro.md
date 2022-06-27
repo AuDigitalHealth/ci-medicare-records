@@ -5,7 +5,7 @@ The purpose of this profile is to define a representation of an administered vac
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Australian Immunisation Register records are uploaded to the My Health Record system from a Medicare repository
+* An individual’s Australian Immunisation Register record is uploaded to the My Health Record system from a Medicare repository
 
 
 ##### **Each Immunization SHALL have**

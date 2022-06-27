@@ -1,5 +1,5 @@
 <Consent xmlns="http://hl7.org/fhir">
-	<id value="aodr-example-willingtodonatesome"/>
+	<id value="aodr-willingtodonate"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
 	</meta>
@@ -9,12 +9,12 @@
 			<p>
 				<b>Example Narrative</b>
 			</p>
-			<p><b>id</b>: aodr-example-willingtodonatesome</p>
+			<p><b>id</b>: aodr-willingtodonate</p>
 			<p><b>date initial registration</b>: 2015-11-18</p>
 			<p><b>donation decision</b>: Willing to be donor</p>
 			<p><b>dateTime</b>: 2017-09-21</p>
-			<p><b>Bone structure</b>: Not willing to be a donor</p>
-			<p><b>Eye</b>: Not willing to be a donor</p>
+			<p><b>Bone structure</b>: Willing to be donor</p>
+			<p><b>Eye</b>: Willing to be donor</p>
 			<p><b>Heart</b>: Willing to be donor</p>
 			<p><b>Heart valve structure</b>: Willing to be donor</p>
 			<p><b>Kidney</b>: Willing to be donor</p>
@@ -292,7 +292,7 @@
 		<uri value="http://www.australianorgandonorregister.gov.au/aodr"/>
 	</policy>
 	<except>
-		<type value="deny"/>
+		<type value="permit"/>
 		<action>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -307,7 +307,7 @@
 		</data>
 	</except>
 	<except>
-		<type value="deny"/>
+		<type value="permit"/>
 		<action>
 			<coding>
 				<system value="http://snomed.info/sct"/>

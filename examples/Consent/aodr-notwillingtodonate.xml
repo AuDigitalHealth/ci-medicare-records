@@ -1,5 +1,5 @@
 <Consent xmlns="http://hl7.org/fhir">
-	<id value="aodr-example-notwillingtodonate"/>
+	<id value="aodr-notwillingtodonate"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
 	</meta>
@@ -9,7 +9,7 @@
 			<p>
 				<b>Example Narrative</b>
 			</p>
-			<p><b>id</b>: aodr-example-notwillingtodonate</p>
+			<p><b>id</b>: aodr-notwillingtodonate</p>
 			<p><b>date initial registration</b>: 2015-11-18</p>
 			<p><b>donation decision</b>: Not willing to be a donor</p>
 			<p><b>dateTime</b>: 2017-09-21</p>
