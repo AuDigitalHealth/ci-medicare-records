@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="explanationofbenefit-medicare"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
-  <version value="1.0.2"/>
+  <version value="1.0.3"/>
   <name value="ExplanationofBenefitMedicare"/>
   <title value="Explanation of Benefit Medicare" />
   <status value="active"/>
@@ -31,16 +31,14 @@
         <severity value="error"/>
         <human value="A PBS or RPBS claim SHALL include a prescription."/>
         <expression
-          value="(item.category.coding.code='pbs' or item.category.coding.code='rpbs') implies prescription.exists()"
+          value="prescription.exists() implies (subType.coding.code='pbs' or subType.coding.code='rpbs' or item.category.coding.code='pbs' or item.category.coding.code='rpbs')"
         />
       </constraint>
       <constraint>
         <key value="inv-dh-eob-02"/>
         <severity value="error"/>
         <human value="A MBS or DVABS claim SHALL NOT include a prescription."/>
-        <expression
-          value="(item.category.coding.code='mbs' or item.category.coding.code='dva') implies prescription.exists().not()"
-        />
+        <expression value="prescription.empty() implies (subType.coding.code='mbs' or subType.coding.code='dva' or item.category.coding.code='mbs' or item.category.coding.code='dva')"/>
       </constraint>
       <constraint>
         <key value="inv-dh-eob-03"/>
@@ -51,8 +49,8 @@
       <constraint>
         <key value="inv-dh-eob-04"/>
         <severity value="error"/>
-        <human value="A PBS claim (subType='pbs') SHALL be of type 'Pharmacy' (type='pharmacy')."/>
-        <expression value="subType.coding.code='pbs' implies type.coding.code='pharmacy'"/>
+        <human value="A PBS claim SHALL be of type 'Pharmacy' (type='pharmacy')."/>
+        <expression value="prescription.exists() implies type.coding.code='pharmacy'"/>
       </constraint>
       <constraint>
         <key value="inv-dh-eob-05"/>
