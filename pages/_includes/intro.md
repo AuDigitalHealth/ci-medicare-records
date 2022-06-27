@@ -52,6 +52,7 @@ This implementation guide does not include mappings to another format, for more 
 
 
 ### Product version history
+
 <table class="list" width="100%" cellspacing="6">
 	<col style="width:15%"/>
 	<col style="width:15%"/>
@@ -70,32 +71,54 @@ This implementation guide does not include mappings to another format, for more 
         <tr>
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
-            <td>Pre-release at draft for external use. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the Enhanced Use of Immunisations Record Phase 2 and includes support for sending additional immunisation information.
+            <td>Pre-release for review. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the enhanced use of immunisation records.
               <ul>
-                <li>Added StructureDefinitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Australian Immunisation Register Notice, Declared Disclaimer, Immunisation Dose Schedule and Vaccine Serial Number</li>
-                <li>Amended StructureDefinitions:
+                <li>Added:
                   <ul>
-                    <li>Immunization Australian Immunisation Register - amended to represent record of administered vaccination only including new features to represent vaccine serial number and schedule information</li>
-                    <li>all StructureDefinitions - updated copyright year and FHIR version </li>
+                    <li>profile Australian Immunisation Register Immunisation Status</li>
+                    <li>profile Australian Immunisation Register COVID-19 Immunisation Status</li>
+                    <li>profile Australian Immunisation Register Notice</li>
+                    <li>profile Australian Immunisation Register Immunisation Recommendation</li>
+                    <li>profile Declared Disclaimer</li>
+                    <li>extension Immunisation Dose Schedule</li>
+                    <li>extension Vaccine Serial Number</li>
                   </ul>
                 </li>
-                <li>Removed StructureDefinitions: unused extension Immunisation Cancellation Period</li>
+                <li>Amended:
+                  <ul>
+                    <li>profile Australian Immunisation Register Immunisation - corrected to represent only administered vaccines, added vaccine serial number and schedule information</li>
+                  </ul>
+                </li>
+                <li>Removed: 
+                  <ul>
+                    <li>extension Immunisation Cancellation Period</li>
+                  </ul>
+                </li>
               </ul>
             </td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
-            <td>TBD. Implemented in FHIR Release 3.0.2 (STU). This version includes changes for the Enhanced Use of Immunisation Records Phase 2 to remove support for the real time immunisation information added in the previous version.
+            <td>Approved for external use. Implemented in FHIR Release 3.0.2 (STU). This version includes addresses changes in implementation scope.
               <ul>
                 <li>Amended StructureDefinitions:
                   <ul>
-                    <li>Immunization Australian Immunisation Register, and Australian Immunisation Register Notice - removed IHI rules</li>
-                    <li>all StructureDefinitions - updated copyright year, date and version</li>
+                    <li>Australian Immunisation Register Immunisation - removed constraints on population of Immunization.patient.identifier</li>
+                    <li>Australian Immunisation Register Notice - removed constraints on population of Flag.subject.identifier</li>
+                    <li>Consent Australian Organ Donor Register - corrected category slicing <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6">ci-medicare-records #6</a>, corrected FHIRPath for inv-dh-cons-01 & inv-dh-cons-02 <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5">ci-medicare-records #5</a>, corrected Consent.except.action to patternCodeableConcept <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2">ci-medicare-records #2</a></li>
+                    <li>Explanation of Benefit Medicare - corrected FHIRPath for inv-dh-eob-01, inv-dh-eob-02 & inv-dh-eob-04 <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4">ci-medicare-records #4</a></li>
                   </ul>
                 </li>  
-                <li>Removed StructureDefinitions: Australian Immunisation Register Immunisation Status, Australian Immunisation Register COVID-19 Immunisation Status, Australian Immunisation Register Immunisation Recommendation, Declared Disclaimer, and Immunisation Dose Schedule</li>
-                <li>Corrections of editorial nature</li>
+                <li>Removed:
+                  <ul>
+                    <li>profile Australian Immunisation Register Immunisation Status</li>
+                    <li>profile Australian Immunisation Register COVID-19 Immunisation Status</li>
+                    <li>profile Australian Immunisation Register Immunisation Recommendation</li>
+                    <li>profile Declared Disclaimer</li>
+                    <li>extension Immunisation Dose Schedule</li>
+                  </ul>
+                </li>
               </ul>
             </td>
         </tr>
@@ -104,54 +127,15 @@ This implementation guide does not include mappings to another format, for more 
 <br/>
 
 
-## Known issues
+## Future of Medicare Records FHIR implementation guide
 
-This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
+The profiles defined in this implementation guide are designed to support upload of Medicare records from a Medicare repository to the MHR system. The version currently supported is FHIR STU3
 
-<table border="1" cellpadding="1" valign="middle">
-   <tbody>
-     <tr bgcolor="#DCDCDC">
-       <th>Reference</th>
-       <th>Description</th>
-     </tr>
-     <tr>
-        <td>Medicare Records FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed for the Enhanced Use of Immunisation Records Phase 2 project.
-            <br/><br/>
-            Version 2.1.0 is now available to stakeholders for review however it is not expected to be progressed to publication. 
-            <br/><br/>
-            It is expected that work on this implementation guide is not going to be progressed until a new project is established. 
-        </td>
-     </tr> 
-     <tr>
-       <td>Source material errors</td>
-       <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
-     </tr>
-     <tr>
-       <td>Non-resolving profile URLs</td>
-       <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that StructureDefinition (i.e. profile) and is expected to be an address at which that StructureDefinition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
-     </tr>
-     <tr>
-       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register </a></td>
-       <td>Normative defects; behaves as a failure case. All instances of Consent will fail validation against this profile.
-         <ul>
-           <li>cannot satisfy the required slice category:organDonationConsent. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/6"> ci-medicare-records/issues/6</a>.</li>
-           <li>cannot satisfy invariants inv-dh-cons-01 and inv-dh-cons-02. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/5"> ci-medicare-records/issues/5</a>.</li>
-           <li>cannot include parts of category:organDonationConsent or except.action that are intended to be optional, including text and coding.display. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/2"> ci-medicare-records/issues/2</a>.</li>
-         </ul>
-       </td>
-     </tr>
-     <tr>
-       <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
-       <td>Normative defects; unintended failure cases.
-         <ul>
-           <li>cannot include prescriptions; failure caused by nested contained resources. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/3"> ci-medicare-records/issues/3</a>. </li>
-           <li>Additional unintended failure cases due to definition of inv-dh-eob-01, inv-dh-eob-02 and inv-dh-eob-04. See <a href="https://github.com/AuDigitalHealth/ci-medicare-records/issues/4"> ci-medicare-records/issues/4</a>. </li>
-         </ul>
-       </td>
-     </tr>
-  </tbody>
-</table> 
-<br/>
+This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications will define those interactions.
+
+
+
+
+
 
 
