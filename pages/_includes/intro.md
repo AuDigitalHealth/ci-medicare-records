@@ -1,11 +1,10 @@
 # Medicare Records FHIR Implementation Guide
-<h3>Draft for external review</h3>
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
 <!-- end TOC -->
 
-> <p style="color:#ff0000;">This material is under active development.</p>
+> <p style="color:#DAA520;">Draft for external review</p>
 
 ## Introduction
 
@@ -13,12 +12,10 @@ This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Rel
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
-This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data should be displayed and no such guidance should be inferred.
-
-This implementation guide does not describe transport or persistence mechanisms of the resources described by it. API specifications are defined in separate publications.
+This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications define interactions for each system endpoint.
 
 This implementation guide does not include mappings to another format, for more information see the applicable FHIR resource documentation.
-<br/>
+<br/><br/>
 
 
 ## Usage scenarios
@@ -27,7 +24,7 @@ This implementation guide does not include mappings to another format, for more 
 1. An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare repository
-<br/>
+<br/><br/>
 
 
 ## Key information
@@ -72,7 +69,7 @@ This implementation guide does not include mappings to another format, for more 
             <td>2.0.0</td>
             <td><span style="padding-left: 3px; padding-right: 3px">27 Nov 2020</span></td>
             <td>Pre-release for review. Implemented in FHIR Release 3.0.2 (STU). This version is developed for the enhanced use of immunisation records.
-              <br/>Added:
+              <br/><br/>Added:
                   <ul>
                     <li>profile Australian Immunisation Register Immunisation Status</li>
                     <li>profile Australian Immunisation Register COVID-19 Immunisation Status</li>
@@ -94,9 +91,9 @@ This implementation guide does not include mappings to another format, for more 
         </tr>
         <tr>
             <td>2.1.0</td>
-            <td><span style="padding-left: 3px; padding-right: 3px">TBD</span></td>
-            <td>Approved for external use. Implemented in FHIR Release 3.0.2 (STU). This version includes addresses changes in implementation scope.
-              <br/>Amended:
+            <td><span style="padding-left: 3px; padding-right: 3px">**IN PROGRESS**</span></td>
+            <td>**PROGRESSING THROUGH ASSURANCE**<br/><br/>Implemented in FHIR Release 3.0.2 (STU). This version includes addresses changes in implementation scope.
+              <br/><br/>Amended:
                   <ul>
                     <li>Australian Immunisation Register Immunisation - removed constraints on population of Immunization.patient.identifier</li>
                     <li>Australian Immunisation Register Notice - removed constraints on population of Flag.subject.identifier</li>
@@ -118,11 +115,6 @@ This implementation guide does not include mappings to another format, for more 
 <br/>
 
 
-## Future of Medicare Records FHIR implementation guide
-
-The profiles defined in this implementation guide are designed to support upload of Medicare records from a Medicare repository to the MHR system. The version currently supported is FHIR STU3
-
-This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications define interactions for each system endpoint.
 
 
 

@@ -1,6 +1,6 @@
 {
-  "package-id": "hl7.fhir.au.base",
-  "canonical": "http://hl7.org.au/fhir",
+  "package-id": "au.digitalhealth.stu3.medicare-records",
+  "canonical": "http://ns.electronichealth.net.au/fhir",
   "list": [
     {
       "version": "current",
@@ -8,13 +8,22 @@
       "path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records",
       "status": "ci-build",
       "fhirversion": "3.0.2",
+      "sequence": "STU3",
+      "current": true
+    },
+    {
+      "version": "2.1.0",
+      "desc": "Medicare Records FHIR implementation guide implemented in FHIR STU3.",
+      "path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/2.1.0",
+      "status": "ballot",
+      "fhirversion": "3.0.2",
       "sequence": "STU3"
     },
     {
       "version": "1.0.0",
-      "desc": "Medicare records FHIR implementation guide implemented in FHIR STU3.",
-      "path": "http://hl7.org.au/fhir/base2018Oct",
-      "status": "ballot",
+      "desc": "Medicare Records FHIR implementation guide implemented in FHIR STU3.",
+      "path": "http://ns.electronichealth.net.au/fhir/medicare-records/1.0.0",
+      "status": "release",
       "fhirversion": "3.0.1",
       "sequence": "STU3"
     }
