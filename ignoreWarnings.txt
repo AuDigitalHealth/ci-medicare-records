@@ -2,12 +2,15 @@
 
 Attempt to use Terminology server when no Terminology server is available
 
+This element does not match any known slice defined in the profile http://hl7.org.au/fhir/StructureDefinition/au-practitioner
+
 # The following code systems are external and not supported by terminology server
 Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/anzsco-designation-type-1' is unknown so the code cannot be validated
 
 
 # Terminology not available at HL7 tx server or in package dependency: fictious local coding systems
 Code System URI 'http://example.localcodingsystem.com.au/generic-packages' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated
 
 # Terminology not available at HL7 tx server or in package dependency: CodeSystem
 Code System URI 'urn:oid:1.2.36.1.2001.1005.17' is unknown so the code cannot be validated
@@ -32,3 +35,6 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australi
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.valueCodeableConcept could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 on element ExplanationOfBenefit.item.service could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 on element BodySite.code could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.value[x] could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.item.category could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.subType could not be resolved
