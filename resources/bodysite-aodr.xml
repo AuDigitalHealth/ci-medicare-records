@@ -32,9 +32,6 @@
       <min value="1"/>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite"/>
-        </extension>
         <strength value="required"/>
         <description value="Donateable organs."/>
         <valueSetUri

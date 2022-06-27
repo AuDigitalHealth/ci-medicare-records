@@ -93,9 +93,6 @@
       <path value="ExplanationOfBenefit.subType"/>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ClaimSubType"/>
-        </extension>
         <strength value="required"/>
         <valueSetUri
           value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1"
@@ -159,10 +156,6 @@
       <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.item">
-      <extension
-        url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Item"/>
-      </extension>
       <path value="ExplanationOfBenefit.item"/>
       <min value="1"/>
       <max value="1"/>
@@ -177,9 +170,6 @@
       <path value="ExplanationOfBenefit.item.category"/>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BenefitSubCategory"/>
-        </extension>
         <strength value="extensible"/>
         <valueSetUri
           value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1"
@@ -191,9 +181,6 @@
       <min value="1"/>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ServiceProduct"/>
-        </extension>
         <strength value="required"/>
         <valueSetUri
           value="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1"

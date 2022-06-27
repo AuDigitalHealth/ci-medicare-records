@@ -226,10 +226,6 @@
       <mustSupport value="true"/>
     </element>
     <element id="Consent.except">
-      <extension
-        url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Except"/>
-      </extension>
       <path value="Consent.except"/>
       <short value="Individual's decision about donation of a specific organ or tissue."/>
       <definition value="Individual's decision about donation of a specific organ or tissue."/>
@@ -286,10 +282,6 @@
       <mustSupport value="true"/>
     </element>
     <element id="Consent.except.data">
-      <extension
-        url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="ExceptData"/>
-      </extension>
       <path value="Consent.except.data"/>
       <short value="The body site controlled by this exception."/>
       <definition value="The body site controlled by this exception."/>
