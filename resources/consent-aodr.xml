@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="consent-aodr"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
-  <version value="1.0.3"/>
+  <version value="1.0.4"/>
   <name value="ConsentAODR"/>
   <title value="Consent Australian Organ Donor Register" />
   <status value="active"/>
@@ -113,12 +113,8 @@
       <path value="Consent.category"/>
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -130,13 +126,12 @@
       <sliceName value="organDonationConsent"/>
       <min value="1"/>
       <max value="1"/>
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
           <code value="64300-7"/>
         </coding>
-      </fixedCodeableConcept>
-      <mustSupport value="true"/>
+      </patternCodeableConcept>
     </element>
     <element id="Consent.patient">
       <path value="Consent.patient"/>
