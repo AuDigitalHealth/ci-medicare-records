@@ -1,21 +1,21 @@
 <Immunization xmlns="http://hl7.org/fhir">
-	<id value="7d0dab26-bc12-471e-a228-527c645db404"/>
+	<id value="air-01"/>
 	<meta>
 		<profile
 			value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:4122"/>
-		<value value="ceb0c9d5-62c1-4d86-bad0-15fe96dc39b9"/>
+		<value value="87276918-b7f1-4813-a85c-667beea6f2c3"/>
 	</identifier>
 	<status value="completed"/>
 	<notGiven value="false"/>
 	<vaccineCode>
 		<coding>
 			<system value="urn:oid:1.2.36.1.2001.1005.17"/>
-			<code value="PANVAX"/>
+			<code value="IFHX"/>
 		</coding>
-		<text value="Panvax"/>
+		<text value="Infanrix Hexa"/>
 	</vaccineCode>
 	<patient>
 		<identifier>
@@ -30,11 +30,27 @@
 			<value value="8003608166690503"/>
 		</identifier>
 	</patient>
-	<date value="2019-08-01"/>
+	<date value="2019-05-02"/>
 	<primarySource value="true"/>
 	<vaccinationProtocol>
+		<doseSequence value="1"/>
 		<targetDisease>
-			<text value="Influenza"/>
+			<text value="Diphtheria"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Tetanus"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Pertussis"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hepatitis B"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Polio"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hib"/>
 		</targetDisease>
 		<doseStatus>
 			<coding>

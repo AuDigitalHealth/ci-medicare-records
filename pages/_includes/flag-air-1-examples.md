@@ -5,18 +5,18 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.html">AIR notice - medical contraindication to MMR II</a></td>
-      <td>d75a3b06-0397-4472-bc7e-8651668e8f40</td>
-      <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.xml.html">XML</a></td>
-      <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.json.html">JSON</a></td>
-      <td><a href="Flag-d75a3b06-0397-4472-bc7e-8651668e8f40.ttl.html">Turtle</a></td>
+      <td><a href="Flag-air-01.html">AIR notice - medical contraindication to MMR II</a></td>
+      <td>air-01</td>
+      <td><a href="Flag-air-01.xml.html">XML</a></td>
+      <td><a href="Flag-air-01.json.html">JSON</a></td>
+      <td><a href="Flag-air-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.html">AIR notice - natural immunity to measles</a></td>
-      <td>8a620ec8-6a17-4b33-8f13-ca2f788654ac</td>
-      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.xml.html">XML</a></td>
-      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.json.html">JSON</a></td>
-      <td><a href="Flag-8a620ec8-6a17-4b33-8f13-ca2f788654ac.ttl.html">Turtle</a></td>
+      <td><a href="Flag-air-02.html">AIR notice - natural immunity to measles</a></td>
+      <td>air-02</td>
+      <td><a href="Flag-air-02.xml.html">XML</a></td>
+      <td><a href="Flag-air-02.json.html">JSON</a></td>
+      <td><a href="Flag-air-02.ttl.html">Turtle</a></td>
    </tr>
 
 </table>

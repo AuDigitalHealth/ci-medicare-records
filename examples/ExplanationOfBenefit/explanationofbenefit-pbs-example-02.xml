@@ -16,7 +16,7 @@
 	</contained>
 	<contained>
 		<Medication>
-			<id value="Medication2"/>
+			<id value="med"/>
 			<code>
 				<coding>
 					<system value="urn:oid:1.2.36.1.2001.1005.22"/>
@@ -30,7 +30,7 @@
 	</contained>
 	<contained>
 		<MedicationRequest xmlns="http://hl7.org/fhir">
-			<id value="MedicationRequest2"/>
+			<id value="medreq"/>
 			<meta>
 				<profile
 					value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"
@@ -39,7 +39,7 @@
 			<status value="active"/>
 			<intent value="order"/>
 			<medicationReference>
-				<reference value="#Medication2"/>
+				<reference value="#med"/>
 			</medicationReference>
 			<subject>
 				<identifier>
@@ -95,7 +95,7 @@
 	</patient>
 	<created value="2017-01-16"/>
 	<prescription>
-		<reference value="#MedicationRequest2"/>
+		<reference value="#medreq"/>
 	</prescription>
 	<item>
 		<sequence value="1"/>

@@ -1,11 +1,11 @@
 <Flag xmlns="http://hl7.org/fhir">
-    <id value="8a620ec8-6a17-4b33-8f13-ca2f788654ac" />
+    <id value="air-01" />
     <meta>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1" />
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:4122" />
-        <value value="475db616-dfd5-43f3-b935-9f582233a38d" />
+        <value value="0985f047-de42-478d-a56c-c37cc9ae5d10" />
     </identifier>
     <status value="active" />
     <category>
@@ -17,7 +17,7 @@
     </category>
     <code>
         <text
-            value="Natural immunity to Measles recorded on 28 Oct 2020."
+            value="Medical contraindication to MMR II recorded on 12 Oct 2020."
          />
     </code>
     <subject>

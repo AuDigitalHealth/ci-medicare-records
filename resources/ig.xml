@@ -113,7 +113,7 @@
       <name value="Immunization example 1"/>
       <description value="Vaccination administration (Infanrix Hexa at 6 months of age)"/>
       <sourceReference>
-        <reference value="Immunization/88d35c33-414c-4d55-98e9-29f9c954df03"/>
+        <reference value="Immunization/air-01"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/immunization-air"/> 
@@ -124,7 +124,7 @@
       <name value="Immunization example 2"/>
       <description value="Vaccination administration (Panvax for influenza)"/>
       <sourceReference>
-        <reference value="Immunization/7d0dab26-bc12-471e-a228-527c645db404"/>
+        <reference value="Immunization/air-02"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/immunization-air"/> 
@@ -223,7 +223,7 @@
       <name value="Flag 1"/>
       <description value="AIR notice - Medical contraindication to MMR II"/>
       <sourceReference>
-        <reference value="Flag/d75a3b06-0397-4472-bc7e-8651668e8f40"/>
+        <reference value="Flag/air-01"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/flag-air-1"/> 
@@ -234,7 +234,7 @@
       <name value="Flag 1"/>
       <description value="AIR notice - Natural immunity to Measles"/>
       <sourceReference>
-        <reference value="Flag/8a620ec8-6a17-4b33-8f13-ca2f788654ac"/>
+        <reference value="Flag/air-02"/>
       </sourceReference>
       <exampleFor> 
         <reference value="StructureDefinition/flag-air-1"/> 
