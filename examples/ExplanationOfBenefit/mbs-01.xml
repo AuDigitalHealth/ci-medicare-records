@@ -1,5 +1,5 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="explanationofbenefit-mbs-example-01"/>
+	<id value="mbs-01"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
 	</meta>

@@ -4,7 +4,7 @@
 {:toc}
 <!-- end TOC -->
 
-> <p style="color:#DAA520;">Draft for external review</p>
+<p style="color:#DAA520;">Draft for external review</p>
 
 ## Introduction
 
@@ -17,13 +17,12 @@ This implementation guide, including the profiles defined, are not designed to s
 This implementation guide does not include mappings to another format, for more information see the applicable FHIR resource documentation.
 <br/><br/>
 
-
 ## Usage scenarios
 [Profiles](profiles.html) in Medicare Records FHIR implementation guide are defined to support the following scenarios:
-1. An individual’s Australian Immunisation Register (AIR) records are uploaded to the My Health Record system from a Medicare repository
-1. An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare repository
-1. An individual’s Medicare Benefits Schedule (MBS) records are uploaded to the My Health Record system from a Medicare repository
-1. An individual’s Pharmaceutical Benefits Schedule (PBS) records are uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Australian Immunisation Register (AIR) record is uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Medicare Benefits Schedule (MBS) claim item records are uploaded to the My Health Record system from a Medicare repository
+1. An individual’s Pharmaceutical Benefits Schedule (PBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 <br/><br/>
 
 

@@ -5,7 +5,7 @@ This extension applies to any resource and represents the date an individual fir
 
 #####  **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare repository
+* An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository
 
 
 #####  **Each Extension SHALL have**

@@ -1,12 +1,24 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="explanationofbenefit-mbs-example-min"/>
+	<id value="mbs-02"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:oid:2.25.129844986816735724544008039950138526110"/>
+		<value value="urn:oid:1.2.36.1.2001.1007.11.8003640002000043.1000000000041358"/>
 	</identifier>
+	<type>
+		<coding>
+			<system value="http://hl7.org/fhir/ex-claimtype"/>
+			<code value="pharmacy"/>
+		</coding>
+	</type>
+	<subType>
+		<coding>
+			<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
+			<code value="mbs"/>
+		</coding>
+	</subType>
 	<patient>
 		<identifier>
 			<type>
@@ -23,18 +35,15 @@
 	<created value="2017-12-04"/>
 	<item>
 		<sequence value="1"/>
-		<category>
-			<coding>
-				<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
-				<code value="mbs"/>
-			</coding>
-		</category>
 		<service>
 			<coding>
 				<system value="urn:oid:1.2.36.1.2001.1005.21"/>
-				<code value="30186"/>
+				<code value="30185"/>
+				<display
+					value="Palmar or plantar warts (10 or more), definitive removal of, excluding ablative methods alone, not being a service to which item 30186 or 30187 applies (Anaes.)"
+				/>
 			</coding>
 		</service>
 		<servicedDate value="2016-06-16"/>
 	</item>
-</ExplanationOfBenefit>
+	</ExplanationOfBenefit>

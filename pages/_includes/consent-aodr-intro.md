@@ -4,7 +4,7 @@ The purpose of this profile is to define a representation of a record of organ a
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Australian Organ Donor Register (AODR) record is uploaded to the My Health Record system from a Medicare repository
+* An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository
 
 
 ##### **Each Consent SHALL have**
