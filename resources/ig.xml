@@ -132,6 +132,17 @@
     </resource>
     <resource>
       <example value="true"/>
+      <name value="Immunization example 2"/>
+      <description value="Vaccination administration (Pfizer Comirnaty for COVID-19)"/>
+      <sourceReference>
+        <reference value="Immunization/air-03"/>
+      </sourceReference>
+      <exampleFor> 
+        <reference value="StructureDefinition/immunization-air"/> 
+      </exampleFor>
+    </resource>
+    <resource>
+      <example value="true"/>
       <name value="Explanation of Benefit MBS example 1"/>
       <description value="MBS example 1"/>
       <sourceReference>
