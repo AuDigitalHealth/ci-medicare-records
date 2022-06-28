@@ -3,27 +3,6 @@
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
 	</meta>
-	<text>
-		<status value="extensions"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<p>
-				<b>Example Narrative</b>
-			</p>
-			<p><b>id</b>: aodr-willingtodonate</p>
-			<p><b>date initial registration</b>: 2015-11-18</p>
-			<p><b>donation decision</b>: Willing to be donor</p>
-			<p><b>dateTime</b>: 2017-09-21</p>
-			<p><b>Bone structure</b>: Willing to be donor</p>
-			<p><b>Eye</b>: Willing to be donor</p>
-			<p><b>Heart</b>: Willing to be donor</p>
-			<p><b>Heart valve structure</b>: Willing to be donor</p>
-			<p><b>Kidney</b>: Willing to be donor</p>
-			<p><b>Liver</b>: Willing to be donor</p>
-			<p><b>Lung structure</b>: Willing to be donor</p>
-			<p><b>Pancreas</b>: Willing to be donor</p>
-			<p><b>Skin structure</b>: Willing to be donor</p>
-		</div>
-	</text>
 	<contained>
 		<BodySite>
 			<id value="BodySite-bone"/>
