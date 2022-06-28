@@ -18,4 +18,11 @@
       <td><a href="Immunization-air-02.json.html">JSON</a></td>
       <td><a href="Immunization-air-02.ttl.html">Turtle</a></td>
    </tr>
+   <tr>
+      <td><a href="Immunization-air-03.html">Vaccination administration (Pfizer Comirnaty for COVID-19)</a></td>
+      <td>air-03</td>
+      <td><a href="Immunization-air-03.xml.html">XML</a></td>
+      <td><a href="Immunization-air-03.json.html">JSON</a></td>
+      <td><a href="Immunization-air-03.ttl.html">Turtle</a></td>
+   </tr>
 </table>
