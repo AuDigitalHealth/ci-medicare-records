@@ -5,7 +5,7 @@
 {:toc}
 
 
-### Version = 2.0.1
+###Version = 2.0.1
 - Publication date: **IN PROGRESS**
 - Publication status: **PROGRESSING THROUGH ASSURANCE**
 - url: <https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/branches/2.1.0/>
@@ -29,7 +29,7 @@ Removed:
 - profile Declared Disclaimer
 - extension Immunisation Dose Schedule
 
-<br/><br/>
+<br/>
 ### Version = 2.0.0
 - Publication date: 27 Novemeber 2020
 - Publication status: Draft for external use [THIS STATUS WAS ISSUED IN ERROR AND IS WITHDRAWN]
@@ -56,7 +56,7 @@ Amended:
 Removed: 
 - extension Immunisation Cancellation Period
                   
-<br/><br/>          
+<br/>        
 ### Version = 1.0.0
 - Publication date: 1 November 2018
 - Publication status: Approved for external use
