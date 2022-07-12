@@ -5,7 +5,7 @@
 {:toc}
 
 
-###Version = 2.0.1
+### Version = 2.0.1
 - Publication date: **IN PROGRESS**
 - Publication status: **PROGRESSING THROUGH ASSURANCE**
 - url: <https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/branches/2.1.0/>
@@ -17,22 +17,23 @@ This version is developed for the Enhanced Use of Immunisation Records project. 
 
 Amended:
 
-- Australian Immunisation Register Immunisation - removed constraints on population of Immunization.patient.identifier
-- Australian Immunisation Register Notice - removed constraints on population of Flag.subject.identifier
-- Consent Australian Organ Donor Register - corrected category slicing [ci-medicare-records #6](https://github.com/AuDigitalHealth/ci-medicare-records/issues/6), corrected FHIRPath for inv-dh-cons-01 & inv-dh-cons-02 [ci-medicare-records #5](https://github.com/AuDigitalHealth/ci-medicare-records/issues/5), corrected Consent.except.action to patternCodeableConcept [ci-medicare-records #2](https://github.com/AuDigitalHealth/ci-medicare-records/issues/2)
-- Explanation of Benefit Medicare - corrected FHIRPath for inv-dh-eob-01, inv-dh-eob-02 & inv-dh-eob-04[ci-medicare-records #4](https://github.com/AuDigitalHealth/ci-medicare-records/issues/4)
+- Australian Immunisation Register Immunisation - removed constraints on population of Immunization.patient.identifier [ci-medicare-records #15](https://github.com/AuDigitalHealth/ci-medicare-records/issues/15)
+- Australian Immunisation Register Notice - removed constraints on population of Flag.subject.identifier [ci-medicare-records #15](https://github.com/AuDigitalHealth/ci-medicare-records/issues/15)
+- Consent Australian Organ Donor Register - technical correction to category slicing [ci-medicare-records #6](https://github.com/AuDigitalHealth/ci-medicare-records/issues/6), corrected FHIRPath for inv-dh-cons-01 & inv-dh-cons-02 [ci-medicare-records #5](https://github.com/AuDigitalHealth/ci-medicare-records/issues/5), corrected Consent.except.action to patternCodeableConcept [ci-medicare-records #2](https://github.com/AuDigitalHealth/ci-medicare-records/issues/2)
+- Explanation of Benefit Medicare - technical correction to FHIRPath for inv-dh-eob-01, inv-dh-eob-02 & inv-dh-eob-04 [ci-medicare-records #4](https://github.com/AuDigitalHealth/ci-medicare-records/issues/4)
+- technical correction to revert HL7 AU Base implementation guide dependency version to v0.9.3 12 September 2018 [ci-medicare-records #15](https://github.com/AuDigitalHealth/ci-medicare-records/issues/15)
 
 Removed:
-- profile Australian Immunisation Register Immunisation Status
-- profile Australian Immunisation Register COVID-19 Immunisation Status
-- profile Australian Immunisation Register Immunisation Recommendation
-- profile Declared Disclaimer
-- extension Immunisation Dose Schedule
+- profile Australian Immunisation Register Immunisation Status [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
+- profile Australian Immunisation Register COVID-19 Immunisation Status [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
+- profile Australian Immunisation Register Immunisation Recommendation [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
+- profile Declared Disclaimer [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
+- extension Immunisation Dose Schedule [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
 
 <br/>
 ### Version = 2.0.0
 - Publication date: 27 Novemeber 2020
-- Publication status: Draft for external use [THIS STATUS WAS ISSUED IN ERROR AND IS WITHDRAWN]
+- Publication status: Draft for external use [THIS STATUS WAS ISSUED IN ERROR AND IS CORRECTED TO: Draft for external review]
 - url: N/A
 - Based on FHIR version : 3.0.2
 - Archived release location: <https://github.com/AuDigitalHealth/ci-medicare-records/releases/tag/MR-2.0.0-2020NOV>
