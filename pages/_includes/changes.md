@@ -11,7 +11,9 @@
 - url: <https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/branches/2.1.0/>
 - Based on FHIR version : 3.0.2
 
-This version is developed for the Enhanced Use of Immunisation Records project. This version addresses the changes in scope to the FHIR payload in this project with the following changes:
+This version is developed for the Enhanced Use of Immunisation Records project. This version addresses the changes in scope to the FHIR payload in this project.
+
+**Changes in this version**
 
 Amended:
 
@@ -27,7 +29,7 @@ Removed:
 - profile Declared Disclaimer
 - extension Immunisation Dose Schedule
 
-
+<br/><br/>
 ### Version = 2.0.0
 - Publication date: 27 Novemeber 2020
 - Publication status: Draft for external use [THIS STATUS WAS ISSUED IN ERROR AND IS WITHDRAWN]
@@ -35,7 +37,9 @@ Removed:
 - Based on FHIR version : 3.0.2
 - Archived release location: <https://github.com/AuDigitalHealth/ci-medicare-records/releases/tag/MR-2.0.0-2020NOV>
 
-Pre-release for review. This version is developed for the Enhanced Use of Immunisation Records project with the following changes:
+Pre-release for review. This version is developed for the Enhanced Use of Immunisation Records project.
+
+**Changes in this version**
 
 Added:
 - profile Australian Immunisation Register Immunisation Status
@@ -52,7 +56,7 @@ Amended:
 Removed: 
 - extension Immunisation Cancellation Period
                   
-                  
+<br/><br/>          
 ### Version = 1.0.0
 - Publication date: 1 November 2018
 - Publication status: Approved for external use
