@@ -1,5 +1,3 @@
-#### Australian Immunisation Register Notice *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 

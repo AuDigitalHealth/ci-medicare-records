@@ -1,5 +1,3 @@
-#### Medication Request Pharmaceutical Benefits Scheme *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 This profile defines a representation of prescription data to support representation of PBS claim items.
 
 #####  **Usage scenarios**
