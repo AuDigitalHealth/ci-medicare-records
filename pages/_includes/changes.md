@@ -30,6 +30,7 @@ Removed:
 - profile Declared Disclaimer [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
 - extension Immunisation Dose Schedule [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
 
+---
 
 ### Version = 2.0.0
 - Publication date: 27 Novemeber 2020
@@ -56,8 +57,9 @@ Amended:
 
 Removed: 
 - extension Immunisation Cancellation Period
-                  
-  
+
+---
+
 ### Version = 1.0.0
 - Publication date: 1 November 2018
 - Publication status: Approved for external use
@@ -66,3 +68,5 @@ Removed:
   - Archived release location: TBD 
 
 The Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.
+
+---
