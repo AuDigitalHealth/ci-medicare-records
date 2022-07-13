@@ -8,14 +8,10 @@
 
 ## Introduction
 
-This implementation guide is based on [HL7<sup>TM</sup> FHIR<sup>&reg;</sup> Release 3 (STU)](http://hl7.org/fhir/STU3/index.html) and publishes artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. 
+The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. 
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
-This implementation guide, including the profiles defined, are not designed to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems. One or more separate publications define interactions for each system endpoint.
-
-This implementation guide does not include mappings to another format, for more information see the applicable FHIR resource documentation.
-<br/><br/>
 
 ## Scope
 
@@ -24,7 +20,8 @@ This guide is scoped to the FHIR conformance artefacts (i.e. [Profiles and Exten
 1. An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Medicare Benefits Schedule (MBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Pharmaceutical Benefits Schedule (PBS) claim item records are uploaded to the My Health Record system from a Medicare repository
-<br/><br/>
+
+This guide, including the profiles defined, is intended to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems.
 
 The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
@@ -40,11 +37,6 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
 - [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
 - [Change Log](changes.html): This page documents the changes across versions of the Medicare Records FHIR Implementation Guide
-
-
-
-
-
 
 
 
