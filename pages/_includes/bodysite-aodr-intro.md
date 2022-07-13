@@ -1,5 +1,3 @@
-#### BodySite Australian Organ Donor Register *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 

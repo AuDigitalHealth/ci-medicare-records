@@ -1,5 +1,3 @@
-#### Medication Pharmaceutical Benefits Scheme *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 The purpose of this profile is to define a representation of medicinal product information for a prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 

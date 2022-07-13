@@ -1,5 +1,3 @@
-#### Consent Australian Organ Donor Register *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 ##### **Usage scenarios**

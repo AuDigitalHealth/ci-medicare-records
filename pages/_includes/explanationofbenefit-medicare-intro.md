@@ -1,5 +1,3 @@
-#### Explanation of Benefit Medicare *[[Active](http://hl7.org/fhir/STU3/valueset-publication-status.html)]*
-
 The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
 
 
