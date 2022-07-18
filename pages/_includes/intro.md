@@ -4,7 +4,6 @@
 {:toc}
 <!-- end TOC -->
 
-<p style="color:#DAA520;">Draft for external review</p>
 
 ## Introduction
 
