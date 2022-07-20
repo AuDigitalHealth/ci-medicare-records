@@ -3,7 +3,7 @@
   <id value="au.digitalhealth.stu3.medicare-records"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
   <version value="2.1.0"/>
-  <name value="MedicareRecords"/>
+  <name value="ADHAMedicareRecords"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
