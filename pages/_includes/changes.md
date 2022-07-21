@@ -8,7 +8,7 @@
 ### Version = 2.1.0
 - Publication date: **IN PROGRESS**
 - Publication status: **PROGRESSING THROUGH ASSURANCE**
-- url: <https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records/branches/2.1.0/>
+- url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/2.1.0>
 - Based on FHIR version : 3.0.2
 
 This version is developed for the Enhanced Use of Immunisation Records project. This version addresses the changes in scope to the FHIR payload in this project.
@@ -63,7 +63,7 @@ Removed:
 ### Version = 1.0.0
 - Publication date: 1 November 2018
 - Publication status: Approved for external use
-- url: <https://developer.digitalhealth.gov.au/sites/default/files/specifications/clinical-documents/ep-2746-2018/dh-2738-2018/index.html>
+- url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/1.0.0>
 - Based on FHIR version : 3.0.1
   - Archived release location: TBD 
 
