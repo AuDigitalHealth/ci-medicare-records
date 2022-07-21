@@ -35,7 +35,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Profiles and Extensions](profiles.html): This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and the expectations for must support elements in each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
-- [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
+- [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Change Log](changes.html): This page documents the changes across versions of the Medicare Records FHIR Implementation Guide
 
 
