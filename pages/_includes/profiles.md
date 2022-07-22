@@ -19,11 +19,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
      <th>Description</th>
   </tr>
   <tr>
-     <td><a href="StructureDefinition-immunization-air.html">Australian Immunisation Register Immunisation</a></td>
+     <td><a href="StructureDefinition-immunization-air.html">AHDA Australian Immunisation Register Immunisation</a></td>
      <td>This profile defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register.</td>
   </tr>
    <tr>
-      <td><a href="StructureDefinition-flag-air-1.html">Australian Immunisation Register Notice</a></td>
+      <td><a href="StructureDefinition-flag-air-1.html">AHDA Australian Immunisation Register Notice</a></td>
       <td>This profile defines a representation of an Australian Immunisation Register notice for an individual, e.g. information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
    </tr> 
  </tbody>   
@@ -41,11 +41,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
        <th>Description</th>
      </tr>
      <tr>
-       <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></td>
+       <td><a href="StructureDefinition-consent-aodr.html">AHDA Consent Australian Organ Donor Register</a></td>
        <td>This profile defines a representation of donation decision information from the Australian Organ Donor Register.</td>
      </tr>
      <tr>
-       <td><a href="StructureDefinition-bodysite-aodr.html">BodySite Australian Organ Donor Register</a></td>
+       <td><a href="StructureDefinition-bodysite-aodr.html">AHDA BodySite Australian Organ Donor Register</a></td>
        <td>This profile defines a representation of an organ or tissue for donation as part of an Australian Organ Donor Register record.</td>
      </tr>
   </tbody>
@@ -63,11 +63,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
          <th>Description</th>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">AHDA Explanation of Benefit Medicare</a></td>
          <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-referralrequest-mbsdva.html">Referral Request Medicare Benefits Schedule Department of Veterans’ Affairs</a></td>
+         <td><a href="StructureDefinition-referralrequest-mbsdva.html">AHDA Referral Request MBS DVA</a></td>
          <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of MBS claim item records.</td>
        </tr>
  </tbody>
@@ -86,15 +86,15 @@ The profiles listed below are defined as part of this implementation guide. Thes
          <th>Description</th>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">Explanation of Benefit Medicare</a></td>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">AHDA Explanation of Benefit Medicare</a></td>
          <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-medicationrequest-pbs.html">Medication Request Pharmaceutical Benefits Scheme</a></td>
+         <td><a href="StructureDefinition-medicationrequest-pbs.html">AHDA Medication Request PBS</a></td>
          <td>This profile defines a representation of prescription data to as part of a PBS claim item.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-medication-pbs.html">Medication Pharmaceutical Benefits Scheme</a></td>
+         <td><a href="StructureDefinition-medication-pbs.html">AHDA Medication PBS</a></td>
          <td>This profile defines a representation of pharmaceutical item data as part of a PBS claim item.</td>
       </tr>
  </tbody>
@@ -121,7 +121,7 @@ The following extensions are defined as part of this implementation guide.
         <td><a href="StructureDefinition-consent-aodr.html">Consent Australian Organ Donor Register</a></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-extension-dateinitialregistration.html">Date Initial Registration</a></td>
+        <td><a href="StructureDefinition-extension-dateinitialregistration.html">Date of Initial Registration</a></td>
         <td>Australian Organ Donor Register record</td>
         <td><a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/STU3/Resource.html">Resource</a></td>
