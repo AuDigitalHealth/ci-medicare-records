@@ -22,6 +22,7 @@ Amended:
 - Consent Australian Organ Donor Register - technical correction to category slicing [ci-medicare-records #6](https://github.com/AuDigitalHealth/ci-medicare-records/issues/6), corrected FHIRPath for inv-dh-cons-01 & inv-dh-cons-02 [ci-medicare-records #5](https://github.com/AuDigitalHealth/ci-medicare-records/issues/5), corrected Consent.except.action to patternCodeableConcept [ci-medicare-records #2](https://github.com/AuDigitalHealth/ci-medicare-records/issues/2)
 - Explanation of Benefit Medicare - technical correction to FHIRPath for inv-dh-eob-01, inv-dh-eob-02 & inv-dh-eob-04 [ci-medicare-records #4](https://github.com/AuDigitalHealth/ci-medicare-records/issues/4)
 - technical correction to revert HL7 AU Base implementation guide dependency version to v0.9.3 12 September 2018 [ci-medicare-records #15](https://github.com/AuDigitalHealth/ci-medicare-records/issues/15)
+- applied 2022 naming policy to title and name of structures [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/17)
 
 Removed:
 - profile Australian Immunisation Register Immunisation Status [ci-medicare-records #16](https://github.com/AuDigitalHealth/ci-medicare-records/issues/16)
