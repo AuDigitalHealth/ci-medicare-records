@@ -2,12 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="explanationofbenefit-medicare"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
-  <version value="1.0.3"/>
-  <name value="ExplanationofBenefitMedicare"/>
-  <title value="Explanation of Benefit Medicare" />
+  <version value="1.0.4"/>
+  <name value="ADHAExplanationofBenefitMedicare"/>
+  <title value="ADHA Explanation of Benefit Medicare" />
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-06-27"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
