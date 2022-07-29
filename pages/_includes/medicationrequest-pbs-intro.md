@@ -22,9 +22,9 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * intent
     * medication
     * authoredOn
-    * dispeseRequest
+    * dispenseRequest
     * dispenseRequest.numberOfRepeatsAllowed
-    * dispeseRequest.quantity
+    * dispenseRequest.quantity
 * The system SHALL be able to take the following elements into account when performing processing:
     * identifier
     * subject
