@@ -19,11 +19,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
      <th>Description</th>
   </tr>
   <tr>
-     <td><a href="StructureDefinition-immunization-air.html">AHDA Australian Immunisation Register Immunisation</a></td>
+     <td><a href="StructureDefinition-immunization-air.html">ADHA Australian Immunisation Register Immunization</a></td>
      <td>This profile defines a representation of the record of an administered vaccination, for an individual, held in the Australian Immunisation Register.</td>
   </tr>
    <tr>
-      <td><a href="StructureDefinition-flag-air-1.html">AHDA Australian Immunisation Register Notice</a></td>
+      <td><a href="StructureDefinition-flag-air-1.html">ADHA Australian Immunisation Register Flag</a></td>
       <td>This profile defines a representation of an Australian Immunisation Register notice for an individual, e.g. information that an individual has an exemption record or has finished a National Immunisation Program schedule.</td>
    </tr> 
  </tbody>   
@@ -41,11 +41,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
        <th>Description</th>
      </tr>
      <tr>
-       <td><a href="StructureDefinition-consent-aodr.html">AHDA Consent Australian Organ Donor Register</a></td>
+       <td><a href="StructureDefinition-consent-aodr.html">ADHA Australian Organ Donor Register Consent</a></td>
        <td>This profile defines a representation of donation decision information from the Australian Organ Donor Register.</td>
      </tr>
      <tr>
-       <td><a href="StructureDefinition-bodysite-aodr.html">AHDA BodySite Australian Organ Donor Register</a></td>
+       <td><a href="StructureDefinition-bodysite-aodr.html">ADHA Australian Organ Donor Register BodySite</a></td>
        <td>This profile defines a representation of an organ or tissue for donation as part of an Australian Organ Donor Register record.</td>
      </tr>
   </tbody>
@@ -63,11 +63,11 @@ The profiles listed below are defined as part of this implementation guide. Thes
          <th>Description</th>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">AHDA Explanation of Benefit Medicare</a></td>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">ADHA Medicare ExplanationOfBenefit</a></td>
          <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-referralrequest-mbsdva.html">AHDA Referral Request MBS DVA</a></td>
+         <td><a href="StructureDefinition-referralrequest-mbsdva.html">ADHA MBS DVA ReferralRequest</a></td>
          <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of MBS claim item records.</td>
        </tr>
  </tbody>
@@ -86,15 +86,15 @@ The profiles listed below are defined as part of this implementation guide. Thes
          <th>Description</th>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">AHDA Explanation of Benefit Medicare</a></td>
+         <td><a href="StructureDefinition-explanationofbenefit-medicare.html">ADHA Medicare ExplanationOfBenefit</a></td>
          <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-medicationrequest-pbs.html">AHDA Medication Request PBS</a></td>
+         <td><a href="StructureDefinition-medicationrequest-pbs.html">ADHA PBS MedicationRequest</a></td>
          <td>This profile defines a representation of prescription data to as part of a PBS claim item.</td>
       </tr>
       <tr>
-         <td><a href="StructureDefinition-medication-pbs.html">AHDA Medication PBS</a></td>
+         <td><a href="StructureDefinition-medication-pbs.html">ADHA PBS Medication</a></td>
          <td>This profile defines a representation of pharmaceutical item data as part of a PBS claim item.</td>
       </tr>
  </tbody>
