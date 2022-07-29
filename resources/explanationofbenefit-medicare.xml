@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
   <version value="1.0.4"/>
   <name value="ADHAExplanationofBenefitMedicare"/>
-  <title value="ADHA Explanation of Benefit Medicare" />
+  <title value="ADHA Medicare ExplanationOfBenefit" />
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>

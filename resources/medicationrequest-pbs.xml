@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medicationrequest-pbs"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"/>
-  <version value="1.0.3"/>
+  <version value="1.0.4"/>
   <name value="ADHAMedicationRequestPBS"/>
-  <title value="ADHA Medication Request PBS" />
+  <title value="ADHA PBS MedicationRequest" />
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
