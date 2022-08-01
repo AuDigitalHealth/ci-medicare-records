@@ -8,7 +8,7 @@
 
 ## Introduction
 
-The Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. 
+The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. 
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
@@ -36,7 +36,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Profiles and Extensions](profiles.html): This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and the expectations for must support elements in each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
-- [Change Log](changes.html): This page documents the changes across versions of the Medicare Records FHIR Implementation Guide
+- [Change Log](changes.html): This page documents the changes across versions of this implementation guide
 
 
 
