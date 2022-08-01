@@ -67,6 +67,6 @@ Removed:
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/1.0.0>
 - Based on FHIR version : 3.0.1 
 
-The Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.
+The Australian Digital Health Agency Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.
 
 ---
