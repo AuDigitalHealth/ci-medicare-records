@@ -6,7 +6,7 @@
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="ceb0c9d5-62c1-4d86-bad0-15fe96dc39b9"/>
+		<value value="urn:uuid:ceb0c9d5-62c1-4d86-bad0-15fe96dc39b9"/>
 	</identifier>
 	<status value="completed"/>
 	<notGiven value="false"/>
