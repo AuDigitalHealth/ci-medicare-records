@@ -5,7 +5,7 @@
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986" />
-        <value value="0985f047-de42-478d-a56c-c37cc9ae5d10" />
+        <value value="urn:uuid:0985f047-de42-478d-a56c-c37cc9ae5d10" />
     </identifier>
     <status value="active" />
     <category>
