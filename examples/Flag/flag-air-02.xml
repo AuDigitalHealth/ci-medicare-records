@@ -4,7 +4,7 @@
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1" />
     </meta>
     <identifier>
-        <system value="urn:ietf:rfc:4122" />
+        <system value="urn:ietf:rfc:3986" />
         <value value="0985f047-de42-478d-a56c-c37cc9ae5d10" />
     </identifier>
     <status value="active" />
