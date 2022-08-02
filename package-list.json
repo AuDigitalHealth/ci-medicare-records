@@ -1,0 +1,17 @@
+{
+  "package-id": "au.digitalhealth.stu3.medicare-records",
+  "title": "Australian Digital Health Agency Medicare Records FHIR Implementation Guide",
+  "canonical": "http://ns.electronichealth.net.au/fhir",
+  "introduction" : "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.",
+  "list": [
+    {
+      "version": "current",
+     "desc": "Continuous Integration Build STU3 (latest in version control) - Content subject to frequent changes.",
+      "path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records",
+      "status": "ci-build",
+      "fhirversion": "3.0.2",
+      "sequence": "STU3",
+      "current": true
+    }
+  ]
+}
