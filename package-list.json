@@ -10,7 +10,6 @@
       "path": "https://build.fhir.org/ig/AuDigitalHealth/ci-medicare-records",
       "status": "ci-build",
       "fhirversion": "3.0.2",
-      "sequence": "STU3",
       "current": true
     }
   ]
