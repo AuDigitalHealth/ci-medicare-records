@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medicationrequest-pbs"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/medicationrequest-pbs"/>
-  <version value="1.0.4"/>
+  <version value="1.0.5"/>
   <name value="ADHAMedicationRequestPBS"/>
   <title value="ADHA PBS MedicationRequest" />
   <status value="active"/>
@@ -41,8 +41,6 @@
     </element>
     <element id="MedicationRequest.meta.profile">
       <path value="MedicationRequest.meta.profile"/>
-      <definition
-        value="A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structuredefinition-definitions.html#StructureDefinition.url)."/>
       <min value="1"/>
     </element>
     <element id="MedicationRequest.identifier">
