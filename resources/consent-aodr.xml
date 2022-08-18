@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="consent-aodr"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
-  <version value="1.0.6"/>
+  <version value="1.1.0"/>
   <name value="ADHAConsentAODR"/>
   <title value="ADHA Australian Organ Donor Register Consent" />
   <status value="active"/>
@@ -59,8 +59,6 @@
     </element>
     <element id="Consent.meta.profile">
       <path value="Consent.meta.profile"/>
-      <definition
-        value="A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structuredefinition-definitions.html#StructureDefinition.url)."/>
       <min value="1"/>
     </element>
     <element id="Consent.extension">
@@ -73,18 +71,6 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Consent.extension:dateInitialRegistration">
-      <path value="Consent.extension"/>
-      <sliceName value="dateInitialRegistration"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration"
-        />
-      </type>
-      <mustSupport value="true"/>
-    </element>
     <element id="Consent.extension:donationDecision">
       <path value="Consent.extension"/>
       <sliceName value="donationDecision"/>
@@ -92,9 +78,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"
-        />
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
       </type>
       <mustSupport value="true"/>
     </element>

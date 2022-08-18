@@ -135,10 +135,6 @@
             "base": "StructureDefinition-explanationofbenefit-medicare.html",
             "defns": "StructureDefinition-explanationofbenefit-medicare-definitions.html"
         },
-        "StructureDefinition/extension-dateinitialregistration": {
-            "base": "StructureDefinition-extension-dateinitialregistration.html",
-            "defns": "StructureDefinition-extension-dateinitialregistration-definitions.html"
-        },
         "StructureDefinition/extension-donationdecision": {
             "base": "StructureDefinition-extension-donationdecision.html",
             "defns": "StructureDefinition-extension-donationdecision-definitions.html"

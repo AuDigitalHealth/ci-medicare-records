@@ -30,7 +30,6 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * except.action
     * except.data
     * except.data.reference
-    * extension-dateinitialregistration
     * extension-donationdecision
 * The system SHALL be able to take the following elements into account when performing processing:
     * identifier

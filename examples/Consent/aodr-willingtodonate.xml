@@ -10,7 +10,6 @@
 				<b>Example Narrative</b>
 			</p>
 			<p><b>id</b>: aodr-willingtodonate</p>
-			<p><b>date initial registration</b>: 2015-11-18</p>
 			<p><b>donation decision</b>: Willing to be donor</p>
 			<p><b>dateTime</b>: 2017-09-21</p>
 			<p><b>Bone structure</b>: Willing to be donor</p>
@@ -249,9 +248,6 @@
 			</patient>
 		</BodySite>
 	</contained>
-	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration">
-		<valueDateTime value="2015-11-18"/>
-	</extension>
 	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision">
 		<valueCodeableConcept>
 			<coding>

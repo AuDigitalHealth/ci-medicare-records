@@ -1,4 +1,4 @@
-This extension applies to the Consent resource and represents an individual's decision about organ and tissue donation.
+This extension applies to the Consent resource and is used to represent an individual's decision about organ and tissue donation.
 
 
 #####  **Usage scenarios**
