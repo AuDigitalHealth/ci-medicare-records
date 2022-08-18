@@ -19,7 +19,7 @@ Amended:
 
 - ADHA Australian Organ Donor Register Consent - remove support for extension Date of Initial Registration [ci-medicare-records #23](https://github.com/AuDigitalHealth/ci-medicare-records/issues/23)
 - ADHA Medicare ExplanationOfBenefit - remove support for ExplanationOfBenefit.referral [ci-medicare-records #21](https://github.com/AuDigitalHealth/ci-medicare-records/issues/21)
-- extension Consent Donation Decision - refactored to remove erroneous slicing [ci-medicare-records #20](https://github.com/AuDigitalHealth/ci-medicare-records/issues/20), correct description [ci-medicare-records #22](https://github.com/AuDigitalHealth/ci-medicare-records/issues/22) 
+- extension Consent Donation Decision - refactored to remove erroneous slicing [ci-medicare-records #20](https://github.com/AuDigitalHealth/ci-medicare-records/issues/20), corrected profile description [ci-medicare-records #22](https://github.com/AuDigitalHealth/ci-medicare-records/issues/22) 
 - extension Vaccine Vial Serial Number - refactored to remove erroneous slicing [ci-medicare-records #18](https://github.com/AuDigitalHealth/ci-medicare-records/issues/18)
 - added profile-specific implementation guidance to the page for ADHA Medicare ExplanationOfBenefit to include practitioner-classification extension [ci-medicare-records #24](https://github.com/AuDigitalHealth/ci-medicare-records/issues/24)
 
