@@ -66,10 +66,6 @@ The profiles listed below are defined as part of this implementation guide. Thes
          <td><a href="StructureDefinition-explanationofbenefit-medicare.html">ADHA Medicare ExplanationOfBenefit</a></td>
          <td>This profile defines a representation of PBS claim items or MBS claim items.</td>
       </tr>
-      <tr>
-         <td><a href="StructureDefinition-referralrequest-mbsdva.html">ADHA MBS DVA ReferralRequest</a></td>
-         <td>This profile defines a representation of information of the requested service including the requesting practitioner as part of MBS claim item records.</td>
-       </tr>
  </tbody>
 </table>
 <br/>

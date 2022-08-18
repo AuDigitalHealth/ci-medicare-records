@@ -19,6 +19,7 @@ Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-b
 Code System URI 'urn:oid:1.2.36.1.2001.1005.17' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.13.62' is unknown so the code cannot be validated
 
 # Terminology not available at HL7 tx server or in package dependency: ValueSet
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found by validator

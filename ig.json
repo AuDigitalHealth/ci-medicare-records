@@ -151,10 +151,6 @@
             "base": "StructureDefinition-medicationrequest-pbs.html",
             "defns": "StructureDefinition-medicationrequest-pbs-definitions.html"
         },
-        "StructureDefinition/referralrequest-mbsdva": {
-            "base": "StructureDefinition-referralrequest-mbsdva.html",
-            "defns": "StructureDefinition-referralrequest-mbsdva-definitions.html"
-        },
         "StructureDefinition/medication-pbs": {
             "base": "StructureDefinition-medication-pbs.html",
             "defns": "StructureDefinition-medication-pbs-definitions.html"

@@ -25,7 +25,6 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * subtype
     * created
     * provider
-    * referral
     * prescription
     * item
     * item.sequence
@@ -45,9 +44,9 @@ In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conforman
     * Generic name of a PBS item can be represented by the supplied item service code
     * Date of supply of the item is represented by item.serviced[x]
 * MBS record: 
-    * An ExplanationOfBenefit for an MBS record will represent the requester of the service as part of a ReferralRequest
     * Whether a service was provided in a hospital is indicated by the use and value of item.location
     * Date of service is represented by item.serviced[x]
+    * Provider role is represented in a contained Practitioner resource using the [practitioner-classification](http://hl7.org/fhir/STU3/extension-practitioner-classification.html) extension 
 
 
 

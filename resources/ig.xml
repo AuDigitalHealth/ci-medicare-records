@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="au.digitalhealth.stu3.medicare-records"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
@@ -88,14 +88,6 @@
       <description value="The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <sourceReference>
         <reference value="StructureDefinition/medicationrequest-pbs"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <name value="ReferralRequestMBSDVA"/>
-      <description value="The purpose of this profile is to define a representation of service item claimed information, including practitioner that requested the service, in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans' Affairs (DVA) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
-      <sourceReference>
-        <reference value="StructureDefinition/referralrequest-mbsdva"/>
       </sourceReference>
     </resource>
     <resource>
