@@ -131,7 +131,7 @@ The following extensions are defined as part of this implementation guide.
         <td><a href="StructureDefinition-vaccine-serial-number-1.html">Vaccine Vial Serial Number</a></td>
         <td>Australian Immunisation Register record</td>
         <td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td>
-        <td><a href="http://hl7.org/fhir/STU3/immunization-definitions.html#Immunization">Immunization</a></td>
+        <td><a href="http://hl7.org/fhir/STU3/immunization.html">Immunization</a></td>
         <td><a href="StructureDefinition-immunization-air.html">ADHA Australian Immunisation Register Immunization</a></td>
     </tr>
 </table>
