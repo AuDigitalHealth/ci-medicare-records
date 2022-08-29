@@ -36,7 +36,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Profiles and Extensions](profiles.html): This page lists the set of profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and the expectations for must support elements in each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
-- [Change Log](changes.html): This page documents the changes across versions of this implementation guide
+- [Change Log](changes.html): This page documents the changes across versions of this implementation guide.
 
 
 
