@@ -3,8 +3,8 @@ The purpose of this profile is to define a representation of a record of a claim
 
 ##### **Usage scenarios**
 The following are the usage scenarios expected:
-* An individual’s Medicare Benefits Schedule (MBS) claim item records are uploaded to the My Health Record system from a Medicare repository
-* An individual’s Pharmaceutical Benefits Schedule (PBS) claim item records are uploaded to the My Health Record system from a Medicare repository
+* An individual’s MBS claim item records are uploaded to the My Health Record system from a Medicare repository
+* An individual’s PBS claim item records are uploaded to the My Health Record system from a Medicare repository
 
 
 ##### **Each Explanation of Benefit SHALL have**

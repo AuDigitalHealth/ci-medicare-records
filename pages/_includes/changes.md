@@ -9,7 +9,7 @@
 - Publication date: **IN PROGRESS**
 - Publication status: **PROGRESSING THROUGH ASSURANCE**
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/2.2.0>
-- Based on FHIR version : 3.0.2
+- Based on FHIR version: 3.0.2
 
 This version is developed for the HDR Upgrade project. This version clarifies the scope of the live feed FHIR payload to the MHR system.
 
@@ -33,7 +33,7 @@ Removed:
 - Publication date: **IN PROGRESS**
 - Publication status: **PROGRESSING THROUGH ASSURANCE**
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/2.1.0>
-- Based on FHIR version : 3.0.2
+- Based on FHIR version: 3.0.2
 
 This version is developed for the Enhanced Use of Immunisation Records project. This version addresses the changes in scope to the FHIR payload in this project.
 
@@ -61,7 +61,7 @@ Removed:
 - Publication date: 27 November 2020
 - Publication status: Draft for external use [THIS STATUS WAS ISSUED IN ERROR AND IS CORRECTED TO: Draft for external review]
 - url: N/A
-- Based on FHIR version : 3.0.2
+- Based on FHIR version: 3.0.2
 - Archived release location: <https://github.com/AuDigitalHealth/ci-medicare-records/releases/tag/MR-2.0.0-2020NOV>
 
 Pre-release for review. This version is developed for the Enhanced Use of Immunisation Records project.
@@ -89,7 +89,7 @@ Removed:
 - Publication date: 1 November 2018
 - Publication status: Approved for external use
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/1.0.0>
-- Based on FHIR version : 3.0.1 
+- Based on FHIR version: 3.0.1 
 
 The Australian Digital Health Agency Medicare Records FHIR Implementation Guide was developed in support of the Medicare Document Simplification work package for My Health Record system release v9.3.
 
