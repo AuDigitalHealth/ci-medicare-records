@@ -21,11 +21,9 @@ This guide is scoped to the FHIR conformance artefacts (i.e. [Profiles and Exten
 1. An individual’s Medicare Benefits Schedule (MBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Pharmaceutical Benefits Schedule (PBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 
-This guide, including the profiles defined, is intended to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems.
+This guide, including the profiles defined, is intended to support interactions between a Medicare repository and the My Health Record system.
 
-The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
-
-The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements. This release of the implementation guide is scoped to the content of the Agency FHIR NPM package v1.0.0 and is provided to assist readers and users in understanding the content of that package.  
+The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements.   
 
 
 ## How to read this guide

@@ -22,7 +22,7 @@ The following are the usage scenarios expected:
 ##### **Must Support**
 In the context of this profile [Must Support](http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport) SHALL be interpreted as follows.
 * The system SHALL be able to store and retrieve the following elements:
-   * vaccine-serial-number-1
+   * serialNumber
    * status
    * notGiven
    * vaccineCode
