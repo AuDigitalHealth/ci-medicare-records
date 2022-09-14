@@ -91,7 +91,7 @@ The profiles listed below are defined as part of this implementation guide. Thes
       </tr>
       <tr>
          <td><a href="StructureDefinition-medicationrequest-pbs.html">ADHA PBS MedicationRequest</a></td>
-         <td>This profile defines a representation of prescription data to as part of a PBS claim item.</td>
+         <td>This profile defines a representation of prescription data as part of a PBS claim item.</td>
       </tr>
       <tr>
          <td><a href="StructureDefinition-medication-pbs.html">ADHA PBS Medication</a></td>
