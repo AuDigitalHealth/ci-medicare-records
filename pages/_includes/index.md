@@ -21,7 +21,7 @@ This guide is scoped to the FHIR conformance artefacts (i.e. [Profiles and Exten
 1. An individual’s Medicare Benefits Schedule (MBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 1. An individual’s Pharmaceutical Benefits Schedule (PBS) claim item records are uploaded to the My Health Record system from a Medicare repository
 
-This guide, including the profiles defined, is intended to support interactions between individuals, healthcare providers, the MHR system, and other clinical information systems.
+This guide, including the profiles defined, is intended to support interactions between individuals, healthcare providers, the My Health Record system, and other clinical information systems.
 
 The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
