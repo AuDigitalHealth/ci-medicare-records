@@ -17,7 +17,7 @@
       "version": "2.1.0",
       "date": "1999-09-09",
      "desc": "The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts extended for the Enhanced Use of Immunisation Records project.",
-      "path": "https://www.digitalhealth.gov.au/fhir/STU3/medicare-records/2.1.0",
+      "path": "https://fhir.digitalhealth.gov.au/STU3/medicare-records/2.1.0",
       "status": "release",
       "fhirversion": "3.0.2",
       "sequence": "STU3",
