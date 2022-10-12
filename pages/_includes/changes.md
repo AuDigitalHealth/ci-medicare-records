@@ -6,7 +6,7 @@
 
 
 ### Version = 2.2.0
-- Publication date: 06 October 2022
+- Publication date: 6 October 2022
 - Publication status: Approved for external use
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/2.2.0>
 - Based on FHIR version: 3.0.2
@@ -30,7 +30,7 @@ Removed:
 ---
 
 ### Version = 2.1.0
-- Publication date: 06 October 2022
+- Publication date: 6 October 2022
 - Publication status: Approved for external use
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records/2.1.0>
 - Based on FHIR version: 3.0.2
