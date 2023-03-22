@@ -10,7 +10,7 @@ active: profiles
 <!-- ============Tabs (only on Profile StructureDefinition Pages =============== -->
 {% if '{{[type]}}'=='StructureDefinition' %}<ul class="nav nav-tabs">
   <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
-  <li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
+  <!--<li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>-->
   <li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
   <li class="{% if '{{[fmt]}}' == 'xml' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
   <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
