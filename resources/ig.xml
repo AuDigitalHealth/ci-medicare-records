@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="au.digitalhealth.stu3.medicare-records"/>
   <url value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
-  <version value="2.2.0"/>
+  <version value="2.3.0-ci-build"/>
   <name value="ADHAMedicareRecords"/>
   <status value="active"/>
   <experimental value="false"/>
