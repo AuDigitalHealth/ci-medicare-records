@@ -167,7 +167,7 @@
       </reference>
       <name value="Explanation of Benefit PBS example 1"/>
       <description value="PBS example 1"/>
-      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
     </resource>
     <resource>
       <reference>
@@ -175,7 +175,7 @@
       </reference>
       <name value="Explanation of Benefit PBS example 2"/>
       <description value="PBS example 2"/>
-      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
     </resource>
     <resource>
       <reference>
