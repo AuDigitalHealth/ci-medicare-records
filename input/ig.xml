@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="au.digitalhealth.stu3.medicare-records"/>
+  <url
+    value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
+  <version value="2.2.0-ci-build"/>
+  <name value="ADHAMedicareRecords"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The Australian Digital Health Agency Medicare Records FHIR Implementation Guide contains HL7™ FHIR® Release 3 (STU3) artefacts authored and maintained by the Agency to support the electronic exchange of Medicare records between Medicare repositories and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <packageId value="au.digitalhealth.stu3.medicare-records"/>
+  <license value="Apache-2.0"/>
+  <fhirVersion value="3.0.2"/>
+  <!--<dependsOn>
+    <type value="reference"/>
+    <uri value="http://hl7.org.au/fhir/2018Sep"/>
+  </dependsOn>-->
+  <!--<dependsOn id="aubase">
+    <uri value="http://hl7.org.au/fhir"/>
+    <packageId value="http://hl7.org.au/fhir/2018Sep"/>
+    <version value="3.0.1"/>
+  </dependsOn>-->
+  <definition>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/bodysite-aodr"/>
+      </reference>
+      <name value="BodySiteAODR"/>
+      <description
+        value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/consent-aodr"/>
+      </reference>
+      <name value="ConsentAODR"/>
+      <description
+        value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/explanationofbenefit-medicare"/>
+      </reference>
+      <name value="ExplanationofBenefitMedicare"/>
+      <description
+        value="The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/extension-donationdecision"/>
+      </reference>
+      <name value="ExtensionDonationDecision"/>
+      <description
+        value="This extension applies to the Consent resource and is used to represent an individual's decision about organ and tissue donation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/flag-air-1"/>
+      </reference>
+      <name value="FlagAIR"/>
+      <description
+        value="The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/immunization-air"/>
+      </reference>
+      <name value="ImmunizationAIR"/>
+      <description
+        value="The purpose of this profile is to define a representation of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/medication-pbs"/>
+      </reference>
+      <name value="MedicationPBS"/>
+      <description
+        value="The purpose of this profile is to define a representation of medicinal product information for a prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/medicationrequest-pbs"/>
+      </reference>
+      <name value="MedicationRequestPBS"/>
+      <description
+        value="The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/vaccine-serial-number-1"/>
+      </reference>
+      <name value="VaccineSerialNumber"/>
+      <description
+        value="This extension applies to the Immunization resource and is used to represent the serial number of the vial of vaccine."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <!--    Examples-->
+    <resource>
+      <reference>
+        <reference value="Immunization/air-01"/>
+      </reference>
+      <name
+        value="Immunization example 1"/>
+      <description value="Vaccination administration (Infanrix Hexa at 6 months of age)"/>
+      <exampleCanonical
+        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/air-02"/>
+      </reference>
+      <name value="Immunization example 2"/>
+      <description value="Vaccination administration (Panvax for influenza)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/air-03"/>
+      </reference>
+      <name value="Immunization example 2"/>
+      <description value="Vaccination administration (Pfizer Comirnaty for COVID-19)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/immunization-air"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExplanationOfBenefit/mbs-01"/>
+      </reference>
+      <name value="Explanation of Benefit MBS example 1"/>
+      <description value="MBS example 1"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExplanationOfBenefit/mbs-02"/>
+      </reference>
+      <name value="Explanation of Benefit MBS example 2"/>
+      <description value="MBS example 2"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExplanationOfBenefit/mbs-min"/>
+      </reference>
+      <name value="Explanation of Benefit MBS example 4"/>
+      <description value="MBS example min"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/explanationofbenefit-medicare"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExplanationOfBenefit/pbs-01"/>
+      </reference>
+      <name value="Explanation of Benefit PBS example 1"/>
+      <description value="PBS example 1"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExplanationOfBenefit/pbs-02"/>
+      </reference>
+      <name value="Explanation of Benefit PBS example 2"/>
+      <description value="PBS example 2"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/aodr-willingtodonate"/>
+      </reference>
+      <name value="Consent example 1"/>
+      <description value="Willing to donate"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/aodr-willingtodonatesome"/>
+      </reference>
+      <name value="Consent example 2"/>
+      <description value="Willing to donate some"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/aodr-notwillingtodonate"/>
+      </reference>
+      <name value="Consent example 3"/>
+      <description value="Not willing to donate"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/consent-aodr"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Flag/air-01"/>
+      </reference>
+      <name value="Flag 1"/>
+      <description value="AIR notice - Medical contraindication to MMR II"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Flag/air-02"/>
+      </reference>
+      <name value="Flag 1"/>
+      <description value="AIR notice - Natural immunity to Measles"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/flag-air-1"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Australian Digital Health Agency FHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Artefacts"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="disclaimers.html"/>
+        <title value="Disclaimers"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2022+"/>
+    </parameter>
+    <parameter>
+      <code value="show-inherited-invariants"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input\intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input\pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input\includes"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input\history"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="init"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="progress"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="tx"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="generate"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="html"/>
+    </parameter>
+  </definition>
+
+</ImplementationGuide>
