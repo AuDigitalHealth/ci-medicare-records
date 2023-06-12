@@ -21,15 +21,11 @@
   <packageId value="au.digitalhealth.stu3.medicare-records"/>
   <license value="Apache-2.0"/>
   <fhirVersion value="3.0.2"/>
-  <!--<dependsOn>
-    <type value="reference"/>
-    <uri value="http://hl7.org.au/fhir/2018Sep"/>
-  </dependsOn>-->
-  <!--<dependsOn id="aubase">
-    <uri value="http://hl7.org.au/fhir"/>
-    <packageId value="http://hl7.org.au/fhir/2018Sep"/>
-    <version value="3.0.1"/>
-  </dependsOn>-->
+  <dependsOn id="aubase">
+    <uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+    <packageId value="hl7.fhir.au.base"/>
+    <version value="0.9.3"/>
+  </dependsOn>
   <definition>
     <resource>
       <reference>

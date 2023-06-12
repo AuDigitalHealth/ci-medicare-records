@@ -54,6 +54,7 @@ txCache
 input-cache
 local-template
 template
+input-cache
 
 
 
