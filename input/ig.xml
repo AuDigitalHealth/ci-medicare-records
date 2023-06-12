@@ -267,6 +267,10 @@
       <value value="2022+"/>
     </parameter>
     <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples/*"/>
+    </parameter>
+    <parameter>
       <code value="show-inherited-invariants"/>
       <value value="false"/>
     </parameter>
