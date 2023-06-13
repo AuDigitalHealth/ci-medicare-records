@@ -287,6 +287,10 @@
       <value value="true"/>
     </parameter>
     <parameter>
+      <code value="apply-version"/>
+      <value value="false"/>
+    </parameter>    
+    <parameter>
       <code value="path-resource"/>
       <value value="input\history"/>
     </parameter>
