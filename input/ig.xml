@@ -5,6 +5,7 @@
     value="http://ns.electronichealth.net.au/ci/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records"/>
   <version value="2.2.0-ci-build"/>
   <name value="ADHAMedicareRecords"/>
+  <title value="Australian Digital Health Agency Medicare Records FHIR Implementation Guide"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -223,7 +224,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Australian Digital Health Agency FHIR"/>
+        <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -261,6 +262,10 @@
     <parameter>
       <code value="copyrightyear"/>
       <value value="2022+"/>
+    </parameter>
+    <parameter>
+      <code value="apply-copyright"/>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>
