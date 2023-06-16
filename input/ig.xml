@@ -10,6 +10,7 @@
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
+    <name value="Australian Digital Health Agency"/>
     <telecom>
       <system value="email"/>
       <value value="help@digitalhealth.gov.au"/>
@@ -288,6 +289,10 @@
       <value value="input\includes"/>
     </parameter>
     <parameter>
+      <code value="shownav"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
       <code value="find-other-resources"/>
       <value value="true"/>
     </parameter>
@@ -302,6 +307,10 @@
     <parameter>
       <code value="excludemap"/>
       <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="../input/_resources/terminology-settings.json"/>
     </parameter>
     <parameter>
       <code value="logging"/>
