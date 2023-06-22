@@ -1,0 +1,1 @@
+<a style="color: var(--footer-hyperlink-text-color); font-size: 12px; font-family: verdana" target="_blank" href="https://fhir.digitalhealth.gov.au/medicare-records/history.html">Version History</a>
