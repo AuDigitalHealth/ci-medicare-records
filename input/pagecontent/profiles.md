@@ -107,7 +107,7 @@ The following extensions are defined as part of this implementation guide.
         <td><a href="StructureDefinition-extension-donationdecision.html">Consent Donation Decision</a></td>
         <td>Australian Organ Donor Register record</td>
         <td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-        <td><a href="http://hl7.org/fhir/STU3/Consent.html">Consent</a></td>
+        <td><a href="http://hl7.org/fhir/STU3/consent.html">Consent</a></td>
         <td><a href="StructureDefinition-consent-aodr.html">ADHA Australian Organ Donor Register Consent</a></td>
     </tr>
     <tr>
