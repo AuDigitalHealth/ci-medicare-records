@@ -1,5 +1,3 @@
-The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
-
 ### Usage scenarios
 The following are the usage scenarios expected:
 * An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository

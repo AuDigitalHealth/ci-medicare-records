@@ -1,6 +1,3 @@
-The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
-
-
 ### Usage scenarios
 The following are the usage scenarios expected:
 * An individual’s MBS claim item records are uploaded to the My Health Record system from a Medicare repository

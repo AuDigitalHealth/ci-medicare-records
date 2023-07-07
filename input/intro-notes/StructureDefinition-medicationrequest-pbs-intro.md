@@ -1,6 +1,4 @@
-The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia.
-
-###  Usage scenarios
+### Usage scenarios
 The following are the usage scenarios expected:
 * An individual’s PBS claim item records are uploaded to the My Health Record system from a Medicare repository
 

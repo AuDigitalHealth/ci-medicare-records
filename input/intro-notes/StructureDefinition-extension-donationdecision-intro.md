@@ -1,7 +1,4 @@
-This extension applies to the Consent resource and is used to represent an individual's decision about organ and tissue donation.
-
-
-###  **Usage scenarios**
+### Usage scenarios
 The following are the usage scenarios expected:
 * An individual’s Australian Organ Donor Register record is uploaded to the My Health Record system from a Medicare repository
 

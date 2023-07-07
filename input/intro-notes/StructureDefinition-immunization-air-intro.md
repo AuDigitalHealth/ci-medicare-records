@@ -1,6 +1,3 @@
-The purpose of this profile is to define a representation of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia.
-
-
 ### Usage scenarios
 The following are the usage scenarios expected:
 * An individual’s Australian Immunisation Register record is uploaded to the My Health Record system from a Medicare repository
