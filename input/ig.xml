@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="au.digitalhealth.stu3.medicare-records"/>
   <url
@@ -33,7 +33,7 @@
       <reference>
         <reference value="StructureDefinition/bodysite-aodr"/>
       </reference>
-      <name value="BodySiteAODR"/>
+      <name value="ADHA Australian Organ Donor Register BodySite"/>
       <description
         value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -42,7 +42,7 @@
       <reference>
         <reference value="StructureDefinition/consent-aodr"/>
       </reference>
-      <name value="ConsentAODR"/>
+      <name value="ADHA Australian Organ Donor Register Consent"/>
       <description
         value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -51,7 +51,7 @@
       <reference>
         <reference value="StructureDefinition/explanationofbenefit-medicare"/>
       </reference>
-      <name value="ExplanationofBenefitMedicare"/>
+      <name value="ADHA Medicare ExplanationOfBenefit"/>
       <description
         value="The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS), Department of Veterans’ Affairs (DVA), Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -60,7 +60,7 @@
       <reference>
         <reference value="StructureDefinition/extension-donationdecision"/>
       </reference>
-      <name value="ExtensionDonationDecision"/>
+      <name value="Consent Donation Decision"/>
       <description
         value="This extension applies to the Consent resource and is used to represent an individual's decision about organ and tissue donation."/>
       <exampleBoolean value="false"/>
@@ -69,7 +69,7 @@
       <reference>
         <reference value="StructureDefinition/flag-air-1"/>
       </reference>
-      <name value="FlagAIR"/>
+      <name value="ADHA Australian Immunisation Register Flag"/>
       <description
         value="The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -78,7 +78,7 @@
       <reference>
         <reference value="StructureDefinition/immunization-air"/>
       </reference>
-      <name value="ImmunizationAIR"/>
+      <name value="ADHA Australian Immunisation Register Immunization"/>
       <description
         value="The purpose of this profile is to define a representation of an administered vaccination, for an individual, held in the Australian Immunisation Register (AIR) for the electronic exchange of digital health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -87,7 +87,7 @@
       <reference>
         <reference value="StructureDefinition/medication-pbs"/>
       </reference>
-      <name value="MedicationPBS"/>
+      <name value="ADHA PBS Medication"/>
       <description
         value="The purpose of this profile is to define a representation of medicinal product information for a prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -96,7 +96,7 @@
       <reference>
         <reference value="StructureDefinition/medicationrequest-pbs"/>
       </reference>
-      <name value="MedicationRequestPBS"/>
+      <name value="ADHA PBS MedicationRequest"/>
       <description
         value="The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between Medicare repositories and the My Health Record system infrastructure in Australia."/>
       <exampleBoolean value="false"/>
@@ -105,7 +105,7 @@
       <reference>
         <reference value="StructureDefinition/vaccine-serial-number-1"/>
       </reference>
-      <name value="VaccineSerialNumber"/>
+      <name value="Vaccine Vial Serial Number"/>
       <description
         value="This extension applies to the Immunization resource and is used to represent the serial number of the vial of vaccine."/>
       <exampleBoolean value="false"/>
