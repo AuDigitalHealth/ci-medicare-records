@@ -2,7 +2,7 @@
 
 The profiles listed below are defined as part of this implementation guide. These profiles make reference to profiles published by HL7 Australia in the [Australian Base Implementation Guide v0.9.3](http://hl7.org.au/fhir/2018Sep/index.html).
 
-###  Australian Immunisation Register record
+####  Australian Immunisation Register record
 
 <table class="list" width="100%">
   <tbody>
@@ -24,7 +24,7 @@ The profiles listed below are defined as part of this implementation guide. Thes
 </table>
 <br/>
 
-### Australian Organ Donor Register record
+#### Australian Organ Donor Register record
 
 <table class="list" width="100%">
   <tbody>
@@ -46,7 +46,7 @@ The profiles listed below are defined as part of this implementation guide. Thes
 </table>
 <br/>
 
-###  Medicare Benefits Schedule (MBS) claim item record
+####  Medicare Benefits Schedule (MBS) claim item record
 
 <table class="list" width="100%">
    <tbody>
@@ -65,7 +65,7 @@ The profiles listed below are defined as part of this implementation guide. Thes
 <br/>
 
 
-###  Pharmaceutical Benefits Schedule (PBS) claim item record
+####  Pharmaceutical Benefits Schedule (PBS) claim item record
 
 <table class="list" width="100%">
    <tbody>
