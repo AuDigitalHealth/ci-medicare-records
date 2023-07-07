@@ -1,6 +1,6 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">IG Home</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
     <a href="profiles.html">Profiles and Extensions</a>
@@ -18,4 +18,3 @@
     <a href="changes.html">Change Log</a>
   </li>
 </ul> 
-
