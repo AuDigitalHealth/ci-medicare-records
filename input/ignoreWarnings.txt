@@ -1,40 +1,46 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
-# (And include comments like this justifying why)
+# The following code systems are external and not supported by terminology server
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/anzsco-designation-type-1' is unknown so the code cannot be validated
 
-# We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+# Terminology not available at HL7 tx server or in package dependency: fictitious local coding systems
+Code System URI 'http://example.localcodingsystem.com.au/generic-packages' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated
 
-# Have verified that these examples are being checked against the expected profiles/resources.
-INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary
-INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
-INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
-INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
+# Terminology not available at HL7 tx server or in package dependency: CodeSystem
+Code System URI 'urn:oid:1.2.36.1.2001.1005.17' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.36.1.2001.1005.22' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.13.62' is unknown so the code cannot be validated
 
-# This is inherited from the base resource
-WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace
+# Terminology not available at HL7 tx server or in package dependency: ValueSet
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 not found
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 not found
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 not found
 
-# These examples are fake code systems - they're not expected to be checked
-Code System URI 'http://example.org/some-id-type-system' is unknown so the code cannot be validated
-Code System URI 'http://example.org/some-system' is unknown so the code cannot be validated
+# Example warnings
+The Implementation Guide contains no explicitly linked examples for this profile
 
-# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
-INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
-INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
+# Terminology not available at HL7 tx server or in package dependency: resolution
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1 on element ReferralRequest.specialty could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modified-pbs-item-1 on element Medication.code could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-vaccine-1 on element Immunization.vaccineCode could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.valueCodeableConcept could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1 on element ExplanationOfBenefit.item.service could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 on element BodySite.code could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-consent-finding-1 on element Extension.value[x] could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.item.category could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.subType could not be resolved
 
-# If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
-WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile
+# Suppress warnings re autogenerated HTML fragments
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 
-# The objective is to show a reference to an unknown code system, so these warnings are expected
-WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unable to provide support for code system http://not-a-known-code-system
+# Unable to understand supplied SNOMED system version
+Error from server: Unable to understand Default system version "http://snomed.info/sct/32506021000036107"
 
-# We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)
-WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
-WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
+# Suppress inter-version extension issue
+The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
+The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
