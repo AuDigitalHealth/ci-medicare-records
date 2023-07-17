@@ -15,7 +15,7 @@
         {
             "label": "Trigger auto build - master branch",
             "type": "shell",
-            "command": "curl -X POST \"https://us-central1-fhir-org-starter-project.cloudfunctions.net/ig-commit-trigger\" -H \"Content-type: application/json\" --data '{\"ref\": \"refs/heads/master\", \"repository\": {\"full_name\": \"AuDigitalHealth/ci-fhir-r4\"}}'",
+            "command": "curl -X POST \"https://us-central1-fhir-org-starter-project.cloudfunctions.net/ig-commit-trigger\" -H \"Content-type: application/json\" --data '{\"ref\": \"refs/heads/master\", \"repository\": {\"full_name\": \"AuDigitalHealth/ci-medicare-records\"}}'",
             "group": {
               "kind": "build"
             }
