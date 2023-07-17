@@ -16,11 +16,9 @@ The contents of this repository include:
 This repository has the following structure: 
 - a resources folder that holds all StructureDefinition resources (e.g. profiles, extensions)
 - an examples folder that holds all example resources
-- a pages folder that contains the FHIR implementation guide containing the implementation guide specific markdown files e.g. header and footer
-- a JSON control file in the root level folder
+- an intro-notes folder that contains the FHIR implementation guide containing the implementation guide specific markdown files
+- an ig.ini in the root level folder
 - repository files, e.g. .gitignore, README.md and etc.
-- implementation guide build files, e.g. base.html, format.html and etc.
-
  
 ## How to view the content
 To view the latest continuous build version of the implementation guide.
